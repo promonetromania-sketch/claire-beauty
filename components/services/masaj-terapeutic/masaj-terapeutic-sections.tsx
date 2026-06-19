@@ -1,5 +1,7 @@
 import type { ComponentType, ReactNode } from "react"
-import Image from "next/image"
+import { VisualGallery } from "@/components/shared/visual-gallery"
+import { ClaireImage } from "@/components/ui/claire-image"
+import { claireImages, pageGalleries } from "@/lib/images/claire-beauty"
 import Link from "next/link"
 import {
   Activity,
@@ -177,11 +179,9 @@ export function MasajTerapeuticSections() {
             />
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-premium-lg">
-            <Image
-              src="/images/hero-spa.jpg"
-              alt="Masaj terapeutic pentru dureri de spate în Craiova"
+            <ClaireImage
+              {...claireImages.masajTerapeutic1}
               fill
-              className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
@@ -267,11 +267,9 @@ export function MasajTerapeuticSections() {
             </p>
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-premium-lg">
-            <Image
-              src="/images/treatment-body.jpg"
-              alt="Ședință de masaj terapeutic la Claire Beauty"
+            <ClaireImage
+              {...claireImages.masajDeepTissue2}
               fill
-              className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
@@ -530,6 +528,15 @@ export function MasajTerapeuticSections() {
           </ul>
         </div>
       </SectionShell>
+
+      <VisualGallery
+        images={pageGalleries.masajTerapeutic}
+        eyebrow="În salon"
+        title="Masaj terapeutic la Claire Beauty"
+        description="Tehnici reale, presiune adaptată și rezultate vizibile — așa arată experiența de masaj terapeutic în cabinetul nostru."
+        className="bg-background"
+        columns={3}
+      />
 
       <ServiceCTA
         title="Programează-te acum la Claire Beauty Craiova"

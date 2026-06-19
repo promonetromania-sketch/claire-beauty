@@ -1,5 +1,7 @@
 import type { ComponentType, ReactNode } from "react"
-import Image from "next/image"
+import { VisualGallery } from "@/components/shared/visual-gallery"
+import { ClaireImage } from "@/components/ui/claire-image"
+import { claireImages, pageGalleries } from "@/lib/images/claire-beauty"
 import Link from "next/link"
 import {
   AlertTriangle,
@@ -224,11 +226,9 @@ export function DermapenSections() {
             </p>
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-premium-lg">
-            <Image
-              src="/images/hero-spa.jpg"
-              alt="Cum funcționează Dermapen în Craiova"
+            <ClaireImage
+              {...claireImages.tratamentFacialMasaj}
               fill
-              className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
@@ -512,6 +512,15 @@ export function DermapenSections() {
         title="Programează-te acum"
         description="Programează-te pentru Dermapen Craiova și începe procesul de regenerare a pielii."
         primaryLabel="Programează-te acum"
+      />
+
+      <VisualGallery
+        images={pageGalleries.dermapen}
+        eyebrow="În salon"
+        title="Dermapen la Claire Beauty"
+        description="Proceduri reale, tehnici profesionale și rezultate progresive — așa arată experiența Dermapen în cabinetul nostru."
+        className="bg-background"
+        columns={3}
       />
 
       <ServiceCTA

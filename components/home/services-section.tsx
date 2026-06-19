@@ -1,13 +1,14 @@
-import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
+import { ClaireImage } from "@/components/ui/claire-image"
+import { claireImages } from "@/lib/images/claire-beauty"
 
 const services = [
   {
     title: "Reflexoterapie",
     description:
       "Terapie holistică care stimulează punctele reflexogene din tălpi pentru echilibrarea întregului organism.",
-    image: "/images/treatment-reflexology.jpg",
+    image: claireImages.reflexoterapie,
     href: "/reflexoterapie-craiova",
     featured: true,
   },
@@ -15,7 +16,7 @@ const services = [
     title: "Masaj Anticelulitic",
     description:
       "Tratament intensiv pentru reducerea celulitei și îmbunătățirea aspectului pielii.",
-    image: "/images/treatment-body.jpg",
+    image: claireImages.masajAnticelulitic,
     href: "/masaj-anticelulitic-craiova",
     featured: false,
   },
@@ -23,7 +24,7 @@ const services = [
     title: "Drenaj Limfatic",
     description:
       "Tehnici specializate pentru eliminarea toxinelor și reducerea retenției de apă.",
-    image: "/images/treatment-body.jpg",
+    image: claireImages.drenajLimfatic,
     href: "/drenaj-limfatic-craiova",
     featured: false,
   },
@@ -31,7 +32,7 @@ const services = [
     title: "Tratamente Faciale",
     description:
       "Îngrijire premium pentru ten, de la curățare profundă la tratamente anti-aging.",
-    image: "/images/treatment-facial.jpg",
+    image: claireImages.tratamentFacialMasaj,
     href: "/tratamente-faciale-craiova",
     featured: false,
   },
@@ -39,7 +40,7 @@ const services = [
     title: "Remodelare Corporală",
     description:
       "Tehnologii avansate pentru conturarea și remodelarea siluetei tale.",
-    image: "/images/treatment-body.jpg",
+    image: claireImages.remodelareCorporala,
     href: "/remodelare-corporala-craiova",
     featured: false,
   },
@@ -47,8 +48,8 @@ const services = [
     title: "Radiofrecvență",
     description:
       "Tratament non-invaziv pentru fermitatea pielii și reducerea ridurilor.",
-    image: "/images/treatment-facial.jpg",
-    href: "/radiofrecventa-craiova",
+    image: claireImages.radiofrecventaFacial,
+    href: "/radiofrecventa-corporala-craiova",
     featured: false,
   },
 ]
@@ -57,7 +58,6 @@ export function ServicesSection() {
   return (
     <section id="servicii" className="py-24 bg-background">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <p className="text-sm font-medium tracking-widest text-accent uppercase mb-4">
             Serviciile Noastre
@@ -73,7 +73,6 @@ export function ServicesSection() {
           </p>
         </div>
 
-        {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <Link
@@ -84,18 +83,16 @@ export function ServicesSection() {
               }`}
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              {/* Image */}
               <div className="relative h-64 overflow-hidden">
-                <Image
-                  src={service.image}
-                  alt={service.title}
+                <ClaireImage
+                  {...service.image}
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="transition-transform duration-700 group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent" />
               </div>
 
-              {/* Content */}
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <h3 className="font-serif text-xl font-semibold text-primary-foreground mb-2 group-hover:text-accent transition-colors">
                   {service.title}

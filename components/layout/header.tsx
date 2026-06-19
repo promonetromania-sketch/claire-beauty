@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import Image from "next/image"
+import { ClaireImage } from "@/components/ui/claire-image"
+import { claireImages } from "@/lib/images/claire-beauty"
 import { usePathname } from "next/navigation"
 import {
   Menu,
@@ -140,12 +141,11 @@ export function Header() {
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
             <div className="relative h-14 w-14 overflow-hidden rounded-full ring-1 ring-[#D4AF37]/35">
-              <Image
-                src="/images/logo.jpg"
-                alt="Claire's Studio by Ana Savovici"
+              <ClaireImage
+                {...claireImages.logo}
                 fill
-                className="object-cover"
                 priority
+                sizes="48px"
               />
             </div>
             <div className="hidden sm:block">

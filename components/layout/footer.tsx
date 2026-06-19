@@ -1,5 +1,6 @@
 import Link from "next/link"
-import Image from "next/image"
+import { ClaireImage } from "@/components/ui/claire-image"
+import { claireImages } from "@/lib/images/claire-beauty"
 import { Phone, Mail, MapPin, Clock, Instagram, Facebook } from "lucide-react"
 
 const services = [
@@ -30,11 +31,10 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="mb-6 flex items-center gap-3">
               <div className="relative h-16 w-16 overflow-hidden rounded-full border border-[#D4AF37]/45 ring-1 ring-[#D4AF37]/20">
-                <Image
-                  src="/images/logo.jpg"
-                  alt="Claire's Studio by Ana Savovici"
+                <ClaireImage
+                  {...claireImages.logo}
                   fill
-                  className="object-cover"
+                  sizes="64px"
                 />
               </div>
             </Link>

@@ -1,12 +1,13 @@
-import Image from "next/image"
 import { Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { ClaireImage } from "@/components/ui/claire-image"
+import type { ClaireImageMeta } from "@/lib/images/claire-beauty"
 
 interface ServiceHeroProps {
   title: string
   subtitle: string
   description: string
-  image: string
+  image: string | ClaireImageMeta
   badge?: string
 }
 
@@ -17,46 +18,43 @@ export function ServiceHero({
   image,
   badge,
 }: ServiceHeroProps) {
+  const imageProps: ClaireImageMeta =
+    typeof image === "string"
+      ? { src: image, alt: title, title }
+      : image
+
   return (
     <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
       <div className="absolute inset-0">
-        <Image
-          src={image}
-          alt={title}
+        <ClaireImage
+          {...imageProps}
           fill
-          className="object-cover"
           priority
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/70 to-primary/50" />
       </div>
 
-      {/* Content */}
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-32 pt-40">
         <div className="max-w-2xl">
-          {/* Badge */}
           {badge && (
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent/20 backdrop-blur-sm border border-accent/30 mb-6">
               <span className="text-sm font-medium text-accent">{badge}</span>
             </div>
           )}
 
-          {/* Subtitle */}
           <p className="text-sm font-medium tracking-widest text-accent uppercase mb-4">
             {subtitle}
           </p>
 
-          {/* Title */}
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-primary-foreground leading-tight mb-6">
             {title}
           </h1>
 
-          {/* Description */}
           <p className="text-lg sm:text-xl text-primary-foreground/90 leading-relaxed mb-8 max-w-xl">
             {description}
           </p>
 
-          {/* CTA */}
           <Button
             asChild
             size="lg"

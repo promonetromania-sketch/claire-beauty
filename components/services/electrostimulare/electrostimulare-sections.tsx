@@ -1,5 +1,7 @@
 import type { ComponentType, ReactNode } from "react"
-import Image from "next/image"
+import { VisualGallery } from "@/components/shared/visual-gallery"
+import { ClaireImage } from "@/components/ui/claire-image"
+import { claireImages, pageGalleries } from "@/lib/images/claire-beauty"
 import Link from "next/link"
 import {
   Activity,
@@ -207,11 +209,9 @@ export function ElectrostimulareSections() {
             </p>
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-premium-lg">
-            <Image
-              src="/images/treatment-body.jpg"
-              alt="Cum funcționează electrostimularea în Craiova"
+            <ClaireImage
+              {...claireImages.electrostimulare}
               fill
-              className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
@@ -613,6 +613,15 @@ export function ElectrostimulareSections() {
         title="Programează-te acum"
         description="Dacă vrei un corp mai tonifiat fără efort intens — locurile sunt limitate, iar perioadele aglomerate se ocupă rapid."
         primaryLabel="Programează-te acum"
+      />
+
+      <VisualGallery
+        images={pageGalleries.electrostimulare}
+        eyebrow="În salon"
+        title="Electrostimulare la Claire Beauty"
+        description="Echipament real, proceduri profesionale și rezultate vizibile — așa arată experiența de electrostimulare în cabinetul nostru."
+        className="bg-background"
+        columns={3}
       />
 
       <ServiceCTA

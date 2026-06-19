@@ -1,11 +1,12 @@
-import Image from "next/image"
 import { CheckCircle } from "lucide-react"
+import { ClaireImage } from "@/components/ui/claire-image"
+import type { ClaireImageMeta } from "@/lib/images/claire-beauty"
 
 interface ServiceDetailsProps {
   title: string
   subtitle: string
   description: string
-  image: string
+  image: string | ClaireImageMeta
   features: string[]
   reversed?: boolean
 }
@@ -18,6 +19,11 @@ export function ServiceDetails({
   features,
   reversed = false,
 }: ServiceDetailsProps) {
+  const imageProps: ClaireImageMeta =
+    typeof image === "string"
+      ? { src: image, alt: title, title }
+      : image
+
   return (
     <section className={`py-24 ${reversed ? "bg-secondary" : "bg-background"}`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -26,17 +32,14 @@ export function ServiceDetails({
             reversed ? "lg:flex-row-reverse" : ""
           }`}
         >
-          {/* Image */}
           <div className={`relative ${reversed ? "lg:order-2" : ""}`}>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-premium-lg">
-              <Image
-                src={image}
-                alt={title}
+              <ClaireImage
+                {...imageProps}
                 fill
-                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
-            {/* Decorative Element */}
             <div
               className={`absolute -bottom-6 ${
                 reversed ? "-left-6" : "-right-6"
@@ -44,7 +47,6 @@ export function ServiceDetails({
             />
           </div>
 
-          {/* Content */}
           <div className={reversed ? "lg:order-1" : ""}>
             <p className="text-sm font-medium tracking-widest text-accent uppercase mb-4">
               {subtitle}
@@ -56,7 +58,6 @@ export function ServiceDetails({
               {description}
             </p>
 
-            {/* Features */}
             <ul className="space-y-3">
               {features.map((feature) => (
                 <li key={feature} className="flex items-start gap-3">

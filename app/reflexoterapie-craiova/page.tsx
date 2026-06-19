@@ -11,11 +11,13 @@ import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { WhatsAppButton } from "@/components/layout/whatsapp-button"
 import { MobileCTA } from "@/components/layout/mobile-cta"
+import { VisualGallery } from "@/components/shared/visual-gallery"
 import { ServiceHero } from "@/components/services/service-hero"
 import { ServiceBenefits } from "@/components/services/service-benefits"
 import { ServiceDetails } from "@/components/services/service-details"
 import { ServiceFAQ } from "@/components/services/service-faq"
 import { ServiceCTA } from "@/components/services/service-cta"
+import { claireImages, pageGalleries } from "@/lib/images/claire-beauty"
 
 export const metadata: Metadata = {
   title: "Reflexoterapie Craiova | Claire's Studio by Ana Savovici",
@@ -135,7 +137,7 @@ export default function ReflexoterapiePage() {
           title="Reflexoterapie Craiova"
           subtitle="Terapie Holistică"
           description="Descoperă puterea vindecătoare a reflexoterapiei. Tratament natural care echilibrează corpul și mintea prin stimularea punctelor reflexogene din tălpi."
-          image="/images/treatment-reflexology.jpg"
+          image={claireImages.reflexoterapie}
           badge="Tratament Premium"
         />
 
@@ -150,7 +152,7 @@ export default function ReflexoterapiePage() {
           title="Ce Este Reflexoterapia?"
           subtitle="Înțelege Tratamentul"
           description="Reflexoterapia este o terapie complementară antică care se bazează pe principiul că tălpile picioarelor conțin zone reflexogene care corespund tuturor organelor și sistemelor corpului. Prin stimularea acestor puncte, se poate îmbunătăți funcționarea organelor corespondente și se poate restabili echilibrul energetic al corpului."
-          image="/images/treatment-reflexology.jpg"
+          image={claireImages.reflexoterapie}
           features={whatIsFeatures}
         />
 
@@ -158,9 +160,18 @@ export default function ReflexoterapiePage() {
           title="Cum Decurge O Ședință?"
           subtitle="Experiența Ta"
           description="La Claire's Studio, fiecare ședință de reflexoterapie este o experiență de relaxare profundă. Într-un ambient calm și primitor, tehnicianul nostru certificat va lucra pe punctele reflexogene ale tălpilor tale, adaptând presiunea și tehnicile în funcție de nevoile tale specifice."
-          image="/images/treatment-body.jpg"
+          image={claireImages.masajRelaxare}
           features={sessionFeatures}
           reversed
+        />
+
+        <VisualGallery
+          images={pageGalleries.reflexoterapie}
+          eyebrow="În salon"
+          title="Reflexoterapie la Claire Beauty"
+          description="Proceduri reale, tehnici profesionale și atmosferă relaxantă — așa arată experiența de reflexoterapie în cabinetul nostru."
+          className="bg-background"
+          columns={3}
         />
 
         <ServiceCTA

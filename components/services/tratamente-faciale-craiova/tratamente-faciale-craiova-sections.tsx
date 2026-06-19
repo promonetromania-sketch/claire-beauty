@@ -1,5 +1,7 @@
 import type { ComponentType, ReactNode } from "react"
-import Image from "next/image"
+import { VisualGallery } from "@/components/shared/visual-gallery"
+import { ClaireImage } from "@/components/ui/claire-image"
+import { claireImages, pageGalleries } from "@/lib/images/claire-beauty"
 import Link from "next/link"
 import {
   ArrowRight,
@@ -288,11 +290,9 @@ export function TratamenteFacialeCraiovaSections() {
             </p>
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-premium-lg">
-            <Image
-              src="/images/treatment-facial.jpg"
-              alt="Alegerea corectă a tratamentului facial în Craiova"
+            <ClaireImage
+              {...claireImages.hydrafacial}
               fill
-              className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
@@ -623,6 +623,15 @@ export function TratamenteFacialeCraiovaSections() {
         title="Programează-te acum"
         description="Dacă îți dorești un ten care arată vizibil mai bine — nu doar „îngrijit temporar” — locurile sunt limitate, iar perioadele aglomerate se ocupă rapid."
         primaryLabel="Programează-te acum"
+      />
+
+      <VisualGallery
+        images={pageGalleries.tratamenteFaciale}
+        eyebrow="În salon"
+        title="Tratamente faciale la Claire Beauty"
+        description="Proceduri reale, tehnici profesionale și rezultate vizibile — așa arată experiența facială în cabinetul nostru."
+        className="bg-background"
+        columns={4}
       />
 
       <ServiceCTA

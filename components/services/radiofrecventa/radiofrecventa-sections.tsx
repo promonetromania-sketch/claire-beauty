@@ -1,5 +1,7 @@
 import type { ComponentType, ReactNode } from "react"
-import Image from "next/image"
+import { VisualGallery } from "@/components/shared/visual-gallery"
+import { ClaireImage } from "@/components/ui/claire-image"
+import { claireImages, pageGalleries } from "@/lib/images/claire-beauty"
 import Link from "next/link"
 import {
   AlertTriangle,
@@ -224,11 +226,9 @@ export function RadiofrecventaSections() {
             </p>
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-premium-lg">
-            <Image
-              src="/images/treatment-body.jpg"
-              alt="Cum funcționează radiofrecvența pentru fermitate și colagen în Craiova"
+            <ClaireImage
+              {...claireImages.radiofrecventaFacial}
               fill
-              className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
@@ -657,6 +657,15 @@ export function RadiofrecventaSections() {
         title="Programează-te acum"
         description="Programează-te acum și începe procesul de fermizare și remodelare corporală în Craiova."
         primaryLabel="Programează-te acum"
+      />
+
+      <VisualGallery
+        images={pageGalleries.radiofrecventa}
+        eyebrow="În salon"
+        title="Radiofrecvență la Claire Beauty"
+        description="Tratament real, echipament profesional și rezultate vizibile — așa arată experiența de radiofrecvență în cabinetul nostru."
+        className="bg-background"
+        columns={3}
       />
 
       <ServiceCTA

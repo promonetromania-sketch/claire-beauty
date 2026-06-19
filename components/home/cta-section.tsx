@@ -1,22 +1,20 @@
-import Image from "next/image"
 import { Phone, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { ClaireImage } from "@/components/ui/claire-image"
+import { claireImages } from "@/lib/images/claire-beauty"
 
 export function CTASection() {
   return (
     <section className="relative py-24 overflow-hidden">
-      {/* Background */}
       <div className="absolute inset-0">
-        <Image
-          src="/images/treatment-body.jpg"
-          alt="Tratament spa"
+        <ClaireImage
+          {...claireImages.masajRelaxare1}
           fill
-          className="object-cover"
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-primary/85" />
       </div>
 
-      {/* Content */}
       <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
         <p className="text-sm font-medium tracking-widest text-accent uppercase mb-4">
           Programează-te Astăzi
@@ -30,7 +28,6 @@ export function CTASection() {
           descoperă tratamentul perfect pentru tine.
         </p>
 
-        {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Button
             asChild

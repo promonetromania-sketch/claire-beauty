@@ -1,4 +1,5 @@
-import Image from "next/image"
+import { ClaireImage } from "@/components/ui/claire-image"
+import { claireImages } from "@/lib/images/claire-beauty"
 import Link from "next/link"
 import { Calendar, MessageCircle, Phone, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -17,11 +18,9 @@ export function MasajAnticeluliticHero() {
   return (
     <section className="relative flex min-h-[78vh] items-center overflow-hidden">
       <div className="absolute inset-0">
-        <Image
-          src="/images/treatment-body.jpg"
-          alt="Masaj anticelulitic Craiova la Claire Beauty"
+        <ClaireImage
+          {...claireImages.masajAnticelulitic}
           fill
-          className="object-cover"
           priority
           sizes="100vw"
         />

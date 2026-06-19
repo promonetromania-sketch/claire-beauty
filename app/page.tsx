@@ -9,6 +9,7 @@ import { AboutSection } from "@/components/home/about-section"
 import { TestimonialsSection } from "@/components/home/testimonials-section"
 import { FAQSection } from "@/components/home/faq-section"
 import { CTASection } from "@/components/home/cta-section"
+import { GallerySection } from "@/components/home/gallery-section"
 import { LocalSEOSection } from "@/components/home/local-seo-section"
 
 export default function HomePage() {
@@ -20,6 +21,7 @@ export default function HomePage() {
         <ServicesSection />
         <BenefitsSection />
         <AboutSection />
+        <GallerySection />
         <TestimonialsSection />
         <FAQSection />
         <CTASection />

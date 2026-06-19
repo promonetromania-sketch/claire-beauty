@@ -1,7 +1,8 @@
-import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { ClaireImage } from "@/components/ui/claire-image"
+import { claireImages } from "@/lib/images/claire-beauty"
 
 const highlights = [
   "Tratamente personalizate pentru fiecare client",
@@ -15,22 +16,18 @@ export function AboutSection() {
     <section id="despre" className="py-24 bg-background">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Image */}
           <div className="relative">
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-premium-lg">
-              <Image
-                src="/images/logo.jpg"
-                alt="Ana Savovici - Claire's Studio"
+              <ClaireImage
+                {...claireImages.terapeutPortret}
                 fill
-                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
-            {/* Decorative Element */}
             <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-accent/10 rounded-2xl -z-10" />
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-secondary rounded-2xl -z-10" />
           </div>
 
-          {/* Content */}
           <div>
             <p className="text-sm font-medium tracking-widest text-accent uppercase mb-4">
               Despre Noi
@@ -52,7 +49,6 @@ export function AboutSection() {
               produse și echipamente din industrie.
             </p>
 
-            {/* Highlights */}
             <ul className="space-y-3 mb-8">
               {highlights.map((highlight) => (
                 <li key={highlight} className="flex items-center gap-3">
@@ -62,7 +58,6 @@ export function AboutSection() {
               ))}
             </ul>
 
-            {/* CTA */}
             <Button
               asChild
               size="lg"
@@ -74,6 +69,23 @@ export function AboutSection() {
               </Link>
             </Button>
           </div>
+        </div>
+
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6">
+          {[claireImages.terapeutMasajIntrare, claireImages.masajAtmosfera, claireImages.terapeutMasajSemn].map(
+            (image) => (
+              <div
+                key={image.src}
+                className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-premium"
+              >
+                <ClaireImage
+                  {...image}
+                  fill
+                  sizes="(max-width: 640px) 100vw, 33vw"
+                />
+              </div>
+            ),
+          )}
         </div>
       </div>
     </section>

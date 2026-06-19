@@ -13,6 +13,9 @@ import { Footer } from "@/components/layout/footer"
 import { WhatsAppButton } from "@/components/layout/whatsapp-button"
 import { MobileCTA } from "@/components/layout/mobile-cta"
 import { ContactForm } from "@/components/contact/contact-form"
+import { VisualGallery } from "@/components/shared/visual-gallery"
+import { ClaireImage } from "@/components/ui/claire-image"
+import { claireImages, pageGalleries } from "@/lib/images/claire-beauty"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
@@ -110,6 +113,25 @@ export default function ContactPage() {
               oricare dintre metodele de mai jos și îți vom răspunde cât mai
               curând.
             </p>
+          </div>
+        </section>
+
+        <section className="py-16 bg-secondary/40">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {pageGalleries.contact.map((image) => (
+                <div
+                  key={image.src}
+                  className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-premium-lg"
+                >
+                  <ClaireImage
+                    {...image}
+                    fill
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 

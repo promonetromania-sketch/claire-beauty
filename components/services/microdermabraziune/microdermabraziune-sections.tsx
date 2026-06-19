@@ -1,5 +1,7 @@
 import type { ComponentType, ReactNode } from "react"
-import Image from "next/image"
+import { VisualGallery } from "@/components/shared/visual-gallery"
+import { ClaireImage } from "@/components/ui/claire-image"
+import { claireImages, pageGalleries } from "@/lib/images/claire-beauty"
 import Link from "next/link"
 import {
   AlertTriangle,
@@ -208,11 +210,9 @@ export function MicrodermabraziuneSections() {
             </p>
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-premium-lg">
-            <Image
-              src="/images/hero-spa.jpg"
-              alt="Cum funcționează microdermabraziunea în Craiova"
+            <ClaireImage
+              {...claireImages.microdermabraziune}
               fill
-              className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
@@ -545,6 +545,15 @@ export function MicrodermabraziuneSections() {
         title="Programează-te acum"
         description="Dacă vrei un ten curat și luminos — locurile sunt limitate. Programează microdermabraziunea în Craiova."
         primaryLabel="Programează-te acum"
+      />
+
+      <VisualGallery
+        images={pageGalleries.microdermabraziune}
+        eyebrow="În salon"
+        title="Microdermabraziune la Claire Beauty"
+        description="Proceduri reale, tehnici profesionale și ten vizibil mai curat — așa arată experiența în cabinetul nostru."
+        className="bg-background"
+        columns={3}
       />
 
       <ServiceCTA
