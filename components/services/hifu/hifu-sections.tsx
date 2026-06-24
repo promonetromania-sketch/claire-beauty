@@ -13,6 +13,7 @@ import {
   Target,
   Timer,
   Zap } from "lucide-react"
+import { ViewPricesLink } from "@/components/pricing/view-prices-link"
 import { ServiceCTA } from "@/components/services/service-cta"
 import { cn } from "@/lib/utils"
 
@@ -563,6 +564,7 @@ export function HifuSections() {
             <p className="mt-4">
               Este un tratament premium, cu efect de durată.
             </p>
+            <ViewPricesLink section="faciale" />
           </InfoCard>
           <InfoCard icon={Leaf} title="De ce să alegi Claire Beauty pentru HIFU în Craiova">
             <BulletList

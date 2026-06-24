@@ -11,6 +11,7 @@ import {
   Shield,
   Sparkles,
   Target } from "lucide-react"
+import { ViewPricesLink } from "@/components/pricing/view-prices-link"
 import { ServiceCTA } from "@/components/services/service-cta"
 import { cn } from "@/lib/utils"
 
@@ -562,6 +563,7 @@ export function ElectrostimulareSections() {
               să știi că rezultatele depind de numărul de ședințe și combinațiile
               alese.
             </p>
+            <ViewPricesLink section="pachete-terapii" />
           </InfoCard>
           <InfoCard icon={Activity} title="Cum arată corpul după electrostimulare">
             <BulletList

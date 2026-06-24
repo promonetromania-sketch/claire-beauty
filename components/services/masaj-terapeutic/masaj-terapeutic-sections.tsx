@@ -15,6 +15,7 @@ import {
   Timer,
   Users,
   Waves } from "lucide-react"
+import { ViewPricesLink } from "@/components/pricing/view-prices-link"
 import { ServiceCTA } from "@/components/services/service-cta"
 import { cn } from "@/lib/utils"
 
@@ -482,6 +483,7 @@ export function MasajTerapeuticSections() {
               Prețul variază în funcție de durată și zonele tratate.
               Contactează-ne pentru ofertă personalizată.
             </p>
+            <ViewPricesLink section="masaj" />
           </InfoCard>
         </div>
       </SectionShell>

@@ -17,6 +17,7 @@ const quickLinks = [
   { name: "Blog", href: "/blog" },
   { name: "Despre Noi", href: "/#despre" },
   { name: "Servicii", href: "/#servicii-populare" },
+  { name: "Prețuri", href: "/preturi" },
   { name: "Contact", href: "/contact" },
 ]
 

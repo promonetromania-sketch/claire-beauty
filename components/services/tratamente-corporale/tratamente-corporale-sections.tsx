@@ -327,6 +327,7 @@ export function TratamenteCorporaleSections() {
             { label: "Masaj Craiova", href: "/masaj-craiova" },
             { label: "Tratamente faciale", href: "/tratamente-faciale-craiova" },
             { label: "Hydrafacial", href: "/hydrafacial-craiova" },
+            { label: "Prețuri", href: "/preturi" },
             { label: "Contact", href: "/contact" },
           ].map((link) => (
             <Link

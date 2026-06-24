@@ -50,6 +50,17 @@ export function CTASection() {
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="rounded-full border-primary-foreground/35 bg-transparent px-10 text-base font-semibold text-primary-foreground transition-all hover:border-[#D4AF37]/50 hover:bg-primary-foreground/10"
+            >
+              <Link href="/preturi" className="inline-flex items-center gap-2">
+                Vezi prețurile
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </Button>
           </div>
         </ScrollReveal>
       </div>

@@ -16,6 +16,7 @@ import {
   Users,
   Waves,
   XCircle } from "lucide-react"
+import { ViewPricesLink } from "@/components/pricing/view-prices-link"
 import { ServiceCTA } from "@/components/services/service-cta"
 import { cn } from "@/lib/utils"
 
@@ -496,6 +497,7 @@ export function MasajAnticeluliticSections() {
               rezultate optime, recomandăm pachete de mai multe ședințe.
               Contactează-ne pentru ofertă personalizată și disponibilitate.
             </p>
+            <ViewPricesLink section="masaj" />
           </InfoCard>
         </div>
       </SectionShell>

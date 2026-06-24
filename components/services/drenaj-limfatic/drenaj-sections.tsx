@@ -15,6 +15,7 @@ import {
   Timer,
   Users,
   Waves } from "lucide-react"
+import { ViewPricesLink } from "@/components/pricing/view-prices-link"
 import { ServiceCTA } from "@/components/services/service-cta"
 import { cn } from "@/lib/utils"
 
@@ -461,6 +462,7 @@ export function DrenajSections() {
               Contactează-ne pentru ofertă personalizată și pachete recomandate
               pentru eficiență maximă.
             </p>
+            <ViewPricesLink section="masaj" />
           </InfoCard>
         </div>
       </SectionShell>

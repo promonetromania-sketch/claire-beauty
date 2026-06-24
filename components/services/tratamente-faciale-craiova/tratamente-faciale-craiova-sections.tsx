@@ -13,6 +13,7 @@ import {
   Sparkles,
   XCircle,
   Zap } from "lucide-react"
+import { ViewPricesLink } from "@/components/pricing/view-prices-link"
 import { ServiceCTA } from "@/components/services/service-cta"
 import { cn } from "@/lib/utils"
 
@@ -540,6 +541,7 @@ export function TratamenteFacialeCraiovaSections() {
               </Link>{" "}
               pot necesita mai multe ședințe pentru rezultate optime.
             </p>
+            <ViewPricesLink section="faciale" />
           </div>
           <div className="rounded-[2rem] border border-[#D4AF37]/20 bg-card/80 p-8 shadow-premium backdrop-blur-sm">
             <h2 className="mb-4 font-serif text-3xl font-semibold text-foreground">

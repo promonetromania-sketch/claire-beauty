@@ -12,6 +12,7 @@ import {
   Sun,
   Target,
   Timer } from "lucide-react"
+import { ViewPricesLink } from "@/components/pricing/view-prices-link"
 import { ServiceCTA } from "@/components/services/service-cta"
 import { cn } from "@/lib/utils"
 
@@ -548,6 +549,7 @@ export function MicroneedlingSections() {
             <p className="mt-4">
               Pachetele sunt cele mai eficiente pentru rezultate reale.
             </p>
+            <ViewPricesLink section="faciale" />
           </InfoCard>
           <InfoCard icon={Leaf} title="De ce să alegi Claire Beauty Craiova">
             <BulletList

@@ -5,6 +5,7 @@ import { businessProfile } from "@/lib/seo/business"
 const STATIC_ROUTES = [
   "",
   "/blog",
+  "/preturi",
   "/contact",
   "/masaj-craiova",
   "/tratamente-faciale-craiova",

@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import {
   Accordion,
   AccordionContent,
@@ -36,7 +37,8 @@ const faqs = [
   {
     question: "Oferiți pachete sau abonamente?",
     answer:
-      "Da, oferim pachete avantajoase pentru diverse tratamente, precum și abonamente lunare care includ reduceri speciale. Contactează-ne pentru a afla mai multe despre ofertele curente.",
+      "Da, oferim pachete avantajoase pentru diverse tratamente, precum și abonamente de 10 ședințe. Consultă pagina de prețuri pentru valorile actualizate.",
+    link: { href: "/preturi", label: "Vezi lista completă de prețuri" },
   },
 ]
 
@@ -72,6 +74,18 @@ export function FAQSection() {
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground leading-relaxed pb-6">
                 {faq.answer}
+                {"link" in faq && faq.link ? (
+                  <>
+                    {" "}
+                    <Link
+                      href={faq.link.href}
+                      className="font-medium text-accent underline-offset-4 hover:underline"
+                    >
+                      {faq.link.label}
+                    </Link>
+                    .
+                  </>
+                ) : null}
               </AccordionContent>
             </AccordionItem>
           ))}

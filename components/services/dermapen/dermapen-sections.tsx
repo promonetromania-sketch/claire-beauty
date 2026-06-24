@@ -12,6 +12,7 @@ import {
   Sun,
   Target,
   Timer } from "lucide-react"
+import { ViewPricesLink } from "@/components/pricing/view-prices-link"
 import { ServiceCTA } from "@/components/services/service-cta"
 import { cn } from "@/lib/utils"
 
@@ -476,6 +477,7 @@ export function DermapenSections() {
             <p className="mt-4">
               Pachetele oferă cele mai bune rezultate pe termen lung.
             </p>
+            <ViewPricesLink section="faciale" />
           </InfoCard>
           <InfoCard icon={Leaf} title="De ce să alegi Claire Beauty">
             <BulletList

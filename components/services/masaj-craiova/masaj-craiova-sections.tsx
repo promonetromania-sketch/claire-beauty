@@ -13,6 +13,7 @@ import {
   MapPin,
   Sparkles,
   Waves } from "lucide-react"
+import { ViewPricesLink } from "@/components/pricing/view-prices-link"
 import { ServiceCTA } from "@/components/services/service-cta"
 import { cn } from "@/lib/utils"
 
@@ -506,6 +507,7 @@ export function MasajCraiovaSections() {
             <p className="mt-4 text-muted-foreground leading-relaxed">
               Pentru rezultate vizibile, sunt recomandate pachetele.
             </p>
+            <ViewPricesLink section="masaj" />
           </div>
           <div className="rounded-[2rem] border border-[#D4AF37]/20 bg-card/80 p-8 shadow-premium backdrop-blur-sm">
             <h2 className="mb-4 font-serif text-3xl font-semibold text-foreground">

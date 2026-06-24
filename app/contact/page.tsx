@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import {
   Phone,
   Mail,
@@ -103,7 +104,14 @@ export default function ContactPage() {
             <p className="text-lg text-primary-foreground/80 leading-relaxed max-w-2xl mx-auto">
               Ai întrebări sau dorești să faci o programare? Contactează-ne prin
               oricare dintre metodele de mai jos și îți vom răspunde cât mai
-              curând.
+              curând. Consultă și{" "}
+              <Link
+                href="/preturi"
+                className="font-medium text-accent underline-offset-4 hover:underline"
+              >
+                lista de prețuri
+              </Link>
+              .
             </p>
           </div>
         </section>

@@ -703,6 +703,7 @@ export function RemodelareSections() {
             {
               label: "Tratamente corporale",
               href: "/tratamente-corporale-craiova" },
+            { label: "Prețuri", href: "/preturi" },
             { label: "Contact", href: "/contact" },
           ].map((link) => (
             <Link

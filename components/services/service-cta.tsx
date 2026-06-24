@@ -1,13 +1,25 @@
-import { Phone, MessageCircle } from "lucide-react"
+"use client"
+
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+import { Phone, MessageCircle, Tag } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { businessProfile } from "@/lib/seo/business"
+import { getPricingHrefForService } from "@/lib/seo/pricing-links"
 
 interface ServiceCTAProps {
   title: string
   description: string
+  pricingHref?: string
 }
 
-export function ServiceCTA({ title, description }: ServiceCTAProps) {
+export function ServiceCTA({
+  title,
+  description,
+  pricingHref,
+}: ServiceCTAProps) {
+  const pathname = usePathname()
+  const resolvedPricingHref = pricingHref ?? getPricingHrefForService(pathname)
   return (
     <section className="py-24 bg-primary">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
@@ -47,6 +59,17 @@ export function ServiceCTA({ title, description }: ServiceCTAProps) {
               <MessageCircle className="h-5 w-5" />
               <span>WhatsApp</span>
             </a>
+          </Button>
+          <Button
+            asChild
+            size="lg"
+            variant="outline"
+            className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 rounded-full px-8 text-base font-medium bg-transparent"
+          >
+            <Link href={resolvedPricingHref} className="flex items-center gap-2">
+              <Tag className="h-5 w-5" />
+              <span>Vezi prețurile</span>
+            </Link>
           </Button>
         </div>
       </div>
