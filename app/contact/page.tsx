@@ -118,19 +118,14 @@ export default function ContactPage() {
 
         <section className="py-16 bg-secondary/40">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {pageGalleries.contact.map((image) => (
-                <div
-                  key={image.src}
-                  className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-premium-lg"
-                >
-                  <ClaireImage
-                    {...image}
-                    fill
-                    sizes="(max-width: 640px) 100vw, 50vw"
-                  />
-                </div>
-              ))}
+            <div className="mx-auto max-w-3xl">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-premium-lg">
+                <ClaireImage
+                  {...pageGalleries.contact[0]}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 768px"
+                />
+              </div>
             </div>
           </div>
         </section>

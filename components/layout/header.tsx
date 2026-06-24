@@ -21,6 +21,9 @@ import {
   Zap,
   Activity,
   Radio,
+  Facebook,
+  Instagram,
+  MapPin,
   type LucideIcon,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -36,7 +39,29 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible"
 import { mainNavigation, type NavLink } from "@/lib/navigation"
+import { businessProfile } from "@/lib/seo/business"
 import { cn } from "@/lib/utils"
+
+const mobileSocialLinks = [
+  {
+    href: "https://www.facebook.com/",
+    label: "Deschide Facebook Claire Beauty",
+    icon: Facebook,
+  },
+  {
+    href: "https://www.instagram.com/anasavovici_body/",
+    label: "Deschide Instagram Claire Beauty",
+    icon: Instagram,
+  },
+  {
+    href: businessProfile.googleMapsUrl,
+    label: "Deschide locația în Google Maps",
+    icon: MapPin,
+  },
+] as const
+
+const mobileSocialIconClassName =
+  "inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-[#1f4f46] transition-all duration-250 ease-[cubic-bezier(0.4,0,0.2,1)] hover:bg-[#1f4f46]/10 hover:text-[#163a34] active:scale-95"
 
 const submenuIcons: Record<string, LucideIcon> = {
   "/masaj-terapeutic-craiova": Hand,
@@ -139,7 +164,7 @@ export function Header() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
-          <Link href="/" className="group flex items-center gap-3">
+          <Link href="/" className="group flex shrink-0 items-center gap-3">
             <div className="relative h-14 w-14 overflow-hidden rounded-full ring-2 ring-[#D4AF37]/40 shadow-[0_0_16px_rgba(212,175,55,0.15)] transition-all duration-300 group-hover:ring-[#D4AF37]/65 group-hover:shadow-[0_0_22px_rgba(212,175,55,0.28)]">
               <ClaireImage
                 {...claireImages.logo}
@@ -226,18 +251,32 @@ export function Header() {
             </Button>
           </div>
 
-          <button
-            type="button"
-            className="rounded-full p-2 text-[#0E2B1F] transition-all duration-250 ease-[cubic-bezier(0.4,0,0.2,1)] hover:bg-[#D4AF37]/24 hover:shadow-[0_0_18px_rgba(212,175,55,0.32)] md:hidden"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label={isMobileMenuOpen ? "Închide meniul" : "Deschide meniul"}
-          >
-            {isMobileMenuOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
-          </button>
+          <div className="flex shrink-0 items-center gap-0.5 md:hidden">
+            {mobileSocialLinks.map(({ href, label, icon: Icon }) => (
+              <a
+                key={href}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                className={mobileSocialIconClassName}
+              >
+                <Icon className="h-[18px] w-[18px]" strokeWidth={1.85} aria-hidden />
+              </a>
+            ))}
+            <button
+              type="button"
+              className="ml-0.5 rounded-full p-2 text-[#0E2B1F] transition-all duration-250 ease-[cubic-bezier(0.4,0,0.2,1)] hover:bg-[#D4AF37]/24 hover:shadow-[0_0_18px_rgba(212,175,55,0.32)]"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label={isMobileMenuOpen ? "Închide meniul" : "Deschide meniul"}
+            >
+              {isMobileMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
+            </button>
+          </div>
         </div>
       </div>
 

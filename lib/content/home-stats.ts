@@ -1,6 +1,6 @@
 import { Calendar, Heart, Sparkles, Users, type LucideIcon } from "lucide-react"
 
-/** Valori placeholder — editează aici când ai cifre reale confirmate. */
+/** Statistici afișate în secțiunea homepage „De ce aleg clientele…”. */
 export type HomeStatItem = {
   label: string
   value: string
@@ -10,12 +10,12 @@ export type HomeStatItem = {
 export const homeStats: HomeStatItem[] = [
   {
     label: "Cliente Mulțumite",
-    value: "—",
+    value: "1000+",
     icon: Heart,
   },
   {
     label: "Ședințe Realizate",
-    value: "—",
+    value: "10.000+",
     icon: Calendar,
   },
   {
@@ -25,7 +25,7 @@ export const homeStats: HomeStatItem[] = [
   },
   {
     label: "Servicii Profesionale",
-    value: "—",
+    value: "20+",
     icon: Sparkles,
   },
 ]

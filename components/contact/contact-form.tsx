@@ -8,6 +8,52 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
+import { businessProfile } from "@/lib/seo/business"
+
+const CONTACT_SERVICE_OPTIONS = [
+  { value: "masaj", label: "Masaj" },
+  { value: "reflexoterapie", label: "Reflexoterapie" },
+  { value: "masaj-anticelulitic", label: "Masaj Anticelulitic" },
+  { value: "drenaj-limfatic", label: "Drenaj Limfatic" },
+  { value: "tratamente-faciale", label: "Tratamente Faciale" },
+  { value: "microdermabraziune", label: "Microdermabraziune" },
+  { value: "microneedling", label: "Microneedling" },
+  { value: "hifu-facial", label: "HIFU Facial" },
+  { value: "remodelare-corporala", label: "Remodelare Corporală" },
+  { value: "radiofrecventa", label: "Radiofrecvență" },
+  { value: "altele", label: "Altele" },
+] as const
+
+const PROMONET_EMAIL = "promonetromania@gmail.com"
+
+function getServiceLabel(value: string) {
+  return (
+    CONTACT_SERVICE_OPTIONS.find((option) => option.value === value)?.label ??
+    "Nespecificat"
+  )
+}
+
+function buildContactMessage(data: {
+  name: string
+  phone: string
+  email: string
+  service: string
+  message: string
+}) {
+  const serviceLabel = getServiceLabel(data.service)
+
+  return [
+    "Programare / contact Claire Beauty Craiova",
+    "",
+    `Nume: ${data.name}`,
+    `Telefon: ${data.phone}`,
+    `Email: ${data.email || "—"}`,
+    `Serviciu: ${serviceLabel}`,
+    "",
+    "Mesaj:",
+    data.message,
+  ].join("\n")
+}
 
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -17,13 +63,39 @@ export function ContactForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     if (!privacyAccepted) return
+
+    const form = e.currentTarget
+    const formData = new FormData(form)
+
+    const payload = {
+      name: String(formData.get("name") ?? "").trim(),
+      phone: String(formData.get("phone") ?? "").trim(),
+      email: String(formData.get("email") ?? "").trim(),
+      service: String(formData.get("service") ?? "").trim(),
+      message: String(formData.get("message") ?? "").trim(),
+    }
+
     setIsSubmitting(true)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+    const body = buildContactMessage(payload)
+    const subject = `Contact Claire Beauty — ${payload.name}`
+
+    const whatsappUrl = `${businessProfile.whatsappUrl}?text=${encodeURIComponent(body)}`
+    const mailtoUrl = `mailto:${businessProfile.email}?cc=${encodeURIComponent(PROMONET_EMAIL)}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer")
+
+    const mailLink = document.createElement("a")
+    mailLink.href = mailtoUrl
+    mailLink.rel = "noopener noreferrer"
+    mailLink.click()
+
+    await new Promise((resolve) => setTimeout(resolve, 400))
 
     setIsSubmitting(false)
     setIsSubmitted(true)
+    form.reset()
+    setPrivacyAccepted(false)
   }
 
   if (isSubmitted) {
@@ -33,10 +105,13 @@ export function ContactForm() {
           <Send className="h-8 w-8" />
         </div>
         <h3 className="font-serif text-2xl font-semibold text-foreground mb-4">
-          Mesaj Trimis cu Succes!
+          Mesaj pregătit pentru trimitere!
         </h3>
         <p className="text-muted-foreground mb-6">
-          Mulțumim pentru mesaj! Îți vom răspunde în cel mai scurt timp posibil.
+          S-a deschis WhatsApp cu mesajul complet, iar clientul tău de email a
+          fost deschis cu destinatarii{" "}
+          {businessProfile.email} și {PROMONET_EMAIL}. Verifică și trimite
+          emailul dacă nu s-a deschis automat.
         </p>
         <Button
           onClick={() => setIsSubmitted(false)}
@@ -106,13 +181,11 @@ export function ContactForm() {
           className="w-full h-10 px-3 rounded-xl bg-secondary border border-border text-foreground focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
         >
           <option value="">Selectează un serviciu</option>
-          <option value="reflexoterapie">Reflexoterapie</option>
-          <option value="masaj-anticelulitic">Masaj Anticelulitic</option>
-          <option value="drenaj-limfatic">Drenaj Limfatic</option>
-          <option value="tratamente-faciale">Tratamente Faciale</option>
-          <option value="remodelare-corporala">Remodelare Corporală</option>
-          <option value="radiofrecventa">Radiofrecvență</option>
-          <option value="altele">Altele</option>
+          {CONTACT_SERVICE_OPTIONS.map((option) => (
+            <option key={option.value} value={option.value}>
+              {option.label}
+            </option>
+          ))}
         </select>
       </div>
 
