@@ -14,10 +14,10 @@ const services = [
 
 const quickLinks = [
   { name: "Acasă", href: "/" },
-  { name: "Blog", href: "/blog" },
   { name: "Despre Noi", href: "/#despre" },
   { name: "Servicii", href: "/#servicii-populare" },
   { name: "Prețuri", href: "/preturi" },
+  { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
 ]
 
@@ -107,11 +107,11 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:Anasavovici@yahoo.com"
+                  href={`mailto:${businessProfile.email}`}
                   className={`flex items-start gap-3 ${footerLinkClassName}`}
                 >
                   <Mail className="mt-0.5 h-5 w-5 shrink-0 text-[#D4AF37]" />
-                  <span>Anasavovici@yahoo.com</span>
+                  <span>{businessProfile.email}</span>
                 </a>
               </li>
               <li className="flex items-start gap-3 text-sm text-[#FFF9F2]/82">

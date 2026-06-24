@@ -5,7 +5,7 @@ export const businessProfile = {
   url: "https://clairebeauty.ro",
   telephone: "+40757851882",
   telephoneDisplay: "+40 757 851 882",
-  email: "Anasavovici@yahoo.com",
+  email: "anasavovici@yahoo.com",
   address: {
     streetAddress: "Strada Principatele Unite nr. 5",
     postalCode: "200138",

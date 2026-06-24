@@ -51,7 +51,7 @@ export const mainNavigation: NavItem[] = [
       },
     ],
   },
-  { type: "link", name: "Blog", href: "/blog" },
   { type: "link", name: "Prețuri", href: "/preturi" },
+  { type: "link", name: "Blog", href: "/blog" },
   { type: "link", name: "Contact", href: "/contact" },
 ]

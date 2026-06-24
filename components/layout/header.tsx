@@ -251,7 +251,7 @@ export function Header() {
             </Button>
           </div>
 
-          <div className="flex shrink-0 items-center gap-0.5 md:hidden">
+          <div className="flex shrink-0 items-center gap-0 md:hidden">
             {mobileSocialLinks.map(({ href, label, icon: Icon }) => (
               <a
                 key={href}
@@ -264,6 +264,13 @@ export function Header() {
                 <Icon className="h-[18px] w-[18px]" strokeWidth={1.85} aria-hidden />
               </a>
             ))}
+            <a
+              href={`tel:${businessProfile.telephone}`}
+              aria-label="Sună Claire Beauty Craiova"
+              className={mobileSocialIconClassName}
+            >
+              <Phone className="h-[18px] w-[18px]" strokeWidth={1.85} aria-hidden />
+            </a>
             <button
               type="button"
               className="ml-0.5 rounded-full p-2 text-[#0E2B1F] transition-all duration-250 ease-[cubic-bezier(0.4,0,0.2,1)] hover:bg-[#D4AF37]/24 hover:shadow-[0_0_18px_rgba(212,175,55,0.32)]"
