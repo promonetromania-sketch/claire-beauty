@@ -54,7 +54,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       type: "p",
       content: [
         "Orice tratament care « lucrează » — nu doar hidratează superficial — creează un interval de recuperare. Exfolierea mecanică sau chimică elimină straturi de celule moarte; microneedling-ul deschide micro-canale; radiofrecvența încălzește derma. În acest timp, pielea repară, produce colagen, se reechilibrează. Factorii externi greșiți — UV intens, frecare agresivă, ingrediente iritante — pot întrerupe procesul, prelungi roșeața sau, în cazuri rare, provoca hiperpigmentare post-inflamatorie. Respectarea regulilor nu înseamnă « a sta acasă o săptămână »; înseamnă adaptare inteligentă timp de câteva zile. Dacă nu ești sigură de intervalul dintre ședințe, ",
-        { text: "ghidul despre cât de des poți face tratamente faciale", href: "/blog/cat-de-des-tratamente-faciale" },
+        { text: "ghidul despre cum alegi tratamentul facial potrivit", href: "/blog/cum-alegi-tratament-facial-tip-ten" },
         " clarifică frecvențele recomandate pentru fiecare procedură.",
       ],
     },
@@ -202,7 +202,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       type: "p",
       content: [
         "Aftercare-ul nu se termină după 72 de ore — devine întreținere. SPF zilnic prelungește rezultatele colagenului stimulat; hidratarea susține bariera; respectarea ",
-        { text: "frecvenței corecte între ședințe", href: "/blog/cat-de-des-tratamente-faciale" },
+        { text: "frecvenței corecte între ședințe", href: "/blog/cum-pregatesti-tenul-tratament-facial" },
         " permite acumularea progresului. Combină procedurile profesionale cu rutină acasă coerentă, nu contradictorie. Pentru secvențiere logică — curățare, microneedling, radiofrecvență — vezi opțiunile pe pagina de ",
         L.tratamenteFaciale,
         ".",

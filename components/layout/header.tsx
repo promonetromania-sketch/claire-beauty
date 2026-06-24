@@ -44,7 +44,7 @@ import { cn } from "@/lib/utils"
 
 const mobileSocialLinks = [
   {
-    href: "https://www.facebook.com/",
+    href: "https://www.facebook.com/clairestudiobyana",
     label: "Deschide Facebook Claire Beauty",
     icon: Facebook,
   },

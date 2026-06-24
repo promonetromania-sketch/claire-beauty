@@ -28,12 +28,12 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
   hubLink: L.tratamenteCorporale,
   relatedArticles: [
     {
-      text: "Cât durează până vezi rezultate la tratamente estetice",
-      href: "/blog/cat-dureaza-rezultate-tratamente-estetice",
+      text: "Vergeturi — tratamente și rezultate",
+      href: "/blog/vergeturi-tratamente-rezultate",
     },
     {
-      text: "Cât de des poți face tratamente corporale",
-      href: "/blog/cat-de-des-tratamente-corporale",
+      text: "Tratamente corporale — ghid pentru începători",
+      href: "/blog/tratamente-corporale-ghid-incepatori",
     },
   ],
   blocks: [
@@ -268,7 +268,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
         " și ",
         { text: "programare drenaj limfatic Craiova", href: "/drenaj-limfatic-craiova" },
         ". Timeline realist: vezi ",
-        { text: "cât durează rezultatele tratamentelor estetice", href: "/blog/cat-dureaza-rezultate-tratamente-estetice" },
+        { text: "cât durează rezultatele tratamentelor estetice", href: "/blog/vergeturi-tratamente-rezultate" },
         ".",
       ],
     },

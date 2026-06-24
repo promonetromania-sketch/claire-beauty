@@ -29,8 +29,8 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
   hubLink: L.tratamenteFaciale,
   relatedArticles: [
     {
-      text: "Pori dilatați — cauze și obiceiuri",
-      href: "/blog/pori-dilatati-cauze-obiceiuri",
+      text: "Cum scapi de puncte negre fără a-ți deteriora pielea",
+      href: "/blog/cum-scapi-de-puncte-negre-corect",
     },
     {
       text: "Cum scapi de puncte negre fără a-ți deteriora pielea",
@@ -88,7 +88,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       type: "p",
       content: [
         "Există un prag pe care produsele de raft nu îl trec. Comedoanele adânci, milia, keratoza pilară pe obraji, acumularea cronică de celule moarte în stratul cornos — acestea necesită intervenție mecanică sau enzimatică calibrată. Aparatele de curățat porii de uz casnic pot extrage impurități superficiale, dar adesea lasă resturi în por, traumatizează capilarele fine și creează dependență: porii par « curați » o zi, apoi se umplu din nou pentru că cauza — exces de keratină, sebum oxidat, deshidratare — nu a fost tratată. Tenul tern, fără strălucire, cu textură neregulată, este adesea semn că exfolierea superficială nu mai ajunge; articolul nostru despre ",
-        { text: "cauzele tenului tern și fără strălucire", href: "/blog/cauze-ten-tern-fara-stralucire" },
+        { text: "cauzele tenului tern și fără strălucire", href: "/blog/cum-alegi-tratament-facial-tip-ten" },
         " explică legătura dintre acumulare, circulație redusă și aspect obosit — situații în care curățarea profesională face diferența vizibilă.",
       ],
     },
@@ -180,7 +180,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
         ["Puncte negre și ten încărcat revin constant, în ciuda rutinei acasă"],
         ["Produse active irită — ai nevoie de reset profesional al barierei"],
         ["Eveniment în 2–4 săptămâni — vrei ten curat fără risc de iritare"],
-        ["Nu știi ce alegi: Hydrafacial, curățare clasică, microdermabraziune — vezi și ", { text: "pori dilatați", href: "/blog/pori-dilatati-cauze-obiceiuri" }],
+        ["Nu știi ce alegi: Hydrafacial, curățare clasică, microdermabraziune — vezi și ", { text: "cum alegi tratamentul facial potrivit", href: "/blog/cum-alegi-tratament-facial-tip-ten" }],
       ],
     },
     {
