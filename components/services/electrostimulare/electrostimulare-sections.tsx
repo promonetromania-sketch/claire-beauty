@@ -1,7 +1,7 @@
 import type { ComponentType, ReactNode } from "react"
-import { VisualGallery } from "@/components/shared/visual-gallery"
+import { businessProfile } from "@/lib/seo/business"
 import { ClaireImage } from "@/components/ui/claire-image"
-import { claireImages, pageGalleries } from "@/lib/images/claire-beauty"
+import { claireImages } from "@/lib/images/claire-beauty"
 import Link from "next/link"
 import {
   Activity,
@@ -10,16 +10,13 @@ import {
   MapPin,
   Shield,
   Sparkles,
-  Target,
-} from "lucide-react"
+  Target } from "lucide-react"
 import { ServiceCTA } from "@/components/services/service-cta"
 import { cn } from "@/lib/utils"
-import { electrostimulareWhatsappMessage } from "@/lib/content/electrostimulare"
 
 function SectionShell({
   children,
-  className,
-}: {
+  className }: {
   children: ReactNode
   className?: string
 }) {
@@ -34,8 +31,7 @@ function SectionHeading({
   eyebrow,
   title,
   description,
-  align = "center",
-}: {
+  align = "center" }: {
   eyebrow?: string
   title: string
   description?: string
@@ -81,8 +77,7 @@ function BulletList({ items }: { items: string[] }) {
 function InfoCard({
   icon: Icon,
   title,
-  children,
-}: {
+  children }: {
   icon: ComponentType<{ className?: string }>
   title: string
   children: ReactNode
@@ -102,8 +97,7 @@ function InfoCard({
 
 function ComparisonCard({
   title,
-  items,
-}: {
+  items }: {
   title: string
   items: string[]
 }) {
@@ -120,8 +114,7 @@ function ComparisonCard({
 function InlineCTA({
   title,
   description,
-  primaryLabel = "Programează-te acum",
-}: {
+  primaryLabel = "Programează-te acum" }: {
   title: string
   description: string
   primaryLabel?: string
@@ -143,7 +136,7 @@ function InlineCTA({
             {primaryLabel}
           </Link>
           <Link
-            href={`https://wa.me/40757851882?text=${encodeURIComponent(electrostimulareWhatsappMessage)}`}
+            href={businessProfile.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full border border-[#D4AF37]/50 bg-white/70 px-8 py-3 text-sm font-semibold text-[#0E2B1F] transition-all hover:bg-[#D4AF37]/10"
@@ -165,16 +158,13 @@ function InlineCTA({
 const resultsTimeline = [
   {
     period: "După 3–4 ședințe",
-    items: ["ușoară tonifiere"],
-  },
+    items: ["ușoară tonifiere"] },
   {
     period: "După 6–8 ședințe",
-    items: ["definire vizibilă"],
-  },
+    items: ["definire vizibilă"] },
   {
     period: "După 10+ ședințe",
-    items: ["corp mai ferm și conturat"],
-  },
+    items: ["corp mai ferm și conturat"] },
 ] as const
 
 export function ElectrostimulareSections() {
@@ -210,7 +200,7 @@ export function ElectrostimulareSections() {
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-premium-lg">
             <ClaireImage
-              {...claireImages.electrostimulare}
+              {...claireImages.electrostimulareContent}
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
@@ -615,19 +605,9 @@ export function ElectrostimulareSections() {
         primaryLabel="Programează-te acum"
       />
 
-      <VisualGallery
-        images={pageGalleries.electrostimulare}
-        eyebrow="În salon"
-        title="Electrostimulare la Claire Beauty"
-        description="Echipament real, proceduri profesionale și rezultate vizibile — așa arată experiența de electrostimulare în cabinetul nostru."
-        className="bg-background"
-        columns={3}
-      />
-
       <ServiceCTA
         title="Programează-te pentru electrostimulare Craiova"
         description="Începe transformarea: tonifiere rapidă, ardere calorică și remodelare corporală. Telefon: 0757 851 882."
-        whatsappMessage={electrostimulareWhatsappMessage}
       />
     </>
   )

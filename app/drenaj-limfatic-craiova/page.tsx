@@ -5,15 +5,17 @@ import { WhatsAppButton } from "@/components/layout/whatsapp-button"
 import { MobileCTA } from "@/components/layout/mobile-cta"
 import { JsonLd } from "@/components/seo/json-ld"
 import { ServiceFAQ } from "@/components/services/service-faq"
+import { HubBlogLinks } from "@/components/blog/hub-blog-links"
 import { DrenajHero } from "@/components/services/drenaj-limfatic/drenaj-hero"
 import { DrenajSections } from "@/components/services/drenaj-limfatic/drenaj-sections"
-import { drenajFaqs, drenajWhatsappMessage } from "@/lib/content/drenaj-limfatic"
-import { businessProfile, localBusinessId } from "@/lib/seo/business"
+import { drenajFaqs} from "@/lib/content/drenaj-limfatic"
+import { businessProfile, localBusinessId, postalAddressSchema } from "@/lib/seo/business"
+import { servicePageBlogLinks } from "@/lib/seo/traffic-push"
 
 const pageUrl = `${businessProfile.url}/drenaj-limfatic-craiova`
 
 export const metadata: Metadata = {
-  title: "Drenaj Limfatic Craiova – Elimină Retenția de Apă | Claire Beauty",
+  title: "Drenaj Limfatic Craiova – Elimină Retenția de Apă | Claire Beauty Craiova",
   description:
     "Drenaj limfatic Craiova la Claire Beauty. Elimină retenția de apă, detoxifică organismul și reduce inflamația. Programează-te acum!",
   keywords: [
@@ -26,17 +28,14 @@ export const metadata: Metadata = {
     "salon body spa Craiova",
   ],
   alternates: {
-    canonical: pageUrl,
-  },
+    canonical: pageUrl },
   openGraph: {
-    title: "Drenaj Limfatic Craiova – Elimină Retenția de Apă | Claire Beauty",
+    title: "Drenaj Limfatic Craiova – Elimină Retenția de Apă | Claire Beauty Craiova",
     description:
       "Drenaj limfatic Craiova la Claire Beauty. Elimină retenția de apă, detoxifică organismul și reduce inflamația.",
     type: "website",
     locale: "ro_RO",
-    url: pageUrl,
-  },
-}
+    url: pageUrl } }
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -47,18 +46,11 @@ const localBusinessSchema = {
   url: businessProfile.url,
   telephone: businessProfile.telephone,
   email: businessProfile.email,
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: businessProfile.address.locality,
-    addressRegion: businessProfile.address.region,
-    addressCountry: businessProfile.address.country,
-  },
+  address: postalAddressSchema,
   sameAs: businessProfile.sameAs,
   areaServed: {
     "@type": "City",
-    name: "Craiova",
-  },
-}
+    name: "Craiova" } }
 
 const serviceSchema = {
   "@context": "https://schema.org",
@@ -69,13 +61,10 @@ const serviceSchema = {
     "Drenaj limfatic manual în Craiova pentru eliminarea retenției de apă, detoxifiere și remodelare corporală.",
   url: pageUrl,
   provider: {
-    "@id": localBusinessId,
-  },
+    "@id": localBusinessId },
   areaServed: {
     "@type": "City",
-    name: "Craiova",
-  },
-}
+    name: "Craiova" } }
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -85,10 +74,7 @@ const faqSchema = {
     name: faq.question,
     acceptedAnswer: {
       "@type": "Answer",
-      text: faq.answer,
-    },
-  })),
-}
+      text: faq.answer } })) }
 
 export default function DrenajLimfaticPage() {
   return (
@@ -103,12 +89,12 @@ export default function DrenajLimfaticPage() {
           subtitle="FAQ"
           faqs={[...drenajFaqs]}
         />
+        <HubBlogLinks links={servicePageBlogLinks["/drenaj-limfatic-craiova"]} />
       </main>
       <Footer />
       <WhatsAppButton />
       <MobileCTA
         layout="triple"
-        whatsappMessage={drenajWhatsappMessage}
       />
     </>
   )

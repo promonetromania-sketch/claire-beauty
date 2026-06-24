@@ -1,10 +1,11 @@
 import { ClaireImage } from "@/components/ui/claire-image"
+import { businessProfile } from "@/lib/seo/business"
 import { claireImages } from "@/lib/images/claire-beauty"
 import Link from "next/link"
 import { Calendar, MessageCircle, Phone, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-const badges = ["Detoxifiere", "Retenție de apă", "Remodelare corporală"]
+const badges = ["Detoxifiere", "Retenție de apă", "Circulație limfatică"]
 
 const whatsappMessage =
   "Bună ziua! Aș dori să programez o ședință de drenaj limfatic la Claire Beauty Craiova."
@@ -30,8 +31,7 @@ export function DrenajHero() {
             Tratament premium body spa
           </p>
           <h1 className="mb-6 font-serif text-4xl font-semibold leading-tight text-[#FFF9F2] sm:text-5xl lg:text-6xl">
-            Drenaj Limfatic Craiova – Detoxifiere, Eliminarea Retenției de Apă
-            și Remodelare Corporală
+            Drenaj Limfatic Craiova – Detoxifiere și Eliminarea Retenției de Apă
           </h1>
           <p className="mb-8 max-w-2xl text-lg leading-relaxed text-[#FFF9F2]/90">
             Dacă te confrunți cu retenție de apă, senzația de picioare grele sau
@@ -78,7 +78,7 @@ export function DrenajHero() {
               className="rounded-full border-[#D4AF37]/60 bg-[#FFF9F2]/10 px-8 text-base font-semibold text-[#FFF9F2] backdrop-blur-sm hover:bg-[#FFF9F2]/20"
             >
               <a
-                href={`https://wa.me/40757851882?text=${encodeURIComponent(whatsappMessage)}`}
+                href={businessProfile.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"

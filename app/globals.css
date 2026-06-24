@@ -181,3 +181,49 @@
   box-shadow: 0 8px 40px -4px rgba(60, 40, 20, 0.12),
               0 4px 16px -4px rgba(60, 40, 20, 0.06);
 }
+
+/* Premium glass header */
+.glass-header {
+  background: rgba(255, 249, 242, 0.72);
+  backdrop-filter: blur(16px) saturate(1.2);
+  -webkit-backdrop-filter: blur(16px) saturate(1.2);
+}
+
+.glass-header-scrolled {
+  background: rgba(255, 249, 242, 0.88);
+  backdrop-filter: blur(20px) saturate(1.25);
+  -webkit-backdrop-filter: blur(20px) saturate(1.25);
+}
+
+/* Premium interactive elements */
+.premium-btn-primary {
+  background: oklch(0.75 0.12 85);
+  color: oklch(0.25 0.02 45);
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.premium-btn-primary:hover {
+  background: oklch(0.78 0.13 85);
+  box-shadow: 0 6px 28px rgba(212, 175, 55, 0.38);
+  transform: translateY(-1px);
+}
+
+.premium-service-card {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.premium-service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px -8px rgba(14, 43, 31, 0.18),
+    0 0 0 1px rgba(212, 175, 55, 0.12);
+}
+
+.premium-contact-card {
+  transition: box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.premium-contact-card:hover {
+  box-shadow: 0 12px 40px -8px rgba(14, 43, 31, 0.14);
+}

@@ -8,16 +8,14 @@ import { ServiceFAQ } from "@/components/services/service-faq"
 import { MicroneedlingHero } from "@/components/services/microneedling/microneedling-hero"
 import { MicroneedlingSections } from "@/components/services/microneedling/microneedling-sections"
 import {
-  microneedlingFaqs,
-  microneedlingWhatsappMessage,
-} from "@/lib/content/microneedling"
-import { businessProfile, localBusinessId } from "@/lib/seo/business"
+  microneedlingFaqs} from "@/lib/content/microneedling"
+import { businessProfile, localBusinessId, postalAddressSchema } from "@/lib/seo/business"
 
 const pageUrl = `${businessProfile.url}/microneedling-craiova`
 
 export const metadata: Metadata = {
   title:
-    "Microneedling Craiova – Tratament pentru Cicatrici Acnee, Pori Dilatați și Regenerare Ten",
+    "Microneedling Craiova – Tratament pentru Cicatrici Acnee, Pori Dilatați și Regenerare Ten | Claire Beauty Craiova",
   description:
     "Microneedling Craiova pentru cicatrici post-acnee, pori dilatați și regenerarea pielii. Stimulează colagenul și îmbunătățește textura tenului. Programează-te!",
   keywords: [
@@ -29,18 +27,15 @@ export const metadata: Metadata = {
     "tratamente faciale Craiova",
   ],
   alternates: {
-    canonical: pageUrl,
-  },
+    canonical: pageUrl },
   openGraph: {
     title:
-      "Microneedling Craiova – Tratament pentru Cicatrici Acnee, Pori Dilatați și Regenerare Ten",
+      "Microneedling Craiova – Tratament pentru Cicatrici Acnee, Pori Dilatați și Regenerare Ten | Claire Beauty Craiova",
     description:
       "Microneedling Craiova pentru cicatrici post-acnee, pori dilatați și regenerarea pielii.",
     type: "website",
     locale: "ro_RO",
-    url: pageUrl,
-  },
-}
+    url: pageUrl } }
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -51,18 +46,11 @@ const localBusinessSchema = {
   url: businessProfile.url,
   telephone: businessProfile.telephone,
   email: businessProfile.email,
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: businessProfile.address.locality,
-    addressRegion: businessProfile.address.region,
-    addressCountry: businessProfile.address.country,
-  },
+  address: postalAddressSchema,
   sameAs: businessProfile.sameAs,
   areaServed: {
     "@type": "City",
-    name: "Craiova",
-  },
-}
+    name: "Craiova" } }
 
 const serviceSchema = {
   "@context": "https://schema.org",
@@ -73,13 +61,10 @@ const serviceSchema = {
     "Microneedling în Craiova pentru cicatrici post-acnee, pori dilatați și regenerarea pielii.",
   url: pageUrl,
   provider: {
-    "@id": localBusinessId,
-  },
+    "@id": localBusinessId },
   areaServed: {
     "@type": "City",
-    name: "Craiova",
-  },
-}
+    name: "Craiova" } }
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -89,16 +74,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Acasă",
-      item: businessProfile.url,
-    },
+      item: businessProfile.url },
     {
       "@type": "ListItem",
       position: 2,
       name: "Microneedling Craiova",
-      item: pageUrl,
-    },
-  ],
-}
+      item: pageUrl },
+  ] }
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -108,10 +90,7 @@ const faqSchema = {
     name: faq.question,
     acceptedAnswer: {
       "@type": "Answer",
-      text: faq.answer,
-    },
-  })),
-}
+      text: faq.answer } })) }
 
 export default function MicroneedlingPage() {
   return (
@@ -138,7 +117,6 @@ export default function MicroneedlingPage() {
       <WhatsAppButton />
       <MobileCTA
         layout="triple"
-        whatsappMessage={microneedlingWhatsappMessage}
       />
     </>
   )

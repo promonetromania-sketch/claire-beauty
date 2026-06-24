@@ -6,8 +6,7 @@ import {
   Clock,
   MessageCircle,
   Instagram,
-  Facebook,
-} from "lucide-react"
+  Facebook } from "lucide-react"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { WhatsAppButton } from "@/components/layout/whatsapp-button"
@@ -16,56 +15,51 @@ import { ContactForm } from "@/components/contact/contact-form"
 import { VisualGallery } from "@/components/shared/visual-gallery"
 import { ClaireImage } from "@/components/ui/claire-image"
 import { claireImages, pageGalleries } from "@/lib/images/claire-beauty"
+import { businessProfile } from "@/lib/seo/business"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Contact | Claire's Studio by Ana Savovici - Body Spa Craiova",
+  title: "Contact | Claire Beauty Craiova",
   description:
-    "Contactează-ne pentru programări și informații. Claire's Studio by Ana Savovici - salonul tău premium de body spa în Craiova. Telefon: +40 757 851 882",
+    "Contactează Claire Beauty Craiova pentru programări și informații. Salon premium body spa — telefon: +40 757 851 882.",
   keywords: [
-    "contact salon beauty Craiova",
+    "contact Claire Beauty Craiova",
     "programare body spa Craiova",
-    "Claire's Studio contact",
+    "salon beauty Craiova contact",
     "Ana Savovici contact",
   ],
   openGraph: {
-    title: "Contact | Claire's Studio by Ana Savovici",
+    title: "Contact | Claire Beauty Craiova",
     description:
-      "Contactează-ne pentru programări și informații. Body Spa Premium în Craiova.",
+      "Contactează Claire Beauty Craiova pentru programări și informații despre tratamente faciale, masaj și remodelare corporală.",
     type: "website",
-    locale: "ro_RO",
-  },
-}
+    locale: "ro_RO" } }
 
 const contactInfo = [
   {
     icon: Phone,
     title: "Telefon",
-    content: "+40 757 851 882",
-    href: "tel:+40757851882",
-    description: "Sună-ne pentru programări rapide",
-  },
+    content: businessProfile.telephoneDisplay,
+    href: `tel:${businessProfile.telephone}`,
+    description: "Sună-ne pentru programări rapide" },
   {
     icon: MessageCircle,
     title: "WhatsApp",
-    content: "+40 757 851 882",
-    href: "https://wa.me/40757851882?text=Bună%20ziua!%20Aș%20dori%20să%20fac%20o%20programare.",
-    description: "Scrie-ne oricând pe WhatsApp",
-  },
+    content: businessProfile.telephoneDisplay,
+    href: businessProfile.whatsappUrl,
+    description: "Scrie-ne oricând pe WhatsApp" },
   {
     icon: Mail,
     title: "Email",
-    content: "Anasavovici@yahoo.com",
-    href: "mailto:Anasavovici@yahoo.com",
-    description: "Pentru întrebări detaliate",
-  },
+    content: businessProfile.email,
+    href: `mailto:${businessProfile.email}`,
+    description: "Pentru întrebări detaliate" },
   {
     icon: MapPin,
     title: "Adresă",
-    content: "Craiova, România",
-    href: "https://maps.google.com/?q=Craiova,Romania",
-    description: "Ne găsești ușor în centrul orașului",
-  },
+    content: businessProfile.address.formatted,
+    href: businessProfile.googleMapsUrl,
+    description: businessProfile.locationName },
 ]
 
 const socialLinks = [
@@ -73,14 +67,12 @@ const socialLinks = [
     icon: Instagram,
     name: "Instagram",
     href: "https://www.instagram.com/anasavovici_body/",
-    handle: "@anasavovici_body",
-  },
+    handle: "@anasavovici_body" },
   {
     icon: Facebook,
     name: "Facebook",
     href: "https://www.facebook.com/clairestudiobyana",
-    handle: "Claire's Studio by Ana Savovici",
-  },
+    handle: "Claire Beauty Craiova" },
 ]
 
 const openingHours = [
@@ -266,7 +258,7 @@ export default function ContactPage() {
                     className="w-full bg-accent hover:bg-accent/90 text-accent-foreground rounded-full"
                   >
                     <a
-                      href="https://wa.me/40757851882?text=Bună%20ziua!%20Aș%20dori%20să%20fac%20o%20programare."
+                      href={businessProfile.whatsappUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center gap-2"
@@ -292,23 +284,37 @@ export default function ContactPage() {
                 Unde Ne Găsești
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Salonul {"Claire's Studio"} se află în Craiova, într-o locație
-                centrală și ușor accesibilă.
+                {businessProfile.locationName} — {businessProfile.address.formatted}
               </p>
             </div>
 
-            <div className="relative aspect-video lg:aspect-[21/9] rounded-2xl overflow-hidden shadow-premium-lg">
+            <div className="relative w-full h-[320px] sm:h-[350px] lg:h-[450px] rounded-2xl overflow-hidden shadow-premium-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91899.91756376377!2d23.729726068359374!3d44.31663560000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4752d700ac8c1097%3A0xe23a6e6b3e8d90e5!2sCraiova%2C%20Romania!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+                src={businessProfile.googleMapsEmbedUrl}
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Claire's Studio Craiova Location"
-                className="absolute inset-0"
+                referrerPolicy="strict-origin-when-cross-origin"
+                title="Hartă Claire's Beauty Craiova"
+                className="absolute inset-0 h-full w-full"
               />
+            </div>
+
+            <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+              <Button asChild className="rounded-full">
+                <a
+                  href={businessProfile.googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Deschide în Google Maps
+                </a>
+              </Button>
+              <Button asChild variant="outline" className="rounded-full">
+                <a href={`tel:${businessProfile.telephone}`}>Sună acum</a>
+              </Button>
             </div>
           </div>
         </section>

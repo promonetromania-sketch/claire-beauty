@@ -7,43 +7,36 @@ import { JsonLd } from "@/components/seo/json-ld"
 import { ServiceFAQ } from "@/components/services/service-faq"
 import { TratamenteFacialeCraiovaHero } from "@/components/services/tratamente-faciale-craiova/tratamente-faciale-craiova-hero"
 import { TratamenteFacialeCraiovaSections } from "@/components/services/tratamente-faciale-craiova/tratamente-faciale-craiova-sections"
+import { HubBlogLinks } from "@/components/blog/hub-blog-links"
 import {
-  tratamenteFacialeFaqs,
-  tratamenteFacialeWhatsappMessage,
-} from "@/lib/content/tratamente-faciale-craiova"
-import { businessProfile, localBusinessId } from "@/lib/seo/business"
+  tratamenteFacialeFaqs} from "@/lib/content/tratamente-faciale-craiova"
+import { hubBlogLinks } from "@/lib/seo/traffic-push"
+import { businessProfile, localBusinessId, postalAddressSchema } from "@/lib/seo/business"
 
 const pageUrl = `${businessProfile.url}/tratamente-faciale-craiova`
 
 export const metadata: Metadata = {
   title:
-    "Tratamente Faciale Craiova – Hydrafacial, Dermapen, HIFU și Microneedling pentru Ten Perfect",
+    "Tratamente Faciale Craiova – Soluții Personalizate pentru Tenul Tău | Claire Beauty Craiova",
   description:
-    "Tratamente faciale Craiova pentru curățare, hidratare, cicatrici și lifting. Hydrafacial, Dermapen, microneedling și HIFU. Alege tratamentul potrivit pentru tenul tău.",
+    "Tratamente faciale Craiova la Claire Beauty: soluții personalizate pentru curățare, hidratare, regenerare și lifting. Consultație gratuită și protocol adaptat tipului de ten.",
   keywords: [
     "tratamente faciale Craiova",
     "tratament facial Craiova",
-    "Hydrafacial Craiova",
-    "Dermapen Craiova",
-    "microneedling Craiova",
-    "HIFU Craiova",
-    "microdermabraziune Craiova",
-    "curățare ten Craiova",
-    "lifting facial Craiova",
+    "îngrijire ten Craiova",
+    "salon facial Craiova",
+    "Claire Beauty Craiova",
   ],
   alternates: {
-    canonical: pageUrl,
-  },
+    canonical: pageUrl },
   openGraph: {
     title:
-      "Tratamente Faciale Craiova – Hydrafacial, Dermapen, HIFU și Microneedling pentru Ten Perfect",
+      "Tratamente Faciale Craiova – Soluții Personalizate pentru Tenul Tău | Claire Beauty Craiova",
     description:
-      "Tratamente faciale Craiova pentru curățare, hidratare, cicatrici și lifting. Hydrafacial, Dermapen, microneedling și HIFU.",
+      "Tratamente faciale Craiova la Claire Beauty: soluții personalizate pentru curățare, hidratare, regenerare și lifting.",
     type: "website",
     locale: "ro_RO",
-    url: pageUrl,
-  },
-}
+    url: pageUrl } }
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -54,18 +47,11 @@ const localBusinessSchema = {
   url: businessProfile.url,
   telephone: businessProfile.telephone,
   email: businessProfile.email,
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: businessProfile.address.locality,
-    addressRegion: businessProfile.address.region,
-    addressCountry: businessProfile.address.country,
-  },
+  address: postalAddressSchema,
   sameAs: businessProfile.sameAs,
   areaServed: {
     "@type": "City",
-    name: "Craiova",
-  },
-}
+    name: "Craiova" } }
 
 const serviceSchema = {
   "@context": "https://schema.org",
@@ -76,13 +62,10 @@ const serviceSchema = {
     "Tratamente faciale în Craiova: Hydrafacial, Dermapen, microneedling, HIFU și microdermabraziune.",
   url: pageUrl,
   provider: {
-    "@id": localBusinessId,
-  },
+    "@id": localBusinessId },
   areaServed: {
     "@type": "City",
-    name: "Craiova",
-  },
-}
+    name: "Craiova" } }
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -92,16 +75,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Acasă",
-      item: businessProfile.url,
-    },
+      item: businessProfile.url },
     {
       "@type": "ListItem",
       position: 2,
       name: "Tratamente faciale Craiova",
-      item: pageUrl,
-    },
-  ],
-}
+      item: pageUrl },
+  ] }
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -111,10 +91,7 @@ const faqSchema = {
     name: faq.question,
     acceptedAnswer: {
       "@type": "Answer",
-      text: faq.answer,
-    },
-  })),
-}
+      text: faq.answer } })) }
 
 export default function TratamenteFacialeCraiovaPage() {
   return (
@@ -131,6 +108,7 @@ export default function TratamenteFacialeCraiovaPage() {
       <main className="pb-24 md:pb-0">
         <TratamenteFacialeCraiovaHero />
         <TratamenteFacialeCraiovaSections />
+        <HubBlogLinks links={hubBlogLinks.facial} />
         <ServiceFAQ
           title="Întrebări frecvente despre tratamente faciale"
           subtitle="FAQ"
@@ -141,7 +119,6 @@ export default function TratamenteFacialeCraiovaPage() {
       <WhatsAppButton />
       <MobileCTA
         layout="triple"
-        whatsappMessage={tratamenteFacialeWhatsappMessage}
       />
     </>
   )

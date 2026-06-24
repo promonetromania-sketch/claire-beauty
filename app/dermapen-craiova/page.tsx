@@ -7,14 +7,14 @@ import { JsonLd } from "@/components/seo/json-ld"
 import { ServiceFAQ } from "@/components/services/service-faq"
 import { DermapenHero } from "@/components/services/dermapen/dermapen-hero"
 import { DermapenSections } from "@/components/services/dermapen/dermapen-sections"
-import { dermapenFaqs, dermapenWhatsappMessage } from "@/lib/content/dermapen"
-import { businessProfile, localBusinessId } from "@/lib/seo/business"
+import { dermapenFaqs} from "@/lib/content/dermapen"
+import { businessProfile, localBusinessId, postalAddressSchema } from "@/lib/seo/business"
 
 const pageUrl = `${businessProfile.url}/dermapen-craiova`
 
 export const metadata: Metadata = {
   title:
-    "Dermapen Craiova – Tratament pentru Cicatrici Post-Acnee, Riduri și Regenerare Ten",
+    "Dermapen Craiova – Tratament pentru Cicatrici Post-Acnee, Riduri și Regenerare Ten | Claire Beauty Craiova",
   description:
     "Dermapen Craiova pentru cicatrici post-acnee, riduri și ten neuniform. Stimulează colagenul și îmbunătățește textura pielii. Programează-te!",
   keywords: [
@@ -27,18 +27,15 @@ export const metadata: Metadata = {
     "textură neuniformă Craiova",
   ],
   alternates: {
-    canonical: pageUrl,
-  },
+    canonical: pageUrl },
   openGraph: {
     title:
-      "Dermapen Craiova – Tratament pentru Cicatrici Post-Acnee, Riduri și Regenerare Ten",
+      "Dermapen Craiova – Tratament pentru Cicatrici Post-Acnee, Riduri și Regenerare Ten | Claire Beauty Craiova",
     description:
       "Dermapen Craiova pentru cicatrici post-acnee, riduri și ten neuniform.",
     type: "website",
     locale: "ro_RO",
-    url: pageUrl,
-  },
-}
+    url: pageUrl } }
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -49,18 +46,11 @@ const localBusinessSchema = {
   url: businessProfile.url,
   telephone: businessProfile.telephone,
   email: businessProfile.email,
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: businessProfile.address.locality,
-    addressRegion: businessProfile.address.region,
-    addressCountry: businessProfile.address.country,
-  },
+  address: postalAddressSchema,
   sameAs: businessProfile.sameAs,
   areaServed: {
     "@type": "City",
-    name: "Craiova",
-  },
-}
+    name: "Craiova" } }
 
 const serviceSchema = {
   "@context": "https://schema.org",
@@ -71,13 +61,10 @@ const serviceSchema = {
     "Dermapen în Craiova pentru cicatrici post-acnee, riduri și regenerarea pielii.",
   url: pageUrl,
   provider: {
-    "@id": localBusinessId,
-  },
+    "@id": localBusinessId },
   areaServed: {
     "@type": "City",
-    name: "Craiova",
-  },
-}
+    name: "Craiova" } }
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -87,16 +74,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Acasă",
-      item: businessProfile.url,
-    },
+      item: businessProfile.url },
     {
       "@type": "ListItem",
       position: 2,
       name: "Dermapen Craiova",
-      item: pageUrl,
-    },
-  ],
-}
+      item: pageUrl },
+  ] }
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -106,10 +90,7 @@ const faqSchema = {
     name: faq.question,
     acceptedAnswer: {
       "@type": "Answer",
-      text: faq.answer,
-    },
-  })),
-}
+      text: faq.answer } })) }
 
 export default function DermapenPage() {
   return (
@@ -134,7 +115,7 @@ export default function DermapenPage() {
       </main>
       <Footer />
       <WhatsAppButton />
-      <MobileCTA layout="triple" whatsappMessage={dermapenWhatsappMessage} />
+      <MobileCTA layout="triple" />
     </>
   )
 }

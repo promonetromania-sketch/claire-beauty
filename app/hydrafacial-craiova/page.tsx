@@ -5,18 +5,18 @@ import { WhatsAppButton } from "@/components/layout/whatsapp-button"
 import { MobileCTA } from "@/components/layout/mobile-cta"
 import { JsonLd } from "@/components/seo/json-ld"
 import { ServiceFAQ } from "@/components/services/service-faq"
+import { HubBlogLinks } from "@/components/blog/hub-blog-links"
 import { HydrafacialHero } from "@/components/services/hydrafacial/hydrafacial-hero"
 import { HydrafacialSections } from "@/components/services/hydrafacial/hydrafacial-sections"
 import {
-  hydrafacialFaqs,
-  hydrafacialWhatsappMessage,
-} from "@/lib/content/hydrafacial"
-import { businessProfile, localBusinessId } from "@/lib/seo/business"
+  hydrafacialFaqs} from "@/lib/content/hydrafacial"
+import { businessProfile, localBusinessId, postalAddressSchema } from "@/lib/seo/business"
+import { servicePageBlogLinks } from "@/lib/seo/traffic-push"
 
 const pageUrl = `${businessProfile.url}/hydrafacial-craiova`
 
 export const metadata: Metadata = {
-  title: "Hydrafacial Craiova – Curățare Facială Profesională",
+  title: "Hydrafacial Craiova – Curățare Facială Profesională | Claire Beauty Craiova",
   description:
     "Hydrafacial Craiova pentru curățare profundă, hidratare intensă și ten luminos. Elimină punctele negre. Rezultate imediate. Programează-te!",
   keywords: [
@@ -29,17 +29,14 @@ export const metadata: Metadata = {
     "tratamente faciale Craiova",
   ],
   alternates: {
-    canonical: pageUrl,
-  },
+    canonical: pageUrl },
   openGraph: {
-    title: "Hydrafacial Craiova – Curățare Facială Profesională",
+    title: "Hydrafacial Craiova – Curățare Facială Profesională | Claire Beauty Craiova",
     description:
       "Hydrafacial Craiova pentru curățare profundă, hidratare intensă și ten luminos.",
     type: "website",
     locale: "ro_RO",
-    url: pageUrl,
-  },
-}
+    url: pageUrl } }
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -50,18 +47,11 @@ const localBusinessSchema = {
   url: businessProfile.url,
   telephone: businessProfile.telephone,
   email: businessProfile.email,
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: businessProfile.address.locality,
-    addressRegion: businessProfile.address.region,
-    addressCountry: businessProfile.address.country,
-  },
+  address: postalAddressSchema,
   sameAs: businessProfile.sameAs,
   areaServed: {
     "@type": "City",
-    name: "Craiova",
-  },
-}
+    name: "Craiova" } }
 
 const serviceSchema = {
   "@context": "https://schema.org",
@@ -72,13 +62,10 @@ const serviceSchema = {
     "Hydrafacial în Craiova pentru curățare profundă, hidratare intensă și ten luminos.",
   url: pageUrl,
   provider: {
-    "@id": localBusinessId,
-  },
+    "@id": localBusinessId },
   areaServed: {
     "@type": "City",
-    name: "Craiova",
-  },
-}
+    name: "Craiova" } }
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -88,16 +75,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Acasă",
-      item: businessProfile.url,
-    },
+      item: businessProfile.url },
     {
       "@type": "ListItem",
       position: 2,
       name: "Hydrafacial Craiova",
-      item: pageUrl,
-    },
-  ],
-}
+      item: pageUrl },
+  ] }
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -107,10 +91,7 @@ const faqSchema = {
     name: faq.question,
     acceptedAnswer: {
       "@type": "Answer",
-      text: faq.answer,
-    },
-  })),
-}
+      text: faq.answer } })) }
 
 export default function HydrafacialPage() {
   return (
@@ -132,10 +113,11 @@ export default function HydrafacialPage() {
           subtitle="FAQ"
           faqs={[...hydrafacialFaqs]}
         />
+        <HubBlogLinks links={servicePageBlogLinks["/hydrafacial-craiova"]} />
       </main>
       <Footer />
       <WhatsAppButton />
-      <MobileCTA layout="triple" whatsappMessage={hydrafacialWhatsappMessage} />
+      <MobileCTA layout="triple" />
     </>
   )
 }

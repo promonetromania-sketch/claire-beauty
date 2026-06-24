@@ -1,4 +1,5 @@
 import { ClaireImage } from "@/components/ui/claire-image"
+import { businessProfile } from "@/lib/seo/business"
 import { claireImages } from "@/lib/images/claire-beauty"
 import Link from "next/link"
 import { Calendar, MessageCircle, Phone, Sparkles } from "lucide-react"
@@ -20,7 +21,7 @@ export function DermapenHero() {
     <section className="relative flex min-h-[78vh] items-center overflow-hidden">
       <div className="absolute inset-0">
         <ClaireImage
-          {...claireImages.dermapen}
+          {...claireImages.dermapenTratament}
           fill
           priority
           sizes="100vw"
@@ -91,7 +92,7 @@ export function DermapenHero() {
               className="rounded-full border-[#D4AF37]/60 bg-[#FFF9F2]/10 px-8 text-base font-semibold text-[#FFF9F2] backdrop-blur-sm hover:bg-[#FFF9F2]/20"
             >
               <a
-                href={`https://wa.me/40757851882?text=${encodeURIComponent(whatsappMessage)}`}
+                href={businessProfile.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"

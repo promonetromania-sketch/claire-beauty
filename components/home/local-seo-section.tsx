@@ -1,108 +1,129 @@
-import { MapPin, Clock, Phone, Mail } from "lucide-react"
+import Link from "next/link"
+import { MapPin, Clock, Phone, MessageCircle, ExternalLink } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { ScrollReveal } from "@/components/ui/scroll-reveal"
+import { businessProfile } from "@/lib/seo/business"
 
 export function LocalSEOSection() {
   return (
-    <section className="py-24 bg-secondary">
+    <section id="locatie" className="bg-secondary py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Content */}
-          <div>
-            <p className="text-sm font-medium tracking-widest text-accent uppercase mb-4">
-              Locație
-            </p>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground mb-6">
-              Body Spa Premium în
-              <span className="text-gold-gradient"> Craiova</span>
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              {"Claire's Studio"} este salonul tău de încredere pentru tratamente
-              de înfrumusețare și wellness în Craiova. Ne găsești într-o locație
-              centrală, ușor accesibilă, pregătiți să îți oferim cele mai bune
-              servicii de body spa.
-            </p>
+        <ScrollReveal className="mx-auto mb-12 max-w-3xl text-center sm:mb-16">
+          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-accent">
+            Locație
+          </p>
+          <h2 className="mb-6 font-serif text-3xl font-semibold text-foreground sm:text-4xl lg:text-5xl">
+            Unde ne găsești
+          </h2>
+          <p className="text-lg leading-relaxed text-muted-foreground">
+            Claire Beauty te așteaptă în Craiova pentru masaj, remodelare
+            corporală și tratamente faciale.
+          </p>
+        </ScrollReveal>
 
-            {/* Contact Info */}
-            <div className="space-y-4">
-              <div className="flex items-start gap-4">
-                <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-accent/10 text-accent flex-shrink-0">
-                  <MapPin className="h-6 w-6" />
+        <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-12">
+          <ScrollReveal>
+            <div className="relative h-[320px] w-full overflow-hidden rounded-2xl bg-card shadow-premium-lg sm:h-[350px] lg:h-[450px]">
+              <iframe
+                src={businessProfile.googleMapsEmbedUrl}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+                title="Hartă Claire's Beauty Craiova"
+                className="absolute inset-0 h-full w-full"
+              />
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={100}>
+            <div className="premium-contact-card rounded-2xl border border-[#D4AF37]/15 bg-card p-6 shadow-premium-lg sm:p-8">
+              <div className="mb-6 flex items-start gap-4 border-b border-border/60 pb-6">
+                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-accent/12 text-accent shadow-[inset_0_0_0_1px_rgba(212,175,55,0.2)]">
+                  <MapPin className="h-7 w-7" aria-hidden />
                 </div>
                 <div>
-                  <p className="font-medium text-foreground">Adresă</p>
-                  <p className="text-muted-foreground">Craiova, România</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-accent/10 text-accent flex-shrink-0">
-                  <Clock className="h-6 w-6" />
-                </div>
-                <div>
-                  <p className="font-medium text-foreground">Program</p>
-                  <p className="text-muted-foreground">
-                    Luni - Vineri: 09:00 - 20:00
+                  <p className="font-serif text-xl font-semibold text-foreground">
+                    {businessProfile.locationName}
                   </p>
-                  <p className="text-muted-foreground">Sâmbătă: 10:00 - 16:00</p>
+                  <p className="mt-1 leading-relaxed text-muted-foreground">
+                    {businessProfile.address.formatted}
+                  </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-accent/10 text-accent flex-shrink-0">
-                  <Phone className="h-6 w-6" />
+              <div className="mb-8 space-y-5">
+                <div className="flex items-start gap-4 rounded-xl bg-secondary/60 p-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent/12 text-accent">
+                    <Clock className="h-6 w-6" aria-hidden />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Program</p>
+                    <p className="text-muted-foreground">
+                      Luni - Vineri: 09:00 - 20:00
+                    </p>
+                    <p className="text-muted-foreground">
+                      Sâmbătă: 10:00 - 16:00
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <p className="font-medium text-foreground">Telefon</p>
-                  <a
-                    href="tel:+40757851882"
-                    className="text-accent hover:underline"
-                  >
-                    +40 757 851 882
-                  </a>
+
+                <div className="flex items-start gap-4 rounded-xl border border-[#D4AF37]/25 bg-[#D4AF37]/8 p-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent text-accent-foreground">
+                    <Phone className="h-6 w-6" aria-hidden />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Telefon</p>
+                    <a
+                      href={`tel:${businessProfile.telephone}`}
+                      className="font-serif text-xl font-semibold text-accent hover:underline"
+                    >
+                      {businessProfile.telephoneDisplay}
+                    </a>
+                  </div>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-accent/10 text-accent flex-shrink-0">
-                  <Mail className="h-6 w-6" />
-                </div>
-                <div>
-                  <p className="font-medium text-foreground">Email</p>
-                  <a
-                    href="mailto:Anasavovici@yahoo.com"
-                    className="text-accent hover:underline"
+              <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                <Button
+                  asChild
+                  className="premium-btn-primary rounded-full"
+                >
+                  <Link
+                    href={businessProfile.googleMapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2"
                   >
-                    Anasavovici@yahoo.com
+                    Deschide în Google Maps
+                    <ExternalLink className="h-4 w-4" />
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" className="rounded-full">
+                  <a
+                    href={`tel:${businessProfile.telephone}`}
+                    className="inline-flex items-center gap-2"
+                  >
+                    <Phone className="h-4 w-4" />
+                    Sună acum
                   </a>
-                </div>
+                </Button>
+                <Button asChild variant="outline" className="rounded-full">
+                  <a
+                    href={businessProfile.whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2"
+                  >
+                    <MessageCircle className="h-4 w-4" />
+                    WhatsApp
+                  </a>
+                </Button>
               </div>
             </div>
-          </div>
-
-          {/* Map Placeholder */}
-          <div className="relative aspect-square lg:aspect-[4/3] rounded-2xl overflow-hidden shadow-premium-lg bg-card">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91899.91756376377!2d23.729726068359374!3d44.31663560000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4752d700ac8c1097%3A0xe23a6e6b3e8d90e5!2sCraiova%2C%20Romania!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Claire's Studio Craiova Location"
-              className="absolute inset-0"
-            />
-          </div>
-        </div>
-
-        {/* SEO Keywords */}
-        <div className="mt-16 pt-12 border-t border-border">
-          <p className="text-center text-sm text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            <strong>{"Claire's Studio by Ana Savovici"}</strong> - Salonul tău de body
-            spa în Craiova. Oferim servicii premium de reflexoterapie Craiova,
-            masaj anticelulitic Craiova, drenaj limfatic Craiova, tratamente
-            faciale Craiova, remodelare corporală Craiova și radiofrecvență
-            Craiova. Vizitează-ne pentru o experiență de wellness de neuitat.
-          </p>
+          </ScrollReveal>
         </div>
       </div>
     </section>

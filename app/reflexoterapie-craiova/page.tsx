@@ -5,22 +5,24 @@ import {
   Moon,
   Zap,
   Shield,
-  Leaf,
-} from "lucide-react"
+  Leaf } from "lucide-react"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { WhatsAppButton } from "@/components/layout/whatsapp-button"
 import { MobileCTA } from "@/components/layout/mobile-cta"
-import { VisualGallery } from "@/components/shared/visual-gallery"
 import { ServiceHero } from "@/components/services/service-hero"
 import { ServiceBenefits } from "@/components/services/service-benefits"
 import { ServiceDetails } from "@/components/services/service-details"
 import { ServiceFAQ } from "@/components/services/service-faq"
 import { ServiceCTA } from "@/components/services/service-cta"
-import { claireImages, pageGalleries } from "@/lib/images/claire-beauty"
+import { JsonLd } from "@/components/seo/json-ld"
+import { claireImages } from "@/lib/images/claire-beauty"
+import { businessProfile, localBusinessId, postalAddressSchema } from "@/lib/seo/business"
+
+const pageUrl = `${businessProfile.url}/reflexoterapie-craiova`
 
 export const metadata: Metadata = {
-  title: "Reflexoterapie Craiova | Claire's Studio by Ana Savovici",
+  title: "Reflexoterapie Craiova | Claire Beauty Craiova",
   description:
     "Reflexoterapie profesională în Craiova. Tratament holistic pentru echilibrarea organismului, reducerea stresului și îmbunătățirea sănătății generale. Programează-te acum!",
   keywords: [
@@ -32,51 +34,46 @@ export const metadata: Metadata = {
     "wellness Craiova",
   ],
   openGraph: {
-    title: "Reflexoterapie Craiova | Claire's Studio",
+    title: "Reflexoterapie Craiova | Claire Beauty Craiova",
     description:
       "Reflexoterapie profesională în Craiova. Tratament holistic pentru echilibrarea organismului și reducerea stresului.",
     type: "website",
     locale: "ro_RO",
-  },
-}
+    url: pageUrl },
+  alternates: {
+    canonical: pageUrl } }
 
 const benefits = [
   {
     icon: Heart,
     title: "Îmbunătățirea Circulației",
     description:
-      "Stimulează fluxul sanguin și ajută la oxigenarea mai bună a țesuturilor din întregul corp.",
-  },
+      "Stimulează fluxul sanguin și ajută la oxigenarea mai bună a țesuturilor din întregul corp." },
   {
     icon: Brain,
     title: "Reducerea Stresului",
     description:
-      "Calmează sistemul nervos și reduce nivelul de cortizol, hormonul stresului.",
-  },
+      "Calmează sistemul nervos și reduce nivelul de cortizol, hormonul stresului." },
   {
     icon: Moon,
     title: "Somn Mai Bun",
     description:
-      "Îmbunătățește calitatea somnului și ajută la combaterea insomniei în mod natural.",
-  },
+      "Îmbunătățește calitatea somnului și ajută la combaterea insomniei în mod natural." },
   {
     icon: Zap,
     title: "Mai Multă Energie",
     description:
-      "Crește nivelul de energie și vitalitate prin echilibrarea sistemelor corpului.",
-  },
+      "Crește nivelul de energie și vitalitate prin echilibrarea sistemelor corpului." },
   {
     icon: Shield,
     title: "Sistem Imunitar Întărit",
     description:
-      "Stimulează funcțiile imunitare și ajută organismul să se apere mai eficient.",
-  },
+      "Stimulează funcțiile imunitare și ajută organismul să se apere mai eficient." },
   {
     icon: Leaf,
     title: "Detoxifiere Naturală",
     description:
-      "Ajută la eliminarea toxinelor și la curățarea organismului în mod natural.",
-  },
+      "Ajută la eliminarea toxinelor și la curățarea organismului în mod natural." },
 ]
 
 const whatIsFeatures = [
@@ -99,38 +96,100 @@ const faqs = [
   {
     question: "Ce este reflexoterapia?",
     answer:
-      "Reflexoterapia este o terapie holistică care se bazează pe stimularea punctelor reflexogene din tălpi, mâini sau urechi. Aceste puncte corespund diferitelor organe și sisteme ale corpului. Prin aplicarea unei presiuni controlate, se poate influența pozitiv funcționarea întregului organism.",
-  },
+      "Reflexoterapia este o terapie holistică care se bazează pe stimularea punctelor reflexogene din tălpi, mâini sau urechi. Aceste puncte corespund diferitelor organe și sisteme ale corpului. Prin aplicarea unei presiuni controlate, se poate influența pozitiv funcționarea întregului organism." },
   {
     question: "Este dureroasă reflexoterapia?",
     answer:
-      "Nu, reflexoterapia nu este dureroasă. Poți simți o presiune fermă, dar plăcută. Dacă anumite zone sunt sensibile, aceasta poate indica un dezechilibru în organul corespunzător. Tehnicianul va ajusta presiunea în funcție de confortul tău.",
-  },
+      "Nu, reflexoterapia nu este dureroasă. Poți simți o presiune fermă, dar plăcută. Dacă anumite zone sunt sensibile, aceasta poate indica un dezechilibru în organul corespunzător. Tehnicianul va ajusta presiunea în funcție de confortul tău." },
   {
     question: "Câte ședințe sunt necesare?",
     answer:
-      "Numărul de ședințe variază în funcție de problema abordată și de răspunsul individual. Pentru probleme acute, 3-5 ședințe pot fi suficiente. Pentru afecțiuni cronice sau pentru menținerea sănătății, se recomandă ședințe regulate, de obicei săptămânale sau bisăptămânale.",
-  },
+      "Numărul de ședințe variază în funcție de problema abordată și de răspunsul individual. Pentru probleme acute, 3-5 ședințe pot fi suficiente. Pentru afecțiuni cronice sau pentru menținerea sănătății, se recomandă ședințe regulate, de obicei săptămânale sau bisăptămânale." },
   {
     question: "Cât durează o ședință?",
     answer:
-      "O ședință completă de reflexoterapie durează aproximativ 45-60 de minute. Prima ședință poate dura puțin mai mult, deoarece include și o consultație pentru evaluarea stării tale generale de sănătate.",
-  },
+      "O ședință completă de reflexoterapie durează aproximativ 45-60 de minute. Prima ședință poate dura puțin mai mult, deoarece include și o consultație pentru evaluarea stării tale generale de sănătate." },
   {
     question: "Cine poate beneficia de reflexoterapie?",
     answer:
-      "Reflexoterapia este potrivită pentru aproape orice persoană, indiferent de vârstă. Este deosebit de benefică pentru cei care suferă de stres, anxietate, dureri de cap, probleme digestive, insomnie sau dureri cronice. Totuși, se recomandă consultarea unui medic în cazul unor afecțiuni grave.",
-  },
+      "Reflexoterapia este potrivită pentru aproape orice persoană, indiferent de vârstă. Este deosebit de benefică pentru cei care suferă de stres, anxietate, dureri de cap, probleme digestive, insomnie sau dureri cronice. Totuși, se recomandă consultarea unui medic în cazul unor afecțiuni grave." },
   {
     question: "Ce trebuie să fac înainte de ședință?",
     answer:
-      "Îți recomandăm să eviți mesele copioase cu 1-2 ore înainte de ședință și să bei suficientă apă. Vino cu picioarele curate și poartă haine confortabile. După ședință, bea multă apă pentru a ajuta la eliminarea toxinelor.",
-  },
+      "Îți recomandăm să eviți mesele copioase cu 1-2 ore înainte de ședință și să bei suficientă apă. Vino cu picioarele curate și poartă haine confortabile. După ședință, bea multă apă pentru a ajuta la eliminarea toxinelor." },
 ]
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "@id": localBusinessId,
+  name: businessProfile.name,
+  legalName: businessProfile.legalName,
+  url: businessProfile.url,
+  telephone: businessProfile.telephone,
+  email: businessProfile.email,
+  address: postalAddressSchema,
+  sameAs: businessProfile.sameAs,
+  areaServed: {
+    "@type": "City",
+    name: "Craiova" } }
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Reflexoterapie Craiova",
+  serviceType: "Reflexoterapie",
+  description:
+    "Reflexoterapie profesională în Craiova pentru echilibrarea organismului și reducerea stresului.",
+  url: pageUrl,
+  provider: {
+    "@id": localBusinessId },
+  areaServed: {
+    "@type": "City",
+    name: "Craiova" } }
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Acasă",
+      item: businessProfile.url },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Masaj Craiova",
+      item: `${businessProfile.url}/masaj-craiova` },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: "Reflexoterapie Craiova",
+      item: pageUrl },
+  ] }
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer } })) }
 
 export default function ReflexoterapiePage() {
   return (
     <>
+      <JsonLd
+        data={[
+          localBusinessSchema,
+          serviceSchema,
+          breadcrumbSchema,
+          faqSchema,
+        ]}
+      />
       <Header />
       <main>
         <ServiceHero
@@ -152,26 +211,16 @@ export default function ReflexoterapiePage() {
           title="Ce Este Reflexoterapia?"
           subtitle="Înțelege Tratamentul"
           description="Reflexoterapia este o terapie complementară antică care se bazează pe principiul că tălpile picioarelor conțin zone reflexogene care corespund tuturor organelor și sistemelor corpului. Prin stimularea acestor puncte, se poate îmbunătăți funcționarea organelor corespondente și se poate restabili echilibrul energetic al corpului."
-          image={claireImages.reflexoterapie}
+          image={claireImages.masajReflexoterapieEquip}
           features={whatIsFeatures}
         />
 
         <ServiceDetails
           title="Cum Decurge O Ședință?"
           subtitle="Experiența Ta"
-          description="La Claire's Studio, fiecare ședință de reflexoterapie este o experiență de relaxare profundă. Într-un ambient calm și primitor, tehnicianul nostru certificat va lucra pe punctele reflexogene ale tălpilor tale, adaptând presiunea și tehnicile în funcție de nevoile tale specifice."
-          image={claireImages.masajRelaxare}
+          description="La Claire Beauty Craiova, fiecare ședință de reflexoterapie este o experiență de relaxare profundă. Într-un ambient calm și primitor, tehnicianul nostru certificat va lucra pe punctele reflexogene ale tălpilor tale, adaptând presiunea și tehnicile în funcție de nevoile tale specifice."
           features={sessionFeatures}
           reversed
-        />
-
-        <VisualGallery
-          images={pageGalleries.reflexoterapie}
-          eyebrow="În salon"
-          title="Reflexoterapie la Claire Beauty"
-          description="Proceduri reale, tehnici profesionale și atmosferă relaxantă — așa arată experiența de reflexoterapie în cabinetul nostru."
-          className="bg-background"
-          columns={3}
         />
 
         <ServiceCTA
@@ -192,7 +241,7 @@ export default function ReflexoterapiePage() {
               Reflexoterapie Profesională în Craiova
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              {"Claire's Studio by Ana Savovici"} oferă servicii premium de{" "}
+              Claire Beauty Craiova oferă servicii premium de{" "}
               <strong>reflexoterapie în Craiova</strong>. Dacă cauți{" "}
               <strong>reflexoterapie plantară Craiova</strong>,{" "}
               <strong>masaj tălpi Craiova</strong> sau{" "}

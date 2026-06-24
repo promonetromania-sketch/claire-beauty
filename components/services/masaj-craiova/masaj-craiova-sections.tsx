@@ -1,7 +1,7 @@
 import type { ComponentType, ReactNode } from "react"
-import { VisualGallery } from "@/components/shared/visual-gallery"
+import { businessProfile } from "@/lib/seo/business"
 import { ClaireImage } from "@/components/ui/claire-image"
-import { claireImages, pageGalleries } from "@/lib/images/claire-beauty"
+import { claireImages } from "@/lib/images/claire-beauty"
 import Link from "next/link"
 import {
   Activity,
@@ -12,16 +12,13 @@ import {
   HeartPulse,
   MapPin,
   Sparkles,
-  Waves,
-} from "lucide-react"
+  Waves } from "lucide-react"
 import { ServiceCTA } from "@/components/services/service-cta"
 import { cn } from "@/lib/utils"
-import { masajCraiovaWhatsappMessage } from "@/lib/content/masaj-craiova"
 
 function SectionShell({
   children,
-  className,
-}: {
+  className }: {
   children: ReactNode
   className?: string
 }) {
@@ -36,8 +33,7 @@ function SectionHeading({
   eyebrow,
   title,
   description,
-  align = "center",
-}: {
+  align = "center" }: {
   eyebrow?: string
   title: string
   description?: string
@@ -83,8 +79,7 @@ function BulletList({ items }: { items: string[] }) {
 function InlineCTA({
   title,
   description,
-  primaryLabel = "Programează-te acum",
-}: {
+  primaryLabel = "Programează-te acum" }: {
   title: string
   description: string
   primaryLabel?: string
@@ -106,7 +101,7 @@ function InlineCTA({
             {primaryLabel}
           </Link>
           <Link
-            href={`https://wa.me/40757851882?text=${encodeURIComponent(masajCraiovaWhatsappMessage)}`}
+            href={businessProfile.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full border border-[#D4AF37]/50 bg-white/70 px-8 py-3 text-sm font-semibold text-[#0E2B1F] transition-all hover:bg-[#D4AF37]/10"
@@ -132,32 +127,28 @@ const serviceCards = [
     description:
       "Pentru dureri musculare, tensiune și recuperare după efort sau stat prelungit la birou.",
     icon: HeartPulse,
-    cta: "Masaj terapeutic Craiova",
-  },
+    cta: "Masaj terapeutic Craiova" },
   {
     title: "Masaj anticelulitic",
     href: "/masaj-anticelulitic-craiova",
     description:
       "Pentru reducerea celulitei, fermitate și remodelare corporală cu tehnici manuale dedicate.",
     icon: Waves,
-    cta: "Masaj anticelulitic Craiova",
-  },
+    cta: "Masaj anticelulitic Craiova" },
   {
     title: "Drenaj limfatic",
     href: "/drenaj-limfatic-craiova",
     description:
       "Pentru retenție de apă, picioare grele și detoxifiere prin stimularea circulației limfatice.",
     icon: Droplets,
-    cta: "Drenaj limfatic Craiova",
-  },
+    cta: "Drenaj limfatic Craiova" },
   {
     title: "Reflexoterapie",
     href: "/reflexoterapie-craiova",
     description:
       "Pentru echilibru general, reducerea stresului și relaxare profundă prin puncte reflexe.",
     icon: Footprints,
-    cta: "Reflexoterapie Craiova",
-  },
+    cta: "Reflexoterapie Craiova" },
 ] as const
 
 function ServiceHubCard({
@@ -165,8 +156,7 @@ function ServiceHubCard({
   href,
   description,
   icon: Icon,
-  cta,
-}: {
+  cta }: {
   title: string
   href: string
   description: string
@@ -555,19 +545,9 @@ export function MasajCraiovaSections() {
         </div>
       </SectionShell>
 
-      <VisualGallery
-        images={pageGalleries.masajCraiova}
-        eyebrow="În salon"
-        title="Masaj la Claire Beauty"
-        description="Tehnici reale, terapeută dedicată și atmosferă premium — așa arată experiența de masaj în cabinetul nostru."
-        className="bg-background"
-        columns={4}
-      />
-
       <ServiceCTA
         title="Programează-te pentru masaj Craiova"
         description="Începe tratamentul potrivit pentru dureri, celulită, retenție sau stres. Telefon: 0757 851 882 · WhatsApp: 0757 851 882 · Programare: clairebeauty.ro/contact"
-        whatsappMessage={masajCraiovaWhatsappMessage}
       />
     </>
   )

@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { ClaireImage } from "@/components/ui/claire-image"
 import { claireImages } from "@/lib/images/claire-beauty"
+import { businessProfile } from "@/lib/seo/business"
 import { Phone, Mail, MapPin, Clock, Instagram, Facebook } from "lucide-react"
 
 const services = [
@@ -13,9 +14,17 @@ const services = [
 
 const quickLinks = [
   { name: "Acasă", href: "/" },
+  { name: "Blog", href: "/blog" },
   { name: "Despre Noi", href: "/#despre" },
-  { name: "Servicii", href: "/#servicii" },
+  { name: "Servicii", href: "/#servicii-populare" },
   { name: "Contact", href: "/contact" },
+]
+
+const legalLinks = [
+  { name: "Confidențialitate", href: "/politica-confidentialitate" },
+  { name: "GDPR", href: "/gdpr" },
+  { name: "Politica cookie", href: "/politica-cookie" },
+  { name: "Termeni și condiții", href: "/termeni-si-conditii" },
 ]
 
 const footerLinkClassName =
@@ -35,14 +44,15 @@ export function Footer() {
                   {...claireImages.logo}
                   fill
                   sizes="64px"
+                  className="object-cover"
                 />
               </div>
             </Link>
             <p className="mb-1 font-serif text-2xl font-bold tracking-[0.5px] text-[#FFF9F2]">
-              {"Claire's Studio"}
+              Claire Beauty Craiova
             </p>
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-[#D4AF37]">
-              by Ana Savovici
+              Body Spa
             </p>
             <p className="text-sm leading-relaxed text-[#FFF9F2]/78">
               Salonul tău premium de body spa în Craiova. Oferim tratamente de
@@ -105,7 +115,14 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3 text-sm text-[#FFF9F2]/82">
                 <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-[#D4AF37]" />
-                <span>Craiova, România</span>
+                <a
+                  href={businessProfile.googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={footerLinkClassName}
+                >
+                  {businessProfile.address.formatted}
+                </a>
               </li>
               <li className="flex items-start gap-3 text-sm text-[#FFF9F2]/82">
                 <Clock className="mt-0.5 h-5 w-5 shrink-0 text-[#D4AF37]" />
@@ -144,9 +161,23 @@ export function Footer() {
         <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="text-sm text-[#FFF9F2]/58">
-              © {new Date().getFullYear()} {"Claire's Studio by Ana Savovici"}.
+              © {new Date().getFullYear()} Claire Beauty Craiova.
               Toate drepturile rezervate.
             </p>
+            <nav
+              aria-label="Legal"
+              className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2"
+            >
+              {legalLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm text-[#FFF9F2]/58 transition-colors hover:text-[#D4AF37]"
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </nav>
             <p className="text-sm font-semibold uppercase tracking-[0.12em] text-[#D4AF37]/85">
               Body Spa Premium Craiova
             </p>

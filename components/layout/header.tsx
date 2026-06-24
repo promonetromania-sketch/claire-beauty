@@ -84,7 +84,7 @@ const mobileSubNavItemClassName = cn(
 )
 
 const ctaButtonClassName =
-  "rounded-full border border-[#D4AF37]/70 bg-[#0E2B1F] px-6 font-serif text-sm font-bold tracking-[0.5px] text-[#D4AF37] transition-all duration-250 ease-[cubic-bezier(0.4,0,0.2,1)] hover:bg-[#0E2B1F] hover:text-[#F0D78C] hover:shadow-[0_0_20px_rgba(212,175,55,0.28)]"
+  "rounded-full border border-[#D4AF37]/80 bg-[#0E2B1F] px-7 py-2.5 font-serif text-sm font-bold tracking-[0.5px] text-[#D4AF37] shadow-[0_4px_20px_rgba(14,43,31,0.2),0_0_0_1px_rgba(212,175,55,0.15)] transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] hover:scale-[1.02] hover:bg-[#0E2B1F] hover:text-[#F0D78C] hover:shadow-[0_0_28px_rgba(212,175,55,0.35)]"
 
 function isNavLinkActive(pathname: string, href: string) {
   return href === "/" ? pathname === "/" : pathname === href
@@ -131,21 +131,22 @@ export function Header() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 border-b backdrop-blur-md transition-all duration-250 ease-[cubic-bezier(0.4,0,0.2,1)]",
+        "fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]",
         isScrolled
-          ? "border-[#D4AF37]/20 bg-[#FFF9F2]/92 shadow-[0_10px_30px_rgba(14,43,31,0.08)] backdrop-blur-lg"
-          : "border-[#D4AF37]/12 bg-[#FFF9F2]/78",
+          ? "glass-header-scrolled border-[#D4AF37]/25 shadow-[0_8px_32px_rgba(14,43,31,0.1)]"
+          : "glass-header border-[#D4AF37]/15",
       )}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
-          <Link href="/" className="flex items-center gap-3">
-            <div className="relative h-14 w-14 overflow-hidden rounded-full ring-1 ring-[#D4AF37]/35">
+          <Link href="/" className="group flex items-center gap-3">
+            <div className="relative h-14 w-14 overflow-hidden rounded-full ring-2 ring-[#D4AF37]/40 shadow-[0_0_16px_rgba(212,175,55,0.15)] transition-all duration-300 group-hover:ring-[#D4AF37]/65 group-hover:shadow-[0_0_22px_rgba(212,175,55,0.28)]">
               <ClaireImage
                 {...claireImages.logo}
                 fill
                 priority
-                sizes="48px"
+                sizes="56px"
+                className="object-cover"
               />
             </div>
             <div className="hidden sm:block">
@@ -241,7 +242,7 @@ export function Header() {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="border-t border-[#D4AF37]/20 bg-[#FFF9F2]/95 backdrop-blur-lg md:hidden">
+        <div className="border-t border-[#D4AF37]/20 glass-header md:hidden">
           <div className="space-y-2 px-4 py-6">
             {mainNavigation.map((item) =>
               item.type === "link" ? (

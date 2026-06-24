@@ -1,7 +1,7 @@
 import type { ComponentType, ReactNode } from "react"
-import { VisualGallery } from "@/components/shared/visual-gallery"
+import { businessProfile } from "@/lib/seo/business"
 import { ClaireImage } from "@/components/ui/claire-image"
-import { claireImages, pageGalleries } from "@/lib/images/claire-beauty"
+import { claireImages } from "@/lib/images/claire-beauty"
 import Link from "next/link"
 import {
   AlertTriangle,
@@ -12,16 +12,13 @@ import {
   Sparkles,
   Target,
   Timer,
-  Zap,
-} from "lucide-react"
+  Zap } from "lucide-react"
 import { ServiceCTA } from "@/components/services/service-cta"
 import { cn } from "@/lib/utils"
-import { hifuWhatsappMessage } from "@/lib/content/hifu"
 
 function SectionShell({
   children,
-  className,
-}: {
+  className }: {
   children: ReactNode
   className?: string
 }) {
@@ -36,8 +33,7 @@ function SectionHeading({
   eyebrow,
   title,
   description,
-  align = "center",
-}: {
+  align = "center" }: {
   eyebrow?: string
   title: string
   description?: string
@@ -83,8 +79,7 @@ function BulletList({ items }: { items: string[] }) {
 function InfoCard({
   icon: Icon,
   title,
-  children,
-}: {
+  children }: {
   icon: ComponentType<{ className?: string }>
   title: string
   children: ReactNode
@@ -104,8 +99,7 @@ function InfoCard({
 
 function ComparisonCard({
   title,
-  items,
-}: {
+  items }: {
   title: string
   items: string[]
 }) {
@@ -122,8 +116,7 @@ function ComparisonCard({
 function InlineCTA({
   title,
   description,
-  primaryLabel = "Programează-te acum",
-}: {
+  primaryLabel = "Programează-te acum" }: {
   title: string
   description: string
   primaryLabel?: string
@@ -145,7 +138,7 @@ function InlineCTA({
             {primaryLabel}
           </Link>
           <Link
-            href={`https://wa.me/40757851882?text=${encodeURIComponent(hifuWhatsappMessage)}`}
+            href={businessProfile.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full border border-[#D4AF37]/50 bg-white/70 px-8 py-3 text-sm font-semibold text-[#0E2B1F] transition-all hover:bg-[#D4AF37]/10"
@@ -167,22 +160,19 @@ function InlineCTA({
 const resultsTimeline = [
   {
     period: "Imediat după tratament",
-    items: ["pielea poate părea ușor mai fermă"],
-  },
+    items: ["pielea poate părea ușor mai fermă"] },
   {
     period: "După 2–4 săptămâni",
     items: [
       "conturul feței începe să se îmbunătățească",
       "pielea devine mai întinsă",
-    ],
-  },
+    ] },
   {
     period: "După 2–3 luni",
     items: [
       "colagenul este stimulat complet",
       "efectul de lifting devine vizibil",
-    ],
-  },
+    ] },
 ] as const
 
 export function HifuSections() {
@@ -220,7 +210,7 @@ export function HifuSections() {
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-premium-lg">
             <ClaireImage
-              {...claireImages.hifuCorporal}
+              {...claireImages.hifuFacialTehnologie}
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
@@ -600,19 +590,9 @@ export function HifuSections() {
         primaryLabel="Programează-te acum"
       />
 
-      <VisualGallery
-        images={pageGalleries.hifu}
-        eyebrow="În salon"
-        title="HIFU la Claire Beauty"
-        description="Tratament real, echipament profesional și rezultate vizibile — exact cum arată experiența HIFU în cabinetul nostru."
-        className="bg-background"
-        columns={3}
-      />
-
       <ServiceCTA
         title="Programează-te pentru HIFU Craiova"
         description="Lifting facial fără operație, fermitate și rejuvenare profundă. Telefon: 0757 851 882."
-        whatsappMessage={hifuWhatsappMessage}
       />
     </>
   )

@@ -7,40 +7,35 @@ import { JsonLd } from "@/components/seo/json-ld"
 import { ServiceFAQ } from "@/components/services/service-faq"
 import { MasajCraiovaHero } from "@/components/services/masaj-craiova/masaj-craiova-hero"
 import { MasajCraiovaSections } from "@/components/services/masaj-craiova/masaj-craiova-sections"
+import { HubBlogLinks } from "@/components/blog/hub-blog-links"
 import {
-  masajCraiovaFaqs,
-  masajCraiovaWhatsappMessage,
-} from "@/lib/content/masaj-craiova"
-import { businessProfile, localBusinessId } from "@/lib/seo/business"
+  masajCraiovaFaqs} from "@/lib/content/masaj-craiova"
+import { hubBlogLinks } from "@/lib/seo/traffic-push"
+import { businessProfile, localBusinessId, postalAddressSchema } from "@/lib/seo/business"
 
 const pageUrl = `${businessProfile.url}/masaj-craiova`
 
 export const metadata: Metadata = {
-  title:
-    "Masaj Craiova – Anticelulitic, Terapeutic, Drenaj Limfatic și Reflexoterapie",
+  title: "Masaj Craiova – Tratamente Profesionale pentru Relaxare și Recuperare | Claire Beauty Craiova",
   description:
-    "Masaj Craiova pentru dureri, celulită și retenție de apă. Anticelulitic, terapeutic, drenaj limfatic și reflexoterapie. Alege tratamentul potrivit!",
+    "Masaj Craiova la Claire Beauty: alege tratamentul potrivit pentru relaxare, recuperare musculară sau wellness. Consultație personalizată și programări rapide.",
   keywords: [
     "masaj Craiova",
     "salon masaj Craiova",
-    "masaj terapeutic Craiova",
-    "masaj anticelulitic Craiova",
-    "drenaj limfatic Craiova",
-    "reflexoterapie Craiova",
+    "masaj profesional Craiova",
+    "tratament masaj Craiova",
+    "Claire Beauty Craiova",
   ],
   alternates: {
-    canonical: pageUrl,
-  },
+    canonical: pageUrl },
   openGraph: {
     title:
-      "Masaj Craiova – Anticelulitic, Terapeutic, Drenaj Limfatic și Reflexoterapie",
+      "Masaj Craiova – Tratamente Profesionale pentru Relaxare și Recuperare | Claire Beauty Craiova",
     description:
-      "Masaj Craiova pentru dureri, celulită și retenție de apă. Anticelulitic, terapeutic, drenaj limfatic și reflexoterapie.",
+      "Masaj Craiova la Claire Beauty: alege tratamentul potrivit pentru relaxare, recuperare musculară sau wellness.",
     type: "website",
     locale: "ro_RO",
-    url: pageUrl,
-  },
-}
+    url: pageUrl } }
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -51,18 +46,11 @@ const localBusinessSchema = {
   url: businessProfile.url,
   telephone: businessProfile.telephone,
   email: businessProfile.email,
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: businessProfile.address.locality,
-    addressRegion: businessProfile.address.region,
-    addressCountry: businessProfile.address.country,
-  },
+  address: postalAddressSchema,
   sameAs: businessProfile.sameAs,
   areaServed: {
     "@type": "City",
-    name: "Craiova",
-  },
-}
+    name: "Craiova" } }
 
 const serviceSchema = {
   "@context": "https://schema.org",
@@ -73,13 +61,10 @@ const serviceSchema = {
     "Servicii de masaj în Craiova: masaj terapeutic, masaj anticelulitic, drenaj limfatic și reflexoterapie.",
   url: pageUrl,
   provider: {
-    "@id": localBusinessId,
-  },
+    "@id": localBusinessId },
   areaServed: {
     "@type": "City",
-    name: "Craiova",
-  },
-}
+    name: "Craiova" } }
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -89,16 +74,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Acasă",
-      item: businessProfile.url,
-    },
+      item: businessProfile.url },
     {
       "@type": "ListItem",
       position: 2,
       name: "Masaj Craiova",
-      item: pageUrl,
-    },
-  ],
-}
+      item: pageUrl },
+  ] }
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -108,10 +90,7 @@ const faqSchema = {
     name: faq.question,
     acceptedAnswer: {
       "@type": "Answer",
-      text: faq.answer,
-    },
-  })),
-}
+      text: faq.answer } })) }
 
 export default function MasajCraiovaPage() {
   return (
@@ -128,6 +107,7 @@ export default function MasajCraiovaPage() {
       <main className="pb-24 md:pb-0">
         <MasajCraiovaHero />
         <MasajCraiovaSections />
+        <HubBlogLinks links={hubBlogLinks.masaj} />
         <ServiceFAQ
           title="Întrebări frecvente despre masaj în Craiova"
           subtitle="FAQ"
@@ -136,7 +116,7 @@ export default function MasajCraiovaPage() {
       </main>
       <Footer />
       <WhatsAppButton />
-      <MobileCTA layout="triple" whatsappMessage={masajCraiovaWhatsappMessage} />
+      <MobileCTA layout="triple" />
     </>
   )
 }

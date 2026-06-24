@@ -1,7 +1,7 @@
 import type { ComponentType, ReactNode } from "react"
-import { VisualGallery } from "@/components/shared/visual-gallery"
+import { businessProfile } from "@/lib/seo/business"
 import { ClaireImage } from "@/components/ui/claire-image"
-import { claireImages, pageGalleries } from "@/lib/images/claire-beauty"
+import { claireImages } from "@/lib/images/claire-beauty"
 import Link from "next/link"
 import {
   ArrowRight,
@@ -12,16 +12,13 @@ import {
   PenLine,
   Sparkles,
   XCircle,
-  Zap,
-} from "lucide-react"
+  Zap } from "lucide-react"
 import { ServiceCTA } from "@/components/services/service-cta"
 import { cn } from "@/lib/utils"
-import { tratamenteFacialeWhatsappMessage } from "@/lib/content/tratamente-faciale-craiova"
 
 function SectionShell({
   children,
-  className,
-}: {
+  className }: {
   children: ReactNode
   className?: string
 }) {
@@ -36,8 +33,7 @@ function SectionHeading({
   eyebrow,
   title,
   description,
-  align = "center",
-}: {
+  align = "center" }: {
   eyebrow?: string
   title: string
   description?: string
@@ -83,8 +79,7 @@ function BulletList({ items }: { items: string[] }) {
 function InlineCTA({
   title,
   description,
-  primaryLabel = "Programează-te acum",
-}: {
+  primaryLabel = "Programează-te acum" }: {
   title: string
   description: string
   primaryLabel?: string
@@ -106,7 +101,7 @@ function InlineCTA({
             {primaryLabel}
           </Link>
           <Link
-            href={`https://wa.me/40757851882?text=${encodeURIComponent(tratamenteFacialeWhatsappMessage)}`}
+            href={businessProfile.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full border border-[#D4AF37]/50 bg-white/70 px-8 py-3 text-sm font-semibold text-[#0E2B1F] transition-all hover:bg-[#D4AF37]/10"
@@ -131,44 +126,38 @@ const procedureCards = [
     href: "/hydrafacial-craiova",
     description:
       "Curățare profundă și hidratare instant pentru ten încărcat, pori vizibili și luminozitate imediată.",
-    icon: Droplets,
-  },
+    icon: Droplets },
   {
     title: "Dermapen",
     href: "/dermapen-craiova",
     description:
       "Stimulare colagen pentru riduri fine, cicatrici și textură neuniformă, cu acțiune în profunzime.",
-    icon: PenLine,
-  },
+    icon: PenLine },
   {
     title: "Microneedling",
     href: "/microneedling-craiova",
     description:
       "Regenerare intensivă pentru cicatrici post-acnee, pori dilatați și pete pigmentare.",
-    icon: Layers,
-  },
+    icon: Layers },
   {
     title: "HIFU",
-    href: "/hifu-craiova",
+    href: "/hifu-facial-craiova",
     description:
       "Lifting facial fără operație pentru piele lăsată, fermitate redusă și tonifiere progresivă.",
-    icon: Zap,
-  },
+    icon: Zap },
   {
     title: "Microdermabraziune",
     href: "/microdermabraziune-craiova",
     description:
       "Curățare și exfoliere pentru ten încărcat, piele ternă și întreținere cu textură îmbunătățită.",
-    icon: Sparkles,
-  },
+    icon: Sparkles },
 ] as const
 
 function ProcedureHubCard({
   title,
   href,
   description,
-  icon: Icon,
-}: {
+  icon: Icon }: {
   title: string
   href: string
   description: string
@@ -203,15 +192,13 @@ const treatmentDetails = [
     href: "/hydrafacial-craiova",
     idealFor: ["pori încărcați", "ten tern", "rezultate imediate"],
     result: "ten curat și luminos după prima ședință",
-    cta: "Vezi Hydrafacial",
-  },
+    cta: "Vezi Hydrafacial" },
   {
     title: "Dermapen – stimularea colagenului",
     href: "/dermapen-craiova",
     idealFor: ["riduri fine", "cicatrici", "textură neuniformă"],
     result: "lucrează în profunzime, nu doar la suprafață",
-    cta: "Vezi Dermapen",
-  },
+    cta: "Vezi Dermapen" },
   {
     title: "Microneedling – regenerare intensivă",
     href: "/microneedling-craiova",
@@ -222,26 +209,23 @@ const treatmentDetails = [
     ],
     result:
       "unul dintre cele mai eficiente tratamente pentru refacerea pielii",
-    cta: "Vezi microneedling",
-  },
+    cta: "Vezi microneedling" },
   {
     title: "HIFU – lifting fără operație",
-    href: "/hifu-craiova",
+    href: "/hifu-facial-craiova",
     idealFor: [
       "piele lăsată",
       "efect de lifting",
       "rezultate fără intervenții invazive",
     ],
     result: "stimulează colagenul în profunzime",
-    cta: "Vezi HIFU",
-  },
+    cta: "Vezi HIFU" },
   {
     title: "Microdermabraziune – curățare și exfoliere",
     href: "/microdermabraziune-craiova",
     idealFor: ["ten încărcat", "piele ternă", "întreținere"],
     result: "îmbunătățește textura pielii rapid",
-    cta: "Vezi procedura",
-  },
+    cta: "Vezi procedura" },
 ] as const
 
 const comparisonRows = [
@@ -291,7 +275,7 @@ export function TratamenteFacialeCraiovaSections() {
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-premium-lg">
             <ClaireImage
-              {...claireImages.hydrafacial}
+              {...claireImages.tratamentFacial2}
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
@@ -310,23 +294,19 @@ export function TratamenteFacialeCraiovaSections() {
             {
               problem: "curățare și hidratare",
               link: "/hydrafacial-craiova",
-              label: "Hydrafacial",
-            },
+              label: "Hydrafacial" },
             {
               problem: "cicatrici și textură",
               link: "/microneedling-craiova",
-              label: "microneedling",
-            },
+              label: "microneedling" },
             {
               problem: "colagen și regenerare",
               link: "/dermapen-craiova",
-              label: "Dermapen",
-            },
+              label: "Dermapen" },
             {
               problem: "lifting și fermitate",
-              link: "/hifu-craiova",
-              label: "HIFU",
-            },
+              link: "/hifu-facial-craiova",
+              label: "HIFU" },
           ].map((item) => (
             <div
               key={item.label}
@@ -553,7 +533,7 @@ export function TratamenteFacialeCraiovaSections() {
               </Link>{" "}
               sau{" "}
               <Link
-                href="/hifu-craiova"
+                href="/hifu-facial-craiova"
                 className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
               >
                 HIFU
@@ -625,19 +605,9 @@ export function TratamenteFacialeCraiovaSections() {
         primaryLabel="Programează-te acum"
       />
 
-      <VisualGallery
-        images={pageGalleries.tratamenteFaciale}
-        eyebrow="În salon"
-        title="Tratamente faciale la Claire Beauty"
-        description="Proceduri reale, tehnici profesionale și rezultate vizibile — așa arată experiența facială în cabinetul nostru."
-        className="bg-background"
-        columns={4}
-      />
-
       <ServiceCTA
         title="Începe transformarea tenului tău"
         description="Programează-te acum pentru tratamente faciale Craiova: Hydrafacial, Dermapen, microneedling, HIFU și microdermabraziune. Telefon: 0757 851 882."
-        whatsappMessage={tratamenteFacialeWhatsappMessage}
       />
     </>
   )

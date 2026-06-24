@@ -8,15 +8,13 @@ import { ServiceFAQ } from "@/components/services/service-faq"
 import { ElectrostimulareHero } from "@/components/services/electrostimulare/electrostimulare-hero"
 import { ElectrostimulareSections } from "@/components/services/electrostimulare/electrostimulare-sections"
 import {
-  electrostimulareFaqs,
-  electrostimulareWhatsappMessage,
-} from "@/lib/content/electrostimulare"
-import { businessProfile, localBusinessId } from "@/lib/seo/business"
+  electrostimulareFaqs} from "@/lib/content/electrostimulare"
+import { businessProfile, localBusinessId, postalAddressSchema } from "@/lib/seo/business"
 
 const pageUrl = `${businessProfile.url}/electrostimulare-craiova`
 
 export const metadata: Metadata = {
-  title: "Electrostimulare Craiova – Tonifiere Musculară și Remodelare Corporală",
+  title: "Electrostimulare Craiova – Tonifiere Musculară și Remodelare | Claire Beauty Craiova",
   description:
     "Electrostimulare Craiova pentru tonifiere rapidă, ardere calorică și remodelare corporală. Rezultate vizibile fără sală. Programează-te!",
   keywords: [
@@ -28,17 +26,14 @@ export const metadata: Metadata = {
     "fermitate corporală Craiova",
   ],
   alternates: {
-    canonical: pageUrl,
-  },
+    canonical: pageUrl },
   openGraph: {
-    title: "Electrostimulare Craiova – Tonifiere Musculară și Remodelare Corporală",
+    title: "Electrostimulare Craiova – Tonifiere Musculară și Remodelare | Claire Beauty Craiova",
     description:
       "Electrostimulare Craiova pentru tonifiere rapidă, ardere calorică și remodelare corporală.",
     type: "website",
     locale: "ro_RO",
-    url: pageUrl,
-  },
-}
+    url: pageUrl } }
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -49,18 +44,11 @@ const localBusinessSchema = {
   url: businessProfile.url,
   telephone: businessProfile.telephone,
   email: businessProfile.email,
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: businessProfile.address.locality,
-    addressRegion: businessProfile.address.region,
-    addressCountry: businessProfile.address.country,
-  },
+  address: postalAddressSchema,
   sameAs: businessProfile.sameAs,
   areaServed: {
     "@type": "City",
-    name: "Craiova",
-  },
-}
+    name: "Craiova" } }
 
 const serviceSchema = {
   "@context": "https://schema.org",
@@ -71,13 +59,10 @@ const serviceSchema = {
     "Electrostimulare în Craiova pentru tonifiere musculară, ardere calorică și remodelare corporală.",
   url: pageUrl,
   provider: {
-    "@id": localBusinessId,
-  },
+    "@id": localBusinessId },
   areaServed: {
     "@type": "City",
-    name: "Craiova",
-  },
-}
+    name: "Craiova" } }
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -87,16 +72,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Acasă",
-      item: businessProfile.url,
-    },
+      item: businessProfile.url },
     {
       "@type": "ListItem",
       position: 2,
       name: "Electrostimulare Craiova",
-      item: pageUrl,
-    },
-  ],
-}
+      item: pageUrl },
+  ] }
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -106,10 +88,7 @@ const faqSchema = {
     name: faq.question,
     acceptedAnswer: {
       "@type": "Answer",
-      text: faq.answer,
-    },
-  })),
-}
+      text: faq.answer } })) }
 
 export default function ElectrostimularePage() {
   return (
@@ -136,7 +115,6 @@ export default function ElectrostimularePage() {
       <WhatsAppButton />
       <MobileCTA
         layout="triple"
-        whatsappMessage={electrostimulareWhatsappMessage}
       />
     </>
   )

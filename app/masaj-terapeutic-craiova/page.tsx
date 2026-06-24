@@ -8,16 +8,14 @@ import { ServiceFAQ } from "@/components/services/service-faq"
 import { MasajTerapeuticHero } from "@/components/services/masaj-terapeutic/masaj-terapeutic-hero"
 import { MasajTerapeuticSections } from "@/components/services/masaj-terapeutic/masaj-terapeutic-sections"
 import {
-  masajTerapeuticFaqs,
-  masajTerapeuticWhatsappMessage,
-} from "@/lib/content/masaj-terapeutic"
-import { businessProfile, localBusinessId } from "@/lib/seo/business"
+  masajTerapeuticFaqs} from "@/lib/content/masaj-terapeutic"
+import { businessProfile, localBusinessId, postalAddressSchema } from "@/lib/seo/business"
 
 const pageUrl = `${businessProfile.url}/masaj-terapeutic-craiova`
 
 export const metadata: Metadata = {
   title:
-    "Masaj Terapeutic Craiova – Tratament pentru Dureri de Spate și Tensiune Musculară",
+    "Masaj Terapeutic Craiova – Tratament pentru Dureri de Spate și Tensiune Musculară | Claire Beauty Craiova",
   description:
     "Masaj terapeutic Craiova pentru dureri de spate, tensiune musculară și mobilitate redusă. Reduce disconfortul și îmbunătățește starea generală. Programează-te!",
   keywords: [
@@ -30,18 +28,15 @@ export const metadata: Metadata = {
     "salon body spa Craiova",
   ],
   alternates: {
-    canonical: pageUrl,
-  },
+    canonical: pageUrl },
   openGraph: {
     title:
-      "Masaj Terapeutic Craiova – Tratament pentru Dureri de Spate și Tensiune Musculară",
+      "Masaj Terapeutic Craiova – Tratament pentru Dureri de Spate și Tensiune Musculară | Claire Beauty Craiova",
     description:
       "Masaj terapeutic Craiova pentru dureri de spate, tensiune musculară și mobilitate redusă.",
     type: "website",
     locale: "ro_RO",
-    url: pageUrl,
-  },
-}
+    url: pageUrl } }
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -52,18 +47,11 @@ const localBusinessSchema = {
   url: businessProfile.url,
   telephone: businessProfile.telephone,
   email: businessProfile.email,
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: businessProfile.address.locality,
-    addressRegion: businessProfile.address.region,
-    addressCountry: businessProfile.address.country,
-  },
+  address: postalAddressSchema,
   sameAs: businessProfile.sameAs,
   areaServed: {
     "@type": "City",
-    name: "Craiova",
-  },
-}
+    name: "Craiova" } }
 
 const serviceSchema = {
   "@context": "https://schema.org",
@@ -74,13 +62,10 @@ const serviceSchema = {
     "Masaj terapeutic în Craiova pentru dureri de spate, tensiune musculară, recuperare și mobilitate.",
   url: pageUrl,
   provider: {
-    "@id": localBusinessId,
-  },
+    "@id": localBusinessId },
   areaServed: {
     "@type": "City",
-    name: "Craiova",
-  },
-}
+    name: "Craiova" } }
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -90,10 +75,7 @@ const faqSchema = {
     name: faq.question,
     acceptedAnswer: {
       "@type": "Answer",
-      text: faq.answer,
-    },
-  })),
-}
+      text: faq.answer } })) }
 
 export default function MasajTerapeuticPage() {
   return (
@@ -113,7 +95,6 @@ export default function MasajTerapeuticPage() {
       <WhatsAppButton />
       <MobileCTA
         layout="triple"
-        whatsappMessage={masajTerapeuticWhatsappMessage}
       />
     </>
   )

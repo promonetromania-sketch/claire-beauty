@@ -8,17 +8,15 @@ import { ServiceFAQ } from "@/components/services/service-faq"
 import { MasajAnticeluliticHero } from "@/components/services/masaj-anticelulitic/masaj-anticelulitic-hero"
 import { MasajAnticeluliticSections } from "@/components/services/masaj-anticelulitic/masaj-anticelulitic-sections"
 import {
-  masajAnticeluliticFaqs,
-  masajAnticeluliticWhatsappMessage,
-} from "@/lib/content/masaj-anticelulitic"
-import { businessProfile, localBusinessId } from "@/lib/seo/business"
+  masajAnticeluliticFaqs} from "@/lib/content/masaj-anticelulitic"
+import { businessProfile, localBusinessId, postalAddressSchema } from "@/lib/seo/business"
 
 const pageUrl = `${businessProfile.url}/masaj-anticelulitic-craiova`
 
 export const metadata: Metadata = {
-  title: "Masaj Anticelulitic Craiova – Scapă de Celulită Rapid | Claire Beauty",
+  title: "Masaj Anticelulitic Craiova – Tratament Profesional pentru Tonifiere | Claire Beauty Craiova",
   description:
-    "Masaj anticelulitic Craiova la Claire Beauty. Reducere vizibilă a celulitei, piele fermă și remodelare corporală. Programează-te acum!",
+    "Masaj anticelulitic Craiova la Claire Beauty: tehnici specializate pentru tonifiere, circulație și aspect îmbunătățit al pielii. Programează consultația ta.",
   keywords: [
     "masaj anticelulitic Craiova",
     "remodelare corporală Craiova",
@@ -29,18 +27,15 @@ export const metadata: Metadata = {
     "masaj anticelulitic manual Craiova",
   ],
   alternates: {
-    canonical: pageUrl,
-  },
+    canonical: pageUrl },
   openGraph: {
     title:
-      "Masaj Anticelulitic Craiova – Scapă de Celulită Rapid | Claire Beauty",
+      "Masaj Anticelulitic Craiova – Tratament Profesional pentru Tonifiere | Claire Beauty Craiova",
     description:
-      "Masaj anticelulitic Craiova la Claire Beauty. Reducere vizibilă a celulitei, piele fermă și remodelare corporală.",
+      "Masaj anticelulitic Craiova la Claire Beauty: tehnici specializate pentru tonifiere, circulație și aspect îmbunătățit al pielii.",
     type: "website",
     locale: "ro_RO",
-    url: pageUrl,
-  },
-}
+    url: pageUrl } }
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -51,18 +46,11 @@ const localBusinessSchema = {
   url: businessProfile.url,
   telephone: businessProfile.telephone,
   email: businessProfile.email,
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: businessProfile.address.locality,
-    addressRegion: businessProfile.address.region,
-    addressCountry: businessProfile.address.country,
-  },
+  address: postalAddressSchema,
   sameAs: businessProfile.sameAs,
   areaServed: {
     "@type": "City",
-    name: "Craiova",
-  },
-}
+    name: "Craiova" } }
 
 const serviceSchema = {
   "@context": "https://schema.org",
@@ -73,13 +61,10 @@ const serviceSchema = {
     "Masaj anticelulitic în Craiova pentru reducerea celulitei, fermitatea pielii și remodelare corporală.",
   url: pageUrl,
   provider: {
-    "@id": localBusinessId,
-  },
+    "@id": localBusinessId },
   areaServed: {
     "@type": "City",
-    name: "Craiova",
-  },
-}
+    name: "Craiova" } }
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -89,10 +74,7 @@ const faqSchema = {
     name: faq.question,
     acceptedAnswer: {
       "@type": "Answer",
-      text: faq.answer,
-    },
-  })),
-}
+      text: faq.answer } })) }
 
 export default function MasajAnticeluliticPage() {
   return (
@@ -112,7 +94,6 @@ export default function MasajAnticeluliticPage() {
       <WhatsAppButton />
       <MobileCTA
         layout="triple"
-        whatsappMessage={masajAnticeluliticWhatsappMessage}
       />
     </>
   )

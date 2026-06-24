@@ -27,4 +27,14 @@ export const radiofrecventaFaqs = [
     answer:
       "Depinde de zona tratată, durata ședinței și pachetul ales. Rezultatele depind de numărul de ședințe și combinațiile incluse în protocol.",
   },
+  {
+    question: "Există contraindicații pentru radiofrecvență corporală?",
+    answer:
+      "Da. Se evită în sarcină, în caz de implanturi metalice în zona tratată, afecțiuni dermatologice active sau febră. La Claire Beauty Craiova evaluăm starea ta înainte de prima ședință.",
+  },
+  {
+    question: "Se poate combina radiofrecvența cu electrostimulare sau masaj?",
+    answer:
+      "Da, combinațiile sunt frecvente în protocoalele de remodelare corporală. RF susține fermitatea, iar electrostimularea sau masajul anticelulitic completează conturul și circulația.",
+  },
 ] as const

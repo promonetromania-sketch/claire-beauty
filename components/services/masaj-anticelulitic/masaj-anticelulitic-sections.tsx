@@ -1,7 +1,7 @@
 import type { ComponentType, ReactNode } from "react"
-import { VisualGallery } from "@/components/shared/visual-gallery"
+import { businessProfile } from "@/lib/seo/business"
 import { ClaireImage } from "@/components/ui/claire-image"
-import { claireImages, pageGalleries } from "@/lib/images/claire-beauty"
+import { claireImages } from "@/lib/images/claire-beauty"
 import Link from "next/link"
 import {
   Activity,
@@ -15,16 +15,13 @@ import {
   Timer,
   Users,
   Waves,
-  XCircle,
-} from "lucide-react"
+  XCircle } from "lucide-react"
 import { ServiceCTA } from "@/components/services/service-cta"
 import { cn } from "@/lib/utils"
-import { masajAnticeluliticWhatsappMessage } from "@/lib/content/masaj-anticelulitic"
 
 function SectionShell({
   children,
-  className,
-}: {
+  className }: {
   children: ReactNode
   className?: string
 }) {
@@ -39,8 +36,7 @@ function SectionHeading({
   eyebrow,
   title,
   description,
-  align = "center",
-}: {
+  align = "center" }: {
   eyebrow?: string
   title: string
   description?: string
@@ -86,8 +82,7 @@ function BulletList({ items }: { items: string[] }) {
 function InfoCard({
   icon: Icon,
   title,
-  children,
-}: {
+  children }: {
   icon: ComponentType<{ className?: string }>
   title: string
   children: ReactNode
@@ -108,8 +103,7 @@ function InfoCard({
 function InlineCTA({
   title,
   description,
-  primaryLabel = "Programează-te acum",
-}: {
+  primaryLabel = "Programează-te acum" }: {
   title: string
   description: string
   primaryLabel?: string
@@ -131,7 +125,7 @@ function InlineCTA({
             {primaryLabel}
           </Link>
           <Link
-            href={`https://wa.me/40757851882?text=${encodeURIComponent(masajAnticeluliticWhatsappMessage)}`}
+            href={businessProfile.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full border border-[#D4AF37]/50 bg-white/70 px-8 py-3 text-sm font-semibold text-[#0E2B1F] transition-all hover:bg-[#D4AF37]/10"
@@ -181,13 +175,6 @@ export function MasajAnticeluliticSections() {
               anticelulitic este tot mai căutat în Craiova pentru reducerea
               aspectului de celulită și îmbunătățirea fermității pielii.
             </p>
-          </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-premium-lg">
-            <ClaireImage
-              {...claireImages.masajAnticelulitic}
-              fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
           </div>
         </div>
       </SectionShell>
@@ -542,19 +529,9 @@ export function MasajAnticeluliticSections() {
         </div>
       </SectionShell>
 
-      <VisualGallery
-        images={pageGalleries.masajAnticelulitic}
-        eyebrow="În salon"
-        title="Masaj anticelulitic la Claire Beauty"
-        description="Proceduri reale, tehnici profesionale și rezultate progresive — așa arată experiența anticelulitică în cabinetul nostru."
-        className="bg-background"
-        columns={3}
-      />
-
       <ServiceCTA
         title="Programează-te acum – rezultate vizibile în câteva ședințe"
         description="Dacă îți dorești o piele mai fermă și o siluetă remodelată, acum este momentul să începi. Locurile sunt limitate în perioadele aglomerate, așa că îți recomandăm să faci o programare din timp. Programează-te pentru masaj anticelulitic Craiova și începe procesul de remodelare corporală."
-        whatsappMessage={masajAnticeluliticWhatsappMessage}
       />
     </>
   )

@@ -1,7 +1,7 @@
 import type { ComponentType, ReactNode } from "react"
-import { VisualGallery } from "@/components/shared/visual-gallery"
+import { businessProfile } from "@/lib/seo/business"
 import { ClaireImage } from "@/components/ui/claire-image"
-import { claireImages, pageGalleries } from "@/lib/images/claire-beauty"
+import { claireImages } from "@/lib/images/claire-beauty"
 import Link from "next/link"
 import {
   AlertTriangle,
@@ -11,16 +11,13 @@ import {
   Shield,
   Sparkles,
   Target,
-  Waves,
-} from "lucide-react"
+  Waves } from "lucide-react"
 import { ServiceCTA } from "@/components/services/service-cta"
 import { cn } from "@/lib/utils"
-import { radiofrecventaWhatsappMessage } from "@/lib/content/radiofrecventa"
 
 function SectionShell({
   children,
-  className,
-}: {
+  className }: {
   children: ReactNode
   className?: string
 }) {
@@ -35,8 +32,7 @@ function SectionHeading({
   eyebrow,
   title,
   description,
-  align = "center",
-}: {
+  align = "center" }: {
   eyebrow?: string
   title: string
   description?: string
@@ -82,8 +78,7 @@ function BulletList({ items }: { items: string[] }) {
 function InfoCard({
   icon: Icon,
   title,
-  children,
-}: {
+  children }: {
   icon: ComponentType<{ className?: string }>
   title: string
   children: ReactNode
@@ -103,8 +98,7 @@ function InfoCard({
 
 function ComparisonCard({
   title,
-  items,
-}: {
+  items }: {
   title: string
   items: string[]
 }) {
@@ -121,8 +115,7 @@ function ComparisonCard({
 function InlineCTA({
   title,
   description,
-  primaryLabel = "Programează-te acum",
-}: {
+  primaryLabel = "Programează-te acum" }: {
   title: string
   description: string
   primaryLabel?: string
@@ -144,7 +137,7 @@ function InlineCTA({
             {primaryLabel}
           </Link>
           <Link
-            href={`https://wa.me/40757851882?text=${encodeURIComponent(radiofrecventaWhatsappMessage)}`}
+            href={businessProfile.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full border border-[#D4AF37]/50 bg-white/70 px-8 py-3 text-sm font-semibold text-[#0E2B1F] transition-all hover:bg-[#D4AF37]/10"
@@ -166,31 +159,25 @@ function InlineCTA({
 const sessionsTimeline = [
   {
     period: "3–4 ședințe",
-    items: ["primele efecte de fermitate și tonifiere"],
-  },
+    items: ["primele efecte de fermitate și tonifiere"] },
   {
     period: "6–8 ședințe",
-    items: ["rezultate vizibile pe piele și contur"],
-  },
+    items: ["rezultate vizibile pe piele și contur"] },
   {
     period: "10+ ședințe",
-    items: ["rezultate optime de remodelare corporală"],
-  },
+    items: ["rezultate optime de remodelare corporală"] },
 ] as const
 
 const resultsTimeline = [
   {
     period: "După câteva ședințe",
-    items: ["pielea începe să fie mai fermă"],
-  },
+    items: ["pielea începe să fie mai fermă"] },
   {
     period: "După 6–8 ședințe",
-    items: ["diferența este vizibilă"],
-  },
+    items: ["diferența este vizibilă"] },
   {
     period: "După 1–2 luni",
-    items: ["conturul corporal este îmbunătățit"],
-  },
+    items: ["conturul corporal este îmbunătățit"] },
 ] as const
 
 export function RadiofrecventaSections() {
@@ -227,7 +214,7 @@ export function RadiofrecventaSections() {
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-premium-lg">
             <ClaireImage
-              {...claireImages.radiofrecventaFacial}
+              {...claireImages.endolaser}
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
@@ -369,16 +356,13 @@ export function RadiofrecventaSections() {
           {[
             {
               title: "Radiofrecvență + anticelulitic",
-              text: "fermitate + slăbire",
-            },
+              text: "fermitate + slăbire" },
             {
               title: "Radiofrecvență + drenaj",
-              text: "fermitate + detox",
-            },
+              text: "fermitate + detox" },
             {
               title: "Radiofrecvență + electrostimulare",
-              text: "tonifiere completă",
-            },
+              text: "tonifiere completă" },
           ].map((combo) => (
             <article
               key={combo.title}
@@ -659,19 +643,9 @@ export function RadiofrecventaSections() {
         primaryLabel="Programează-te acum"
       />
 
-      <VisualGallery
-        images={pageGalleries.radiofrecventa}
-        eyebrow="În salon"
-        title="Radiofrecvență la Claire Beauty"
-        description="Tratament real, echipament profesional și rezultate vizibile — așa arată experiența de radiofrecvență în cabinetul nostru."
-        className="bg-background"
-        columns={3}
-      />
-
       <ServiceCTA
         title="Programează-te pentru radiofrecvență Craiova"
         description="Începe fermizarea pielii și remodelarea corporală cu protocol personalizat. Telefon: 0757 851 882."
-        whatsappMessage={radiofrecventaWhatsappMessage}
       />
     </>
   )

@@ -1,87 +1,100 @@
-import { Star, Quote } from "lucide-react"
-
-const testimonials = [
-  {
-    name: "Maria P.",
-    role: "Clientă Fidelă",
-    content:
-      "Experiență minunată! Tratamentele de la Claire's Studio m-au ajutat să scap de celulită și să mă simt din nou încrezătoare. Recomand cu căldură!",
-    rating: 5,
-  },
-  {
-    name: "Elena D.",
-    role: "Prima Vizită",
-    content:
-      "Am fost impresionată de profesionalismul și atenția la detalii. Atmosfera este relaxantă și rezultatele sunt vizibile de la prima ședință.",
-    rating: 5,
-  },
-  {
-    name: "Andreea M.",
-    role: "Clientă Fidelă",
-    content:
-      "Reflexoterapia de aici este extraordinară! Mă simt mult mai bine și dorm mult mai bine de când am început ședințele. Ana este un profesionist adevărat.",
-    rating: 5,
-  },
-]
+import Link from "next/link"
+import { Star, Quote, ExternalLink } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { ScrollReveal } from "@/components/ui/scroll-reveal"
+import { businessProfile } from "@/lib/seo/business"
+import { googleTestimonials } from "@/lib/content/testimonials"
 
 export function TestimonialsSection() {
   return (
-    <section className="py-24 bg-primary">
+    <section className="bg-primary py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <p className="text-sm font-medium tracking-widest text-accent uppercase mb-4">
-            Testimoniale
+        <ScrollReveal className="mx-auto mb-12 max-w-3xl text-center sm:mb-16">
+          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-accent">
+            Recenzii Google
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-primary-foreground mb-6">
-            Ce Spun
-            <span className="text-gold-gradient"> Clientele Noastre</span>
+          <h2 className="mb-6 font-serif text-3xl font-semibold text-primary-foreground sm:text-4xl lg:text-5xl">
+            Ce spun clientele
+            <span className="text-gold-gradient"> noastre</span>
           </h2>
-          <p className="text-lg text-primary-foreground/80 leading-relaxed">
-            Satisfacția clientelor noastre este cea mai mare răsplată. Iată
-            câteva dintre experiențele lor.
+          <div
+            className="mb-4 flex items-center justify-center gap-1.5"
+            aria-label="Evaluare 5 din 5 stele"
+          >
+            {[...Array(5)].map((_, i) => (
+              <Star
+                key={i}
+                className="h-7 w-7 text-accent drop-shadow-[0_0_8px_rgba(212,175,55,0.35)]"
+                fill="currentColor"
+                aria-hidden
+              />
+            ))}
+          </div>
+          <p className="text-lg leading-relaxed text-primary-foreground/80">
+            {businessProfile.googleReviews.rating.toFixed(1).replace(".0", ",0")}{" "}
+            din 5 · {businessProfile.googleReviews.count} recenzii pe Google Maps
+            — experiențe reale ale clientelor noastre.
           </p>
-        </div>
+        </ScrollReveal>
 
-        {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={testimonial.name}
-              className="relative p-8 rounded-2xl bg-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/10"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              {/* Quote Icon */}
-              <Quote className="h-10 w-10 text-accent/30 mb-6" />
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+          {googleTestimonials.map((testimonial, index) => (
+            <ScrollReveal key={testimonial.name} delay={index * 90}>
+              <article className="premium-testimonial-card group relative rounded-2xl border border-primary-foreground/10 bg-primary-foreground/5 p-6 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-[#D4AF37]/35 hover:bg-primary-foreground/8 hover:shadow-[0_12px_40px_rgba(0,0,0,0.18)] sm:p-8">
+                <Quote
+                  className="mb-5 h-9 w-9 text-accent/40 transition-colors group-hover:text-accent/60"
+                  aria-hidden
+                />
 
-              {/* Rating */}
-              <div className="flex items-center gap-1 mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className="h-5 w-5 text-accent"
-                    fill="currentColor"
-                  />
-                ))}
-              </div>
+                <div
+                  className="mb-4 flex items-center gap-1"
+                  aria-label={`${testimonial.rating} stele`}
+                >
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star
+                      key={i}
+                      className="h-5 w-5 text-accent"
+                      fill="currentColor"
+                      aria-hidden
+                    />
+                  ))}
+                </div>
 
-              {/* Content */}
-              <p className="text-primary-foreground/90 leading-relaxed mb-6">
-                {`"${testimonial.content}"`}
-              </p>
-
-              {/* Author */}
-              <div>
-                <p className="font-serif text-lg font-semibold text-primary-foreground">
-                  {testimonial.name}
+                <p className="mb-6 text-sm leading-relaxed text-primary-foreground/92 sm:text-base">
+                  {`"${testimonial.content}"`}
                 </p>
-                <p className="text-sm text-primary-foreground/60">
-                  {testimonial.role}
-                </p>
-              </div>
-            </div>
+
+                <div className="border-t border-primary-foreground/10 pt-4">
+                  <p className="font-serif text-lg font-semibold text-primary-foreground">
+                    {testimonial.name}
+                  </p>
+                  <p className="text-sm text-primary-foreground/65">
+                    {testimonial.role}
+                  </p>
+                </div>
+              </article>
+            </ScrollReveal>
           ))}
         </div>
+
+        <ScrollReveal className="mt-10 text-center" delay={120}>
+          <Button
+            asChild
+            variant="outline"
+            size="lg"
+            className="rounded-full border-primary-foreground/30 bg-transparent text-primary-foreground transition-all hover:border-[#D4AF37]/50 hover:bg-primary-foreground/10 hover:shadow-[0_0_20px_rgba(212,175,55,0.15)]"
+          >
+            <Link
+              href={businessProfile.googleMapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2"
+            >
+              Vezi recenziile pe Google
+              <ExternalLink className="h-4 w-4" />
+            </Link>
+          </Button>
+        </ScrollReveal>
       </div>
     </section>
   )

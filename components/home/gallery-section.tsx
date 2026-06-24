@@ -7,9 +7,12 @@ export function GallerySection() {
       images={homepageGallery}
       eyebrow="Galerie"
       title="Claire Beauty în imagini"
-      description="Tratamente reale, terapeută dedicată și atmosferă premium — tot ce definește salonul nostru din Craiova."
-      className="bg-secondary/40"
-      columns={3}
+      description="O selecție din atmosfera salonului și tratamentele noastre — autentic, elegant, premium."
+      className="bg-secondary/30"
+      columns={4}
+      hideFromIndexOnMobile={4}
+      ctaHref="/contact"
+      ctaLabel="Vezi galeria completă"
     />
   )
 }

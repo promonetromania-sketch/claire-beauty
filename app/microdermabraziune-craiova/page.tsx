@@ -8,16 +8,14 @@ import { ServiceFAQ } from "@/components/services/service-faq"
 import { MicrodermabraziuneHero } from "@/components/services/microdermabraziune/microdermabraziune-hero"
 import { MicrodermabraziuneSections } from "@/components/services/microdermabraziune/microdermabraziune-sections"
 import {
-  microdermabraziuneFaqs,
-  microdermabraziuneWhatsappMessage,
-} from "@/lib/content/microdermabraziune"
-import { businessProfile, localBusinessId } from "@/lib/seo/business"
+  microdermabraziuneFaqs} from "@/lib/content/microdermabraziune"
+import { businessProfile, localBusinessId, postalAddressSchema } from "@/lib/seo/business"
 
 const pageUrl = `${businessProfile.url}/microdermabraziune-craiova`
 
 export const metadata: Metadata = {
   title:
-    "Microdermabraziune Craiova – Curățare Facială, Exfoliere și Ten Curat Imediat",
+    "Microdermabraziune Craiova – Curățare Facială, Exfoliere și Ten Curat Imediat | Claire Beauty Craiova",
   description:
     "Microdermabraziune Craiova pentru curățare profundă, exfoliere și ten mai luminos. Elimină celulele moarte și îmbunătățește textura pielii. Programează-te!",
   keywords: [
@@ -29,18 +27,15 @@ export const metadata: Metadata = {
     "pori dilatați Craiova",
   ],
   alternates: {
-    canonical: pageUrl,
-  },
+    canonical: pageUrl },
   openGraph: {
     title:
-      "Microdermabraziune Craiova – Curățare Facială, Exfoliere și Ten Curat Imediat",
+      "Microdermabraziune Craiova – Curățare Facială, Exfoliere și Ten Curat Imediat | Claire Beauty Craiova",
     description:
       "Microdermabraziune Craiova pentru curățare profundă, exfoliere și ten mai luminos.",
     type: "website",
     locale: "ro_RO",
-    url: pageUrl,
-  },
-}
+    url: pageUrl } }
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -51,18 +46,11 @@ const localBusinessSchema = {
   url: businessProfile.url,
   telephone: businessProfile.telephone,
   email: businessProfile.email,
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: businessProfile.address.locality,
-    addressRegion: businessProfile.address.region,
-    addressCountry: businessProfile.address.country,
-  },
+  address: postalAddressSchema,
   sameAs: businessProfile.sameAs,
   areaServed: {
     "@type": "City",
-    name: "Craiova",
-  },
-}
+    name: "Craiova" } }
 
 const serviceSchema = {
   "@context": "https://schema.org",
@@ -73,13 +61,10 @@ const serviceSchema = {
     "Microdermabraziune în Craiova pentru curățare profundă, exfoliere și ten mai luminos.",
   url: pageUrl,
   provider: {
-    "@id": localBusinessId,
-  },
+    "@id": localBusinessId },
   areaServed: {
     "@type": "City",
-    name: "Craiova",
-  },
-}
+    name: "Craiova" } }
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -89,16 +74,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Acasă",
-      item: businessProfile.url,
-    },
+      item: businessProfile.url },
     {
       "@type": "ListItem",
       position: 2,
       name: "Microdermabraziune Craiova",
-      item: pageUrl,
-    },
-  ],
-}
+      item: pageUrl },
+  ] }
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -108,10 +90,7 @@ const faqSchema = {
     name: faq.question,
     acceptedAnswer: {
       "@type": "Answer",
-      text: faq.answer,
-    },
-  })),
-}
+      text: faq.answer } })) }
 
 export default function MicrodermabraziunePage() {
   return (
@@ -138,7 +117,6 @@ export default function MicrodermabraziunePage() {
       <WhatsAppButton />
       <MobileCTA
         layout="triple"
-        whatsappMessage={microdermabraziuneWhatsappMessage}
       />
     </>
   )

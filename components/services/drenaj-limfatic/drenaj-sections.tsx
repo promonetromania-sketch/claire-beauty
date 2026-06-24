@@ -1,7 +1,7 @@
 import type { ComponentType, ReactNode } from "react"
-import { VisualGallery } from "@/components/shared/visual-gallery"
+import { businessProfile } from "@/lib/seo/business"
 import { ClaireImage } from "@/components/ui/claire-image"
-import { claireImages, pageGalleries } from "@/lib/images/claire-beauty"
+import { claireImages } from "@/lib/images/claire-beauty"
 import Link from "next/link"
 import {
   Activity,
@@ -14,17 +14,14 @@ import {
   Sparkles,
   Timer,
   Users,
-  Waves,
-} from "lucide-react"
+  Waves } from "lucide-react"
 import { ServiceCTA } from "@/components/services/service-cta"
 import { cn } from "@/lib/utils"
-import { drenajWhatsappMessage } from "@/lib/content/drenaj-limfatic"
 
 function SectionShell({
   children,
   className,
-  id,
-}: {
+  id }: {
   children: ReactNode
   className?: string
   id?: string
@@ -39,8 +36,7 @@ function SectionShell({
 function SectionHeading({
   eyebrow,
   title,
-  description,
-}: {
+  description }: {
   eyebrow?: string
   title: string
   description?: string
@@ -80,8 +76,7 @@ function BulletList({ items }: { items: string[] }) {
 function InfoCard({
   icon: Icon,
   title,
-  children,
-}: {
+  children }: {
   icon: ComponentType<{ className?: string }>
   title: string
   children: ReactNode
@@ -102,8 +97,7 @@ function InfoCard({
 function InlineCTA({
   title,
   description,
-  primaryLabel = "Programează-te acum",
-}: {
+  primaryLabel = "Programează-te acum" }: {
   title: string
   description: string
   primaryLabel?: string
@@ -125,7 +119,7 @@ function InlineCTA({
             {primaryLabel}
           </Link>
           <Link
-            href={`https://wa.me/40757851882?text=${encodeURIComponent(drenajWhatsappMessage)}`}
+            href={businessProfile.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full border border-[#D4AF37]/50 bg-white/70 px-8 py-3 text-sm font-semibold text-[#0E2B1F] transition-all hover:bg-[#D4AF37]/10"
@@ -176,7 +170,7 @@ export function DrenajSections() {
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-premium-lg">
             <ClaireImage
-              {...claireImages.drenajLimfatic}
+              {...claireImages.masajDrenajEquip}
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
@@ -471,19 +465,9 @@ export function DrenajSections() {
         </div>
       </SectionShell>
 
-      <VisualGallery
-        images={pageGalleries.drenajLimfatic}
-        eyebrow="În salon"
-        title="Drenaj limfatic la Claire Beauty"
-        description="Proceduri reale, tehnici profesionale și rezultate vizibile — așa arată experiența de drenaj limfatic în cabinetul nostru."
-        className="bg-background"
-        columns={3}
-      />
-
       <ServiceCTA
         title="Programează-te acum la Claire Beauty Craiova"
         description="Dacă vrei să elimini retenția de apă și să te simți mai ușor și mai energic, programează-te pentru drenaj limfatic Craiova. Locurile sunt limitate în perioadele aglomerate."
-        whatsappMessage={drenajWhatsappMessage}
       />
     </>
   )

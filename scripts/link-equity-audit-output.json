@@ -1,0 +1,478 @@
+{
+  "results": [
+    {
+      "slug": "picioare-grele-seara-cauze",
+      "isMoney": true,
+      "inboundBlog": 7,
+      "inboundHub": 2,
+      "inboundServiceHub": 1,
+      "inboundSite": 2,
+      "totalInbound": 12,
+      "outboundBlog": 5,
+      "outboundService": 2,
+      "totalOutbound": 7,
+      "inboundFrom": [
+        "de-ce-apare-retentia-de-apa-cauze",
+        "semne-ca-ai-nevoie-de-drenaj-limfatic",
+        "ghid-complet-drenaj-limfatic",
+        "masaj-anticelulitic-vs-drenaj-limfatic",
+        "beneficii-masaj-relaxare-craiova",
+        "beneficii-masaj-terapeutic-stres-dureri",
+        "ce-este-reflexoterapia-beneficii"
+      ]
+    },
+    {
+      "slug": "curatare-faciala-acasa-vs-salon",
+      "isMoney": true,
+      "inboundBlog": 7,
+      "inboundHub": 1,
+      "inboundServiceHub": 1,
+      "inboundSite": 2,
+      "totalInbound": 11,
+      "outboundBlog": 4,
+      "outboundService": 1,
+      "totalOutbound": 5,
+      "inboundFrom": [
+        "cum-scapi-de-puncte-negre-corect",
+        "ce-este-hydrafacial-beneficii-craiova",
+        "ce-este-microdermabraziunea-beneficii",
+        "cum-pregatesti-tenul-tratament-facial",
+        "cum-alegi-tratament-facial-tip-ten",
+        "ce-evitat-dupa-tratamente-estetice",
+        "hifu-facial-lifting-nechirurgical"
+      ]
+    },
+    {
+      "slug": "de-ce-apare-retentia-de-apa-cauze",
+      "isMoney": true,
+      "inboundBlog": 5,
+      "inboundHub": 2,
+      "inboundServiceHub": 1,
+      "inboundSite": 2,
+      "totalInbound": 10,
+      "outboundBlog": 4,
+      "outboundService": 2,
+      "totalOutbound": 6,
+      "inboundFrom": [
+        "picioare-grele-seara-cauze",
+        "semne-ca-ai-nevoie-de-drenaj-limfatic",
+        "ghid-complet-drenaj-limfatic",
+        "masaj-anticelulitic-vs-drenaj-limfatic",
+        "beneficii-masaj-terapeutic-stres-dureri"
+      ]
+    },
+    {
+      "slug": "cum-scapi-de-celulita-ghid-complet",
+      "isMoney": false,
+      "inboundBlog": 7,
+      "inboundHub": 1,
+      "inboundServiceHub": 1,
+      "inboundSite": 1,
+      "totalInbound": 10,
+      "outboundBlog": 3,
+      "outboundService": 5,
+      "totalOutbound": 8,
+      "inboundFrom": [
+        "masaj-anticelulitic-vs-drenaj-limfatic",
+        "masaj-terapeutic-vs-anticelulitic-cand",
+        "vergeturi-tratamente-rezultate",
+        "remodelare-corporala-fara-operatie-tehnologii",
+        "radiofrecventa-corporala-ghid",
+        "tratamente-inainte-de-concediu",
+        "tratamente-corporale-ghid-incepatori"
+      ]
+    },
+    {
+      "slug": "semne-ca-ai-nevoie-de-drenaj-limfatic",
+      "isMoney": true,
+      "inboundBlog": 5,
+      "inboundHub": 1,
+      "inboundServiceHub": 1,
+      "inboundSite": 2,
+      "totalInbound": 9,
+      "outboundBlog": 4,
+      "outboundService": 0,
+      "totalOutbound": 4,
+      "inboundFrom": [
+        "de-ce-apare-retentia-de-apa-cauze",
+        "picioare-grele-seara-cauze",
+        "ghid-complet-drenaj-limfatic",
+        "masaj-anticelulitic-vs-drenaj-limfatic",
+        "masaj-terapeutic-vs-anticelulitic-cand"
+      ]
+    },
+    {
+      "slug": "masaj-anticelulitic-vs-drenaj-limfatic",
+      "isMoney": true,
+      "inboundBlog": 4,
+      "inboundHub": 2,
+      "inboundServiceHub": 1,
+      "inboundSite": 1,
+      "totalInbound": 8,
+      "outboundBlog": 5,
+      "outboundService": 4,
+      "totalOutbound": 9,
+      "inboundFrom": [
+        "semne-ca-ai-nevoie-de-drenaj-limfatic",
+        "masaj-terapeutic-vs-anticelulitic-cand",
+        "cum-scapi-de-celulita-ghid-complet",
+        "de-ce-apare-retentia-de-apa-cauze"
+      ]
+    },
+    {
+      "slug": "remodelare-corporala-fara-operatie-tehnologii",
+      "isMoney": false,
+      "inboundBlog": 6,
+      "inboundHub": 1,
+      "inboundServiceHub": 1,
+      "inboundSite": 0,
+      "totalInbound": 8,
+      "outboundBlog": 3,
+      "outboundService": 6,
+      "totalOutbound": 9,
+      "inboundFrom": [
+        "cum-scapi-de-celulita-ghid-complet",
+        "vergeturi-tratamente-rezultate",
+        "electrostimulare-corporala-tonifiere",
+        "radiofrecventa-corporala-ghid",
+        "tratamente-inainte-de-concediu",
+        "tratamente-corporale-ghid-incepatori"
+      ]
+    },
+    {
+      "slug": "cum-scapi-de-puncte-negre-corect",
+      "isMoney": true,
+      "inboundBlog": 3,
+      "inboundHub": 1,
+      "inboundServiceHub": 1,
+      "inboundSite": 2,
+      "totalInbound": 7,
+      "outboundBlog": 5,
+      "outboundService": 1,
+      "totalOutbound": 6,
+      "inboundFrom": [
+        "curatare-faciala-acasa-vs-salon",
+        "pregatire-ten-vara-pasi",
+        "ce-este-hydrafacial-beneficii-craiova"
+      ]
+    },
+    {
+      "slug": "tratamente-inainte-de-concediu",
+      "isMoney": true,
+      "inboundBlog": 3,
+      "inboundHub": 1,
+      "inboundServiceHub": 1,
+      "inboundSite": 2,
+      "totalInbound": 7,
+      "outboundBlog": 7,
+      "outboundService": 3,
+      "totalOutbound": 10,
+      "inboundFrom": [
+        "tratamente-corporale-ghid-incepatori",
+        "electrostimulare-corporala-tonifiere",
+        "pregatire-ten-vara-pasi"
+      ]
+    },
+    {
+      "slug": "pregatire-ten-vara-pasi",
+      "isMoney": true,
+      "inboundBlog": 3,
+      "inboundHub": 1,
+      "inboundServiceHub": 1,
+      "inboundSite": 2,
+      "totalInbound": 7,
+      "outboundBlog": 5,
+      "outboundService": 0,
+      "totalOutbound": 5,
+      "inboundFrom": [
+        "cum-pregatesti-tenul-tratament-facial",
+        "tratamente-inainte-de-concediu",
+        "ce-evitat-dupa-tratamente-estetice"
+      ]
+    },
+    {
+      "slug": "ce-este-hydrafacial-beneficii-craiova",
+      "isMoney": false,
+      "inboundBlog": 5,
+      "inboundHub": 1,
+      "inboundServiceHub": 1,
+      "inboundSite": 0,
+      "totalInbound": 7,
+      "outboundBlog": 4,
+      "outboundService": 4,
+      "totalOutbound": 8,
+      "inboundFrom": [
+        "cum-scapi-de-puncte-negre-corect",
+        "ce-este-microdermabraziunea-beneficii",
+        "cum-pregatesti-tenul-tratament-facial",
+        "pregatire-ten-vara-pasi",
+        "curatare-faciala-acasa-vs-salon"
+      ]
+    },
+    {
+      "slug": "hifu-facial-lifting-nechirurgical",
+      "isMoney": true,
+      "inboundBlog": 5,
+      "inboundHub": 1,
+      "inboundServiceHub": 0,
+      "inboundSite": 1,
+      "totalInbound": 7,
+      "outboundBlog": 3,
+      "outboundService": 0,
+      "totalOutbound": 3,
+      "inboundFrom": [
+        "cum-scapi-de-puncte-negre-corect",
+        "ce-este-microdermabraziunea-beneficii",
+        "microneedling-vs-dermapen-diferente",
+        "cum-alegi-tratament-facial-tip-ten",
+        "ce-evitat-dupa-tratamente-estetice"
+      ]
+    },
+    {
+      "slug": "cum-pregatesti-tenul-tratament-facial",
+      "isMoney": false,
+      "inboundBlog": 6,
+      "inboundHub": 1,
+      "inboundServiceHub": 0,
+      "inboundSite": 0,
+      "totalInbound": 7,
+      "outboundBlog": 4,
+      "outboundService": 2,
+      "totalOutbound": 6,
+      "inboundFrom": [
+        "ce-evitat-dupa-tratamente-estetice",
+        "curatare-faciala-acasa-vs-salon",
+        "pregatire-ten-vara-pasi",
+        "tratamente-inainte-de-concediu",
+        "ce-este-hydrafacial-beneficii-craiova",
+        "cum-alegi-tratament-facial-tip-ten"
+      ]
+    },
+    {
+      "slug": "ce-este-microdermabraziunea-beneficii",
+      "isMoney": false,
+      "inboundBlog": 5,
+      "inboundHub": 1,
+      "inboundServiceHub": 1,
+      "inboundSite": 0,
+      "totalInbound": 7,
+      "outboundBlog": 4,
+      "outboundService": 0,
+      "totalOutbound": 4,
+      "inboundFrom": [
+        "cum-scapi-de-puncte-negre-corect",
+        "ce-este-hydrafacial-beneficii-craiova",
+        "hifu-facial-lifting-nechirurgical",
+        "microneedling-vs-dermapen-diferente",
+        "curatare-faciala-acasa-vs-salon"
+      ]
+    },
+    {
+      "slug": "ghid-complet-drenaj-limfatic",
+      "isMoney": false,
+      "inboundBlog": 4,
+      "inboundHub": 1,
+      "inboundServiceHub": 1,
+      "inboundSite": 0,
+      "totalInbound": 6,
+      "outboundBlog": 3,
+      "outboundService": 0,
+      "totalOutbound": 3,
+      "inboundFrom": [
+        "de-ce-apare-retentia-de-apa-cauze",
+        "semne-ca-ai-nevoie-de-drenaj-limfatic",
+        "masaj-anticelulitic-vs-drenaj-limfatic",
+        "picioare-grele-seara-cauze"
+      ]
+    },
+    {
+      "slug": "vergeturi-tratamente-rezultate",
+      "isMoney": false,
+      "inboundBlog": 4,
+      "inboundHub": 1,
+      "inboundServiceHub": 1,
+      "inboundSite": 0,
+      "totalInbound": 6,
+      "outboundBlog": 3,
+      "outboundService": 1,
+      "totalOutbound": 4,
+      "inboundFrom": [
+        "cum-scapi-de-celulita-ghid-complet",
+        "remodelare-corporala-fara-operatie-tehnologii",
+        "tratamente-corporale-ghid-incepatori",
+        "tratamente-inainte-de-concediu"
+      ]
+    },
+    {
+      "slug": "ce-evitat-dupa-tratamente-estetice",
+      "isMoney": true,
+      "inboundBlog": 2,
+      "inboundHub": 1,
+      "inboundServiceHub": 0,
+      "inboundSite": 2,
+      "totalInbound": 5,
+      "outboundBlog": 5,
+      "outboundService": 0,
+      "totalOutbound": 5,
+      "inboundFrom": [
+        "cum-pregatesti-tenul-tratament-facial",
+        "cum-scapi-de-puncte-negre-corect"
+      ]
+    },
+    {
+      "slug": "microneedling-vs-dermapen-diferente",
+      "isMoney": true,
+      "inboundBlog": 3,
+      "inboundHub": 1,
+      "inboundServiceHub": 0,
+      "inboundSite": 1,
+      "totalInbound": 5,
+      "outboundBlog": 3,
+      "outboundService": 2,
+      "totalOutbound": 5,
+      "inboundFrom": [
+        "ce-evitat-dupa-tratamente-estetice",
+        "hifu-facial-lifting-nechirurgical",
+        "cum-alegi-tratament-facial-tip-ten"
+      ]
+    },
+    {
+      "slug": "electrostimulare-corporala-tonifiere",
+      "isMoney": true,
+      "inboundBlog": 2,
+      "inboundHub": 1,
+      "inboundServiceHub": 1,
+      "inboundSite": 1,
+      "totalInbound": 5,
+      "outboundBlog": 3,
+      "outboundService": 0,
+      "totalOutbound": 3,
+      "inboundFrom": [
+        "radiofrecventa-corporala-ghid",
+        "tratamente-inainte-de-concediu"
+      ]
+    },
+    {
+      "slug": "masaj-terapeutic-vs-anticelulitic-cand",
+      "isMoney": true,
+      "inboundBlog": 3,
+      "inboundHub": 1,
+      "inboundServiceHub": 0,
+      "inboundSite": 1,
+      "totalInbound": 5,
+      "outboundBlog": 4,
+      "outboundService": 1,
+      "totalOutbound": 5,
+      "inboundFrom": [
+        "beneficii-masaj-relaxare-craiova",
+        "picioare-grele-seara-cauze",
+        "beneficii-masaj-terapeutic-stres-dureri"
+      ]
+    },
+    {
+      "slug": "cum-alegi-tratament-facial-tip-ten",
+      "isMoney": false,
+      "inboundBlog": 3,
+      "inboundHub": 1,
+      "inboundServiceHub": 0,
+      "inboundSite": 0,
+      "totalInbound": 4,
+      "outboundBlog": 4,
+      "outboundService": 0,
+      "totalOutbound": 4,
+      "inboundFrom": [
+        "pregatire-ten-vara-pasi",
+        "ce-este-microdermabraziunea-beneficii",
+        "microneedling-vs-dermapen-diferente"
+      ]
+    },
+    {
+      "slug": "beneficii-masaj-relaxare-craiova",
+      "isMoney": false,
+      "inboundBlog": 3,
+      "inboundHub": 1,
+      "inboundServiceHub": 0,
+      "inboundSite": 0,
+      "totalInbound": 4,
+      "outboundBlog": 3,
+      "outboundService": 1,
+      "totalOutbound": 4,
+      "inboundFrom": [
+        "picioare-grele-seara-cauze",
+        "beneficii-masaj-terapeutic-stres-dureri",
+        "ce-este-reflexoterapia-beneficii"
+      ]
+    },
+    {
+      "slug": "tratamente-corporale-ghid-incepatori",
+      "isMoney": false,
+      "inboundBlog": 3,
+      "inboundHub": 1,
+      "inboundServiceHub": 0,
+      "inboundSite": 0,
+      "totalInbound": 4,
+      "outboundBlog": 4,
+      "outboundService": 1,
+      "totalOutbound": 5,
+      "inboundFrom": [
+        "tratamente-inainte-de-concediu",
+        "remodelare-corporala-fara-operatie-tehnologii",
+        "vergeturi-tratamente-rezultate"
+      ]
+    },
+    {
+      "slug": "beneficii-masaj-terapeutic-stres-dureri",
+      "isMoney": false,
+      "inboundBlog": 2,
+      "inboundHub": 1,
+      "inboundServiceHub": 0,
+      "inboundSite": 0,
+      "totalInbound": 3,
+      "outboundBlog": 4,
+      "outboundService": 3,
+      "totalOutbound": 7,
+      "inboundFrom": [
+        "ce-este-reflexoterapia-beneficii",
+        "masaj-terapeutic-vs-anticelulitic-cand"
+      ]
+    },
+    {
+      "slug": "radiofrecventa-corporala-ghid",
+      "isMoney": false,
+      "inboundBlog": 1,
+      "inboundHub": 1,
+      "inboundServiceHub": 1,
+      "inboundSite": 0,
+      "totalInbound": 3,
+      "outboundBlog": 3,
+      "outboundService": 0,
+      "totalOutbound": 3,
+      "inboundFrom": [
+        "electrostimulare-corporala-tonifiere"
+      ]
+    },
+    {
+      "slug": "ce-este-reflexoterapia-beneficii",
+      "isMoney": false,
+      "inboundBlog": 1,
+      "inboundHub": 1,
+      "inboundServiceHub": 0,
+      "inboundSite": 0,
+      "totalInbound": 2,
+      "outboundBlog": 3,
+      "outboundService": 1,
+      "totalOutbound": 4,
+      "inboundFrom": [
+        "beneficii-masaj-relaxare-craiova"
+      ]
+    }
+  ],
+  "orphans": [],
+  "moneyUnder5": [],
+  "heavyOutbound": [],
+  "hubOutbound": {
+    "masaj": 9,
+    "facial": 10,
+    "corporal": 10
+  }
+}

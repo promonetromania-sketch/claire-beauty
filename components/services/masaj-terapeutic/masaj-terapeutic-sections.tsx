@@ -1,7 +1,7 @@
 import type { ComponentType, ReactNode } from "react"
-import { VisualGallery } from "@/components/shared/visual-gallery"
+import { businessProfile } from "@/lib/seo/business"
 import { ClaireImage } from "@/components/ui/claire-image"
-import { claireImages, pageGalleries } from "@/lib/images/claire-beauty"
+import { claireImages } from "@/lib/images/claire-beauty"
 import Link from "next/link"
 import {
   Activity,
@@ -14,16 +14,13 @@ import {
   Target,
   Timer,
   Users,
-  Waves,
-} from "lucide-react"
+  Waves } from "lucide-react"
 import { ServiceCTA } from "@/components/services/service-cta"
 import { cn } from "@/lib/utils"
-import { masajTerapeuticWhatsappMessage } from "@/lib/content/masaj-terapeutic"
 
 function SectionShell({
   children,
-  className,
-}: {
+  className }: {
   children: ReactNode
   className?: string
 }) {
@@ -38,8 +35,7 @@ function SectionHeading({
   eyebrow,
   title,
   description,
-  align = "center",
-}: {
+  align = "center" }: {
   eyebrow?: string
   title: string
   description?: string
@@ -85,8 +81,7 @@ function BulletList({ items }: { items: string[] }) {
 function InfoCard({
   icon: Icon,
   title,
-  children,
-}: {
+  children }: {
   icon: ComponentType<{ className?: string }>
   title: string
   children: ReactNode
@@ -107,8 +102,7 @@ function InfoCard({
 function InlineCTA({
   title,
   description,
-  primaryLabel = "Programează-te acum",
-}: {
+  primaryLabel = "Programează-te acum" }: {
   title: string
   description: string
   primaryLabel?: string
@@ -130,7 +124,7 @@ function InlineCTA({
             {primaryLabel}
           </Link>
           <Link
-            href={`https://wa.me/40757851882?text=${encodeURIComponent(masajTerapeuticWhatsappMessage)}`}
+            href={businessProfile.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full border border-[#D4AF37]/50 bg-white/70 px-8 py-3 text-sm font-semibold text-[#0E2B1F] transition-all hover:bg-[#D4AF37]/10"
@@ -180,7 +174,7 @@ export function MasajTerapeuticSections() {
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-premium-lg">
             <ClaireImage
-              {...claireImages.masajTerapeutic1}
+              {...claireImages.masajTerapeutic2}
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
@@ -265,13 +259,6 @@ export function MasajTerapeuticSections() {
               durerilor de spate și a tensiunii musculare. În multe cazuri,
               ameliorarea se simte chiar după prima ședință.
             </p>
-          </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-premium-lg">
-            <ClaireImage
-              {...claireImages.masajDeepTissue2}
-              fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
           </div>
         </div>
       </SectionShell>
@@ -529,19 +516,9 @@ export function MasajTerapeuticSections() {
         </div>
       </SectionShell>
 
-      <VisualGallery
-        images={pageGalleries.masajTerapeutic}
-        eyebrow="În salon"
-        title="Masaj terapeutic la Claire Beauty"
-        description="Tehnici reale, presiune adaptată și rezultate vizibile — așa arată experiența de masaj terapeutic în cabinetul nostru."
-        className="bg-background"
-        columns={3}
-      />
-
       <ServiceCTA
         title="Programează-te acum la Claire Beauty Craiova"
         description="Dacă vrei să scapi de dureri și să îți recapeți mobilitatea, programează-te acum. Locurile sunt limitate în perioadele aglomerate. Programează-te pentru masaj terapeutic Craiova și scapă de durerile musculare eficient."
-        whatsappMessage={masajTerapeuticWhatsappMessage}
       />
     </>
   )

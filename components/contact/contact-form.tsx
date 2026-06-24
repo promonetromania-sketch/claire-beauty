@@ -1,8 +1,10 @@
 "use client"
 
 import { useState } from "react"
+import Link from "next/link"
 import { Send, Loader2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Checkbox } from "@/components/ui/checkbox"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
@@ -10,9 +12,11 @@ import { Textarea } from "@/components/ui/textarea"
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [privacyAccepted, setPrivacyAccepted] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    if (!privacyAccepted) return
     setIsSubmitting(true)
 
     // Simulate form submission
@@ -126,9 +130,32 @@ export function ContactForm() {
         />
       </div>
 
+      <div className="flex items-start gap-3 rounded-xl border border-border bg-secondary/50 p-4">
+        <Checkbox
+          id="privacy"
+          checked={privacyAccepted}
+          onCheckedChange={(checked) => setPrivacyAccepted(checked === true)}
+          required
+          className="mt-0.5"
+        />
+        <Label
+          htmlFor="privacy"
+          className="cursor-pointer text-sm leading-relaxed text-muted-foreground font-normal"
+        >
+          Sunt de acord cu prelucrarea datelor mele conform{" "}
+          <Link
+            href="/politica-confidentialitate"
+            className="font-medium text-[#0E2B1F] underline-offset-2 hover:text-[#D4AF37] hover:underline"
+          >
+            Politicii de confidențialitate
+          </Link>
+          . *
+        </Label>
+      </div>
+
       <Button
         type="submit"
-        disabled={isSubmitting}
+        disabled={isSubmitting || !privacyAccepted}
         size="lg"
         className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-full"
       >

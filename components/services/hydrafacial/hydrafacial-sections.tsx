@@ -1,7 +1,7 @@
 import type { ComponentType, ReactNode } from "react"
-import { VisualGallery } from "@/components/shared/visual-gallery"
+import { businessProfile } from "@/lib/seo/business"
 import { ClaireImage } from "@/components/ui/claire-image"
-import { claireImages, pageGalleries } from "@/lib/images/claire-beauty"
+import { claireImages } from "@/lib/images/claire-beauty"
 import Link from "next/link"
 import {
   AlertTriangle,
@@ -11,16 +11,13 @@ import {
   MapPin,
   Sparkles,
   Target,
-  Waves,
-} from "lucide-react"
+  Waves } from "lucide-react"
 import { ServiceCTA } from "@/components/services/service-cta"
 import { cn } from "@/lib/utils"
-import { hydrafacialWhatsappMessage } from "@/lib/content/hydrafacial"
 
 function SectionShell({
   children,
-  className,
-}: {
+  className }: {
   children: ReactNode
   className?: string
 }) {
@@ -35,8 +32,7 @@ function SectionHeading({
   eyebrow,
   title,
   description,
-  align = "center",
-}: {
+  align = "center" }: {
   eyebrow?: string
   title: string
   description?: string
@@ -82,8 +78,7 @@ function BulletList({ items }: { items: string[] }) {
 function InfoCard({
   icon: Icon,
   title,
-  children,
-}: {
+  children }: {
   icon: ComponentType<{ className?: string }>
   title: string
   children: ReactNode
@@ -104,8 +99,7 @@ function InfoCard({
 function InlineCTA({
   title,
   description,
-  primaryLabel = "Programează-te acum",
-}: {
+  primaryLabel = "Programează-te acum" }: {
   title: string
   description: string
   primaryLabel?: string
@@ -127,7 +121,7 @@ function InlineCTA({
             {primaryLabel}
           </Link>
           <Link
-            href={`https://wa.me/40757851882?text=${encodeURIComponent(hydrafacialWhatsappMessage)}`}
+            href={businessProfile.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full border border-[#D4AF37]/50 bg-white/70 px-8 py-3 text-sm font-semibold text-[#0E2B1F] transition-all hover:bg-[#D4AF37]/10"
@@ -151,26 +145,22 @@ const hydrafacialSteps = [
     step: "01",
     title: "Curățare",
     description: "Eliminarea impurităților de la suprafața pielii.",
-    icon: Sparkles,
-  },
+    icon: Sparkles },
   {
     step: "02",
     title: "Exfoliere",
     description: "Îndepărtarea delicată a stratului superficial.",
-    icon: Waves,
-  },
+    icon: Waves },
   {
     step: "03",
     title: "Extracție impurități",
     description: "Curățarea porilor și a punctelor negre.",
-    icon: Target,
-  },
+    icon: Target },
   {
     step: "04",
     title: "Hidratare cu seruri active",
     description: "Infuzie de hidratare intensă pentru glow imediat.",
-    icon: Droplets,
-  },
+    icon: Droplets },
 ] as const
 
 export function HydrafacialSections() {
@@ -322,7 +312,7 @@ export function HydrafacialSections() {
             </Link>{" "}
             sau{" "}
             <Link
-              href="/hifu-craiova"
+              href="/hifu-facial-craiova"
               className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
             >
               HIFU
@@ -364,7 +354,7 @@ export function HydrafacialSections() {
             <li>
               Pentru lifting facial →{" "}
               <Link
-                href="/hifu-craiova"
+                href="/hifu-facial-craiova"
                 className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
               >
                 HIFU
@@ -547,19 +537,9 @@ export function HydrafacialSections() {
         primaryLabel="Programează-te acum"
       />
 
-      <VisualGallery
-        images={pageGalleries.hydrafacial}
-        eyebrow="În salon"
-        title="Hydrafacial la Claire Beauty"
-        description="Tratament real, echipament profesional și rezultate vizibile — exact cum arată experiența în cabinetul nostru."
-        className="bg-background"
-        columns={3}
-      />
-
       <ServiceCTA
         title="Programează-te pentru Hydrafacial Craiova"
         description="Vezi diferența chiar după prima ședință: curățare profundă, hidratare intensă și glow imediat. Telefon: 0757 851 882."
-        whatsappMessage={hydrafacialWhatsappMessage}
       />
     </>
   )

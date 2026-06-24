@@ -31,7 +31,7 @@ export const mainNavigation: NavItem[] = [
     name: "Tratamente faciale",
     href: "/tratamente-faciale-craiova",
     items: [
-      { name: "HIFU", href: "/hifu-craiova" },
+      { name: "HIFU", href: "/hifu-facial-craiova" },
       { name: "Dermapen", href: "/dermapen-craiova" },
       { name: "Microdermabraziune", href: "/microdermabraziune-craiova" },
       { name: "Microneedling", href: "/microneedling-craiova" },
@@ -51,5 +51,6 @@ export const mainNavigation: NavItem[] = [
       },
     ],
   },
+  { type: "link", name: "Blog", href: "/blog" },
   { type: "link", name: "Contact", href: "/contact" },
 ]

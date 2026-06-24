@@ -17,7 +17,7 @@ export function AboutSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="relative">
-            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-premium-lg">
+            <div className="relative aspect-[4/3] max-w-xl mx-auto lg:max-w-none rounded-2xl overflow-hidden shadow-premium-lg">
               <ClaireImage
                 {...claireImages.terapeutPortret}
                 fill
@@ -72,7 +72,7 @@ export function AboutSection() {
         </div>
 
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6">
-          {[claireImages.terapeutMasajIntrare, claireImages.masajAtmosfera, claireImages.terapeutMasajSemn].map(
+          {[claireImages.masajRelaxare1, claireImages.masajAtmosfera, claireImages.hydrafacial].map(
             (image) => (
               <div
                 key={image.src}

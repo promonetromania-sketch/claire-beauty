@@ -1,4 +1,5 @@
 import { ClaireImage } from "@/components/ui/claire-image"
+import { businessProfile } from "@/lib/seo/business"
 import { claireImages } from "@/lib/images/claire-beauty"
 import Link from "next/link"
 import { Calendar, MessageCircle, Phone, Sparkles } from "lucide-react"
@@ -35,8 +36,8 @@ export function MasajAnticeluliticHero() {
             Tratament premium body spa
           </p>
           <h1 className="mb-6 font-serif text-4xl font-semibold leading-tight text-[#FFF9F2] sm:text-5xl lg:text-6xl">
-            Masaj Anticelulitic Craiova – Scapă de Celulită și Redefinește-ți
-            Silueta
+            Masaj Anticelulitic Craiova – Tratament Profesional pentru Tonifiere
+            și Aspect Îmbunătățit al Pielii
           </h1>
           <p className="mb-8 max-w-2xl text-lg leading-relaxed text-[#FFF9F2]/90">
             Dacă te confrunți cu celulita și ai încercat deja creme, diete sau
@@ -84,7 +85,7 @@ export function MasajAnticeluliticHero() {
               className="rounded-full border-[#D4AF37]/60 bg-[#FFF9F2]/10 px-8 text-base font-semibold text-[#FFF9F2] backdrop-blur-sm hover:bg-[#FFF9F2]/20"
             >
               <a
-                href={`https://wa.me/40757851882?text=${encodeURIComponent(whatsappMessage)}`}
+                href={businessProfile.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"

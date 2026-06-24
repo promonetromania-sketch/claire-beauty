@@ -1,7 +1,7 @@
 import type { ComponentType, ReactNode } from "react"
-import { VisualGallery } from "@/components/shared/visual-gallery"
+import { businessProfile } from "@/lib/seo/business"
 import { ClaireImage } from "@/components/ui/claire-image"
-import { claireImages, pageGalleries } from "@/lib/images/claire-beauty"
+import { claireImages } from "@/lib/images/claire-beauty"
 import Link from "next/link"
 import {
   AlertTriangle,
@@ -11,16 +11,13 @@ import {
   Sparkles,
   Sun,
   Target,
-  Timer,
-} from "lucide-react"
+  Timer } from "lucide-react"
 import { ServiceCTA } from "@/components/services/service-cta"
 import { cn } from "@/lib/utils"
-import { dermapenWhatsappMessage } from "@/lib/content/dermapen"
 
 function SectionShell({
   children,
-  className,
-}: {
+  className }: {
   children: ReactNode
   className?: string
 }) {
@@ -35,8 +32,7 @@ function SectionHeading({
   eyebrow,
   title,
   description,
-  align = "center",
-}: {
+  align = "center" }: {
   eyebrow?: string
   title: string
   description?: string
@@ -82,8 +78,7 @@ function BulletList({ items }: { items: string[] }) {
 function InfoCard({
   icon: Icon,
   title,
-  children,
-}: {
+  children }: {
   icon: ComponentType<{ className?: string }>
   title: string
   children: ReactNode
@@ -105,8 +100,7 @@ function ComparisonCard({
   title,
   items,
   href,
-  linkLabel,
-}: {
+  linkLabel }: {
   title: string
   items: string[]
   href?: string
@@ -133,8 +127,7 @@ function ComparisonCard({
 function InlineCTA({
   title,
   description,
-  primaryLabel = "Programează-te acum",
-}: {
+  primaryLabel = "Programează-te acum" }: {
   title: string
   description: string
   primaryLabel?: string
@@ -156,7 +149,7 @@ function InlineCTA({
             {primaryLabel}
           </Link>
           <Link
-            href={`https://wa.me/40757851882?text=${encodeURIComponent(dermapenWhatsappMessage)}`}
+            href={businessProfile.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full border border-[#D4AF37]/50 bg-white/70 px-8 py-3 text-sm font-semibold text-[#0E2B1F] transition-all hover:bg-[#D4AF37]/10"
@@ -178,16 +171,13 @@ function InlineCTA({
 const resultsTimeline = [
   {
     period: "După 1–2 ședințe",
-    items: ["pielea devine mai luminoasă"],
-  },
+    items: ["pielea devine mai luminoasă"] },
   {
     period: "După 3–4 ședințe",
-    items: ["textura începe să se uniformizeze"],
-  },
+    items: ["textura începe să se uniformizeze"] },
   {
     period: "După 4–6 ședințe",
-    items: ["cicatricile și ridurile se reduc vizibil"],
-  },
+    items: ["cicatricile și ridurile se reduc vizibil"] },
 ] as const
 
 export function DermapenSections() {
@@ -227,7 +217,7 @@ export function DermapenSections() {
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-premium-lg">
             <ClaireImage
-              {...claireImages.tratamentFacialMasaj}
+              {...claireImages.dermapen}
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
@@ -292,7 +282,7 @@ export function DermapenSections() {
           în profunzime asupra structurii pielii. Pentru lifting și fermitate,
           vezi{" "}
           <Link
-            href="/hifu-craiova"
+            href="/hifu-facial-craiova"
             className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
           >
             HIFU
@@ -514,19 +504,9 @@ export function DermapenSections() {
         primaryLabel="Programează-te acum"
       />
 
-      <VisualGallery
-        images={pageGalleries.dermapen}
-        eyebrow="În salon"
-        title="Dermapen la Claire Beauty"
-        description="Proceduri reale, tehnici profesionale și rezultate progresive — așa arată experiența Dermapen în cabinetul nostru."
-        className="bg-background"
-        columns={3}
-      />
-
       <ServiceCTA
         title="Programează-te pentru Dermapen Craiova"
         description="Cicatrici post-acnee, riduri fine și textură îmbunătățită prin stimularea colagenului. Telefon: 0757 851 882."
-        whatsappMessage={dermapenWhatsappMessage}
       />
     </>
   )
