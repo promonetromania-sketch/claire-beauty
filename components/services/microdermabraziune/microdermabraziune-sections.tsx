@@ -295,15 +295,15 @@ export function MicrodermabraziuneSections() {
       <SectionShell className="bg-secondary/40">
         <SectionHeading
           eyebrow="Comparație"
-          title="Microdermabraziune vs Hidrafacial"
-          description="Diferența: Hidrafacial este mai complet, microdermabraziunea este mai focusată pe exfoliere. Se pot combina pentru rezultate mai bune."
+          title="Microdermabraziune vs Hydrablast"
+          description="Diferența: Hydrablast este mai complet, microdermabraziunea este mai focusată pe exfoliere. Se pot combina pentru rezultate mai bune."
         />
         <div className="grid gap-6 lg:grid-cols-2">
           <ComparisonCard
-            title="Hidrafacial"
+            title="Hydrablast"
             items={["curăță + hidratează"]}
-            href="/hidrafacial-craiova"
-            linkLabel="Vezi Hidrafacial Craiova"
+            href="/hydrablast-craiova"
+            linkLabel="Vezi Hydrablast Craiova"
           />
           <ComparisonCard
             title="Microdermabraziune"
@@ -351,7 +351,7 @@ export function MicrodermabraziuneSections() {
 
       <InlineCTA
         title="Vrei un ten curat și luminos imediat?"
-        description="Programează microdermabraziunea și combină-o cu Hidrafacial sau microneedling pentru rezultate complete."
+        description="Programează microdermabraziunea și combină-o cu Hydrablast sau microneedling pentru rezultate complete."
         primaryLabel="Cere recomandare"
       />
 
@@ -380,7 +380,7 @@ export function MicrodermabraziuneSections() {
         <div className="mx-auto max-w-3xl">
           <BulletList
             items={[
-              "microdermabraziune + Hidrafacial → curățare + hidratare",
+              "microdermabraziune + Hydrablast → curățare + hidratare",
               "microdermabraziune + microneedling → exfoliere + colagen",
               "microdermabraziune + HIFU → curățare + lifting",
             ]}
@@ -388,10 +388,10 @@ export function MicrodermabraziuneSections() {
           <p className="mt-6 text-center text-muted-foreground leading-relaxed">
             Explorează{" "}
             <Link
-              href="/hidrafacial-craiova"
+              href="/hydrablast-craiova"
               className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
             >
-              Hidrafacial
+              Hydrablast
             </Link>
             ,{" "}
             <Link

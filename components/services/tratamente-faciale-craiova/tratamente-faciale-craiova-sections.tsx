@@ -123,8 +123,8 @@ function InlineCTA({
 
 const procedureCards = [
   {
-    title: "Hidrafacial",
-    href: "/hidrafacial-craiova",
+    title: "Hydrablast",
+    href: "/hydrablast-craiova",
     description:
       "Curățare profundă și hidratare instant pentru ten încărcat, pori vizibili și luminozitate imediată.",
     icon: Droplets },
@@ -199,11 +199,11 @@ function ProcedureHubCard({
 
 const treatmentDetails = [
   {
-    title: "Hidrafacial – curățare + hidratare instant",
-    href: "/hidrafacial-craiova",
+    title: "Hydrablast – curățare + hidratare instant",
+    href: "/hydrablast-craiova",
     idealFor: ["pori încărcați", "ten tern", "rezultate imediate"],
     result: "ten curat și luminos după prima ședință",
-    cta: "Vezi Hidrafacial" },
+    cta: "Vezi Hydrablast" },
   {
     title: "RF Fractionat – stimularea colagenului",
     idealFor: ["riduri fine", "cicatrici", "textură neuniformă"],
@@ -238,7 +238,7 @@ const treatmentDetails = [
 ] as const
 
 const comparisonRows = [
-  { treatment: "Hidrafacial", role: "curăță + hidratează" },
+  { treatment: "Hydrablast", role: "curăță + hidratează" },
   { treatment: "RF Fractionat", role: "stimulează colagen" },
   { treatment: "Microneedling", role: "repară pielea" },
   { treatment: "HIFU", role: "ridică și tonifică" },
@@ -274,10 +274,10 @@ export function TratamenteFacialeCraiovaSections() {
             <p className="mt-6 text-muted-foreground leading-relaxed">
               De exemplu, dacă vrei o curățare eficientă și hidratare imediată,{" "}
               <Link
-                href="/hidrafacial-craiova"
+                href="/hydrablast-craiova"
                 className="font-medium text-[#0E2B1F] underline-offset-4 hover:text-[#D4AF37] hover:underline"
               >
-                Hidrafacial Craiova
+                Hydrablast Craiova
               </Link>{" "}
               este una dintre cele mai rapide soluții.
             </p>
@@ -302,8 +302,8 @@ export function TratamenteFacialeCraiovaSections() {
           {[
             {
               problem: "curățare și hidratare",
-              link: "/hidrafacial-craiova",
-              label: "Hidrafacial" },
+              link: "/hydrablast-craiova",
+              label: "Hydrablast" },
             {
               problem: "cicatrici și textură",
               link: "/microneedling-craiova",
@@ -413,7 +413,7 @@ export function TratamenteFacialeCraiovaSections() {
         <div className="mx-auto max-w-3xl space-y-4">
           <BulletList
             items={[
-              "Hidrafacial + microneedling → curățare + regenerare",
+              "Hydrablast + microneedling → curățare + regenerare",
               "RF Fractionat + HIFU → colagen + lifting",
               "Microdermabraziune + hidratare → glow imediat",
             ]}
@@ -496,10 +496,10 @@ export function TratamenteFacialeCraiovaSections() {
             <p className="text-muted-foreground leading-relaxed">
               Mulți clienți aleg{" "}
               <Link
-                href="/hidrafacial-craiova"
+                href="/hydrablast-craiova"
                 className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
               >
-                Hidrafacial
+                Hydrablast
               </Link>{" "}
               sau{" "}
               <Link
@@ -617,7 +617,7 @@ export function TratamenteFacialeCraiovaSections() {
 
       <ServiceCTA
         title="Începe transformarea tenului tău"
-        description="Programează-te acum pentru tratamente faciale Craiova: Hidrafacial, RF Fractionat, microneedling, HIFU și microdermabraziune. Telefon: 0757 851 882."
+        description="Programează-te acum pentru tratamente faciale Craiova: Hydrablast, RF Fractionat, microneedling, HIFU și microdermabraziune. Telefon: 0757 851 882."
       />
     </>
   )

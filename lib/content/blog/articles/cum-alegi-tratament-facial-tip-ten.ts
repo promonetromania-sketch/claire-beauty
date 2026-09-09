@@ -206,7 +206,7 @@ const blocks: BlogPost["blocks"] = [
   {
     type: "p",
     content: [
-      "Curățare profundă (Hidrafacial): la 4–6 săptămâni. Microdermabraziune: la 3–4 săptămâni. Microneedling: la 4–6 săptămâni, cicluri de 3–6 ședințe. HIFU: la 12–18 luni, în funcție de răspuns. Constanța bate intensitatea — o ședință excelentă urmată de luni de neglijență nu aduce beneficii durabile.",
+      "Curățare profundă (Hydrablast): la 4–6 săptămâni. Microdermabraziune: la 3–4 săptămâni. Microneedling: la 4–6 săptămâni, cicluri de 3–6 ședințe. HIFU: la 12–18 luni, în funcție de răspuns. Constanța bate intensitatea — o ședință excelentă urmată de luni de neglijență nu aduce beneficii durabile.",
     ],
   },
   {
@@ -236,7 +236,7 @@ const faqs: BlogPost["faqs"] = [
       "Da, este foarte frecvent. Zona T poate fi grasă, iar obrajii uscați și reactivi. Protocolul se adaptează: zone diferite, intensități diferite, seruri specifice pentru fiecare zonă.",
   },
   {
-    question: "Hidrafacial este potrivit pentru toate tipurile de ten?",
+    question: "Hydrablast este potrivit pentru toate tipurile de ten?",
     answer:
       "Pentru majoritatea, da. Serurile se personalizează: hidratante pentru ten uscat, cu acid salicilic pentru ten gras, calmante pentru ten sensibil. Consultația stabilește formula optimă.",
   },
@@ -278,7 +278,7 @@ export const tipTenPost: BlogPost = {
   excerpt:
     "Ten gras, uscat, sensibil sau matur — fiecare tip necesită un protocol diferit. Ghid practic pentru alegerea tratamentului facial ideal în Craiova.",
   metaDescription:
-    "Cum alegi tratamentul facial potrivit: ten gras, uscat, sensibil, mixt. Recomandări Hidrafacial, microdermabraziune, HIFU la Claire Beauty Craiova.",
+    "Cum alegi tratamentul facial potrivit: ten gras, uscat, sensibil, mixt. Recomandări Hydrablast, microdermabraziune, HIFU la Claire Beauty Craiova.",
   keywords: [
     "tratament facial tip ten",
     "ce tratament facial imi trebuie",

@@ -367,10 +367,10 @@ export function HifuSections() {
           <ul className="space-y-3 text-muted-foreground leading-relaxed">
             <li>
               <Link
-                href="/hidrafacial-craiova"
+                href="/hydrablast-craiova"
                 className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
               >
-                Hidrafacial
+                Hydrablast
               </Link>{" "}
               → curățare + hidratare
             </li>
@@ -398,7 +398,7 @@ export function HifuSections() {
           <BulletList
             items={[
               "HIFU + microneedling → lifting + regenerare",
-              "HIFU + Hidrafacial → lifting + hidratare",
+              "HIFU + Hydrablast → lifting + hidratare",
             ]}
           />
           <p className="mt-6 text-center text-muted-foreground leading-relaxed">
@@ -411,10 +411,10 @@ export function HifuSections() {
             </Link>{" "}
             și{" "}
             <Link
-              href="/hidrafacial-craiova"
+              href="/hydrablast-craiova"
               className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
             >
-              Hidrafacial
+              Hydrablast
             </Link>
             .
           </p>

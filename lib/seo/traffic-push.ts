@@ -60,8 +60,8 @@ export const hubBlogLinks: Record<HubKey, BlogInlineLink[]> = {
       href: "/blog/ce-evitat-dupa-tratamente-estetice",
     },
     {
-      text: "Hidrafacial pentru începători — ce trebuie să știi",
-      href: "/blog/ce-este-hydrafacial-beneficii-craiova",
+      text: "Hydrablast pentru începători — ce trebuie să știi",
+      href: "/blog/ce-este-hydrablast-beneficii-craiova",
     },
     {
       text: "Microdermabraziune — când este recomandată",
@@ -152,7 +152,7 @@ export const servicePageBlogLinks: Record<string, BlogInlineLink[]> = {
       href: "/blog/masaj-anticelulitic-vs-drenaj-limfatic",
     },
   ],
-  "/hidrafacial-craiova": [
+  "/hydrablast-craiova": [
     {
       text: "Curățare facială acasă vs salon",
       href: "/blog/curatare-faciala-acasa-vs-salon",
@@ -162,8 +162,8 @@ export const servicePageBlogLinks: Record<string, BlogInlineLink[]> = {
       href: "/blog/cum-scapi-de-puncte-negre-corect",
     },
     {
-      text: "Hidrafacial pentru începători",
-      href: "/blog/ce-este-hydrafacial-beneficii-craiova",
+      text: "Hydrablast pentru începători",
+      href: "/blog/ce-este-hydrablast-beneficii-craiova",
     },
     {
       text: "Microdermabraziune — când e recomandată",
@@ -327,8 +327,8 @@ export const articleTrafficPushOutbounds: Record<string, BlogInlineLink[]> = {
       href: "/blog/pori-dilatati-cauze-obiceiuri",
     },
     {
-      text: "Hidrafacial pentru începători",
-      href: "/blog/ce-este-hydrafacial-beneficii-craiova",
+      text: "Hydrablast pentru începători",
+      href: "/blog/ce-este-hydrablast-beneficii-craiova",
     },
     {
       text: "Microdermabraziune — când e recomandată",
@@ -339,7 +339,7 @@ export const articleTrafficPushOutbounds: Record<string, BlogInlineLink[]> = {
       href: "/blog/hifu-facial-lifting-nechirurgical",
     },
   ],
-  "ce-este-hydrafacial-beneficii-craiova": [
+  "ce-este-hydrablast-beneficii-craiova": [
     {
       text: "Curățare acasă vs salon — când treci la profesional",
       href: "/blog/curatare-faciala-acasa-vs-salon",
@@ -367,8 +367,8 @@ export const articleTrafficPushOutbounds: Record<string, BlogInlineLink[]> = {
       href: "/blog/curatare-faciala-acasa-vs-salon",
     },
     {
-      text: "Hidrafacial pentru începători",
-      href: "/blog/ce-este-hydrafacial-beneficii-craiova",
+      text: "Hydrablast pentru începători",
+      href: "/blog/ce-este-hydrablast-beneficii-craiova",
     },
     {
       text: "HIFU facial — lifting nechirurgical",
@@ -421,8 +421,8 @@ export const articleTrafficPushOutbounds: Record<string, BlogInlineLink[]> = {
       href: "/blog/pregatire-ten-vara-pasi",
     },
     {
-      text: "Hidrafacial pentru începători",
-      href: "/blog/ce-este-hydrafacial-beneficii-craiova",
+      text: "Hydrablast pentru începători",
+      href: "/blog/ce-este-hydrablast-beneficii-craiova",
     },
     {
       text: "Curățare facială acasă vs salon",
@@ -585,8 +585,8 @@ export const articleTrafficPushOutbounds: Record<string, BlogInlineLink[]> = {
       href: "/blog/tratamente-inainte-de-concediu",
     },
     {
-      text: "Hidrafacial pentru începători",
-      href: "/blog/ce-este-hydrafacial-beneficii-craiova",
+      text: "Hydrablast pentru începători",
+      href: "/blog/ce-este-hydrablast-beneficii-craiova",
     },
     {
       text: "Cum alegi tratamentul facial potrivit",
@@ -609,8 +609,8 @@ export const articleTrafficPushOutbounds: Record<string, BlogInlineLink[]> = {
       href: "/blog/cum-scapi-de-puncte-negre-corect",
     },
     {
-      text: "Hidrafacial pentru începători",
-      href: "/blog/ce-este-hydrafacial-beneficii-craiova",
+      text: "Hydrablast pentru începători",
+      href: "/blog/ce-este-hydrablast-beneficii-craiova",
     },
     {
       text: "Microdermabraziune — indicații",

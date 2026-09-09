@@ -1,39 +1,40 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { WhatsAppButton } from "@/components/layout/whatsapp-button"
 import { MobileCTA } from "@/components/layout/mobile-cta"
 import { JsonLd } from "@/components/seo/json-ld"
 import { ServiceFAQ } from "@/components/services/service-faq"
-import { TratamenteFacialeCraiovaHero } from "@/components/services/tratamente-faciale-craiova/tratamente-faciale-craiova-hero"
-import { TratamenteFacialeCraiovaSections } from "@/components/services/tratamente-faciale-craiova/tratamente-faciale-craiova-sections"
 import { HubBlogLinks } from "@/components/blog/hub-blog-links"
+import { HydrablastHero } from "@/components/services/hydrafacial/hydrafacial-hero"
+import { HydrablastSections } from "@/components/services/hydrafacial/hydrafacial-sections"
 import {
-  tratamenteFacialeFaqs} from "@/lib/content/tratamente-faciale-craiova"
-import { hubBlogLinks } from "@/lib/seo/traffic-push"
+  hydrafacialFaqs} from "@/lib/content/hydrafacial"
 import { businessProfile, localBusinessId, postalAddressSchema } from "@/lib/seo/business"
+import { servicePageBlogLinks } from "@/lib/seo/traffic-push"
 
-const pageUrl = `${businessProfile.url}/tratamente-faciale-craiova`
+const pageUrl = `${businessProfile.url}/hydrablast-craiova`
 
 export const metadata: Metadata = {
-  title:
-    "Tratamente Faciale Craiova – Soluții Personalizate pentru Tenul Tău | Claire Beauty Craiova",
+  title: "Hydrablast Craiova – Hidrodermabraziune Facială | Claire Beauty Craiova",
   description:
-    "Tratamente faciale Craiova la Claire Beauty: soluții personalizate pentru curățare, hidratare, regenerare și lifting. Consultație gratuită și protocol adaptat tipului de ten.",
+    "Hydrablast Craiova pentru curățare profundă, hidratare intensă și ten luminos. Hidrodermabraziune profesională. Elimină punctele negre. Rezultate imediate.",
   keywords: [
-    "tratamente faciale Craiova",
+    "Hydrablast Craiova",
+    "hidrodermabraziune Craiova",
+    "curățare facială Craiova",
     "tratament facial Craiova",
-    "îngrijire ten Craiova",
-    "salon facial Craiova",
-    "Claire Beauty Craiova",
+    "hidratare ten Craiova",
+    "ten luminos Craiova",
+    "puncte negre Craiova",
+    "tratamente faciale Craiova",
   ],
   alternates: {
     canonical: pageUrl },
   openGraph: {
-    title:
-      "Tratamente Faciale Craiova – Soluții Personalizate pentru Tenul Tău | Claire Beauty Craiova",
+    title: "Hydrablast Craiova – Hidrodermabraziune Facială | Claire Beauty Craiova",
     description:
-      "Tratamente faciale Craiova la Claire Beauty: soluții personalizate pentru curățare, hidratare, regenerare și lifting.",
+      "Hydrablast Craiova pentru curățare profundă, hidratare intensă și ten luminos.",
     type: "website",
     locale: "ro_RO",
     url: pageUrl } }
@@ -56,10 +57,10 @@ const localBusinessSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Tratamente faciale Craiova",
-  serviceType: "Tratamente faciale",
+  name: "Hydrablast Craiova",
+  serviceType: "Hydrablast",
   description:
-    "Tratamente faciale în Craiova: Hydrablast, RF Fractionat, microneedling, HIFU și microdermabraziune.",
+    "Hydrablast în Craiova — hidrodermabraziune pentru curățare profundă, hidratare intensă și ten luminos.",
   url: pageUrl,
   provider: {
     "@id": localBusinessId },
@@ -79,21 +80,21 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 2,
-      name: "Tratamente faciale Craiova",
+      name: "Hydrablast Craiova",
       item: pageUrl },
   ] }
 
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  mainEntity: tratamenteFacialeFaqs.map((faq) => ({
+  mainEntity: hydrafacialFaqs.map((faq) => ({
     "@type": "Question",
     name: faq.question,
     acceptedAnswer: {
       "@type": "Answer",
       text: faq.answer } })) }
 
-export default function TratamenteFacialeCraiovaPage() {
+export default function HydrablastPage() {
   return (
     <>
       <JsonLd
@@ -106,20 +107,18 @@ export default function TratamenteFacialeCraiovaPage() {
       />
       <Header />
       <main className="pb-24 md:pb-0">
-        <TratamenteFacialeCraiovaHero />
-        <TratamenteFacialeCraiovaSections />
-        <HubBlogLinks links={hubBlogLinks.facial} />
+        <HydrablastHero />
+        <HydrablastSections />
         <ServiceFAQ
-          title="Întrebări frecvente despre tratamente faciale"
+          title="Întrebări frecvente despre Hydrablast"
           subtitle="FAQ"
-          faqs={[...tratamenteFacialeFaqs]}
+          faqs={[...hydrafacialFaqs]}
         />
+        <HubBlogLinks links={servicePageBlogLinks["/hydrablast-craiova"]} />
       </main>
       <Footer />
       <WhatsAppButton />
-      <MobileCTA
-        layout="triple"
-      />
+      <MobileCTA layout="triple" />
     </>
   )
 }

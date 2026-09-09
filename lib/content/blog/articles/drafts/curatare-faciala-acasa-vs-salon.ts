@@ -149,7 +149,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       content: [
         "Modelul optim: rutină zilnică constantă acasă + curățare profesională la 4–6 săptămâni pentru ten normal-mixt, la 6–8 săptămâni pentru ten uscat sau sensibil, la 3–4 săptămâni pentru ten gras cu tendință acneică activă (sub supraveghere). Între ședințe: nu reintroduce aparatul de vacuum acasă « ca să prelungești efectul » — riști iritare. Menține demachierea, hidratarea, SPF-ul. Evită exfolierea cu 48–72 de ore înainte de programare. După ședință, urmează indicațiile esteticianei: uneori se recomandă pauză de la retinol 2–3 zile, alteori continuarea rutinei obișnuite. Hub-ul de ",
         L.tratamenteFaciale,
-        " reunește toate opțiunile — de la curățare clasică la Hidrafacial, microdermabraziune și protocoale combinate — astfel încât poți alege nivelul potrivit obiectivelor și bugetului tău.",
+        " reunește toate opțiunile — de la curățare clasică la Hydrablast, microdermabraziune și protocoale combinate — astfel încât poți alege nivelul potrivit obiectivelor și bugetului tău.",
       ],
     },
     {
@@ -171,7 +171,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       content: [
         "Alegerea ta — acasă vs salon — devine programare când rutina casnică a atins plafonul: puncte negre care revin în 3–5 zile, ten încărcat dimineața, produse active care ard. Semne clare că ai nevoie de serviciu: barieră compromisă după supra-curățare, textură neregulată persistentă, eveniment important în 2–4 săptămâni. Tranziția naturală: recunoști limitele acasă → alegi protocol profesional → programezi evaluarea. În cadrul clinicii noastre din Craiova, majoritatea clientelor observă ten curat și confortabil încă după prima ",
         { text: "consultație tratament facial personalizat", href: "/tratamente-faciale-craiova" },
-        " — Hidrafacial sau curățare clasică, după tipul de ten.",
+        " — Hydrablast sau curățare clasică, după tipul de ten.",
       ],
     },
     {
@@ -180,7 +180,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
         ["Puncte negre și ten încărcat revin constant, în ciuda rutinei acasă"],
         ["Produse active irită — ai nevoie de reset profesional al barierei"],
         ["Eveniment în 2–4 săptămâni — vrei ten curat fără risc de iritare"],
-        ["Nu știi ce alegi: Hidrafacial, curățare clasică, microdermabraziune — vezi și ", { text: "cum alegi tratamentul facial potrivit", href: "/blog/cum-alegi-tratament-facial-tip-ten" }],
+        ["Nu știi ce alegi: Hydrablast, curățare clasică, microdermabraziune — vezi și ", { text: "cum alegi tratamentul facial potrivit", href: "/blog/cum-alegi-tratament-facial-tip-ten" }],
       ],
     },
     {
@@ -213,7 +213,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       items: [
         ["Evaluare personalizată — tip ten, barieră, obiective, contraindicații"],
         ["Plan adaptat tipului tău de piele — frecvență și procedură corectă"],
-        ["Recomandare tratament corect — Hidrafacial, curățare clasică sau microdermabraziune, după caz"],
+        ["Recomandare tratament corect — Hydrablast, curățare clasică sau microdermabraziune, după caz"],
       ],
     },
     {
@@ -240,9 +240,9 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
         "Ten gras sau acneic: la 3–4 săptămâni. Ten normal-mixt: la 4–6 săptămâni. Ten uscat sau sensibil: la 6–8 săptămâni. Frecvența se ajustează după răspunsul pielii și obiceiurile acasă.",
     },
     {
-      question: "Hidrafacial sau curățare facială clasică — ce aleg?",
+      question: "Hydrablast sau curățare facială clasică — ce aleg?",
       answer:
-        "Hidrafacial e ideal pentru curățare plus hidratare, ten deshidratat sau sensibil. Curățarea clasică cu extracție manuală e potrivită când ai comedoni mulți, ten rezistent și toleranță bună. Consultația stabilește opțiunea optimă.",
+        "Hydrablast e ideal pentru curățare plus hidratare, ten deshidratat sau sensibil. Curățarea clasică cu extracție manuală e potrivită când ai comedoni mulți, ten rezistent și toleranță bună. Consultația stabilește opțiunea optimă.",
     },
     {
       question: "Aparatul de curățat porii de acasă e periculos?",

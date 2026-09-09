@@ -11,7 +11,7 @@ export const INDEX_TIER_1 = [
 ] as const
 
 export const INDEX_TIER_2_PUBLISHED = [
-  "ce-este-hydrafacial-beneficii-craiova",
+  "ce-este-hydrablast-beneficii-craiova",
   "cum-scapi-de-celulita-ghid-complet",
   "masaj-anticelulitic-vs-drenaj-limfatic",
   "remodelare-corporala-fara-operatie-tehnologii",
@@ -37,7 +37,7 @@ export const INDEX_TIER_2_HUBS = [
   "/tratamente-corporale-craiova",
   "/remodelare-corporala-craiova",
   "/drenaj-limfatic-craiova",
-  "/hidrafacial-craiova",
+  "/hydrablast-craiova",
 ] as const
 
 export const INDEX_TIER_3_DRAFTS = [

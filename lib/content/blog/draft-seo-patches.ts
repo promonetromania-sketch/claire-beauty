@@ -43,8 +43,8 @@ export const draftArticleSeoPatches: Record<string, ArticleSeoPatch> = {
         href: "/blog/cum-scapi-de-puncte-negre-corect",
       },
       {
-        text: "Hidrafacial pentru începători",
-        href: "/blog/ce-este-hydrafacial-beneficii-craiova",
+        text: "Hydrablast pentru începători",
+        href: "/blog/ce-este-hydrablast-beneficii-craiova",
       },
       {
         text: "Microdermabraziune — când e recomandată",
@@ -97,8 +97,8 @@ export const draftArticleSeoPatches: Record<string, ArticleSeoPatch> = {
         href: "/blog/tratamente-inainte-de-concediu",
       },
       {
-        text: "Hidrafacial pentru începători",
-        href: "/blog/ce-este-hydrafacial-beneficii-craiova",
+        text: "Hydrablast pentru începători",
+        href: "/blog/ce-este-hydrablast-beneficii-craiova",
       },
       {
         text: "Cum scapi de puncte negre corect",
@@ -129,8 +129,8 @@ export const draftArticleSeoPatches: Record<string, ArticleSeoPatch> = {
         href: "/blog/lifting-nechirurgical-vs-chirurgical",
       },
       {
-        text: "Hidrafacial pentru începători",
-        href: "/blog/ce-este-hydrafacial-beneficii-craiova",
+        text: "Hydrablast pentru începători",
+        href: "/blog/ce-este-hydrablast-beneficii-craiova",
       },
     ],
     extraServiceLinks: [L.tratamenteFaciale, L.hifu, L.dermapen],

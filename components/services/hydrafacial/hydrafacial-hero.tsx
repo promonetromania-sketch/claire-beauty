@@ -14,9 +14,9 @@ const badges = [
 ]
 
 const whatsappMessage =
-  "Bună ziua! Aș dori să programez o ședință de Hidrafacial la Claire Beauty Craiova."
+  "Bună ziua! Aș dori să programez o ședință de Hydrablast la Claire Beauty Craiova."
 
-export function HidrafacialHero() {
+export function HydrablastHero() {
   return (
     <section className="relative flex min-h-[78vh] items-center overflow-hidden">
       <div className="absolute inset-0">
@@ -37,15 +37,15 @@ export function HidrafacialHero() {
             Tratament premium glow facial
           </p>
           <h1 className="mb-6 font-serif text-4xl font-semibold leading-tight text-[#FFF9F2] sm:text-5xl lg:text-6xl">
-            Hidrafacial Craiova – Curățare Profundă, Hidratare Intensă și Efect
-            de Glow Imediat
+            Hydrablast Craiova – Hidrodermabraziune, Curățare Profundă și Glow
+            Imediat
           </h1>
           <p className="mb-4 max-w-2xl text-lg leading-relaxed text-[#FFF9F2]/90">
             Dacă îți dorești un ten curat, luminos și vizibil îmbunătățit chiar
-            după prima ședință, Hidrafacial este unul dintre cele mai eficiente
-            tratamente faciale disponibile în acest moment. Este tratamentul
-            ideal pentru persoanele care vor rezultate rapide, fără durere și
-            fără timp de recuperare.
+            după prima ședință, Hydrablast este hidrodermabraziunea profesională
+            pe care o folosim la Claire Beauty. Este tratamentul ideal pentru
+            persoanele care vor rezultate rapide, fără durere și fără timp de
+            recuperare.
           </p>
           <p className="mb-8 max-w-2xl text-lg leading-relaxed text-[#FFF9F2]/90">
             Procedura de{" "}
@@ -53,7 +53,7 @@ export function HidrafacialHero() {
               href="/"
               className="font-medium text-[#D4AF37] underline-offset-4 hover:underline"
             >
-              Hidrafacial
+              Hydrablast
             </Link>{" "}
             curăță în profunzime și hidratează pielea fără disconfort.
             Rezultatul: un ten curat, hidratat și vizibil mai luminos după o

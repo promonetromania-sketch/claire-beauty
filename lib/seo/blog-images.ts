@@ -21,7 +21,7 @@ export const BLOG_IMAGE_BY_SLUG: Record<string, string> = {
     "/og/blog/post-tratamente-post-procedura.jpg",
   "tratamente-inainte-de-concediu": "/og/blog/pre-vacanta-beauty.jpg",
   "pregatire-ten-vara-pasi": "/og/blog/facial-incepatori-clinic.jpg",
-  "ce-este-hydrafacial-beneficii-craiova":
+  "ce-este-hydrablast-beneficii-craiova":
     "/images/blog/blog-hydrafacial-beneficii.jpg",
   "cum-scapi-de-celulita-ghid-complet": "/images/blog/blog-celulita-ghid.jpg",
   "masaj-anticelulitic-vs-drenaj-limfatic":

@@ -179,10 +179,10 @@ export const pricingCategories: PricingCategory[] = [
     title: "Tratamente faciale",
     items: [
       {
-        name: "Hidrafacial",
+        name: "Hydrablast",
         price: "de la 300 lei",
         detail: "/ tratament",
-        href: "/hidrafacial-craiova",
+        href: "/hydrablast-craiova",
       },
       {
         name: "Microneedling",

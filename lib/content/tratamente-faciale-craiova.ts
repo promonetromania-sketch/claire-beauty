@@ -5,7 +5,7 @@ export const tratamenteFacialeFaqs = [
   {
     question: "Care este cel mai bun tratament facial?",
     answer:
-      "Depinde de problema pielii. Pentru curățare este recomandat Hidrafacial, pentru cicatrici microneedling, iar pentru lifting HIFU.",
+      "Depinde de problema pielii. Pentru curățare este recomandat Hydrablast, pentru cicatrici microneedling, iar pentru lifting HIFU.",
   },
   {
     question: "Cât de des ar trebui să faci tratamente faciale?",
@@ -15,7 +15,7 @@ export const tratamenteFacialeFaqs = [
   {
     question: "Se văd rezultatele după prima ședință?",
     answer:
-      "Unele tratamente oferă rezultate imediate (ex: Hidrafacial), iar altele au efect progresiv (ex: RF Fractionat, HIFU).",
+      "Unele tratamente oferă rezultate imediate (ex: Hydrablast), iar altele au efect progresiv (ex: RF Fractionat, HIFU).",
   },
   {
     question: "Se pot combina tratamentele faciale?",

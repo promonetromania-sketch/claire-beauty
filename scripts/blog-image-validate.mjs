@@ -13,7 +13,7 @@ const LIVE = [
   "ce-evitat-dupa-tratamente-estetice",
   "tratamente-inainte-de-concediu",
   "pregatire-ten-vara-pasi",
-  "ce-este-hydrafacial-beneficii-craiova",
+  "ce-este-hydrablast-beneficii-craiova",
   "cum-scapi-de-celulita-ghid-complet",
   "masaj-anticelulitic-vs-drenaj-limfatic",
   "remodelare-corporala-fara-operatie-tehnologii",

@@ -34,10 +34,10 @@ export const metadata: Metadata = {
   title:
     "Prețuri Claire Beauty Craiova - Masaj, Tratamente Faciale și Remodelare Corporală",
   description:
-    "Vezi lista de prețuri Claire Beauty Craiova pentru masaj, drenaj limfatic, remodelare corporală, HIFU, Hidrafacial, microneedling și tratamente body spa.",
+    "Vezi lista de prețuri Claire Beauty Craiova pentru masaj, drenaj limfatic, remodelare corporală, HIFU, Hydrablast, microneedling și tratamente body spa.",
   keywords: [
     "prețuri masaj Craiova",
-    "prețuri Hidrafacial Craiova",
+    "prețuri Hydrablast Craiova",
     "prețuri HIFU Craiova",
     "prețuri remodelare corporală Craiova",
     "Claire Beauty prețuri",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title:
       "Prețuri Claire Beauty Craiova - Masaj, Tratamente Faciale și Remodelare Corporală",
     description:
-      "Listă de prețuri pentru masaj, drenaj limfatic, remodelare corporală, HIFU, Hidrafacial și tratamente body spa la Claire Beauty Craiova.",
+      "Listă de prețuri pentru masaj, drenaj limfatic, remodelare corporală, HIFU, Hydrablast și tratamente body spa la Claire Beauty Craiova.",
     type: "website",
     locale: "ro_RO",
     url: pageUrl,

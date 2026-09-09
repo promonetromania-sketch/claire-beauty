@@ -70,7 +70,7 @@ const submenuIcons: Record<string, LucideIcon> = {
   "/hifu-craiova": Zap,
   "/microdermabraziune-craiova": Layers,
   "/microneedling-craiova": Syringe,
-  "/hidrafacial-craiova": Sparkles,
+  "/hydrablast-craiova": Sparkles,
   "/remodelare-corporala-craiova": Activity,
   "/electrostimulare-craiova": Zap,
   "/radiofrecventa-corporala-craiova": Radio,

@@ -45,7 +45,7 @@ export const dermapenFaqs = [
   {
     question: "Care este diferența dintre Dermapen și alte tratamente faciale?",
     answer:
-      "Dermapen acționează în profunzime, stimulând regenerarea pielii. Alte tratamente, precum Hidrafacial, acționează mai mult la suprafață, prin curățare și hidratare.",
+      "Dermapen acționează în profunzime, stimulând regenerarea pielii. Alte tratamente, precum Hydrablast, acționează mai mult la suprafață, prin curățare și hidratare.",
   },
   {
     question: "Cât timp durează recuperarea?",

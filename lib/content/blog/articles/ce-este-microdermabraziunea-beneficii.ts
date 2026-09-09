@@ -221,7 +221,7 @@ const faqs: BlogPost["faqs"] = [
   {
     question: "Pot face microdermabraziune dacă am ten sensibil?",
     answer:
-      "Da, cu precauții. Intensitatea se reduce, iar zona tratată poate fi limitată. Tenul foarte sensibil, cu cuperoză activă sau dermatită, necesită evaluare individuală. Hidrafacial cu seruri calmante poate fi o alternativă mai potrivită.",
+      "Da, cu precauții. Intensitatea se reduce, iar zona tratată poate fi limitată. Tenul foarte sensibil, cu cuperoză activă sau dermatită, necesită evaluare individuală. Hydrablast cu seruri calmante poate fi o alternativă mai potrivită.",
   },
   {
     question: "Microdermabraziunea este sigură vara?",

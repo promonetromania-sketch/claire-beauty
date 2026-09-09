@@ -20,13 +20,13 @@ export type ArticleSeoPatch = {
 }
 
 export const articleSeoPatches: Record<string, ArticleSeoPatch> = {
-  "ce-este-hydrafacial-beneficii-craiova": {
+  "ce-este-hydrablast-beneficii-craiova": {
     title:
-      "Hidrafacial pentru începători: ce trebuie să știi înainte de prima ședință",
+      "Hydrablast pentru începători: ce trebuie să știi înainte de prima ședință",
     excerpt:
-      "Prima ta ședință Hidrafacial? Află ce presupune, cum te pregătești și ce poți aștepta — ghid prietenos pentru clientele din Craiova.",
+      "Prima ta ședință Hydrablast? Află ce presupune, cum te pregătești și ce poți aștepta — ghid prietenos pentru clientele din Craiova.",
     metaDescription:
-      "Ghid Hidrafacial pentru începători: pregătire, pași, confort și recomandări înainte de prima ședință. Programează la Claire Beauty Craiova.",
+      "Ghid Hydrablast pentru începători: pregătire, pași, confort și recomandări înainte de prima ședință. Programează la Claire Beauty Craiova.",
     hubLink: L.tratamenteFaciale,
     relatedArticles: [
       {
@@ -53,8 +53,8 @@ export const articleSeoPatches: Record<string, ArticleSeoPatch> = {
     hubLink: L.tratamenteFaciale,
     relatedArticles: [
       {
-        text: "Hidrafacial pentru începători",
-        href: "/blog/ce-este-hydrafacial-beneficii-craiova",
+        text: "Hydrablast pentru începători",
+        href: "/blog/ce-este-hydrablast-beneficii-craiova",
       },
       {
         text: "Cum alegi tratamentul facial potrivit tipului de ten",
@@ -344,8 +344,8 @@ export const articleSeoPatches: Record<string, ArticleSeoPatch> = {
         href: "/blog/curatare-faciala-acasa-vs-salon",
       },
       {
-        text: "Hidrafacial pentru începători",
-        href: "/blog/ce-este-hydrafacial-beneficii-craiova",
+        text: "Hydrablast pentru începători",
+        href: "/blog/ce-este-hydrablast-beneficii-craiova",
       },
       {
         text: "Ce eviți după tratamente estetice",

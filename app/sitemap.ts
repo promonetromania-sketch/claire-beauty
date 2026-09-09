@@ -12,7 +12,7 @@ const STATIC_ROUTES = [
   "/tratamente-corporale-craiova",
   "/remodelare-corporala-craiova",
   "/drenaj-limfatic-craiova",
-  "/hidrafacial-craiova",
+  "/hydrablast-craiova",
   "/masaj-terapeutic-craiova",
   "/masaj-anticelulitic-craiova",
   "/hifu-facial-craiova",

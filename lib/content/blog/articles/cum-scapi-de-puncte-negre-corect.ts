@@ -8,13 +8,13 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
   excerpt:
     "Strips, extragere manuală sau tratamente profesionale? Află ce funcționează cu adevărat, ce metode îți pot deteriora pielea și de ce curățarea profundă la salon rămâne cea mai sigură soluție pe termen lung.",
   metaDescription:
-    "Cum scapi de puncte negre în mod sigur: Hidrafacial, microdermabraziune și rutină acasă. Ghid complet pentru ten curat la Claire Beauty Craiova.",
+    "Cum scapi de puncte negre în mod sigur: Hydrablast, microdermabraziune și rutină acasă. Ghid complet pentru ten curat la Claire Beauty Craiova.",
   keywords: [
     "cum scapi de puncte negre",
     "puncte negre tratament",
     "curatare pori Craiova",
     "extractie puncte negre",
-    "Hidrafacial puncte negre",
+    "Hydrablast puncte negre",
   ],
   tag: "Tratamente faciale",
   publishedAt: "2026-05-28",
@@ -67,7 +67,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     },
     {
       type: "h3",
-      text: "Curățare profesională — Hidrafacial",
+      text: "Curățare profesională — Hydrablast",
     },
     {
       type: "p",
@@ -84,7 +84,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       type: "p",
       content: [
         L.microdermabraziune,
-        " îndepărtează stratul superficial de celule moarte, prevenind reinfundarea porilor. Nu extrage comedonele existente la fel de direct ca Hidrafacial, dar este excelentă ca tratament complementar — mai ales pentru textură rugoasă sau ten tern. Combinarea celor două proceduri, la intervale adaptate tipului de ten, oferă rezultate mai complete decât oricare singură.",
+        " îndepărtează stratul superficial de celule moarte, prevenind reinfundarea porilor. Nu extrage comedonele existente la fel de direct ca Hydrablast, dar este excelentă ca tratament complementar — mai ales pentru textură rugoasă sau ten tern. Combinarea celor două proceduri, la intervale adaptate tipului de ten, oferă rezultate mai complete decât oricare singură.",
       ],
     },
     {
@@ -140,7 +140,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "La Claire Beauty, procesul începe cu evaluarea tenului: tip de piele, sensibilități, produse folosite acasă. Apoi urmează curățare blândă, exfoliere controlată, extracția impurităților (manuală delicată sau prin Hidrafacial, în funcție de protocol) și mască calmantă. Întreaga ședință durează 45–60 de minute. Pielea poate fi ușor roz imediat după, dar disconfortul dispare rapid — spre deosebire de stoarcerea agresivă acasă, care poate lăsa roșeață și umflătură zile întregi.",
+        "La Claire Beauty, procesul începe cu evaluarea tenului: tip de piele, sensibilități, produse folosite acasă. Apoi urmează curățare blândă, exfoliere controlată, extracția impurităților (manuală delicată sau prin Hydrablast, în funcție de protocol) și mască calmantă. Întreaga ședință durează 45–60 de minute. Pielea poate fi ușor roz imediat după, dar disconfortul dispare rapid — spre deosebire de stoarcerea agresivă acasă, care poate lăsa roșeață și umflătură zile întregi.",
       ],
     },
     {
@@ -213,11 +213,11 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       type: "callout",
       title: "Pori curați, fără iritații",
       content: [
-        "Programează un Hidrafacial la Claire Beauty Craiova și vezi diferența de la prima ședință — curățare profundă, ten calm, fără compromisuri.",
+        "Programează un Hydrablast la Claire Beauty Craiova și vezi diferența de la prima ședință — curățare profundă, ten calm, fără compromisuri.",
       ],
       link: {
-        text: "Hidrafacial Craiova",
-        href: "/hidrafacial-craiova",
+        text: "Hydrablast Craiova",
+        href: "/hydrablast-craiova",
       },
     },
   ],
@@ -228,9 +228,9 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
         "Nu există eliminare permanentă, deoarece glandele sebacee continuă să funcționeze. Cu rutină corectă și curățări profesionale regulate, însă, le poți controla eficient și menține porii curați.",
     },
     {
-      question: "Hidrafacial sau microdermabraziune — ce aleg?",
+      question: "Hydrablast sau microdermabraziune — ce aleg?",
       answer:
-        "Hidrafacial este ideal pentru extracția directă a punctelor negre. Microdermabraziunea previne acumularea celulelor moarte. Adesea, le combinăm pentru rezultate optime.",
+        "Hydrablast este ideal pentru extracția directă a punctelor negre. Microdermabraziunea previne acumularea celulelor moarte. Adesea, le combinăm pentru rezultate optime.",
     },
     {
       question: "Cât de des ar trebui să fac curățare profesională?",

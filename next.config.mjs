@@ -9,7 +9,17 @@ async redirects() {
       },
       {
         source: "/hydrafacial-craiova",
-        destination: "/hidrafacial-craiova",
+        destination: "/hydrablast-craiova",
+        permanent: true,
+      },
+      {
+        source: "/hidrafacial-craiova",
+        destination: "/hydrablast-craiova",
+        permanent: true,
+      },
+      {
+        source: "/blog/ce-este-hydrafacial-beneficii-craiova",
+        destination: "/blog/ce-este-hydrablast-beneficii-craiova",
         permanent: true,
       },
       {

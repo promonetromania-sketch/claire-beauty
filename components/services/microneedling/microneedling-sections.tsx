@@ -280,15 +280,15 @@ export function MicroneedlingSections() {
       <SectionShell className="bg-background">
         <SectionHeading
           eyebrow="Comparație"
-          title="Microneedling vs Hidrafacial"
+          title="Microneedling vs Hydrablast"
           description="Nu sunt alternative — combinate oferă rezultate complete."
         />
         <div className="grid gap-6 lg:grid-cols-2">
           <ComparisonCard
-            title="Hidrafacial"
+            title="Hydrablast"
             items={["curăță + hidratează", "rezultate rapide"]}
-            href="/hidrafacial-craiova"
-            linkLabel="Vezi Hidrafacial Craiova"
+            href="/hydrablast-craiova"
+            linkLabel="Vezi Hydrablast Craiova"
           />
           <ComparisonCard
             title="Microneedling"
@@ -356,7 +356,7 @@ export function MicroneedlingSections() {
 
       <InlineCTA
         title="Ai nevoie de un plan complet de regenerare a tenului?"
-        description="Combină microneedling cu Hidrafacial sau HIFU pentru rezultate vizibile și stabile."
+        description="Combină microneedling cu Hydrablast sau HIFU pentru rezultate vizibile și stabile."
         primaryLabel="Cere recomandare"
       />
 
@@ -396,17 +396,17 @@ export function MicroneedlingSections() {
         <div className="mx-auto max-w-3xl">
           <BulletList
             items={[
-              "microneedling + Hidrafacial → curățare + regenerare",
+              "microneedling + Hydrablast → curățare + regenerare",
               "microneedling + HIFU → regenerare + lifting",
             ]}
           />
           <p className="mt-6 text-center text-muted-foreground leading-relaxed">
             Explorează{" "}
             <Link
-              href="/hidrafacial-craiova"
+              href="/hydrablast-craiova"
               className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
             >
-              Hidrafacial
+              Hydrablast
             </Link>{" "}
             și{" "}
             <Link
