@@ -274,10 +274,10 @@ export function MicrodermabraziuneSections() {
             <p className="mt-4 text-muted-foreground leading-relaxed">
               În aceste cazuri sunt recomandate tratamente precum{" "}
               <Link
-                href="/dermapen-craiova"
+                href="/microneedling-craiova"
                 className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
               >
-                Dermapen
+                microneedling
               </Link>{" "}
               sau{" "}
               <Link
@@ -351,7 +351,7 @@ export function MicrodermabraziuneSections() {
 
       <InlineCTA
         title="Vrei un ten curat și luminos imediat?"
-        description="Programează microdermabraziunea și combină-o cu Hidrafacial sau Dermapen pentru rezultate complete."
+        description="Programează microdermabraziunea și combină-o cu Hidrafacial sau microneedling pentru rezultate complete."
         primaryLabel="Cere recomandare"
       />
 
@@ -381,7 +381,7 @@ export function MicrodermabraziuneSections() {
           <BulletList
             items={[
               "microdermabraziune + Hidrafacial → curățare + hidratare",
-              "microdermabraziune + Dermapen → exfoliere + colagen",
+              "microdermabraziune + microneedling → exfoliere + colagen",
               "microdermabraziune + HIFU → curățare + lifting",
             ]}
           />
@@ -395,10 +395,10 @@ export function MicrodermabraziuneSections() {
             </Link>
             ,{" "}
             <Link
-              href="/dermapen-craiova"
+              href="/microneedling-craiova"
               className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
             >
-              Dermapen
+              microneedling
             </Link>{" "}
             și{" "}
             <Link

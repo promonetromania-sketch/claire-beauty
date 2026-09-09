@@ -185,7 +185,7 @@ export function MicroneedlingSections() {
               align="left"
               eyebrow="Procedură regenerativă"
               title="Ce este microneedling și cum funcționează"
-              description="Microneedling este denumirea generală a procedurii, în timp ce Dermapen este una dintre tehnologiile utilizate pentru realizarea acesteia."
+              description="Microneedling folosește micro-ace pentru a crea canale controlate în piele și a stimula regenerarea."
             />
             <p className="mb-4 text-muted-foreground leading-relaxed">
               Microneedling este o procedură care utilizează micro-ace pentru a
@@ -200,14 +200,7 @@ export function MicroneedlingSections() {
             />
             <p className="mt-6 text-muted-foreground leading-relaxed">
               Practic, pielea este „forțată” să se refacă și să devină mai
-              sănătoasă. Pentru tehnologia avansată, vezi{" "}
-              <Link
-                href="/dermapen-craiova"
-                className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
-              >
-                Dermapen
-              </Link>
-              .
+              sănătoasă, cu un protocol adaptat tipului de ten.
             </p>
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-premium-lg">
@@ -266,22 +259,20 @@ export function MicroneedlingSections() {
       <SectionShell className="bg-secondary/40">
         <SectionHeading
           eyebrow="Comparație"
-          title="Microneedling vs Dermapen (clarificare importantă)"
-          description="Microneedling este procedura, iar Dermapen este instrumentul care o realizează cu precizie mai mare."
+          title="Microneedling profesional vs roller de acasă"
+          description="Aceeași idee, dar adâncime, sterilitate și rezultate diferite."
         />
         <div className="grid gap-6 lg:grid-cols-2">
           <ComparisonCard
-            title="Microneedling"
-            items={["termen general", "procedură de regenerare a pielii"]}
+            title="Roller de acasă"
+            items={["ace scurte, presiune neuniformă", "risc mai mare de iritație"]}
           />
           <ComparisonCard
-            title="Dermapen"
+            title="Microneedling în salon"
             items={[
-              "tehnologie avansată de microneedling",
-              "mai precis și controlat",
+              "adâncime controlată și seruri profesionale",
+              "protocol adaptat tenului tău",
             ]}
-            href="/dermapen-craiova"
-            linkLabel="Vezi Dermapen Craiova"
           />
         </div>
       </SectionShell>
@@ -365,7 +356,7 @@ export function MicroneedlingSections() {
 
       <InlineCTA
         title="Ai nevoie de un plan complet de regenerare a tenului?"
-        description="Combină microneedling cu Hidrafacial, Dermapen sau HIFU pentru rezultate vizibile și stabile."
+        description="Combină microneedling cu Hidrafacial sau HIFU pentru rezultate vizibile și stabile."
         primaryLabel="Cere recomandare"
       />
 
@@ -406,7 +397,6 @@ export function MicroneedlingSections() {
           <BulletList
             items={[
               "microneedling + Hidrafacial → curățare + regenerare",
-              "microneedling + Dermapen → colagen intens",
               "microneedling + HIFU → regenerare + lifting",
             ]}
           />
@@ -417,13 +407,6 @@ export function MicroneedlingSections() {
               className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
             >
               Hidrafacial
-            </Link>
-            ,{" "}
-            <Link
-              href="/dermapen-craiova"
-              className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
-            >
-              Dermapen
             </Link>{" "}
             și{" "}
             <Link

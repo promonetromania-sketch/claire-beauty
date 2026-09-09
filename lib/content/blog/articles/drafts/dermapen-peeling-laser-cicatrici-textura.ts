@@ -3,15 +3,15 @@ import { blogServiceLinks as L } from "../../links"
 import { estimateReadTimeMinutes } from "../../utils"
 
 const post: Omit<BlogPost, "readTimeMinutes"> = {
-  slug: "dermapen-peeling-laser-cicatrici-textura",
-  title: "Dermapen, peeling sau laser: cum alegi terapia potrivită pentru cicatrici și textură",
+  slug: "microneedling-peeling-laser-cicatrici-textura",
+  title: "Microneedling, peeling sau laser: cum alegi terapia potrivită pentru cicatrici și textură",
   excerpt:
-    "Cicatrici post-acnee, textură neuniformă, pori vizibili — Dermapen, peeling sau laser? Ghid comparativ pentru alegerea terapiei potrivite obiectivului tău.",
+    "Cicatrici post-acnee, textură neuniformă, pori vizibili — microneedling, peeling sau laser? Ghid comparativ pentru alegerea terapiei potrivite obiectivului tău.",
   metaDescription:
-    "Dermapen vs peeling vs laser pentru cicatrici și textură: comparație pe obiective, recuperare, ședințe. Cum alegi terapia potrivită la Claire Beauty Craiova.",
+    "Microneedling vs peeling vs laser pentru cicatrici și textură: comparație pe obiective, recuperare, ședințe. Cum alegi terapia potrivită la Claire Beauty Craiova.",
   keywords: [
     "tratament cicatrici post-acnee optiuni",
-    "dermapen vs peeling cicatrici",
+    "microneedling vs peeling cicatrici",
     "laser cicatrici fata",
     "textura piele neuniforma tratament",
     "terapii cicatrici fata",
@@ -19,17 +19,17 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
   tag: "Tratamente faciale",
   publishedAt: "2026-09-01",
   image: {
-    src: "/images/blog/drafts/dermapen-peeling-laser-cicatrici-textura.jpg",
-    alt: "Comparație Dermapen, peeling și laser pentru cicatrici și textură",
-    title: "Dermapen, peeling sau laser — ghid de alegere",
+    src: "/images/blog/drafts/microneedling-peeling-laser-cicatrici-textura.jpg",
+    alt: "Comparație microneedling, peeling și laser pentru cicatrici și textură",
+    title: "microneedling, peeling sau laser — ghid de alegere",
   },
   relatedService: L.dermapen,
   recommendedServices: [L.microneedling, L.microdermabraziune, L.tratamenteFaciale],
   hubLink: L.tratamenteFaciale,
   relatedArticles: [
     {
-      text: "Microneedling vs Dermapen: diferențe și când alegi fiecare",
-      href: "/blog/microneedling-vs-dermapen-diferente",
+      text: "Microneedling: ce este, cum funcționează, rezultate: diferențe și când alegi fiecare",
+      href: "/blog/microneedling-ce-este-cum-functioneaza-rezultate",
     },
     {
       text: "Ce este microdermabraziunea: beneficii și când e recomandată",
@@ -40,7 +40,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Cicatricile post-acnee, textura « neregulată », porii dilatați sau pielea cu aspect « crepat » sunt printre cele mai frecvente motive pentru care clienții caută tratamente profesionale — și printre cele mai confuze în alegere. Dermapen, peeling chimic, laser fracționat, microdermabraziune: toate promit îmbunătățire, dar țintesc mecanisme diferite și au profiluri distincte de recuperare, număr de ședințe și rezultate. Acest articol compară cele trei categorii principale — microneedling/Dermapen, peeling, laser — pentru cicatrici și textură, nu doar Dermapen vs microneedling generic. La ",
+        "Cicatricile post-acnee, textura « neregulată », porii dilatați sau pielea cu aspect « crepat » sunt printre cele mai frecvente motive pentru care clienții caută tratamente profesionale — și printre cele mai confuze în alegere. microneedling, peeling chimic, laser fracționat, microdermabraziune: toate promit îmbunătățire, dar țintesc mecanisme diferite și au profiluri distincte de recuperare, număr de ședințe și rezultate. Acest articol compară cele trei categorii principale — microneedling, peeling, laser — pentru cicatrici și textură, nu doar microneedling vs microneedling generic. La ",
         L.contact,
         ", evaluarea pornește de la tipul de cicatrice, profunzime și obiectiv, nu de la tehnologia « la modă ».",
       ],
@@ -52,17 +52,17 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Cicatricile atrofice (post-acnee « găuri », « ice pick », « boxcar ») apar când țesutul nu s-a regenerat complet după inflamație. Textura neuniformă poate include: pori dilatați, zone cu aspect « crepat », pete post-inflamatorii, suprafață « neregulată » la atingere. Obiectivul tratamentelor este stimularea neocolagenogenezei — producția de colagen nou care « umple » de la bază cicatricile și netezește suprafața. Nici Dermapen, nici peelingul, nici laserul « șterg » cicatrici; le îmbunătățesc treptat, prin regenerare. Așteptările realiste: reducere 40–70% a vizibilității cicatricilor moderate după protocol complet; cicatrici profunde « ice pick » răspund mai slab, adesea necesită combinații sau TCA cross.",
+        "Cicatricile atrofice (post-acnee « găuri », « ice pick », « boxcar ») apar când țesutul nu s-a regenerat complet după inflamație. Textura neuniformă poate include: pori dilatați, zone cu aspect « crepat », pete post-inflamatorii, suprafață « neregulată » la atingere. Obiectivul tratamentelor este stimularea neocolagenogenezei — producția de colagen nou care « umple » de la bază cicatricile și netezește suprafața. Nici microneedling, nici peelingul, nici laserul « șterg » cicatrici; le îmbunătățesc treptat, prin regenerare. Așteptările realiste: reducere 40–70% a vizibilității cicatricilor moderate după protocol complet; cicatrici profunde « ice pick » răspund mai slab, adesea necesită combinații sau TCA cross.",
       ],
     },
     {
       type: "h2",
-      text: "Dermapen — cum funcționează pentru cicatrici și textură",
+      text: "microneedling — cum funcționează pentru cicatrici și textură",
     },
     {
       type: "p",
       content: [
-        "Dermapen este un dispozitiv de microneedling cu ace fine (0,5–2,5 mm) care creează micro-canale în piele, declanșând răspunsul de vindecare și neocolagenogeneza. Pentru cicatrici atrofice, adâncimea se ajustează — cicatrici superficiale: 0,5–1 mm; cicatrici moderate: 1–1,5 mm; cicatrici adânci: 1,5–2 mm (cu precauții). Seruri cu acid hialuronic, peptide sau factori de creștere pot fi aplicate prin canale pentru penetrare amplificată. Recuperare: 24–72 ore de roșeață ușoară; 3–5 zile de descuamare ușoară. Protocol: 4–6 ședințe la 4–6 săptămâni. Microneedling-ul (inclusiv Dermapen) este adesea primul pas pentru cicatrici post-acnee ușoare–moderate și textură neuniformă — eficient, predictibil, downtime minim comparativ cu laserul ablativ.",
+        "microneedling este un dispozitiv de microneedling cu ace fine (0,5–2,5 mm) care creează micro-canale în piele, declanșând răspunsul de vindecare și neocolagenogeneza. Pentru cicatrici atrofice, adâncimea se ajustează — cicatrici superficiale: 0,5–1 mm; cicatrici moderate: 1–1,5 mm; cicatrici adânci: 1,5–2 mm (cu precauții). Seruri cu acid hialuronic, peptide sau factori de creștere pot fi aplicate prin canale pentru penetrare amplificată. Recuperare: 24–72 ore de roșeață ușoară; 3–5 zile de descuamare ușoară. Protocol: 4–6 ședințe la 4–6 săptămâni. Microneedling-ul (inclusiv microneedling) este adesea primul pas pentru cicatrici post-acnee ușoare–moderate și textură neuniformă — eficient, predictibil, downtime minim comparativ cu laserul ablativ.",
       ],
     },
     {
@@ -72,7 +72,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Peelingurile (AHA, BHA, TCA, fenol) exfoliază straturile superioare ale pielii, stimulând regenerarea. Peeling superficial (glicolic, salicilic): textură ușoară, pori, pete — 3–6 ședințe, recuperare 1–3 zile. Peeling mediu (TCA 15–25%): cicatrici superficiale, textură moderată — 1–3 ședințe, recuperare 5–7 zile. Peeling profund (TCA 35%+, fenol): cicatrici adânci, riduri — 1 ședință, recuperare 2–3 săptămâni. Peelingurile sunt excelente pentru textură generală, pete, pori — dar pentru cicatrici atrofice adânci, adesea insuficiente singure. TCA cross ( aplicare punctuală de TCA concentrat în cicatrice) este excepție — foarte eficient pentru « ice pick ». Peelingul nu « înlocuiește » Dermapen; le completează — unele protocoale combină ambele.",
+        "Peelingurile (AHA, BHA, TCA, fenol) exfoliază straturile superioare ale pielii, stimulând regenerarea. Peeling superficial (glicolic, salicilic): textură ușoară, pori, pete — 3–6 ședințe, recuperare 1–3 zile. Peeling mediu (TCA 15–25%): cicatrici superficiale, textură moderată — 1–3 ședințe, recuperare 5–7 zile. Peeling profund (TCA 35%+, fenol): cicatrici adânci, riduri — 1 ședință, recuperare 2–3 săptămâni. Peelingurile sunt excelente pentru textură generală, pete, pori — dar pentru cicatrici atrofice adânci, adesea insuficiente singure. TCA cross ( aplicare punctuală de TCA concentrat în cicatrice) este excepție — foarte eficient pentru « ice pick ». Peelingul nu « înlocuiește » microneedling; le completează — unele protocoale combină ambele.",
       ],
     },
     {
@@ -82,7 +82,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Laserul fracționat (CO2, erbium) creează micro-zones de ablație, stimulând regenerare intensă. Pentru cicatrici adânci, textură severă, riduri fine — laserul poate fi superior microneedling-ului superficial. Recuperare: 5–14 zile (CO2 ablativ), 2–5 zile (erbium fracționat). 1–3 ședințe, cost mai mare. Laserul nu este « mai bun » universal — este mai invaziv, cu downtime mai lung. Pentru cicatrici post-acnee ușoare–moderate, Dermapen este adesea primul pas; laserul intră când Dermapen a atins plafonul sau când cicatricile sunt profunde. Laserul ablativ nu se face pe ten închis la culoare fără precauții extreme — risc de hiperpigmentare.",
+        "Laserul fracționat (CO2, erbium) creează micro-zones de ablație, stimulând regenerare intensă. Pentru cicatrici adânci, textură severă, riduri fine — laserul poate fi superior microneedling-ului superficial. Recuperare: 5–14 zile (CO2 ablativ), 2–5 zile (erbium fracționat). 1–3 ședințe, cost mai mare. Laserul nu este « mai bun » universal — este mai invaziv, cu downtime mai lung. Pentru cicatrici post-acnee ușoare–moderate, este adesea primul pas; laserul intră când microneedling a atins plafonul sau când cicatricile sunt profunde. Laserul ablativ nu se face pe ten închis la culoare fără precauții extreme — risc de hiperpigmentare.",
       ],
     },
     {
@@ -92,11 +92,11 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Microdermabraziunea exfoliază mecanic stratul superior — utilă pentru textură ușoară, pori, ten tern, nu pentru cicatrici atrofice adânci. Efectul este superficial; nu stimulează neocolagenogeneza la adâncimea Dermapen-ului. ",
+        "Microdermabraziunea exfoliază mecanic stratul superior — utilă pentru textură ușoară, pori, ten tern, nu pentru cicatrici atrofice adânci. Efectul este superficial; nu stimulează neocolagenogeneza la adâncimea microneedling-ului. ",
         L.microdermabraziune,
         " este excelentă ca întreținere, pregătire a pielii pentru alte tratamente sau pentru pori dilatați — subiect abordat în ",
         { text: "articole despre cauzele porilor dilatați", href: "/blog/pori-dilatati-cauze-obiceiuri" },
-        ". Nu o confunda cu soluția pentru cicatrici « găuri »; pentru acelea, Dermapen, peeling mediu sau laser sunt opțiunile relevante.",
+        ". Nu o confunda cu soluția pentru cicatrici « găuri »; pentru acelea, peeling mediu sau laser sunt opțiunile relevante.",
       ],
     },
     {
@@ -106,8 +106,8 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Cicatrici « ice pick » (adânci, înguste): TCA cross, laser ablativ punctual, sau Dermapen adânc — peeling superficial insuficient. Cicatrici « boxcar » (largi, cu margini definite): Dermapen, laser fracționat, peeling mediu. Cicatrici « rolling » (ondulate): Dermapen, subcision (chirurgical), laser. Textură generală neuniformă, pori: Dermapen, peeling superficial, microdermabraziune. Pete post-inflamatorii: peeling, laser pigmentar, Dermapen cu seruri depigmentante. Articolul ",
-        { text: "Microneedling vs Dermapen", href: "/blog/microneedling-vs-dermapen-diferente" },
+        "Cicatrici « ice pick » (adânci, înguste): TCA cross, laser ablativ punctual, sau microneedling adânc — peeling superficial insuficient. Cicatrici « boxcar » (largi, cu margini definite): microneedling, laser fracționat, peeling mediu. Cicatrici « rolling » (ondulate): microneedling, subcision (chirurgical), laser. Textură generală neuniformă, pori: microneedling, peeling superficial, microdermabraziune. Pete post-inflamatorii: peeling, laser pigmentar, cu seruri depigmentante. Articolul ",
+        { text: "Microneedling: ce este, cum funcționează, rezultate", href: "/blog/microneedling-ce-este-cum-functioneaza-rezultate" },
         " compară doar cele două variante de microneedling; acest articol le plasează în contextul peeling vs laser.",
       ],
     },
@@ -118,7 +118,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "ul",
       items: [
-        ["Dermapen: 24–72 h roșeață, revenire rapidă"],
+        ["microneedling: 24–72 h roșeață, revenire rapidă"],
         ["Peeling superficial: 1–3 zile descuamare"],
         ["Peeling mediu: 5–7 zile"],
         ["Laser fracționat: 5–14 zile"],
@@ -132,7 +132,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Dermapen: 4–6 ședințe la 4–6 săptămâni; primele îmbunătățiri după 2–3 ședințe; rezultat complet la 4–6 luni. Peeling superficial: 4–6 ședințe; mediu: 1–3 ședințe. Laser: 1–3 ședințe, rezultat în 2–4 luni. Microdermabraziune: 4–8 ședințe pentru textură ușoară. Nu există « o ședință » pentru cicatrici moderate — protocolul este cumulativ. Pacienții care abandonează după 1–2 ședințe nu văd rezultatul complet; consistența contează.",
+        "microneedling: 4–6 ședințe la 4–6 săptămâni; primele îmbunătățiri după 2–3 ședințe; rezultat complet la 4–6 luni. Peeling superficial: 4–6 ședințe; mediu: 1–3 ședințe. Laser: 1–3 ședințe, rezultat în 2–4 luni. Microdermabraziune: 4–8 ședințe pentru textură ușoară. Nu există « o ședință » pentru cicatrici moderate — protocolul este cumulativ. Pacienții care abandonează după 1–2 ședințe nu văd rezultatul complet; consistența contează.",
       ],
     },
     {
@@ -142,7 +142,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Toate procedurile invazive (Dermapen, peeling mediu+, laser) necesită: protecție solară strictă 4–6 săptămâni, evitarea produselor iritante, fără makeup 24–48 h (Dermapen). Contraindicații: acnee activă severă, infecții, herpes activ, sarcină, isotretinoină recentă (6–12 luni), keloiduri. Ten închis: risc de hiperpigmentare post-inflamatorie — Dermapen și peeling mediu cu precauții; laser ablativ adesea evitat. Consultația evaluează istoricul, fototipul Fitzpatrick, medicația — protocolul se adaptează.",
+        "Toate procedurile invazive (microneedling, peeling mediu+, laser) necesită: protecție solară strictă 4–6 săptămâni, evitarea produselor iritante, fără makeup 24–48 h (dispozitiv de microneedling). Contraindicații: acnee activă severă, infecții, herpes activ, sarcină, isotretinoină recentă (6–12 luni), keloiduri. Ten închis: risc de hiperpigmentare post-inflamatorie — microneedling și peeling mediu cu precauții; laser ablativ adesea evitat. Consultația evaluează istoricul, fototipul Fitzpatrick, medicația — protocolul se adaptează.",
       ],
     },
     {
@@ -152,7 +152,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Protocoale combinate pot fi superioare monoterapiei: Dermapen + peeling superficial (textură + pete); Dermapen + TCA cross (cicatrici mixte); laser + Dermapen (cicatrici adânci — laser mai întâi, Dermapen pentru finisare). Microdermabraziune între ședințe de Dermapen poate menține textura. Ordinea și intervalul contează — nu se fac toate simultan. Evaluarea stabilește secvența: uneori 4 ședințe Dermapen, apoi evaluare pentru peeling mediu sau laser dacă plafonul e atins.",
+        "Protocoale combinate pot fi superioare monoterapiei: microneedling + peeling superficial (textură + pete); microneedling + TCA cross (cicatrici mixte); laser + microneedling (cicatrici adânci — laser mai întâi, pentru finisare). Microdermabraziune între ședințe de microneedling poate menține textura. Ordinea și intervalul contează — nu se fac toate simultan. Evaluarea stabilește secvența: uneori 4 ședințe microneedling, apoi evaluare pentru peeling mediu sau laser dacă plafonul e atins.",
       ],
     },
     {
@@ -162,7 +162,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Dermapen: cicatrici post-acnee ușoare–moderate, textură neuniformă, pori, downtime minim acceptabil, buget moderat. Peeling: textură, pete, pori, cicatrici superficiale; toleranță la 3–7 zile recuperare (mediu). Laser: cicatrici adânci, textură severă, riduri fine; toleranță la 5–14 zile; buget mai mare. Microdermabraziune: textură ușoară, pori, întreținere — nu cicatrici atrofice adânci. Candidatul « ideal » depinde de diagnosticul cicatricilor, nu de preferința pentru o tehnologie.",
+        "microneedling: cicatrici post-acnee ușoare–moderate, textură neuniformă, pori, downtime minim acceptabil, buget moderat. Peeling: textură, pete, pori, cicatrici superficiale; toleranță la 3–7 zile recuperare (mediu). Laser: cicatrici adânci, textură severă, riduri fine; toleranță la 5–14 zile; buget mai mare. Microdermabraziune: textură ușoară, pori, întreținere — nu cicatrici atrofice adânci. Candidatul « ideal » depinde de diagnosticul cicatricilor, nu de preferința pentru o tehnologie.",
       ],
     },
     {
@@ -198,7 +198,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "ul",
       items: [
-        ["Microneedling/Dermapen: micro-canale → neocolagenizare; adâncime variabilă; downtime scurt"],
+        ["Microneedling: micro-canale → neocolagenizare; adâncime variabilă; downtime scurt"],
         ["Peeling superficial: exfoliere AHA/BHA; textură/pete ușoare; fără efect pe cicatrici adânci"],
         ["Peeling mediu (TCA): regenerare epidermă+dermă superficială; 5–7 zile recuperare"],
         ["Laser fracționat: ablație controlată; cicatrici adânci/textură severă; downtime 5–14 zile"],
@@ -217,7 +217,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
         ", cu protocol secvențiat după evaluare. Detalii despre microdermabraziune în ",
         { text: "ghidul dedicat", href: "/blog/ce-este-microdermabraziunea-beneficii" },
         "; despre variante microneedling în ",
-        { text: "comparativul Microneedling vs Dermapen", href: "/blog/microneedling-vs-dermapen-diferente" },
+        { text: "comparativul Microneedling: ce este, cum funcționează, rezultate", href: "/blog/microneedling-ce-este-cum-functioneaza-rezultate" },
         ".",
       ],
     },
@@ -238,7 +238,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Cicatricile nu dispar complet — se îmbunătățesc. Textura se netezește treptat; porii pot rămâne vizibili, dar mai puțin pronunțați. Întreținerea (Dermapen la 6–12 luni, microdermabraziune periodică) susține rezultatul. Acneea activă trebuie controlată înainte și în timpul tratamentului — altfel apar cicatrici noi. Compară fotografiile în aceeași lumină la 3, 6 și 12 luni — progresul gradual e greu de observat zilnic în oglindă. Cu protocol corect, obiective realiste și consistență, majoritatea persoanelor cu cicatrici post-acnee ușoare–moderate obțin îmbunătățiri semnificative — nu piele perfectă, dar textură mult mai uniformă și cicatrici mult mai puțin vizibile.",
+        "Cicatricile nu dispar complet — se îmbunătățesc. Textura se netezește treptat; porii pot rămâne vizibili, dar mai puțin pronunțați. Întreținerea (microneedling la 6–12 luni, microdermabraziune periodică) susține rezultatul. Acneea activă trebuie controlată înainte și în timpul tratamentului — altfel apar cicatrici noi. Compară fotografiile în aceeași lumină la 3, 6 și 12 luni — progresul gradual e greu de observat zilnic în oglindă. Cu protocol corect, obiective realiste și consistență, majoritatea persoanelor cu cicatrici post-acnee ușoare–moderate obțin îmbunătățiri semnificative — nu piele perfectă, dar textură mult mai uniformă și cicatrici mult mai puțin vizibile.",
       ],
     },
     {
@@ -252,9 +252,9 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
   ],
   faqs: [
     {
-      question: "Dermapen sau laser pentru cicatrici post-acnee?",
+      question: "microneedling sau laser pentru cicatrici post-acnee?",
       answer:
-        "Pentru cicatrici ușoare–moderate, Dermapen este adesea primul pas — eficient, downtime minim. Laserul intră când cicatricile sunt adânci sau Dermapen a atins plafonul.",
+        "Pentru cicatrici ușoare–moderate, este adesea primul pas — eficient, downtime minim. Laserul intră când cicatricile sunt adânci sau microneedling a atins plafonul.",
     },
     {
       question: "Peelingul elimină cicatricile?",
@@ -262,27 +262,27 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
         "Peeling superficial: textură ușoară, nu cicatrici adânci. Peeling mediu/profund: cicatrici superficiale–moderate. Ice pick adânc necesită TCA cross sau laser.",
     },
     {
-      question: "Câte ședințe Dermapen pentru cicatrici?",
+      question: "Câte ședințe microneedling pentru cicatrici?",
       answer:
         "4–6 ședințe la 4–6 săptămâni. Primele îmbunătățiri după 2–3 ședințe; rezultat complet la 4–6 luni.",
     },
     {
-      question: "Pot face Dermapen dacă am acnee activă?",
+      question: "Pot face microneedling dacă am acnee activă?",
       answer:
         "Acnee ușoară, izolată — uneori da, cu precauții. Acnee moderată–severă activă — contraindicație; tratează acneea mai întâi.",
     },
     {
-      question: "Laserul e mai dureros decât Dermapen?",
+      question: "Laserul e mai dureros decât microneedling?",
       answer:
-        "Laser ablativ: anestezie locală, disconfort mai mare. Dermapen: cremă anestezică, tolerabil. Recuperarea laser e mai lungă.",
+        "Laser ablativ: anestezie locală, disconfort mai mare. microneedling: cremă anestezică, tolerabil. Recuperarea laser e mai lungă.",
     },
     {
       question: "Microdermabraziunea ajută la cicatrici?",
       answer:
-        "Doar cicatrici foarte superficiale. Pentru cicatrici atrofice « găuri », Dermapen, peeling mediu sau laser sunt opțiunile relevante.",
+        "Doar cicatrici foarte superficiale. Pentru cicatrici atrofice « găuri », peeling mediu sau laser sunt opțiunile relevante.",
     },
     {
-      question: "Pot combina Dermapen cu peeling?",
+      question: "Pot combina microneedling cu peeling?",
       answer:
         "Da, în protocoale secvențiale — nu simultan. Evaluarea stabilește ordinea și intervalul.",
     },
@@ -294,7 +294,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
   ],
 }
 
-export const dermapenPeelingLaserCicatriciTexturaPost: BlogPost = {
+export const microneedlingPeelingLaserCicatriciTexturaPost: BlogPost = {
   ...post,
   readTimeMinutes: estimateReadTimeMinutes(post.blocks, post.faqs),
 }

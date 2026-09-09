@@ -86,7 +86,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     },
     {
       type: "h3",
-      text: "Microneedling și Dermapen corporal",
+      text: "Microneedling corporal",
     },
     {
       type: "p",

@@ -60,14 +60,14 @@ export const claireImages = {
   ),
   dermapenTratament: img(
     "site-poze-dermapen-hero.jpg",
-    "Tratament Dermapen microneedling la Claire Beauty Craiova",
-    "Dermapen Craiova – regenerare ten și colagen",
+    "Tratament de microneedling la Claire Beauty Craiova",
+    "Microneedling Craiova – regenerare ten și colagen",
     "center 30%",
   ),
   dermapen: img(
     "site-poze-dermapen-content.jpg",
-    "Tratament Dermapen la Claire Beauty Craiova",
-    "Dermapen Craiova – rejuvenare facială",
+    "Tratament de microneedling la Claire Beauty Craiova",
+    "Microneedling Craiova – rejuvenare facială",
     "center 30%",
   ),
   microneedling: img(

@@ -5,7 +5,7 @@ import { celulitaPost } from "./articles/cum-scapi-de-celulita-ghid-complet"
 import { masajVsDrenajPost } from "./articles/masaj-anticelulitic-vs-drenaj-limfatic"
 import { remodelarePost } from "./articles/remodelare-corporala-fara-operatie-tehnologii"
 import { masajTerapeuticPost } from "./articles/beneficii-masaj-terapeutic-stres-dureri"
-import { microneedlingVsDermapenPost } from "./articles/microneedling-vs-dermapen-diferente"
+import { microneedlingGhidPost } from "./articles/microneedling-ce-este-cum-functioneaza-rezultate"
 import { hifuPost } from "./articles/hifu-facial-lifting-nechirurgical"
 import { pregatireTenPost } from "./articles/cum-pregatesti-tenul-tratament-facial"
 import { reflexoterapiePost } from "./articles/ce-este-reflexoterapia-beneficii"
@@ -33,7 +33,7 @@ export const blogPosts: BlogPost[] = [
   masajVsDrenajPost,
   remodelarePost,
   masajTerapeuticPost,
-  microneedlingVsDermapenPost,
+  microneedlingGhidPost,
   hifuPost,
   pregatireTenPost,
   reflexoterapiePost,

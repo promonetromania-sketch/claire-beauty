@@ -16,7 +16,7 @@ export const INDEX_TIER_2_PUBLISHED = [
   "masaj-anticelulitic-vs-drenaj-limfatic",
   "remodelare-corporala-fara-operatie-tehnologii",
   "beneficii-masaj-terapeutic-stres-dureri",
-  "microneedling-vs-dermapen-diferente",
+  "microneedling-ce-este-cum-functioneaza-rezultate",
   "hifu-facial-lifting-nechirurgical",
   "cum-pregatesti-tenul-tratament-facial",
   "ce-este-reflexoterapia-beneficii",
@@ -54,7 +54,7 @@ export const INDEX_TIER_3_DRAFTS = [
   "detoxifiere-limfatica-ce-inseamna",
   "piele-lasa-cauze-fara-operatie",
   "lifting-nechirurgical-vs-chirurgical",
-  "dermapen-peeling-laser-cicatrici-textura",
+  "microneedling-peeling-laser-cicatrici-textura",
 ] as const
 
 export type IndexTier1Slug = (typeof INDEX_TIER_1)[number]
@@ -70,7 +70,7 @@ export function getTier1PrioritySlugs(): IndexTier1Slug[] {
 /** Tier 2 MONEY pages — secondary blog/home amplification after Tier 1. */
 export const MONEY_PAGE_AMPLIFY = [
   "masaj-anticelulitic-vs-drenaj-limfatic",
-  "microneedling-vs-dermapen-diferente",
+  "microneedling-ce-este-cum-functioneaza-rezultate",
   "hifu-facial-lifting-nechirurgical",
   "masaj-terapeutic-vs-anticelulitic-cand",
   "cum-scapi-de-celulita-ghid-complet",

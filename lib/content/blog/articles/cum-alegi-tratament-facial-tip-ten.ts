@@ -139,15 +139,14 @@ const blocks: BlogPost["blocks"] = [
     type: "ul",
     items: [
       [L.hifu, " — lifting nechirurgical, fermitate, contur facial"],
-      [L.dermapen, " — stimulare colagen, riduri fine, textură"],
-      [L.microneedling, " — cicatrici, pete, rejuvenare progresivă"],
+      [L.microneedling, " — cicatrici, pete, stimulare colagen, rejuvenare progresivă"],
       [L.tratamenteFaciale, " combinate — protocoale personalizate anti-aging"],
     ],
   },
   {
     type: "p",
     content: [
-      "HIFU adresează laxitatea; Dermapen și microneedling lucrează pe textură și colagen. Combinațiile se planifică în timp — nu toate tratamentele se fac în aceeași ședință.",
+      "HIFU adresează laxitatea; microneedling lucrează pe textură și colagen. Combinațiile se planifică în timp — nu toate tratamentele se fac în aceeași ședință.",
     ],
   },
   {
@@ -158,7 +157,7 @@ const blocks: BlogPost["blocks"] = [
     type: "ul",
     items: [
       ["Puncte negre și pori înfundati → ", L.hydrafacial, " sau ", L.microdermabraziune],
-      ["Cicatrici post-acnee → ", L.microneedling, " sau ", L.dermapen],
+      ["Cicatrici post-acnee → ", L.microneedling],
       ["Pete pigmentare → microdermabraziune, peeling-uri blânde, vitamina C profesională"],
       ["Laxitate ușoară → ", L.hifu],
       ["Ten tern, fără strălucire → ", L.hydrafacial, ", microdermabraziune, hidratare profundă"],
@@ -207,7 +206,7 @@ const blocks: BlogPost["blocks"] = [
   {
     type: "p",
     content: [
-      "Curățare profundă (Hidrafacial): la 4–6 săptămâni. Microdermabraziune: la 3–4 săptămâni. Microneedling/Dermapen: la 4–6 săptămâni, cicluri de 3–6 ședințe. HIFU: la 12–18 luni, în funcție de răspuns. Constanța bate intensitatea — o ședință excelentă urmată de luni de neglijență nu aduce beneficii durabile.",
+      "Curățare profundă (Hidrafacial): la 4–6 săptămâni. Microdermabraziune: la 3–4 săptămâni. Microneedling: la 4–6 săptămâni, cicluri de 3–6 ședințe. HIFU: la 12–18 luni, în funcție de răspuns. Constanța bate intensitatea — o ședință excelentă urmată de luni de neglijență nu aduce beneficii durabile.",
     ],
   },
   {
@@ -300,7 +299,7 @@ export const tipTenPost: BlogPost = {
     L.hydrafacial,
     L.microdermabraziune,
     L.hifu,
-    L.dermapen,
+    L.microneedling,
   ],
   blocks,
   faqs,

@@ -72,8 +72,8 @@ export const hubBlogLinks: Record<HubKey, BlogInlineLink[]> = {
       href: "/blog/hifu-facial-lifting-nechirurgical",
     },
     {
-      text: "Microneedling vs Dermapen — diferențe",
-      href: "/blog/microneedling-vs-dermapen-diferente",
+      text: "Microneedling: ce este, cum funcționează, rezultate",
+      href: "/blog/microneedling-ce-este-cum-functioneaza-rezultate",
     },
     {
       text: "Cum alegi tratamentul facial potrivit tipului de ten",
@@ -385,18 +385,18 @@ export const articleTrafficPushOutbounds: Record<string, BlogInlineLink[]> = {
       href: "/blog/cat-dureaza-rezultate-tratamente-estetice",
     },
     {
-      text: "Microneedling vs Dermapen",
-      href: "/blog/microneedling-vs-dermapen-diferente",
+      text: "Microneedling: ce este, cum funcționează, rezultate",
+      href: "/blog/microneedling-ce-este-cum-functioneaza-rezultate",
     },
     {
       text: "Microdermabraziune — când e recomandată",
       href: "/blog/ce-este-microdermabraziunea-beneficii",
     },
   ],
-  "microneedling-vs-dermapen-diferente": [
+  "microneedling-ce-este-cum-functioneaza-rezultate": [
     {
-      text: "Dermapen, peeling sau laser pentru cicatrici",
-      href: "/blog/dermapen-peeling-laser-cicatrici-textura",
+      text: "microneedling, peeling sau laser pentru cicatrici",
+      href: "/blog/microneedling-peeling-laser-cicatrici-textura",
     },
     {
       text: "Colagen explicat simplu",
@@ -663,8 +663,8 @@ export const articleTrafficPushOutbounds: Record<string, BlogInlineLink[]> = {
       href: "/blog/curatare-faciala-acasa-vs-salon",
     },
     {
-      text: "Microneedling vs Dermapen",
-      href: "/blog/microneedling-vs-dermapen-diferente",
+      text: "Microneedling: ce este, cum funcționează, rezultate",
+      href: "/blog/microneedling-ce-este-cum-functioneaza-rezultate",
     },
     {
       text: "HIFU facial — lifting nechirurgical",

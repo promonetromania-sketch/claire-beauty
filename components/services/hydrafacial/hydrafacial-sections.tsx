@@ -306,10 +306,10 @@ export function HidrafacialSections() {
           <p className="mt-4 text-muted-foreground leading-relaxed">
             În aceste cazuri se recomandă tratamente precum{" "}
             <Link
-              href="/dermapen-craiova"
+              href="/microneedling-craiova"
               className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
             >
-              Dermapen
+              microneedling
             </Link>{" "}
             sau{" "}
             <Link
@@ -335,21 +335,12 @@ export function HidrafacialSections() {
           </p>
           <ul className="space-y-3 text-muted-foreground leading-relaxed">
             <li>
-              Pentru regenerare profundă →{" "}
+              Pentru regenerare și colagen →{" "}
               <Link
                 href="/microneedling-craiova"
                 className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
               >
-                microneedling
-              </Link>
-            </li>
-            <li>
-              Pentru stimularea colagenului →{" "}
-              <Link
-                href="/dermapen-craiova"
-                className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
-              >
-                Dermapen
+                Microneedling
               </Link>
             </li>
             <li>

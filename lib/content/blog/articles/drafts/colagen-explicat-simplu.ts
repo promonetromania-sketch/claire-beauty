@@ -28,8 +28,8 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
   hubLink: L.tratamenteFaciale,
   relatedArticles: [
     {
-      text: "Microneedling vs Dermapen: diferențe și cum alegi",
-      href: "/blog/microneedling-vs-dermapen-diferente",
+      text: "Microneedling: ce este, cum funcționează, rezultate: diferențe și cum alegi",
+      href: "/blog/microneedling-ce-este-cum-functioneaza-rezultate",
     },
     {
       text: "HIFU facial: lifting nechirurgical explicat",
@@ -127,12 +127,12 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Microneedling și Dermapen: micro-leziuni controlate → răspuns de vindecare → colagen și elastină noi (neocolagenizare). Rezultate cumulative în 3–6 ședințe. ",
+        "Microneedling: micro-leziuni controlate → răspuns de vindecare → colagen și elastină noi (neocolagenizare). Rezultate cumulative în 3–6 ședințe. ",
         L.microneedling,
         " și ",
         L.dermapen,
         " diferă ca dispozitiv, nu ca principiu — detalii în ",
-        { text: "comparativul dedicat", href: "/blog/microneedling-vs-dermapen-diferente" },
+        { text: "comparativul dedicat", href: "/blog/microneedling-ce-este-cum-functioneaza-rezultate" },
         ". Radiofrecvența încălzește dermă și declanșează remodelare — utilă pentru fermitate ușoară–moderată. HIFU este o opțiune printre altele pentru laxitate profundă; articolul dedicat ",
         { text: "HIFU facial", href: "/blog/hifu-facial-lifting-nechirurgical" },
         " explică când are sens, separat de stimularea generală de colagen. Peelinguri chimice medii: exfoliază și stimulează remodelare — cu downtime. Niciun tratament « adaugă » colagen din exterior; toate pornesc producția ta endogenă.",

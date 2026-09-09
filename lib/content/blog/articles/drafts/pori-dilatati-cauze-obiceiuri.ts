@@ -187,7 +187,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Uneori « porii mari » sunt de fapt cicatrici atrofice de la acnee — adâncimi mici în piele care arată ca pori dilatați. Abordarea diferă: microneedling sau Dermapen pentru stimulare colagen, eventual combinat cu microdermabraziune. Consultația diferențiază — nu tratăm la fel porii genetici și cicatricile. Onestitatea în evaluare evită așteptări nerealiste.",
+        "Uneori « porii mari » sunt de fapt cicatrici atrofice de la acnee — adâncimi mici în piele care arată ca pori dilatați. Abordarea diferă: microneedling pentru stimulare colagen, eventual combinat cu microdermabraziune. Consultația diferențiază — nu tratăm la fel porii genetici și cicatricile. Onestitatea în evaluare evită așteptări nerealiste.",
       ],
     },
     {
@@ -224,7 +224,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
         L.hydrafacial,
         " poate fi programată la 3–4 săptămâni. Evită microdermabraziune intensă sau peeling chimic înainte de expunere prelungită la soare — pielea sensibilizată se pigmentează mai ușor. Iarna este sezonul ideal pentru tratamente active: ",
         L.microdermabraziune,
-        ", Dermapen, protocol de microneedling — cu SPF zilnic chiar și când nu vezi soarele. Adaptarea frecvenței la sezon previne iritații și maximizează rezultatele pe tot anul.",
+        ", protocol de microneedling — cu SPF zilnic chiar și când nu vezi soarele. Adaptarea frecvenței la sezon previne iritații și maximizează rezultatele pe tot anul.",
       ],
     },
     {

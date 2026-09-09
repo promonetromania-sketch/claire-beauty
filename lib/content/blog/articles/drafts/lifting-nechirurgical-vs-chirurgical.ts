@@ -149,7 +149,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     },
     {
       type: "h2",
-      text: "Microneedling, Dermapen și tratamente complementare",
+      text: "Microneedling, și tratamente complementare",
     },
     {
       type: "p",

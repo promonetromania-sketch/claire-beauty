@@ -24,7 +24,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     title: "HIFU facial — lifting nechirurgical",
   },
   relatedService: L.hifu,
-  recommendedServices: [L.tratamenteFaciale, L.dermapen, L.hydrafacial],
+  recommendedServices: [L.tratamenteFaciale, L.microneedling, L.hydrafacial],
   blocks: [
     {
       type: "p",
@@ -202,7 +202,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       type: "p",
       content: [
         "HIFU abordează laxitatea și fermitatea; ",
-        L.dermapen,
+        L.microneedling,
         " lucrează pe textură, cicatrici și calitatea pielii. ",
         L.hydrafacial,
         " curăță și hidratează. Combinațiile sunt posibile, dar cu intervale corecte între proceduri — de obicei 2–4 săptămâni — pentru a nu suprasolicita pielea. Specialistul ",
@@ -273,9 +273,9 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
         "De obicei 12–18 luni, în funcție de vârstă, stil de viață și îngrijire. Ședințe de întreținere anuale sau la 12–18 luni pot prelungi rezultatele.",
     },
     {
-      question: "Pot combina HIFU cu Dermapen?",
+      question: "Pot combina HIFU cu microneedling?",
       answer:
-        "Da, dar nu în aceeași zi. HIFU lucrează pe fermitate profundă; Dermapen pe textură și colagen superficial. Intervalul optim se stabilește la consultație.",
+        "Da, dar nu în aceeași zi. HIFU lucrează pe fermitate profundă; microneedling pe textură și colagen superficial. Intervalul optim se stabilește la consultație.",
     },
     {
       question: "Există efecte secundare?",

@@ -12,6 +12,16 @@ async redirects() {
         destination: "/hidrafacial-craiova",
         permanent: true,
       },
+      {
+        source: "/dermapen-craiova",
+        destination: "/microneedling-craiova",
+        permanent: true,
+      },
+      {
+        source: "/blog/microneedling-vs-dermapen-diferente",
+        destination: "/blog/microneedling-ce-este-cum-functioneaza-rezultate",
+        permanent: true,
+      },
     ]
   },
   typescript: {

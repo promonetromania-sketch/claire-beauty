@@ -40,7 +40,7 @@ export const blogServiceLinks = {
     href: "/masaj-terapeutic-craiova",
   },
   hifu: { text: "HIFU Craiova", href: "/hifu-facial-craiova" },
-  dermapen: { text: "Dermapen Craiova", href: "/dermapen-craiova" },
+  microneedling: { text: "Microneedling Craiova", href: "/microneedling-craiova" },
   microneedling: {
     text: "Microneedling Craiova",
     href: "/microneedling-craiova",

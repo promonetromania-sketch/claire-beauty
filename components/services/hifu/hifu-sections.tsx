@@ -379,18 +379,9 @@ export function HifuSections() {
                 href="/microneedling-craiova"
                 className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
               >
-                microneedling
+                Microneedling
               </Link>{" "}
-              → regenerare
-            </li>
-            <li>
-              <Link
-                href="/dermapen-craiova"
-                className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
-              >
-                Dermapen
-              </Link>{" "}
-              → colagen
+              → regenerare și colagen
             </li>
             <li>HIFU → lifting profund</li>
           </ul>
@@ -407,7 +398,6 @@ export function HifuSections() {
           <BulletList
             items={[
               "HIFU + microneedling → lifting + regenerare",
-              "HIFU + Dermapen → colagen intens",
               "HIFU + Hidrafacial → lifting + hidratare",
             ]}
           />
@@ -417,14 +407,7 @@ export function HifuSections() {
               href="/microneedling-craiova"
               className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
             >
-              microneedling
-            </Link>
-            ,{" "}
-            <Link
-              href="/dermapen-craiova"
-              className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
-            >
-              Dermapen
+              Microneedling
             </Link>{" "}
             și{" "}
             <Link

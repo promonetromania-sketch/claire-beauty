@@ -23,9 +23,9 @@ export const microneedlingFaqs = [
       "Poate apărea un disconfort ușor, dar tratamentul este în general bine tolerat.",
   },
   {
-    question: "Care este diferența dintre microneedling și Dermapen?",
+    question: "Microneedling-ul de salon este diferit de rollerul de acasă?",
     answer:
-      "Microneedling este procedura în sine, iar Dermapen este un dispozitiv modern care realizează această procedură cu precizie mai mare.",
+      "Da. În salon, adâncimea, sterilitatea și serurile sunt controlate de specialist. Rollerul de acasă are ace mai scurte, presiune neuniformă și risc mai mare de iritație.",
   },
   {
     question: "Se poate face microneedling vara?",

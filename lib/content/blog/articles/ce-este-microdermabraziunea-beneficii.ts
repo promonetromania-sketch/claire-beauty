@@ -241,7 +241,7 @@ const faqs: BlogPost["faqs"] = [
   {
     question: "Microdermabraziunea ajută la cicatrici post-acnee?",
     answer:
-      "Poate atenua cicatricile superficiale și poate îmbunătăți textura generală. Pentru cicatrici mai adânci, combinarea cu microneedling sau Dermapen poate fi mai potrivită. Consultația inițială clarifică protocolul optim.",
+      "Poate atenua cicatricile superficiale și poate îmbunătăți textura generală. Pentru cicatrici mai adânci, combinarea cu microneedling poate fi mai potrivită. Consultația inițială clarifică protocolul optim.",
   },
   {
     question: "Cât costă o ședință și cât durează?",

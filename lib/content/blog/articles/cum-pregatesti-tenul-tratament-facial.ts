@@ -33,7 +33,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
         L.hydrafacial,
         ", ",
         { text: "microdermabraziune", href: "/microdermabraziune-craiova" },
-        ", Dermapen sau ",
+        ", sau ",
         L.hifu,
         ", starea pielii tale în ziua tratamentului influențează direct calitatea rezultatelor. Pregătirea nu înseamnă ritualuri complicate — ci câteva reguli simple, respectate constant. La ",
         L.contact,
@@ -146,13 +146,13 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     },
     {
       type: "h3",
-      text: "Microneedling și Dermapen",
+      text: "Microneedling",
     },
     {
       type: "p",
       content: [
-        { text: "Dermapen", href: "/dermapen-craiova" },
-        " și microneedling-ul au cea mai strictă pregătire: fără retinoizi 7 zile, fără acizi 5–7 zile, fără soare intens 7–10 zile. Herpes labial activ amână tratamentul. Anestezia topică se aplică la salon — nu este nevoie să faci nimic special acasă.",
+        { text: "Microneedling-ul", href: "/microneedling-craiova" },
+        " are cea mai strictă pregătire: fără retinoizi 7 zile, fără acizi 5–7 zile, fără soare intens 7–10 zile. Herpes labial activ amână tratamentul. Anestezia topică se aplică la salon — nu este nevoie să faci nimic special acasă.",
       ],
     },
     {

@@ -16,7 +16,6 @@ const STATIC_ROUTES = [
   "/masaj-terapeutic-craiova",
   "/masaj-anticelulitic-craiova",
   "/hifu-facial-craiova",
-  "/dermapen-craiova",
   "/microneedling-craiova",
   "/microdermabraziune-craiova",
   "/electrostimulare-craiova",

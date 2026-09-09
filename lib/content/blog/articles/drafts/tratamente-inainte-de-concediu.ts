@@ -70,7 +70,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       content: [
         "Regula practică: cu cât tratamentul este mai activ, cu atât mai devreme îl planifici. Pentru un ten luminos fără downtime, ",
         L.hydrafacial,
-        " poate fi făcut cu 3–7 zile înainte. Pentru microdermabraziune sau Dermapen, ideal 2–3 săptămâni. Pentru corp — drenaj, masaj anticelulitic, electrostimulare — un protocol de 4–6 ședințe început cu 4–6 săptămâni înainte oferă cel mai bun raport efort-rezultat. Articolul nostru despre ",
+        " poate fi făcut cu 3–7 zile înainte. Pentru microdermabraziune sau microneedling, ideal 2–3 săptămâni. Pentru corp — drenaj, masaj anticelulitic, electrostimulare — un protocol de 4–6 ședințe început cu 4–6 săptămâni înainte oferă cel mai bun raport efort-rezultat. Articolul nostru despre ",
         { text: "pregătirea tenului înainte de tratament facial", href: "/blog/cum-pregatesti-tenul-tratament-facial" },
         " detaliază ce eviți în săptămânile premergătoare.",
       ],
@@ -142,7 +142,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       type: "ol",
       items: [
         ["Săptămâna 1–2: drenaj + masaj anticelulitic; evaluare ten"],
-        ["Săptămâna 3: microdermabraziune sau Dermapen facial"],
+        ["Săptămâna 3: microdermabraziune sau microneedling facial"],
         ["Săptămâna 4: ședință remodelare corporală; hidratare acasă"],
         ["Săptămâna 5: a doua ședință anticelulitic; curățare profundă față dacă e nevoie"],
         ["Săptămâna 6: Hidrafacial cu 5–7 zile înainte de plecare; drenaj ușor opțional"],
@@ -184,7 +184,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Concediu la mare, 10 zile, plecare peste 5 săptămâni: începe cu drenaj și anticelulitic, programează Hidrafacial la 6–7 zile înainte, evită peeling chimic. City break de weekend, peste 2 săptămâni: doar Hidrafacial sau curățare profesională + drenaj ușor — fără proceduri active. Nuntă sau eveniment, peste 8 săptămâni: protocol complet față + corp, cu HIFU sau Dermapen la jumătatea planului și finisare cu Hidrafacial în săptămâna evenimentului. Nu există plan universal — consultația personalizează calendarul.",
+        "Concediu la mare, 10 zile, plecare peste 5 săptămâni: începe cu drenaj și anticelulitic, programează Hidrafacial la 6–7 zile înainte, evită peeling chimic. City break de weekend, peste 2 săptămâni: doar Hidrafacial sau curățare profesională + drenaj ușor — fără proceduri active. Nuntă sau eveniment, peste 8 săptămâni: protocol complet față + corp, cu HIFU sau microneedling la jumătatea planului și finisare cu Hidrafacial în săptămâna evenimentului. Nu există plan universal — consultația personalizează calendarul.",
       ],
     },
     {

@@ -30,7 +30,7 @@ export const hifuFaqs = [
   {
     question: "Se poate combina HIFU cu alte tratamente?",
     answer:
-      "Da, pentru rezultate mai bune poate fi combinat cu Dermapen sau microneedling.",
+      "Da, pentru rezultate mai bune poate fi combinat cu microneedling.",
   },
   {
     question: "Cât costă HIFU în Craiova?",

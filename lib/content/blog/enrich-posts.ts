@@ -130,8 +130,8 @@ export const articleSeoPatches: Record<string, ArticleSeoPatch> = {
     hubLink: L.tratamenteFaciale,
     relatedArticles: [
       {
-        text: "Microneedling vs Dermapen: care ți se potrivește",
-        href: "/blog/microneedling-vs-dermapen-diferente",
+        text: "Microneedling: ce este, cum funcționează, rezultate: care ți se potrivește",
+        href: "/blog/microneedling-ce-este-cum-functioneaza-rezultate",
       },
       {
         text: "Microdermabraziune — când e recomandată",
@@ -294,7 +294,7 @@ export const articleSeoPatches: Record<string, ArticleSeoPatch> = {
     ],
     extraServiceLinks: [L.masajTerapeutic, L.masajAnticelulitic, L.masaj],
   },
-  "microneedling-vs-dermapen-diferente": {
+  "microneedling-ce-este-cum-functioneaza-rezultate": {
     hubLink: L.tratamenteFaciale,
     relatedArticles: [
       {
@@ -330,8 +330,8 @@ export const articleSeoPatches: Record<string, ArticleSeoPatch> = {
         href: "/blog/cum-pregatesti-tenul-tratament-facial",
       },
       {
-        text: "Microneedling vs Dermapen",
-        href: "/blog/microneedling-vs-dermapen-diferente",
+        text: "Microneedling: ce este, cum funcționează, rezultate",
+        href: "/blog/microneedling-ce-este-cum-functioneaza-rezultate",
       },
     ],
     extraServiceLinks: [L.tratamenteFaciale, L.hydrafacial, L.hifu],

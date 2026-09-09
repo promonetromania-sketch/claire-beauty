@@ -22,7 +22,7 @@ import { colagenExplicatSimpluPost } from "./articles/drafts/colagen-explicat-si
 import { detoxifiereLimfaticaCeInseamnaPost } from "./articles/drafts/detoxifiere-limfatica-ce-inseamna"
 import { pieleLasaCauzeFaraOperatiePost } from "./articles/drafts/piele-lasa-cauze-fara-operatie"
 import { liftingNechirurgicalVsChirurgicalPost } from "./articles/drafts/lifting-nechirurgical-vs-chirurgical"
-import { dermapenPeelingLaserCicatriciTexturaPost } from "./articles/drafts/dermapen-peeling-laser-cicatrici-textura"
+import { microneedlingPeelingLaserCicatriciTexturaPost } from "./articles/drafts/microneedling-peeling-laser-cicatrici-textura"
 
 /** Batch 1 — Luna 1 (iulie 2026) */
 export const draftBlogPostsBatch1: BlogPost[] = [
@@ -49,7 +49,7 @@ export const draftBlogPostsBatch2: BlogPost[] = [
   detoxifiereLimfaticaCeInseamnaPost,
   pieleLasaCauzeFaraOperatiePost,
   liftingNechirurgicalVsChirurgicalPost,
-  dermapenPeelingLaserCicatriciTexturaPost,
+  microneedlingPeelingLaserCicatriciTexturaPost,
 ]
 
 export const draftBlogPosts: BlogPost[] = [

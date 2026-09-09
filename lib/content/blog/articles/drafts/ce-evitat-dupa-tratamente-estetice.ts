@@ -9,13 +9,13 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
   excerpt:
     "Soare, sport intens sau produse greșite pot anula progresul unui tratament facial. Checklist clar post-exfoliere, microneedling și radiofrecvență — ce eviți în primele 24–72 de ore și de ce contează.",
   metaDescription:
-    "Ce evit după tratament facial: checklist post-exfoliere, microneedling, Dermapen și radiofrecvență. Soare, sport, produse — ghid aftercare Claire Beauty.",
+    "Ce evit după tratament facial: checklist post-exfoliere, microneedling, și radiofrecvență. Soare, sport, produse — ghid aftercare Claire Beauty.",
   keywords: [
     "ce evit dupa tratament facial",
     "ingrijire post microneedling",
     "aftercare radiofrecventa",
     "soare dupa exfoliere",
-    "reguli dupa dermapen",
+    "reguli dupa microneedling",
   ],
   tag: "Tratamente faciale",
   publishedAt: "2026-08-11",
@@ -33,15 +33,15 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       href: "/blog/cum-pregatesti-tenul-tratament-facial",
     },
     {
-      text: "Microneedling vs Dermapen: diferențe și cum alegi",
-      href: "/blog/microneedling-vs-dermapen-diferente",
+      text: "Microneedling: ce este, cum funcționează, rezultate: diferențe și cum alegi",
+      href: "/blog/microneedling-ce-este-cum-functioneaza-rezultate",
     },
   ],
   blocks: [
     {
       type: "p",
       content: [
-        "Ai făcut tratamentul — pielea arată fresh, specialistul ți-a explicat pe scurt ce urmează. Apoi ajungi acasă, deschizi dulapul cu produse, te gândești la sală sau la plajă — și totul devine neclar. Aftercare-ul post-procedură nu este o formalitate: este jumătate din rezultat. Exfolierea, microneedling-ul (inclusiv Dermapen) și radiofrecvența modifică temporar bariera cutanată sau livrează energie termică în profunzime; în primele 24–72 de ore pielea este vulnerabilă la iritație, pigmentare și infecție. Acest checklist te ajută să știi exact ce eviți după fiecare tip de procedură — fără paranoia, dar cu reguli clare care protejează investiția în ",
+        "Ai făcut tratamentul — pielea arată fresh, specialistul ți-a explicat pe scurt ce urmează. Apoi ajungi acasă, deschizi dulapul cu produse, te gândești la sală sau la plajă — și totul devine neclar. Aftercare-ul post-procedură nu este o formalitate: este jumătate din rezultat. Exfolierea, microneedling-ul (inclusiv microneedling) și radiofrecvența modifică temporar bariera cutanată sau livrează energie termică în profunzime; în primele 24–72 de ore pielea este vulnerabilă la iritație, pigmentare și infecție. Acest checklist te ajută să știi exact ce eviți după fiecare tip de procedură — fără paranoia, dar cu reguli clare care protejează investiția în ",
         L.tratamenteFaciale,
         ".",
       ],
@@ -65,7 +65,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Indiferent dacă ai făcut microdermabraziune, Dermapen sau radiofrecvență facială, câteva principii se aplică tuturor: protecție solară SPF 30+ (chiar și în zile înnorate), curățare blândă fără parfum, fără scrub fizic acasă, fără băi de abur sau saună în primele 48–72 de ore, fără waxing, epilare cu ceară sau laser în zona tratată până la vindecarea completă. Evită produsele cu alcool denaturat, acid glicolic concentrat, retinol prescris sau uleiuri esențiale puternice dacă pielea e roșie — reintrodu-le treptat, cu acordul specialistului. Hidratarea cu cremă simplă, barieră-restauratoare, este preferabilă față de formule « active » în primele zile.",
+        "Indiferent dacă ai făcut microdermabraziune, sau radiofrecvență facială, câteva principii se aplică tuturor: protecție solară SPF 30+ (chiar și în zile înnorate), curățare blândă fără parfum, fără scrub fizic acasă, fără băi de abur sau saună în primele 48–72 de ore, fără waxing, epilare cu ceară sau laser în zona tratată până la vindecarea completă. Evită produsele cu alcool denaturat, acid glicolic concentrat, retinol prescris sau uleiuri esențiale puternice dacă pielea e roșie — reintrodu-le treptat, cu acordul specialistului. Hidratarea cu cremă simplă, barieră-restauratoare, este preferabilă față de formule « active » în primele zile.",
       ],
     },
     {
@@ -97,17 +97,17 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     },
     {
       type: "h2",
-      text: "După microneedling și Dermapen",
+      text: "După microneedling",
     },
     {
       type: "p",
       content: [
-        "Microneedling-ul creează micro-perforații controlate; Dermapen este varianta cu ac motorizat, adesea mai precisă pe zone mici. Pielea poate arăta ca după o arsură ușoară de soare — roșie, caldă, ușor edematoasă — 24–48 de ore. Regula de aur: nu atinge fața cu mâinile murdare, nu aplici produse neagreate (inclusiv seruri « virale » cu vitamina C concentrată sau niacinamidă în primele 24 h, dacă specialistul nu a spus altfel). Evită machiajul complet în ziua procedurii; dacă e obligatoriu a doua zi, produse minerale curate, aplicate cu pensule curate. Nu folosi dispozitive cu vibrație, roller Gua Sha sau masaj facial până la vindecarea micro-canalelor — de obicei 3–5 zile. ",
+        "Microneedling-ul creează micro-perforații controlate; microneedling este varianta cu ac motorizat, adesea mai precisă pe zone mici. Pielea poate arăta ca după o arsură ușoară de soare — roșie, caldă, ușor edematoasă — 24–48 de ore. Regula de aur: nu atinge fața cu mâinile murdare, nu aplici produse neagreate (inclusiv seruri « virale » cu vitamina C concentrată sau niacinamidă în primele 24 h, dacă specialistul nu a spus altfel). Evită machiajul complet în ziua procedurii; dacă e obligatoriu a doua zi, produse minerale curate, aplicate cu pensule curate. Nu folosi dispozitive cu vibrație, roller Gua Sha sau masaj facial până la vindecarea micro-canalelor — de obicei 3–5 zile. ",
         L.dermapen,
         " și ",
         L.microneedling,
         " necesită aceleași precauții; diferența este adâncimea și obiectivul, nu aftercare-ul de bază. Detalii despre alegerea procedurii găsești în ",
-        { text: "comparativul microneedling vs Dermapen", href: "/blog/microneedling-vs-dermapen-diferente" },
+        { text: "comparativul microneedling", href: "/blog/microneedling-ce-este-cum-functioneaza-rezultate" },
         ".",
       ],
     },
@@ -147,7 +147,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       content: [
         "Soarele este inamicul nr. 1 al oricărui tratament activ. UV-ul pe piele proaspăt exfoliată sau micro-perforată crește riscul de pete maro persistente — hiperpigmentare post-inflamatorie — care durează luni. Minimum 7 zile fără expunere directă intensă după microneedling; după exfoliere, același interval sau mai mult. SPF 30–50, reaplicat, pălărie, ochelari — non-negociabil. Solarul este interzis minimum 2 săptămâni post-microneedling adânc și post-peeling mediu; ideal, planifică tratamentele toamna–iarna dacă ești expusă mult la soare vara. Dacă pleci în vacanță, ",
         { text: "pregătirea tenului înainte de tratament", href: "/blog/cum-pregatesti-tenul-tratament-facial" },
-        " include și calendarul post-procedură — nu programezi Dermapen cu trei zile înainte de plajă.",
+        " include și calendarul post-procedură — nu programezi microneedling cu trei zile înainte de plajă.",
       ],
     },
     {
@@ -216,7 +216,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       type: "ul",
       items: [
         ["Microdermabraziune / peeling superficial: fără soare direct 7+ zile, fără exfoliant acasă 5–7 zile, fără piscină 48 h"],
-        ["Microneedling / Dermapen: fără machiaj greu 24–48 h, fără sport intens 24–48 h, fără saună 48–72 h, fără soare 7+ zile"],
+        ["Microneedling / microneedling: fără machiaj greu 24–48 h, fără sport intens 24–48 h, fără saună 48–72 h, fără soare 7+ zile"],
         ["Radiofrecvență facială: fără alte tratamente cu energie 2–4 săptămâni, fără contrast termic extrem în ziua procedurii"],
         ["Toate procedurile active: SPF zilnic, fără waxing/epilare ceară pe zona tratată până la vindecare completă"],
       ],
@@ -234,7 +234,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       question: "Pot aplica machiaj a doua zi după microneedling?",
       answer:
-        "Depinde de intensitatea tratamentului. După Dermapen superficial, machiaj mineral ușor e adesea posibil la 24 h cu instrumente curate. După adâncime mare, așteaptă 48–72 h sau indicația specialistului.",
+        "Depinde de intensitatea tratamentului. După microneedling superficial, machiaj mineral ușor e adesea posibil la 24 h cu instrumente curate. După adâncime mare, așteaptă 48–72 h sau indicația specialistului.",
     },
     {
       question: "Cât timp evit soarele după microdermabraziune?",
@@ -262,7 +262,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
         "Nu combina proceduri active (peeling + microneedling + RF) fără plan. Suprapunerea agravează bariera și anulează rezultatele. Intervalul minim între ședințe depinde de tip — vezi ghidul de frecvență.",
     },
     {
-      question: "Pot înota după Dermapen?",
+      question: "Pot înota după microneedling?",
       answer:
         "Amână înotul în piscină sau mare 3–5 zile. Clorul, sarea și microorganismele irită micro-canalele deschise. Dușul obișnuit acasă e ok, fără apă foarte fierbinte pe față.",
     },

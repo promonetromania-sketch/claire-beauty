@@ -237,8 +237,8 @@ export const draftArticleSeoPatches: Record<string, ArticleSeoPatch> = {
     hubLink: L.tratamenteFaciale,
     relatedArticles: [
       {
-        text: "Microneedling vs Dermapen",
-        href: "/blog/microneedling-vs-dermapen-diferente",
+        text: "Microneedling: ce este, cum funcționează, rezultate",
+        href: "/blog/microneedling-ce-este-cum-functioneaza-rezultate",
       },
       {
         text: "HIFU facial — candidat ideal",
@@ -289,12 +289,12 @@ export const draftArticleSeoPatches: Record<string, ArticleSeoPatch> = {
     ],
     extraServiceLinks: [L.hifu, L.tratamenteFaciale, L.dermapen],
   },
-  "dermapen-peeling-laser-cicatrici-textura": {
+  "microneedling-peeling-laser-cicatrici-textura": {
     hubLink: L.tratamenteFaciale,
     relatedArticles: [
       {
-        text: "Microneedling vs Dermapen",
-        href: "/blog/microneedling-vs-dermapen-diferente",
+        text: "Microneedling: ce este, cum funcționează, rezultate",
+        href: "/blog/microneedling-ce-este-cum-functioneaza-rezultate",
       },
       {
         text: "Colagen explicat simplu",

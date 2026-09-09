@@ -30,7 +30,7 @@ export const BLOG_IMAGE_BY_SLUG: Record<string, string> = {
     "/images/blog/blog-remodelare-corporala.jpg",
   "beneficii-masaj-terapeutic-stres-dureri":
     "/images/blog/blog-masaj-terapeutic.jpg",
-  "microneedling-vs-dermapen-diferente":
+  "microneedling-ce-este-cum-functioneaza-rezultate":
     "/images/blog/blog-microneedling-dermapen.jpg",
   "hifu-facial-lifting-nechirurgical": "/images/blog/blog-hifu-facial.jpg",
   "cum-pregatesti-tenul-tratament-facial":

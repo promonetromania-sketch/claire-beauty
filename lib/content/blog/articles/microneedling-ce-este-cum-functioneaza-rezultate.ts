@@ -3,15 +3,15 @@ import { blogServiceLinks as L } from "../links"
 import { estimateReadTimeMinutes } from "../utils"
 
 const post: Omit<BlogPost, "readTimeMinutes"> = {
-  slug: "microneedling-vs-dermapen-diferente",
-  title: "Microneedling vs Dermapen: care tratament ți se potrivește?",
+  slug: "microneedling-ce-este-cum-functioneaza-rezultate",
+  title: "Microneedling: ce este, cum funcționează, rezultate",
   excerpt:
-    "Microneedling și Dermapen stimulează colagenul prin micro-perforații controlate, dar tehnologia și confortul diferă. Ghid complet pentru alegerea tratamentului facial potrivit în Craiova.",
+    "Microneedling stimulează colagenul prin micro-perforații controlate. Ghid complet: cum funcționează, cui i se potrivește și ce rezultate poți aștepta în Craiova.",
   metaDescription:
-    "Microneedling sau Dermapen? Compară tehnologia, confortul, indicațiile și rezultatele așteptate. Tratamente faciale profesionale la Claire Beauty Craiova.",
+    "Ce este microneedling-ul, cum funcționează și ce rezultate poți aștepta. Ghid Claire Beauty Craiova pentru cicatrici, textură și regenerare.",
   keywords: [
-    "microneedling vs dermapen",
-    "dermapen beneficii",
+    "microneedling",
+    "microneedling beneficii",
     "microneedling Craiova",
     "tratament cicatrici acnee",
     "rejuvenare faciala Craiova",
@@ -20,18 +20,18 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
   publishedAt: "2026-03-25",
   image: {
     src: "/images/blog/blog-microneedling-dermapen.jpg",
-    alt: "Dispozitiv Dermapen și produse pentru microneedling facial profesional",
-    title: "Microneedling vs Dermapen",
+    alt: "Dispozitiv microneedling și produse pentru microneedling facial profesional",
+    title: "Microneedling: ce este, cum funcționează, rezultate",
   },
   relatedService: L.microneedling,
-  recommendedServices: [L.dermapen, L.tratamenteFaciale, L.hydrafacial, L.microdermabraziune],
+  recommendedServices: [L.microneedling, L.tratamenteFaciale, L.hydrafacial, L.microdermabraziune],
   blocks: [
     {
       type: "p",
       content: [
-        "Dacă te uiți la tratamente pentru cicatrici, riduri fine sau ten tern, ai auzit cu siguranță de microneedling și Dermapen. Ambele se bazează pe același principiu — stimularea regenerării pielii prin micro-perforații controlate —, însă modul în care sunt realizate influențează confortul, precizia și rezultatele. La ",
+        "Dacă te uiți la tratamente pentru cicatrici, riduri fine sau ten tern, ai auzit cu siguranță de microneedling. Procedura stimulează regenerarea pielii prin micro-perforații controlate, iar rezultatul depinde de adâncime, protocol și îngrijirea de după. La ",
         L.contact,
-        ", alegerea dintre cele două se face după evaluarea tenului, a obiectivelor tale și a toleranței pielii, nu după trenduri de pe rețelele sociale.",
+        ", alegerea se face după evaluarea tenului, a obiectivelor tale și a toleranței pielii, nu după trenduri de pe rețelele sociale.",
       ],
     },
     {
@@ -62,18 +62,18 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     },
     {
       type: "h2",
-      text: "Ce este Dermapen și cum se deosebește?",
+      text: "Dispozitivul profesional vs roller",
     },
     {
       type: "p",
       content: [
-        { text: "Dermapen", href: "/dermapen-craiova" },
-        " este un dispozitiv motorizat de microneedling cu ace care se mișcă vertical, perpendicular pe piele. Spre deosebire de roller, nu trage pielea în lateral în timpul tratamentului. Viteza de oscilație, adâncimea de penetrare și timpul de contact sunt ajustabile digital, ceea ce permite personalizarea fină pentru fiecare zonă a feței.",
+        { text: "Microneedling-ul profesional", href: "/microneedling-craiova" },
+        " folosește un dispozitiv motorizat cu ace care se mișcă vertical, perpendicular pe piele. Spre deosebire de roller, nu trage pielea în lateral în timpul tratamentului. Viteza de oscilație, adâncimea de penetrare și timpul de contact sunt ajustabile, ceea ce permite personalizarea fină pentru fiecare zonă a feței.",
       ],
     },
     {
       type: "h3",
-      text: "Avantajele tehnologiei Dermapen",
+      text: "Avantajele tehnologiei microneedling",
     },
     {
       type: "ul",
@@ -87,13 +87,13 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     },
     {
       type: "h2",
-      text: "Comparație directă: roller vs Dermapen",
+      text: "Comparație directă: roller vs microneedling",
     },
     {
       type: "ul",
       items: [
-        ["Precizie: Dermapen oferă control superior pe zone mici și pe cicatrici individuale"],
-        ["Confort: Dermapen generează de obicei mai puțină roșeață și senzație de arsură"],
+        ["Precizie: microneedling oferă control superior pe zone mici și pe cicatrici individuale"],
+        ["Confort: microneedling generează de obicei mai puțină roșeață și senzație de arsură"],
         ["Uniformitate: dispozitivul motorizat reduce variațiile cauzate de presiunea manuală"],
         ["Indicații comune: cicatrici post-acnee, riduri fine, pete, pori dilatați, laxitate ușoară"],
         ["Număr de ședințe tipic: 3–6, la interval de 4–6 săptămâni"],
@@ -102,12 +102,12 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     },
     {
       type: "h2",
-      text: "Cui i se potrivește fiecare tratament?",
+      text: "Cui i se potrivește tratamentul?",
     },
     {
       type: "p",
       content: [
-        "Ambele variante sunt potrivite pentru ten cu semne de îmbătrânire timpurie, cicatrici atrofice post-acnee, pete pigmentare, textură neuniformă sau pori vizibili. Dermapen este preferat atunci când ai nevoie de precizie ridicată — cicatrici adânci, zone sensibile sau protocol combinat cu seruri active concentrate.",
+        "Tratamentul este potrivit pentru ten cu semne de îmbătrânire timpurie, cicatrici atrofice post-acnee, pete pigmentare, textură neuniformă sau pori vizibili. Dispozitivul profesional este preferat atunci când ai nevoie de precizie ridicată — cicatrici adânci, zone sensibile sau protocol combinat cu seruri active concentrate.",
       ],
     },
     {
@@ -161,7 +161,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
           " ca pregătire",
         ],
         ["Aplicarea unui gel anestezic topic, dacă protocolul o prevede, pentru confort sporit"],
-        ["Tratamentul propriu-zis: Dermapen sau microneedling, cu adâncime adaptată zonei"],
+        ["Tratamentul propriu-zis: microneedling, cu adâncime adaptată zonei"],
         ["Infuzia de seruri active personalizate imediat după crearea micro-canalelor"],
         ["Calmarea pielii, SPF și recomandări clare pentru acasă, scrise sau explicate verbal"],
       ],
@@ -193,7 +193,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Dermapen se integrează bine într-o rutină de ",
+        "Microneedling-ul se integrează bine într-o rutină de ",
         L.tratamenteFaciale,
         ": alternat cu ",
         L.hydrafacial,
@@ -237,9 +237,9 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Rollerele de uz casnic au ace mai scurte, mai puține și nu beneficiază de seruri profesionale sterile aplicate imediat după procedură. Riscul de iritație, infecție sau micro-leziuni neuniforme este mai mare fără supraveghere specializată. Tratamentul profesional cu ",
+        "Rollerele de uz casnic au ace mai scurte, mai puține și nu beneficiază de seruri profesionale sterile aplicate imediat după procedură. Riscul de iritație, infecție sau micro-leziuni neuniforme este mai mare fără supraveghere specializată. Tratamentul profesional de ",
         L.microneedling,
-        " sau Dermapen oferă adâncime controlată, produse de calitate clinică și protocol adaptat tenului tău.",
+        " oferă adâncime controlată, produse de calitate clinică și protocol adaptat tenului tău.",
       ],
     },
     {
@@ -261,7 +261,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Alegem Dermapen pentru majoritatea protocolului de rejuvenare datorită preciziei și confortului, dar evaluăm fiecare caz individual. Combinăm experiența în ",
+        "Alegem microneedling pentru majoritatea protocolului de rejuvenare datorită preciziei și confortului, dar evaluăm fiecare caz individual. Combinăm experiența în ",
         L.tratamenteFaciale,
         " cu recomandări realiste — fără promisiuni exagerate, cu accent pe progres vizibil și siguranță. Scopul nostru este un ten mai sănătos, nu o transformare overnight.",
       ],
@@ -270,19 +270,19 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       type: "callout",
       title: "Consultație pentru alegerea tratamentului potrivit",
       content: [
-        "Analizăm tenul tău și recomandăm Microneedling sau Dermapen în funcție de problemele identificate, toleranța pielii și obiectivele tale estetice.",
+        "Analizăm tenul tău și recomandăm Microneedling în funcție de problemele identificate, toleranța pielii și obiectivele tale estetice.",
       ],
-      link: L.dermapen,
+      link: L.microneedling,
     },
   ],
   faqs: [
     {
-      question: "Care este diferența principală între microneedling cu roller și Dermapen?",
+      question: "Care este diferența dintre roller și microneedling-ul profesional?",
       answer:
-        "Rollerul creează perforații prin mișcare laterală pe piele, iar presiunea variază cu tehnica aplicatorului. Dermapen folosește ace verticale, motorizate, cu adâncime și viteză ajustabile — mai precis, mai uniform și, de regulă, mai confortabil.",
+        "Rollerul creează perforații prin mișcare laterală pe piele, iar presiunea variază cu tehnica aplicatorului. Dispozitivul profesional folosește ace verticale, motorizate, cu adâncime și viteză ajustabile — mai precis, mai uniform și, de regulă, mai confortabil.",
     },
     {
-      question: "Este dureros tratamentul cu Dermapen?",
+      question: "Este dureros tratamentul cu microneedling?",
       answer:
         "Cu anestezie topică aplicată înainte, disconfortul este bine tolerat de majoritatea clientelelor. Fără anestezie, senzația se compară cu un peeling mediu. Intensitatea se adaptează toleranței tale.",
     },
@@ -297,14 +297,14 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
         "Roșeața ușoară dispare, de obicei, în 24–48 de ore. Pielea poate fi sensibilă 2–3 zile. Evită soarele direct, sauna și produsele active timp de o săptămână.",
     },
     {
-      question: "Pot face Dermapen vara?",
+      question: "Pot face microneedling vara?",
       answer:
         "Da, cu protecție solară riguroasă (SPF 30+). Totuși, toamna și iarna sunt preferabile pentru expunere solară redusă. Specialistul îți va recomanda cel mai sigur calendar.",
     },
     {
-      question: "Se poate combina Dermapen cu Hidrafacial?",
+      question: "Se poate combina microneedling cu Hidrafacial?",
       answer:
-        "Da, dar nu în aceeași zi. Hidrafacial curăță și pregătește tenul; Dermapen lucrează pe regenerare. Intervalul optim între ele se stabilește la consultație, de obicei 2–4 săptămâni.",
+        "Da, dar nu în aceeași zi. Hidrafacial curăță și pregătește tenul; microneedling lucrează pe regenerare. Intervalul optim între ele se stabilește la consultație, de obicei 2–4 săptămâni.",
     },
     {
       question: "Rollerul de acasă este la fel de eficient?",
@@ -319,7 +319,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
   ],
 }
 
-export const microneedlingVsDermapenPost: BlogPost = {
+export const microneedlingGhidPost: BlogPost = {
   ...post,
   readTimeMinutes: estimateReadTimeMinutes(post.blocks, post.faqs),
 }

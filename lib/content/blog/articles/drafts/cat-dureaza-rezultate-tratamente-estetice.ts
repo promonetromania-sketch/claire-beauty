@@ -6,7 +6,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
   slug: "cat-dureaza-rezultate-tratamente-estetice",
   title: "Cât durează până vezi rezultate la tratamente estetice: așteptări realiste pe tipuri",
   excerpt:
-    "Hidrafacial, HIFU, Dermapen sau remodelare corporală — fiecare tratament are propriul calendar de rezultate. Află ce poți aștepta realist, ședință cu ședință, la Claire Beauty Craiova.",
+    "Hidrafacial, HIFU, sau remodelare corporală — fiecare tratament are propriul calendar de rezultate. Află ce poți aștepta realist, ședință cu ședință, la Claire Beauty Craiova.",
   metaDescription:
     "Cât durează rezultatele la tratamente estetice: timeline realist pentru faciale, corporale și masaj. Așteptări corecte și plan personalizat la Claire Beauty Craiova.",
   keywords: [
@@ -94,7 +94,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     },
     {
       type: "h2",
-      text: "Microneedling și Dermapen: progres de la a doua ședință",
+      text: "Microneedling: progres de la a doua ședință",
     },
     {
       type: "p",
@@ -219,7 +219,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       type: "ul",
       items: [
         ["Hidrafacial / curățare profundă: imediat – 24 h; menținere 2–4 săptămâni"],
-        ["Dermapen / microneedling: săptămâna 2–4; peak la ședința 4–6"],
+        ["microneedling: săptămâna 2–4; peak la ședința 4–6"],
         ["HIFU facial: săptămâna 2–4; peak luna 2–3"],
         ["Radiofrecvență corporală: ședința 3–4; peak 6–8 ședinți"],
         ["Electrostimulare: ședința 4–6; menținere lunară"],
@@ -229,12 +229,12 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     },
     {
       type: "h2",
-      text: "Exemplu concret: timeline Dermapen pe 12 săptămâni",
+      text: "Exemplu concret: timeline microneedling pe 12 săptămâni",
     },
     {
       type: "p",
       content: [
-        "Elena, ten mixt cu cicatrici fine post-acnee și pori vizibili pe nas, începe un protocol de Dermapen la 4 săptămâni distanță. Ședința 1 (săptămâna 0): roșeață ușoară 24 de ore, ten curat dar fără schimbare dramatică — normal. Ședința 2 (săptămâna 4): textura pe obraji devine mai uniformă; machiajul se aplică mai neted. Ședința 3 (săptămâna 8): cicatricile fine par mai puțin adânci, porii pe nas mai puțin vizibili. Ședința 4 (săptămâna 12): peak vizibil — ten mai ferm, textură netedă; colagenul continuă să se formeze încă 6–8 săptămâni. Acasă: SPF zilnic, fără retinol în primele 3 zile post-ședință, hidratare constantă. Elena compară poze în aceeași lumină la fiecare ședință — progresul gradual devine clar pe calendar, nu zilnic în oglindă. Acest exemplu ilustrează de ce « când voi vedea rezultatul? » primește răspunsuri diferite față de Hidrafacial sau HIFU.",
+        "Elena, ten mixt cu cicatrici fine post-acnee și pori vizibili pe nas, începe un protocol de microneedling la 4 săptămâni distanță. Ședința 1 (săptămâna 0): roșeață ușoară 24 de ore, ten curat dar fără schimbare dramatică — normal. Ședința 2 (săptămâna 4): textura pe obraji devine mai uniformă; machiajul se aplică mai neted. Ședința 3 (săptămâna 8): cicatricile fine par mai puțin adânci, porii pe nas mai puțin vizibili. Ședința 4 (săptămâna 12): peak vizibil — ten mai ferm, textură netedă; colagenul continuă să se formeze încă 6–8 săptămâni. Acasă: SPF zilnic, fără retinol în primele 3 zile post-ședință, hidratare constantă. Elena compară poze în aceeași lumină la fiecare ședință — progresul gradual devine clar pe calendar, nu zilnic în oglindă. Acest exemplu ilustrează de ce « când voi vedea rezultatul? » primește răspunsuri diferite față de Hidrafacial sau HIFU.",
       ],
     },
     {
@@ -335,7 +335,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
         "Primele schimbări la 2–4 săptămâni; rezultatul maxim la 2–3 luni. Colagenul nou continuă să se formeze — efectul se intensifică gradual, nu instant.",
     },
     {
-      question: "Câte ședințe de Dermapen am nevoie?",
+      question: "Câte ședințe de microneedling am nevoie?",
       answer:
         "Pentru textură și pori: 3–4 ședințe. Pentru cicatrici fine: 4–6 ședințe, la 3–4 săptămâni distanță. Peak-ul apare după finalizarea protocolului, cu îmbunătățire continuă 2–3 luni.",
     },
