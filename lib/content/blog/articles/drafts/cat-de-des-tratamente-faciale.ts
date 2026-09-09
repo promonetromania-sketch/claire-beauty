@@ -6,9 +6,9 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
   slug: "cat-de-des-tratamente-faciale",
   title: "Cât de des poți face tratamente faciale: frecvențe recomandate pe obiective",
   excerpt:
-    "Hydrafacial lunar sau la trei luni? Dermapen de două ori pe an sau la șase săptămâni? Frecvența tratamentelor faciale depinde de procedură, tip de ten și obiectiv — nu de o regulă universală.",
+    "Hidrafacial lunar sau la trei luni? Dermapen de două ori pe an sau la șase săptămâni? Frecvența tratamentelor faciale depinde de procedură, tip de ten și obiectiv — nu de o regulă universală.",
   metaDescription:
-    "Cât de des poți face tratamente faciale: frecvențe pe proceduri (Hydrafacial, microdermabraziune, Dermapen, HIFU) și obiective. Ghid Claire Beauty Craiova.",
+    "Cât de des poți face tratamente faciale: frecvențe pe proceduri (Hidrafacial, microdermabraziune, Dermapen, HIFU) și obiective. Ghid Claire Beauty Craiova.",
   keywords: [
     "cat de des tratament facial",
     "frecventa tratament facial",
@@ -54,26 +54,26 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Două variabile decid intervalul: intensitatea tratamentului și obiectivul tău. Tratamentele blânde de curățare și hidratare — precum Hydrafacial — pot fi făcute frecvent, chiar lunar. Tratamentele care stimulează repararea profundă — Dermapen, microneedling, peelinguri chimice — necesită pauze de 4–6 săptămâni între ședințe, timp în care pielea se reface. Tratamentele de lifting cu energie — HIFU — se fac de 1–2 ori pe an. Consultația inițială și ",
+        "Două variabile decid intervalul: intensitatea tratamentului și obiectivul tău. Tratamentele blânde de curățare și hidratare — precum Hidrafacial — pot fi făcute frecvent, chiar lunar. Tratamentele care stimulează repararea profundă — Dermapen, microneedling, peelinguri chimice — necesită pauze de 4–6 săptămâni între ședințe, timp în care pielea se reface. Tratamentele de lifting cu energie — HIFU — se fac de 1–2 ori pe an. Consultația inițială și ",
         { text: "ghidul de alegere a tratamentului după tip de ten", href: "/blog/cum-alegi-tratament-facial-tip-ten" },
         " te ajută să pornești de la procedura potrivită.",
       ],
     },
     {
       type: "h2",
-      text: "Hydrafacial: cât de des",
+      text: "Hidrafacial: cât de des",
     },
     {
       type: "p",
       content: [
-        "Hydrafacial este cel mai flexibil tratament din punct de vedere al frecvenței. Pentru întreținere generală — ten curat, hidratat, luminos — o ședință la 4–6 săptămâni este ideală. Pentru ten gras, cu pori vizibili sau predispus la puncte negre, poate fi programat la 3–4 săptămâni în perioadele active. Nu are downtime semnificativ și nu subțiază bariera cu exfoliere agresivă. ",
+        "Hidrafacial este cel mai flexibil tratament din punct de vedere al frecvenței. Pentru întreținere generală — ten curat, hidratat, luminos — o ședință la 4–6 săptămâni este ideală. Pentru ten gras, cu pori vizibili sau predispus la puncte negre, poate fi programat la 3–4 săptămâni în perioadele active. Nu are downtime semnificativ și nu subțiază bariera cu exfoliere agresivă. ",
         L.hydrafacial,
         " poate fi combinat cu sezonul — mai des primăvara, când tenul are nevoie de reset, mai rar iarna dacă pielea e sensibilă la frig.",
       ],
     },
     {
       type: "h3",
-      text: "Hydrafacial pe obiective",
+      text: "Hidrafacial pe obiective",
     },
     {
       type: "ul",
@@ -131,7 +131,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Distincția crucială: protocol activ (rezolvă o problemă — pete, cicatrici, ten tern cronic) vs întreținere (menține rezultatele). Un protocol activ de Dermapen sau microdermabraziune durează 2–4 luni, cu frecvență ridicată. Apoi treci la întreținere — Hydrafacial lunar, microdermabraziune ocazională, HIFU anual. Mulți clienți fac greșeala să oprească complet după protocol — rezultatele se estompează în 3–6 luni fără menținere.",
+        "Distincția crucială: protocol activ (rezolvă o problemă — pete, cicatrici, ten tern cronic) vs întreținere (menține rezultatele). Un protocol activ de Dermapen sau microdermabraziune durează 2–4 luni, cu frecvență ridicată. Apoi treci la întreținere — Hidrafacial lunar, microdermabraziune ocazională, HIFU anual. Mulți clienți fac greșeala să oprească complet după protocol — rezultatele se estompează în 3–6 luni fără menținere.",
       ],
     },
     {
@@ -142,10 +142,10 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       type: "ol",
       items: [
         ["Ianuarie–martie: protocol Dermapen (4 ședințe, la 4 săptămâni)"],
-        ["Aprilie–septembrie: Hydrafacial la 4–6 săptămâni"],
+        ["Aprilie–septembrie: Hidrafacial la 4–6 săptămâni"],
         ["Octombrie: microdermabraziune (reset post-vară)"],
         ["Noiembrie: HIFU (dacă e indicat)"],
-        ["Decembrie: Hydrafacial pre-sărbători"],
+        ["Decembrie: Hidrafacial pre-sărbători"],
       ],
     },
     {
@@ -165,7 +165,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Dacă ești într-un protocol activ și intervalul depășește 6 săptămâni între ședințe de Dermapen sau microdermabraziune, progresul se pierde parțial — colagenul stimulat se reabsoarbe, celulele noi nu se acumulează. Pentru Hydrafacial, prea rar înseamnă tenul revine la starea inițială — pori înfundati, opacitate. Regula: respectă intervalul recomandat de specialist, nu amâna ședințele fără motiv.",
+        "Dacă ești într-un protocol activ și intervalul depășește 6 săptămâni între ședințe de Dermapen sau microdermabraziune, progresul se pierde parțial — colagenul stimulat se reabsoarbe, celulele noi nu se acumulează. Pentru Hidrafacial, prea rar înseamnă tenul revine la starea inițială — pori înfundati, opacitate. Regula: respectă intervalul recomandat de specialist, nu amâna ședințele fără motiv.",
       ],
     },
     {
@@ -201,7 +201,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Tenul tânăr (20–30 ani) reface rapid — poate tolera intervale mai scurte între tratamente blânde, dar tot nu abuzează de active. Tenul matur (40+) reface mai lent — pauze mai lungi după Dermapen sau microdermabraziune, uneori 5–6 săptămâni. Tenul sensibil: Hydrafacial preferat, microdermabraziune la intensitate redusă, Dermapen doar după test de toleranță. Tenul gras: curățare mai frecventă, dar fără a strip-ui bariera. Nu copia frecvența unei prietene — pielea ta are ritmul ei.",
+        "Tenul tânăr (20–30 ani) reface rapid — poate tolera intervale mai scurte între tratamente blânde, dar tot nu abuzează de active. Tenul matur (40+) reface mai lent — pauze mai lungi după Dermapen sau microdermabraziune, uneori 5–6 săptămâni. Tenul sensibil: Hidrafacial preferat, microdermabraziune la intensitate redusă, Dermapen doar după test de toleranță. Tenul gras: curățare mai frecventă, dar fără a strip-ui bariera. Nu copia frecvența unei prietene — pielea ta are ritmul ei.",
       ],
     },
     {
@@ -211,7 +211,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "ul",
       items: [
-        ["Hydrafacial: 4–6 săptămâni (întreținere); 3–4 săptămâni (ten gras activ)"],
+        ["Hidrafacial: 4–6 săptămâni (întreținere); 3–4 săptămâni (ten gras activ)"],
         ["Microdermabraziune: 4–6 săptămâni (întreținere); 2–3 săptămâni (protocol activ)"],
         ["Dermapen: 4–6 săptămâni (protocol); 3–6 luni (întreținere post-protocol)"],
         ["HIFU: 6–12 luni între ședințe"],
@@ -224,7 +224,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Mulți clienți alternează proceduri — Hydrafacial între ședințele de Dermapen, microdermabraziune după un protocol de vară. Regula de bază: o procedură activă principală, restul complementar, cu pauze clare. Exemplu: Dermapen la 4 săptămâni ca tratament principal; Hydrafacial la 2 săptămâni după fiecare Dermapen pentru curățare și hidratare, când pielea s-a refăcut. Nu suprapune microdermabraziune și Dermapen în aceeași săptămână — ambele sunt active. Specialistul la ",
+        "Mulți clienți alternează proceduri — Hidrafacial între ședințele de Dermapen, microdermabraziune după un protocol de vară. Regula de bază: o procedură activă principală, restul complementar, cu pauze clare. Exemplu: Dermapen la 4 săptămâni ca tratament principal; Hidrafacial la 2 săptămâni după fiecare Dermapen pentru curățare și hidratare, când pielea s-a refăcut. Nu suprapune microdermabraziune și Dermapen în aceeași săptămână — ambele sunt active. Specialistul la ",
         L.contact,
         " construiește calendarul astfel încât pielea să aibă timp de recuperare între orice două proceduri intense.",
       ],
@@ -236,7 +236,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Andreea, 27 de ani, ten gras cu pori dilatați pe nas și obrajii cu textură aspră. Obiectiv: ten curat, fără inflamații, machiaj care rezistă toată ziua. Nu vrea protocol agresiv — preferă regularitate. Plan propus: luna 1–2 — Hydrafacial la 3 săptămâni (curățare profundă, fără downtime); luna 3 — evaluare: dacă porii rămân vizibili, se introduce microdermabraziune ușoară la 4 săptămâni distanță; luna 4–6 — alternanță Hydrafacial / microdermabraziune, cu BHA acasă de 2 ori pe săptămână și SPF zilnic. Fără Dermapen în prima fază — tenul gras activ beneficiază mai întâi de curățare stabilă. Andreea notează în telefon data fiecărei ședințe — respectarea intervalului previne suprasolicitarea. După 5 luni, porii par mai puțin înfundati, tenul mai mat natural, nu doar « degresat ». Scenariul diferă de protocoalele corporale: fața tolerează curățări mai dese, dar nu combină active intense în aceeași săptămână.",
+        "Andreea, 27 de ani, ten gras cu pori dilatați pe nas și obrajii cu textură aspră. Obiectiv: ten curat, fără inflamații, machiaj care rezistă toată ziua. Nu vrea protocol agresiv — preferă regularitate. Plan propus: luna 1–2 — Hidrafacial la 3 săptămâni (curățare profundă, fără downtime); luna 3 — evaluare: dacă porii rămân vizibili, se introduce microdermabraziune ușoară la 4 săptămâni distanță; luna 4–6 — alternanță Hidrafacial / microdermabraziune, cu BHA acasă de 2 ori pe săptămână și SPF zilnic. Fără Dermapen în prima fază — tenul gras activ beneficiază mai întâi de curățare stabilă. Andreea notează în telefon data fiecărei ședințe — respectarea intervalului previne suprasolicitarea. După 5 luni, porii par mai puțin înfundati, tenul mai mat natural, nu doar « degresat ». Scenariul diferă de protocoalele corporale: fața tolerează curățări mai dese, dar nu combină active intense în aceeași săptămână.",
       ],
     },
     {
@@ -280,9 +280,9 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
   ],
   faqs: [
     {
-      question: "Pot face Hydrafacial o dată pe lună?",
+      question: "Pot face Hidrafacial o dată pe lună?",
       answer:
-        "Da, lunar este frecvența standard de întreținere pentru Hydrafacial. Tenul gras sau cu pori vizibili poate beneficia de ședințe la 3–4 săptămâni în primele luni.",
+        "Da, lunar este frecvența standard de întreținere pentru Hidrafacial. Tenul gras sau cu pori vizibili poate beneficia de ședințe la 3–4 săptămâni în primele luni.",
     },
     {
       question: "Cât timp trebuie să aștept între ședințe de Dermapen?",
@@ -300,9 +300,9 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
         "De obicei o dată pe an pentru întreținere, maximum de două ori pe an dacă laxitatea o impune. Rezultatele durează 6–12 luni.",
     },
     {
-      question: "Pot combina Hydrafacial cu microdermabraziune în aceeași lună?",
+      question: "Pot combina Hidrafacial cu microdermabraziune în aceeași lună?",
       answer:
-        "Da, dar nu în aceeași zi sau săptămână. Hydrafacial poate fi făcut la 2–3 săptămâni după microdermabraziune, când pielea s-a refăcut. Specialistul stabilește ordinea.",
+        "Da, dar nu în aceeași zi sau săptămână. Hidrafacial poate fi făcut la 2–3 săptămâni după microdermabraziune, când pielea s-a refăcut. Specialistul stabilește ordinea.",
     },
     {
       question: "Tratamentele faciale înlocuiesc rutina de acasă?",
@@ -312,7 +312,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       question: "Câte ședințe faciale am nevoie pe an?",
       answer:
-        "Depinde de obiective. Pentru întreținere: 6–10 ședințe Hydrafacial. Pentru protocol activ (Dermapen, pete): 4–6 ședințe concentrate plus întreținere.",
+        "Depinde de obiective. Pentru întreținere: 6–10 ședințe Hidrafacial. Pentru protocol activ (Dermapen, pete): 4–6 ședințe concentrate plus întreținere.",
     },
     {
       question: "Cum știu dacă frecvența mea actuală e corectă?",

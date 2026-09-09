@@ -18,7 +18,7 @@ export const servicePathToPricingSection: Record<string, PricingSectionId> = {
   "/drenaj-limfatic-craiova": "masaj",
   "/reflexoterapie-craiova": "masaj",
   "/tratamente-faciale-craiova": "faciale",
-  "/hydrafacial-craiova": "faciale",
+  "/hidrafacial-craiova": "faciale",
   "/microneedling-craiova": "faciale",
   "/hifu-facial-craiova": "faciale",
   "/dermapen-craiova": "faciale",
@@ -52,8 +52,8 @@ export const pricingHubLinks = [
     section: "faciale" as const,
   },
   {
-    label: "Hydrafacial",
-    href: "/hydrafacial-craiova",
+    label: "Hidrafacial",
+    href: "/hidrafacial-craiova",
     section: "faciale" as const,
   },
   {

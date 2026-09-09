@@ -289,15 +289,15 @@ export function MicroneedlingSections() {
       <SectionShell className="bg-background">
         <SectionHeading
           eyebrow="Comparație"
-          title="Microneedling vs Hydrafacial"
+          title="Microneedling vs Hidrafacial"
           description="Nu sunt alternative — combinate oferă rezultate complete."
         />
         <div className="grid gap-6 lg:grid-cols-2">
           <ComparisonCard
-            title="Hydrafacial"
+            title="Hidrafacial"
             items={["curăță + hidratează", "rezultate rapide"]}
-            href="/hydrafacial-craiova"
-            linkLabel="Vezi Hydrafacial Craiova"
+            href="/hidrafacial-craiova"
+            linkLabel="Vezi Hidrafacial Craiova"
           />
           <ComparisonCard
             title="Microneedling"
@@ -365,7 +365,7 @@ export function MicroneedlingSections() {
 
       <InlineCTA
         title="Ai nevoie de un plan complet de regenerare a tenului?"
-        description="Combină microneedling cu Hydrafacial, Dermapen sau HIFU pentru rezultate vizibile și stabile."
+        description="Combină microneedling cu Hidrafacial, Dermapen sau HIFU pentru rezultate vizibile și stabile."
         primaryLabel="Cere recomandare"
       />
 
@@ -405,7 +405,7 @@ export function MicroneedlingSections() {
         <div className="mx-auto max-w-3xl">
           <BulletList
             items={[
-              "microneedling + Hydrafacial → curățare + regenerare",
+              "microneedling + Hidrafacial → curățare + regenerare",
               "microneedling + Dermapen → colagen intens",
               "microneedling + HIFU → regenerare + lifting",
             ]}
@@ -413,10 +413,10 @@ export function MicroneedlingSections() {
           <p className="mt-6 text-center text-muted-foreground leading-relaxed">
             Explorează{" "}
             <Link
-              href="/hydrafacial-craiova"
+              href="/hidrafacial-craiova"
               className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
             >
-              Hydrafacial
+              Hidrafacial
             </Link>
             ,{" "}
             <Link

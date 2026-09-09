@@ -6,7 +6,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
   slug: "cat-dureaza-rezultate-tratamente-estetice",
   title: "Cât durează până vezi rezultate la tratamente estetice: așteptări realiste pe tipuri",
   excerpt:
-    "Hydrafacial, HIFU, Dermapen sau remodelare corporală — fiecare tratament are propriul calendar de rezultate. Află ce poți aștepta realist, ședință cu ședință, la Claire Beauty Craiova.",
+    "Hidrafacial, HIFU, Dermapen sau remodelare corporală — fiecare tratament are propriul calendar de rezultate. Află ce poți aștepta realist, ședință cu ședință, la Claire Beauty Craiova.",
   metaDescription:
     "Cât durează rezultatele la tratamente estetice: timeline realist pentru faciale, corporale și masaj. Așteptări corecte și plan personalizat la Claire Beauty Craiova.",
   keywords: [
@@ -32,7 +32,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       href: "/blog/lifting-nechirurgical-vs-chirurgical",
     },
     {
-      text: "Hydrafacial pentru începători",
+      text: "Hidrafacial pentru începători",
       href: "/blog/ce-este-hydrafacial-beneficii-craiova",
     },
   ],
@@ -40,7 +40,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Una dintre cele mai frecvente frustrări în estetica profesională nu vine din tratamente ineficiente, ci din așteptări nepotrivite. « De ce nu văd diferența după o ședință? » sau « Când ar trebui să arate tenul perfect? » — răspunsurile depind complet de tipul procedurii, de starea inițială a pielii sau corpului și de constanța protocolului. Tratamentele estetice nu sunt uniforme: un Hydrafacial poate lăsa tenul luminos în aceeași zi; HIFU-ul își dezvăluie liftingul treptat, pe parcursul a 2–3 luni. La ",
+        "Una dintre cele mai frecvente frustrări în estetica profesională nu vine din tratamente ineficiente, ci din așteptări nepotrivite. « De ce nu văd diferența după o ședință? » sau « Când ar trebui să arate tenul perfect? » — răspunsurile depind complet de tipul procedurii, de starea inițială a pielii sau corpului și de constanța protocolului. Tratamentele estetice nu sunt uniforme: un Hidrafacial poate lăsa tenul luminos în aceeași zi; HIFU-ul își dezvăluie liftingul treptat, pe parcursul a 2–3 luni. La ",
         L.contact,
         ", explicăm calendarul real înainte de prima ședință — pentru că progresul înțeles este progresul susținut.",
       ],
@@ -75,13 +75,13 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
         "Curățarea profesională, tratamentele de hidratare și ",
         L.hydrafacial,
         " acționează la nivelul stratului superficial al pielii — elimină impurități, exfoliază ușor, infuzează seruri. Rezultatul este adesea vizibil imediat: ten mai luminos, mai neted, pori mai curăți. Durata efectului: 1–3 săptămâni, în funcție de tipul de ten și rutina de acasă. Pentru menținere, recomandăm 1 ședință lunară sau la 6 săptămâni. Articolul ",
-        { text: "Hydrafacial pentru începători", href: "/blog/ce-este-hydrafacial-beneficii-craiova" },
+        { text: "Hidrafacial pentru începători", href: "/blog/ce-este-hydrafacial-beneficii-craiova" },
         " detaliază ce simți după prima vizită.",
       ],
     },
     {
       type: "h3",
-      text: "Timeline Hydrafacial și faciale similare",
+      text: "Timeline Hidrafacial și faciale similare",
     },
     {
       type: "ul",
@@ -218,7 +218,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "ul",
       items: [
-        ["Hydrafacial / curățare profundă: imediat – 24 h; menținere 2–4 săptămâni"],
+        ["Hidrafacial / curățare profundă: imediat – 24 h; menținere 2–4 săptămâni"],
         ["Dermapen / microneedling: săptămâna 2–4; peak la ședința 4–6"],
         ["HIFU facial: săptămâna 2–4; peak luna 2–3"],
         ["Radiofrecvență corporală: ședința 3–4; peak 6–8 ședinți"],
@@ -234,7 +234,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Elena, ten mixt cu cicatrici fine post-acnee și pori vizibili pe nas, începe un protocol de Dermapen la 4 săptămâni distanță. Ședința 1 (săptămâna 0): roșeață ușoară 24 de ore, ten curat dar fără schimbare dramatică — normal. Ședința 2 (săptămâna 4): textura pe obraji devine mai uniformă; machiajul se aplică mai neted. Ședința 3 (săptămâna 8): cicatricile fine par mai puțin adânci, porii pe nas mai puțin vizibili. Ședința 4 (săptămâna 12): peak vizibil — ten mai ferm, textură netedă; colagenul continuă să se formeze încă 6–8 săptămâni. Acasă: SPF zilnic, fără retinol în primele 3 zile post-ședință, hidratare constantă. Elena compară poze în aceeași lumină la fiecare ședință — progresul gradual devine clar pe calendar, nu zilnic în oglindă. Acest exemplu ilustrează de ce « când voi vedea rezultatul? » primește răspunsuri diferite față de Hydrafacial sau HIFU.",
+        "Elena, ten mixt cu cicatrici fine post-acnee și pori vizibili pe nas, începe un protocol de Dermapen la 4 săptămâni distanță. Ședința 1 (săptămâna 0): roșeață ușoară 24 de ore, ten curat dar fără schimbare dramatică — normal. Ședința 2 (săptămâna 4): textura pe obraji devine mai uniformă; machiajul se aplică mai neted. Ședința 3 (săptămâna 8): cicatricile fine par mai puțin adânci, porii pe nas mai puțin vizibili. Ședința 4 (săptămâna 12): peak vizibil — ten mai ferm, textură netedă; colagenul continuă să se formeze încă 6–8 săptămâni. Acasă: SPF zilnic, fără retinol în primele 3 zile post-ședință, hidratare constantă. Elena compară poze în aceeași lumină la fiecare ședință — progresul gradual devine clar pe calendar, nu zilnic în oglindă. Acest exemplu ilustrează de ce « când voi vedea rezultatul? » primește răspunsuri diferite față de Hidrafacial sau HIFU.",
       ],
     },
     {
@@ -254,7 +254,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Frustrarea « de ce nu văd rezultate? » devine programare când ai așteptări nealiniate cu tratamentul ales, sau ai oprit protocolul prematur. Semne clare că ai nevoie de evaluare: zero progres după numărul estimat de ședințe, confuzie între timeline Hydrafacial vs HIFU, sau obiective multiple fără plan clar. Tranziția naturală: clarifici calendarul real → alegi tratamentul potrivit → programezi evaluarea. În cadrul clinicii noastre din Craiova, majoritatea clientelor observă repere clare (« după ședința 2 vei vedea X ») încă la consultație — ",
+        "Frustrarea « de ce nu văd rezultate? » devine programare când ai așteptări nealiniate cu tratamentul ales, sau ai oprit protocolul prematur. Semne clare că ai nevoie de evaluare: zero progres după numărul estimat de ședințe, confuzie între timeline Hidrafacial vs HIFU, sau obiective multiple fără plan clar. Tranziția naturală: clarifici calendarul real → alegi tratamentul potrivit → programezi evaluarea. În cadrul clinicii noastre din Craiova, majoritatea clientelor observă repere clare (« după ședința 2 vei vedea X ») încă la consultație — ",
         { text: "consultație tratament facial personalizat", href: "/tratamente-faciale-craiova" },
         " sau ",
         { text: "evaluare remodelare corporală", href: "/remodelare-corporala-craiova" },
@@ -266,7 +266,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       items: [
         ["Nu știi când vei vedea primul rezultat — ai nevoie de timeline clar"],
         ["Ai făcut ședințe neregulate — vrei protocol cu repere măsurabile"],
-        ["Compari tratamente diferite (HIFU vs Hydrafacial) — ai nevoie de ghid"],
+        ["Compari tratamente diferite (HIFU vs Hidrafacial) — ai nevoie de ghid"],
         ["Vrei să înțelegi durabilitatea — vezi și ", { text: "lifting nechirurgical vs chirurgical", href: "/blog/lifting-nechirurgical-vs-chirurgical" }],
       ],
     },
@@ -322,10 +322,10 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       question: "De ce nu văd rezultate imediat după prima ședință?",
       answer:
-        "Tratamentele profunde (HIFU, microneedling, radiofrecvență) stimulează regenerarea — procesul durează săptămâni. Doar procedurile superficiale (Hydrafacial, curățare) oferă efect vizibil în aceeași zi.",
+        "Tratamentele profunde (HIFU, microneedling, radiofrecvență) stimulează regenerarea — procesul durează săptămâni. Doar procedurile superficiale (Hidrafacial, curățare) oferă efect vizibil în aceeași zi.",
     },
     {
-      question: "Cât durează efectul unui Hydrafacial?",
+      question: "Cât durează efectul unui Hidrafacial?",
       answer:
         "Tenul rămâne luminos și hidratat 1–3 săptămâni. Pentru menținere constantă, recomandăm 1 ședință lunară sau la 6 săptămâni, plus rutină de acasă adecvată.",
     },
@@ -357,7 +357,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       question: "Rezultatele sunt permanente?",
       answer:
-        "Depinde de tratament și stil de viață. HIFU și microneedling oferă efecte de lungă durată (luni–ani), dar aging-ul continuă. Hydrafacial și curățarea necesită întreținere regulată. Niciun tratament estetic nu oprește timpul.",
+        "Depinde de tratament și stil de viață. HIFU și microneedling oferă efecte de lungă durată (luni–ani), dar aging-ul continuă. Hidrafacial și curățarea necesită întreținere regulată. Niciun tratament estetic nu oprește timpul.",
     },
   ],
 }

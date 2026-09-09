@@ -123,14 +123,13 @@ function InlineCTA({
 
 const procedureCards = [
   {
-    title: "Hydrafacial",
-    href: "/hydrafacial-craiova",
+    title: "Hidrafacial",
+    href: "/hidrafacial-craiova",
     description:
       "Curățare profundă și hidratare instant pentru ten încărcat, pori vizibili și luminozitate imediată.",
     icon: Droplets },
   {
-    title: "Dermapen",
-    href: "/dermapen-craiova",
+    title: "RF Fractionat",
     description:
       "Stimulare colagen pentru riduri fine, cicatrici și textură neuniformă, cu acțiune în profunzime.",
     icon: PenLine },
@@ -160,15 +159,14 @@ function ProcedureHubCard({
   description,
   icon: Icon }: {
   title: string
-  href: string
+  href?: string
   description: string
   icon: ComponentType<{ className?: string }>
 }) {
-  return (
-    <Link
-      href={href}
-      className="group relative flex h-full flex-col overflow-hidden rounded-[1.75rem] border border-[#D4AF37]/20 bg-card/85 p-8 shadow-premium backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_20px_50px_rgba(14,43,31,0.12)]"
-    >
+  const className =
+    "group relative flex h-full flex-col overflow-hidden rounded-[1.75rem] border border-[#D4AF37]/20 bg-card/85 p-8 shadow-premium backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#D4AF37]/40 hover:shadow-[0_20px_50px_rgba(14,43,31,0.12)]"
+  const content = (
+    <>
       <div className="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-[#D4AF37]/10 blur-2xl transition-opacity duration-300 group-hover:opacity-100" />
       <div className="relative mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-[#D4AF37]/12 text-[#0E2B1F] transition-colors group-hover:bg-[#D4AF37]/20">
         <Icon className="h-7 w-7" />
@@ -179,27 +177,37 @@ function ProcedureHubCard({
       <p className="relative mb-6 flex-1 text-muted-foreground leading-relaxed">
         {description}
       </p>
-      <span className="relative inline-flex items-center gap-2 text-sm font-semibold text-[#0E2B1F] transition-colors group-hover:text-[#D4AF37]">
-        Vezi tratamentul
-        <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-      </span>
-    </Link>
+      {href ? (
+        <span className="relative inline-flex items-center gap-2 text-sm font-semibold text-[#0E2B1F] transition-colors group-hover:text-[#D4AF37]">
+          Vezi tratamentul
+          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+        </span>
+      ) : null}
+    </>
   )
+
+  if (href) {
+    return (
+      <Link href={href} className={className}>
+        {content}
+      </Link>
+    )
+  }
+
+  return <div className={className}>{content}</div>
 }
 
 const treatmentDetails = [
   {
-    title: "Hydrafacial – curățare + hidratare instant",
-    href: "/hydrafacial-craiova",
+    title: "Hidrafacial – curățare + hidratare instant",
+    href: "/hidrafacial-craiova",
     idealFor: ["pori încărcați", "ten tern", "rezultate imediate"],
     result: "ten curat și luminos după prima ședință",
-    cta: "Vezi Hydrafacial" },
+    cta: "Vezi Hidrafacial" },
   {
-    title: "Dermapen – stimularea colagenului",
-    href: "/dermapen-craiova",
+    title: "RF Fractionat – stimularea colagenului",
     idealFor: ["riduri fine", "cicatrici", "textură neuniformă"],
-    result: "lucrează în profunzime, nu doar la suprafață",
-    cta: "Vezi Dermapen" },
+    result: "lucrează în profunzime, nu doar la suprafață" },
   {
     title: "Microneedling – regenerare intensivă",
     href: "/microneedling-craiova",
@@ -230,8 +238,8 @@ const treatmentDetails = [
 ] as const
 
 const comparisonRows = [
-  { treatment: "Hydrafacial", role: "curăță + hidratează" },
-  { treatment: "Dermapen", role: "stimulează colagen" },
+  { treatment: "Hidrafacial", role: "curăță + hidratează" },
+  { treatment: "RF Fractionat", role: "stimulează colagen" },
   { treatment: "Microneedling", role: "repară pielea" },
   { treatment: "HIFU", role: "ridică și tonifică" },
   { treatment: "Microdermabraziune", role: "exfoliază" },
@@ -266,10 +274,10 @@ export function TratamenteFacialeCraiovaSections() {
             <p className="mt-6 text-muted-foreground leading-relaxed">
               De exemplu, dacă vrei o curățare eficientă și hidratare imediată,{" "}
               <Link
-                href="/hydrafacial-craiova"
+                href="/hidrafacial-craiova"
                 className="font-medium text-[#0E2B1F] underline-offset-4 hover:text-[#D4AF37] hover:underline"
               >
-                Hydrafacial Craiova
+                Hidrafacial Craiova
               </Link>{" "}
               este una dintre cele mai rapide soluții.
             </p>
@@ -294,16 +302,15 @@ export function TratamenteFacialeCraiovaSections() {
           {[
             {
               problem: "curățare și hidratare",
-              link: "/hydrafacial-craiova",
-              label: "Hydrafacial" },
+              link: "/hidrafacial-craiova",
+              label: "Hidrafacial" },
             {
               problem: "cicatrici și textură",
               link: "/microneedling-craiova",
               label: "microneedling" },
             {
               problem: "colagen și regenerare",
-              link: "/dermapen-craiova",
-              label: "Dermapen" },
+              label: "RF Fractionat" },
             {
               problem: "lifting și fermitate",
               link: "/hifu-facial-craiova",
@@ -315,12 +322,16 @@ export function TratamenteFacialeCraiovaSections() {
             >
               <p className="text-foreground/90 leading-relaxed">
                 pentru {item.problem} →{" "}
-                <Link
-                  href={item.link}
-                  className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
-                >
-                  {item.label}
-                </Link>
+                {"link" in item && item.link ? (
+                  <Link
+                    href={item.link}
+                    className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <span className="font-medium text-[#0E2B1F]">{item.label}</span>
+                )}
               </p>
             </div>
           ))}
@@ -335,13 +346,13 @@ export function TratamenteFacialeCraiovaSections() {
         />
         <div className="mb-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {procedureCards.map((card) => (
-            <ProcedureHubCard key={card.href} {...card} />
+            <ProcedureHubCard key={card.title} {...card} />
           ))}
         </div>
         <div className="grid gap-6">
           {treatmentDetails.map((item) => (
             <article
-              key={item.href}
+              key={item.title}
               className="rounded-[1.75rem] border border-[#D4AF37]/15 bg-card/80 p-8 shadow-premium backdrop-blur-sm"
             >
               <h3 className="mb-4 font-serif text-2xl font-semibold text-foreground">
@@ -354,13 +365,15 @@ export function TratamenteFacialeCraiovaSections() {
               <p className="mt-4 text-muted-foreground leading-relaxed">
                 Rezultat: {item.result}.
               </p>
-              <Link
-                href={item.href}
-                className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#0E2B1F] transition-colors hover:text-[#D4AF37]"
-              >
-                {item.cta}
-                <ArrowRight className="h-4 w-4" />
-              </Link>
+              {"href" in item && item.href && "cta" in item ? (
+                <Link
+                  href={item.href}
+                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#0E2B1F] transition-colors hover:text-[#D4AF37]"
+                >
+                  {item.cta}
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              ) : null}
             </article>
           ))}
         </div>
@@ -400,8 +413,8 @@ export function TratamenteFacialeCraiovaSections() {
         <div className="mx-auto max-w-3xl space-y-4">
           <BulletList
             items={[
-              "Hydrafacial + microneedling → curățare + regenerare",
-              "Dermapen + HIFU → colagen + lifting",
+              "Hidrafacial + microneedling → curățare + regenerare",
+              "RF Fractionat + HIFU → colagen + lifting",
               "Microdermabraziune + hidratare → glow imediat",
             ]}
           />
@@ -483,10 +496,10 @@ export function TratamenteFacialeCraiovaSections() {
             <p className="text-muted-foreground leading-relaxed">
               Mulți clienți aleg{" "}
               <Link
-                href="/hydrafacial-craiova"
+                href="/hidrafacial-craiova"
                 className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
               >
-                Hydrafacial
+                Hidrafacial
               </Link>{" "}
               sau{" "}
               <Link
@@ -526,12 +539,7 @@ export function TratamenteFacialeCraiovaSections() {
             />
             <p className="mt-4 text-muted-foreground leading-relaxed">
               De exemplu,{" "}
-              <Link
-                href="/dermapen-craiova"
-                className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
-              >
-                Dermapen
-              </Link>{" "}
+              <span className="font-medium text-[#0E2B1F]">RF Fractionat</span>{" "}
               sau{" "}
               <Link
                 href="/hifu-facial-craiova"
@@ -609,7 +617,7 @@ export function TratamenteFacialeCraiovaSections() {
 
       <ServiceCTA
         title="Începe transformarea tenului tău"
-        description="Programează-te acum pentru tratamente faciale Craiova: Hydrafacial, Dermapen, microneedling, HIFU și microdermabraziune. Telefon: 0757 851 882."
+        description="Programează-te acum pentru tratamente faciale Craiova: Hidrafacial, RF Fractionat, microneedling, HIFU și microdermabraziune. Telefon: 0757 851 882."
       />
     </>
   )

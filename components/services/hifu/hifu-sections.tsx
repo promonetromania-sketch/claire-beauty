@@ -367,10 +367,10 @@ export function HifuSections() {
           <ul className="space-y-3 text-muted-foreground leading-relaxed">
             <li>
               <Link
-                href="/hydrafacial-craiova"
+                href="/hidrafacial-craiova"
                 className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
               >
-                Hydrafacial
+                Hidrafacial
               </Link>{" "}
               → curățare + hidratare
             </li>
@@ -408,7 +408,7 @@ export function HifuSections() {
             items={[
               "HIFU + microneedling → lifting + regenerare",
               "HIFU + Dermapen → colagen intens",
-              "HIFU + Hydrafacial → lifting + hidratare",
+              "HIFU + Hidrafacial → lifting + hidratare",
             ]}
           />
           <p className="mt-6 text-center text-muted-foreground leading-relaxed">
@@ -428,10 +428,10 @@ export function HifuSections() {
             </Link>{" "}
             și{" "}
             <Link
-              href="/hydrafacial-craiova"
+              href="/hidrafacial-craiova"
               className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
             >
-              Hydrafacial
+              Hidrafacial
             </Link>
             .
           </p>

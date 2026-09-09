@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { WhatsAppButton } from "@/components/layout/whatsapp-button"
@@ -6,21 +6,21 @@ import { MobileCTA } from "@/components/layout/mobile-cta"
 import { JsonLd } from "@/components/seo/json-ld"
 import { ServiceFAQ } from "@/components/services/service-faq"
 import { HubBlogLinks } from "@/components/blog/hub-blog-links"
-import { HydrafacialHero } from "@/components/services/hydrafacial/hydrafacial-hero"
-import { HydrafacialSections } from "@/components/services/hydrafacial/hydrafacial-sections"
+import { HidrafacialHero } from "@/components/services/hydrafacial/hydrafacial-hero"
+import { HidrafacialSections } from "@/components/services/hydrafacial/hydrafacial-sections"
 import {
   hydrafacialFaqs} from "@/lib/content/hydrafacial"
 import { businessProfile, localBusinessId, postalAddressSchema } from "@/lib/seo/business"
 import { servicePageBlogLinks } from "@/lib/seo/traffic-push"
 
-const pageUrl = `${businessProfile.url}/hydrafacial-craiova`
+const pageUrl = `${businessProfile.url}/hidrafacial-craiova`
 
 export const metadata: Metadata = {
-  title: "Hydrafacial Craiova – Curățare Facială Profesională | Claire Beauty Craiova",
+  title: "Hidrafacial Craiova – Curățare Facială Profesională | Claire Beauty Craiova",
   description:
-    "Hydrafacial Craiova pentru curățare profundă, hidratare intensă și ten luminos. Elimină punctele negre. Rezultate imediate. Programează-te!",
+    "Hidrafacial Craiova pentru curățare profundă, hidratare intensă și ten luminos. Elimină punctele negre. Rezultate imediate. Programează-te!",
   keywords: [
-    "Hydrafacial Craiova",
+    "Hidrafacial Craiova",
     "curățare facială Craiova",
     "tratament facial Craiova",
     "hidratare ten Craiova",
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: pageUrl },
   openGraph: {
-    title: "Hydrafacial Craiova – Curățare Facială Profesională | Claire Beauty Craiova",
+    title: "Hidrafacial Craiova – Curățare Facială Profesională | Claire Beauty Craiova",
     description:
-      "Hydrafacial Craiova pentru curățare profundă, hidratare intensă și ten luminos.",
+      "Hidrafacial Craiova pentru curățare profundă, hidratare intensă și ten luminos.",
     type: "website",
     locale: "ro_RO",
     url: pageUrl } }
@@ -56,10 +56,10 @@ const localBusinessSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Hydrafacial Craiova",
-  serviceType: "Hydrafacial",
+  name: "Hidrafacial Craiova",
+  serviceType: "Hidrafacial",
   description:
-    "Hydrafacial în Craiova pentru curățare profundă, hidratare intensă și ten luminos.",
+    "Hidrafacial în Craiova pentru curățare profundă, hidratare intensă și ten luminos.",
   url: pageUrl,
   provider: {
     "@id": localBusinessId },
@@ -79,7 +79,7 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 2,
-      name: "Hydrafacial Craiova",
+      name: "Hidrafacial Craiova",
       item: pageUrl },
   ] }
 
@@ -93,7 +93,7 @@ const faqSchema = {
       "@type": "Answer",
       text: faq.answer } })) }
 
-export default function HydrafacialPage() {
+export default function HidrafacialPage() {
   return (
     <>
       <JsonLd
@@ -106,14 +106,14 @@ export default function HydrafacialPage() {
       />
       <Header />
       <main className="pb-24 md:pb-0">
-        <HydrafacialHero />
-        <HydrafacialSections />
+        <HidrafacialHero />
+        <HidrafacialSections />
         <ServiceFAQ
-          title="Întrebări frecvente despre Hydrafacial"
+          title="Întrebări frecvente despre Hidrafacial"
           subtitle="FAQ"
           faqs={[...hydrafacialFaqs]}
         />
-        <HubBlogLinks links={servicePageBlogLinks["/hydrafacial-craiova"]} />
+        <HubBlogLinks links={servicePageBlogLinks["/hidrafacial-craiova"]} />
       </main>
       <Footer />
       <WhatsAppButton />

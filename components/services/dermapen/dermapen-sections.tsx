@@ -274,10 +274,10 @@ export function DermapenSections() {
         <p className="mx-auto mt-8 max-w-3xl text-center text-muted-foreground leading-relaxed">
           În comparație cu{" "}
           <Link
-            href="/hydrafacial-craiova"
+            href="/hidrafacial-craiova"
             className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
           >
-            Hydrafacial
+            Hidrafacial
           </Link>
           , care curăță și hidratează, Dermapen pentru cicatrici acne acționează
           în profunzime asupra structurii pielii. Pentru lifting și fermitate,

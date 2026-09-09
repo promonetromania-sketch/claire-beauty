@@ -7,6 +7,11 @@ async redirects() {
         destination: "/hifu-facial-craiova",
         permanent: true,
       },
+      {
+        source: "/hydrafacial-craiova",
+        destination: "/hidrafacial-craiova",
+        permanent: true,
+      },
     ]
   },
   typescript: {

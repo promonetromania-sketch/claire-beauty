@@ -26,7 +26,7 @@ export const blogServiceLinks = {
     text: "Microdermabraziune Craiova",
     href: "/microdermabraziune-craiova",
   },
-  hydrafacial: { text: "Hydrafacial Craiova", href: "/hydrafacial-craiova" },
+  hydrafacial: { text: "Hidrafacial Craiova", href: "/hidrafacial-craiova" },
   masajAnticelulitic: {
     text: "Masaj anticelulitic Craiova",
     href: "/masaj-anticelulitic-craiova",

@@ -43,7 +43,7 @@ export const draftArticleSeoPatches: Record<string, ArticleSeoPatch> = {
         href: "/blog/cum-scapi-de-puncte-negre-corect",
       },
       {
-        text: "Hydrafacial pentru începători",
+        text: "Hidrafacial pentru începători",
         href: "/blog/ce-este-hydrafacial-beneficii-craiova",
       },
       {
@@ -97,7 +97,7 @@ export const draftArticleSeoPatches: Record<string, ArticleSeoPatch> = {
         href: "/blog/tratamente-inainte-de-concediu",
       },
       {
-        text: "Hydrafacial pentru începători",
+        text: "Hidrafacial pentru începători",
         href: "/blog/ce-este-hydrafacial-beneficii-craiova",
       },
       {
@@ -129,7 +129,7 @@ export const draftArticleSeoPatches: Record<string, ArticleSeoPatch> = {
         href: "/blog/lifting-nechirurgical-vs-chirurgical",
       },
       {
-        text: "Hydrafacial pentru începători",
+        text: "Hidrafacial pentru începători",
         href: "/blog/ce-este-hydrafacial-beneficii-craiova",
       },
     ],

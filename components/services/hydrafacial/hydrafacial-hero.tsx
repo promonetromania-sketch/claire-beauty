@@ -14,9 +14,9 @@ const badges = [
 ]
 
 const whatsappMessage =
-  "Bună ziua! Aș dori să programez o ședință de Hydrafacial la Claire Beauty Craiova."
+  "Bună ziua! Aș dori să programez o ședință de Hidrafacial la Claire Beauty Craiova."
 
-export function HydrafacialHero() {
+export function HidrafacialHero() {
   return (
     <section className="relative flex min-h-[78vh] items-center overflow-hidden">
       <div className="absolute inset-0">
@@ -37,12 +37,12 @@ export function HydrafacialHero() {
             Tratament premium glow facial
           </p>
           <h1 className="mb-6 font-serif text-4xl font-semibold leading-tight text-[#FFF9F2] sm:text-5xl lg:text-6xl">
-            Hydrafacial Craiova – Curățare Profundă, Hidratare Intensă și Efect
+            Hidrafacial Craiova – Curățare Profundă, Hidratare Intensă și Efect
             de Glow Imediat
           </h1>
           <p className="mb-4 max-w-2xl text-lg leading-relaxed text-[#FFF9F2]/90">
             Dacă îți dorești un ten curat, luminos și vizibil îmbunătățit chiar
-            după prima ședință, Hydrafacial este unul dintre cele mai eficiente
+            după prima ședință, Hidrafacial este unul dintre cele mai eficiente
             tratamente faciale disponibile în acest moment. Este tratamentul
             ideal pentru persoanele care vor rezultate rapide, fără durere și
             fără timp de recuperare.
@@ -53,7 +53,7 @@ export function HydrafacialHero() {
               href="/"
               className="font-medium text-[#D4AF37] underline-offset-4 hover:underline"
             >
-              Hydrafacial
+              Hidrafacial
             </Link>{" "}
             curăță în profunzime și hidratează pielea fără disconfort.
             Rezultatul: un ten curat, hidratat și vizibil mai luminos după o

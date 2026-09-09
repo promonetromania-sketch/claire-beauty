@@ -59,7 +59,7 @@ const serviceSchema = {
   name: "Tratamente faciale Craiova",
   serviceType: "Tratamente faciale",
   description:
-    "Tratamente faciale în Craiova: Hydrafacial, Dermapen, microneedling, HIFU și microdermabraziune.",
+    "Tratamente faciale în Craiova: Hidrafacial, RF Fractionat, microneedling, HIFU și microdermabraziune.",
   url: pageUrl,
   provider: {
     "@id": localBusinessId },

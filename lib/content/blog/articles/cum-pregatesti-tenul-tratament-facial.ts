@@ -124,7 +124,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     },
     {
       type: "h3",
-      text: "Hydrafacial și curățări profunde",
+      text: "Hidrafacial și curățări profunde",
     },
     {
       type: "p",
@@ -229,7 +229,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Pentru evenimente importante — nuntă, botez, fotografii — planifică tratamentul cu 2–4 săptămâni înainte, nu cu o zi. Procedurile active (peeling, microneedling) necesită timp de refacere. Hydrafacial sau microdermabraziunea ușoară pot fi făcute mai aproape de eveniment, dar consultă specialistul. Toamna și iarna sunt ideale pentru tratamente intensive, datorită expunerii solare reduse.",
+        "Pentru evenimente importante — nuntă, botez, fotografii — planifică tratamentul cu 2–4 săptămâni înainte, nu cu o zi. Procedurile active (peeling, microneedling) necesită timp de refacere. Hidrafacial sau microdermabraziunea ușoară pot fi făcute mai aproape de eveniment, dar consultă specialistul. Toamna și iarna sunt ideale pentru tratamente intensive, datorită expunerii solare reduse.",
       ],
     },
     {
@@ -262,7 +262,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       question: "Când opresc retinoizii înainte de tratament?",
       answer:
-        "De regulă cu 5–7 zile înainte pentru microdermabraziune, microneedling sau peeling-uri. Pentru Hydrafacial, oprirea poate să nu fie necesară — confirmă la consultație.",
+        "De regulă cu 5–7 zile înainte pentru microdermabraziune, microneedling sau peeling-uri. Pentru Hidrafacial, oprirea poate să nu fie necesară — confirmă la consultație.",
     },
     {
       question: "Pot face tratament facial dacă am herpes?",
@@ -277,7 +277,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       question: "Pot face sport în ziua tratamentului?",
       answer:
-        "Pentru Hydrafacial sau curățări blânde, sportul ușor este posibil. Pentru microneedling, HIFU sau peeling-uri, evită sportul intens 24–48 de ore.",
+        "Pentru Hidrafacial sau curățări blânde, sportul ușor este posibil. Pentru microneedling, HIFU sau peeling-uri, evită sportul intens 24–48 de ore.",
     },
     {
       question: "Cât timp evit produsele cu acizi după tratament?",
@@ -287,7 +287,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       question: "Pot programa tratament înainte de vacanță la mare?",
       answer:
-        "Pentru proceduri active (microneedling, peeling), planifică cu minimum 2–3 săptămâni înainte de expunere solară intensă. Hydrafacial este mai flexibil, dar SPF rămâne obligatoriu.",
+        "Pentru proceduri active (microneedling, peeling), planifică cu minimum 2–3 săptămâni înainte de expunere solară intensă. Hidrafacial este mai flexibil, dar SPF rămâne obligatoriu.",
     },
     {
       question: "Ce fac dacă pielea mea reacționează la un produs acasă?",

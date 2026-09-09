@@ -54,8 +54,8 @@ export const claireImages = {
   ),
   hydrafacial: img(
     "site-poze-hydrafacial-hero.jpg",
-    "Tratament Hydrafacial la Claire Beauty Craiova",
-    "Hydrafacial Craiova – curățare facială profesională",
+    "Tratament Hidrafacial la Claire Beauty Craiova",
+    "Hidrafacial Craiova – curățare facială profesională",
     "center 30%",
   ),
   dermapenTratament: img(
@@ -168,8 +168,8 @@ export const claireImages = {
   ),
   hydrablast: img(
     "site-poze-hydrafacial-content.jpg",
-    "Tratament Hydrafacial la Claire Beauty Craiova",
-    "Hydrafacial Craiova – procedură profesională",
+    "Tratament Hidrafacial la Claire Beauty Craiova",
+    "Hidrafacial Craiova – procedură profesională",
   ),
   hifuFacialTehnologie: img(
     "site-poze-hifu-content.jpg",

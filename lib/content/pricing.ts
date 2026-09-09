@@ -94,6 +94,12 @@ export const pricingCategories: PricingCategory[] = [
         href: "/masaj-terapeutic-craiova",
       },
       {
+        name: "Masaj terapeutic (spondiloză cervicală / lombalgii / scolioză / cifoză)",
+        price: "200 lei",
+        detail: "cu practici de chiropractică și manipulări pasive · 60 min",
+        href: "/masaj-terapeutic-craiova",
+      },
+      {
         name: "Masaj drenaj limfatic postoperator",
         price: "250 lei",
         detail: "/ ședință",
@@ -173,10 +179,10 @@ export const pricingCategories: PricingCategory[] = [
     title: "Tratamente faciale",
     items: [
       {
-        name: "Hydrafacial",
-        price: "de la 250 lei",
+        name: "Hidrafacial",
+        price: "de la 300 lei",
         detail: "/ tratament",
-        href: "/hydrafacial-craiova",
+        href: "/hidrafacial-craiova",
       },
       {
         name: "Microneedling",

@@ -302,9 +302,9 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
         "Da, cu protecție solară riguroasă (SPF 30+). Totuși, toamna și iarna sunt preferabile pentru expunere solară redusă. Specialistul îți va recomanda cel mai sigur calendar.",
     },
     {
-      question: "Se poate combina Dermapen cu Hydrafacial?",
+      question: "Se poate combina Dermapen cu Hidrafacial?",
       answer:
-        "Da, dar nu în aceeași zi. Hydrafacial curăță și pregătește tenul; Dermapen lucrează pe regenerare. Intervalul optim între ele se stabilește la consultație, de obicei 2–4 săptămâni.",
+        "Da, dar nu în aceeași zi. Hidrafacial curăță și pregătește tenul; Dermapen lucrează pe regenerare. Intervalul optim între ele se stabilește la consultație, de obicei 2–4 săptămâni.",
     },
     {
       question: "Rollerul de acasă este la fel de eficient?",

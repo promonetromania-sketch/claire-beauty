@@ -182,7 +182,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "ol",
       items: [
-        ["6–4 săptămâni înainte: evaluare ten, eventual tratament profesional (Hydrafacial, microdermabraziune)"],
+        ["6–4 săptămâni înainte: evaluare ten, eventual tratament profesional (Hidrafacial, microdermabraziune)"],
         ["4–2 săptămâni: rutină stabilă — curățare, exfoliere moderată, hidratare, SPF zilnic"],
         ["2–1 săptămâni: evită produse noi agresive; finalizează tratamentele cu timp de recuperare"],
         ["Săptămâna vacanței: rutină simplificată — curățare, hidratare ușoară, SPF reaplicat"],
@@ -196,7 +196,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Ana, 34 de ani, ten mixt cu tendință la pori înfundati pe nas și obrajii uscați iarna. Pleacă la mare peste patru săptămâni — prima dată după doi ani fără vacanță la soare. În consultație, tenul arată mat, cu strat fin de celule moarte și SPF aplicat inconsistent. Planul propus: săptămâna 1 — curățare profesională ușoară și evaluare produse acasă; săptămâna 2 — Hydrafacial ca reset pre-sezon, fără downtime; săptămâna 3 — rutină stabilă acasă (gel blând, BHA de 2 ori, gel hidratant, SPF 30 zilnic); săptămâna 4 — fără proceduri noi, doar hidratare și reaplicare SPF. Microdermabraziunea a fost amânată pentru toamnă — pielea sensibilizată înainte de expunere ar fi riscantă. Ana intră la mare cu ten curat, barieră intactă și un kit simplu: demachiant blând, ser hidratant, SPF reaplicabil. După vacanță, programează o ședință calmantă de hidratare — nu un peeling « de recuperare » făcut în grabă.",
+        "Ana, 34 de ani, ten mixt cu tendință la pori înfundati pe nas și obrajii uscați iarna. Pleacă la mare peste patru săptămâni — prima dată după doi ani fără vacanță la soare. În consultație, tenul arată mat, cu strat fin de celule moarte și SPF aplicat inconsistent. Planul propus: săptămâna 1 — curățare profesională ușoară și evaluare produse acasă; săptămâna 2 — Hidrafacial ca reset pre-sezon, fără downtime; săptămâna 3 — rutină stabilă acasă (gel blând, BHA de 2 ori, gel hidratant, SPF 30 zilnic); săptămâna 4 — fără proceduri noi, doar hidratare și reaplicare SPF. Microdermabraziunea a fost amânată pentru toamnă — pielea sensibilizată înainte de expunere ar fi riscantă. Ana intră la mare cu ten curat, barieră intactă și un kit simplu: demachiant blând, ser hidratant, SPF reaplicabil. După vacanță, programează o ședință calmantă de hidratare — nu un peeling « de recuperare » făcut în grabă.",
       ],
     },
     {
@@ -214,7 +214,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       content: [
         "Pagina de ",
         L.tratamenteFaciale,
-        " descrie opțiunile disponibile — curățare profundă, hidratare, microdermabraziune, Hydrafacial — cu recomandări adaptate tipului tău de ten și calendarului estival. Evaluăm, tratăm și îți explicăm ce merită acasă vs ce necesită mâini profesioniste.",
+        " descrie opțiunile disponibile — curățare profundă, hidratare, microdermabraziune, Hidrafacial — cu recomandări adaptate tipului tău de ten și calendarului estival. Evaluăm, tratăm și îți explicăm ce merită acasă vs ce necesită mâini profesioniste.",
       ],
     },
     {
@@ -253,7 +253,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
         "Cu precauție: concentrație mică, doar seara, SPF obligatoriu dimineața. Mulți preferă să reducă retinolul în perioadele de expunere intensă.",
     },
     {
-      question: "Hydrafacial este potrivit pre-vară?",
+      question: "Hidrafacial este potrivit pre-vară?",
       answer:
         "Da, este unul dintre cele mai solicitate « reset-uri » pre-sezon: curățare, exfoliere blândă, hidratare. Ideal cu 2–3 săptămâni înainte de vacanță.",
     },

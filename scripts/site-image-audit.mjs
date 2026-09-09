@@ -8,7 +8,7 @@ const PAGES = [
   { path: "/masaj-craiova", name: "Masaj Craiova (hub)", hero: 1, content: 1, gallery: "masajCraiova" },
   { path: "/tratamente-faciale-craiova", name: "Tratamente faciale (hub)", hero: 1, content: 1, gallery: "tratamenteFaciale" },
   { path: "/tratamente-corporale-craiova", name: "Tratamente corporale (hub)", hero: 1, content: 4, gallery: null, note: "4 carduri hub (structură fixă)" },
-  { path: "/hydrafacial-craiova", name: "Hydrafacial", hero: 1, content: 1, gallery: "hydrafacial" },
+  { path: "/hidrafacial-craiova", name: "Hidrafacial", hero: 1, content: 1, gallery: "hydrafacial" },
   { path: "/dermapen-craiova", name: "Dermapen", hero: 1, content: 1, gallery: "dermapen" },
   { path: "/microneedling-craiova", name: "Microneedling", hero: 1, content: 1, gallery: "microneedling" },
   { path: "/hifu-facial-craiova", name: "HIFU Facial", hero: 1, content: 1, gallery: "hifu" },

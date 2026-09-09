@@ -5,7 +5,7 @@ export const tratamenteFacialeFaqs = [
   {
     question: "Care este cel mai bun tratament facial?",
     answer:
-      "Depinde de problema pielii. Pentru curățare este recomandat Hydrafacial, pentru cicatrici microneedling, iar pentru lifting HIFU.",
+      "Depinde de problema pielii. Pentru curățare este recomandat Hidrafacial, pentru cicatrici microneedling, iar pentru lifting HIFU.",
   },
   {
     question: "Cât de des ar trebui să faci tratamente faciale?",
@@ -15,7 +15,7 @@ export const tratamenteFacialeFaqs = [
   {
     question: "Se văd rezultatele după prima ședință?",
     answer:
-      "Unele tratamente oferă rezultate imediate (ex: Hydrafacial), iar altele au efect progresiv (ex: Dermapen, HIFU).",
+      "Unele tratamente oferă rezultate imediate (ex: Hidrafacial), iar altele au efect progresiv (ex: RF Fractionat, HIFU).",
   },
   {
     question: "Se pot combina tratamentele faciale?",
@@ -25,12 +25,12 @@ export const tratamenteFacialeFaqs = [
   {
     question: "Cât costă tratamentele faciale în Craiova?",
     answer:
-      "Prețurile diferă în funcție de procedură și numărul de ședințe. Tratamentele precum HIFU sau Dermapen pot necesita mai multe ședințe.",
+      "Prețurile diferă în funcție de procedură și numărul de ședințe. Tratamentele precum HIFU sau RF Fractionat pot necesita mai multe ședințe.",
   },
   {
     question: "Ce tratament este potrivit pentru acnee?",
     answer:
-      "Pentru acnee și cicatrici sunt recomandate proceduri de regenerare precum microneedling sau Dermapen.",
+      "Pentru acnee și cicatrici sunt recomandate proceduri de regenerare precum microneedling sau RF Fractionat.",
   },
   {
     question: "Există perioadă de recuperare?",

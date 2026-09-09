@@ -189,7 +189,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Pentru menținerea luminozității: Hydrafacial la 4–6 săptămâni, microdermabraziune la 4–8 săptămâni. Pentru ten foarte tern: protocol inițial de 3 ședințe la 2–3 săptămâni distanță, apoi întreținere. Rezultatul se cumulează — nu aștepta miracol după o singură vizită dacă problema e cronică.",
+        "Pentru menținerea luminozității: Hidrafacial la 4–6 săptămâni, microdermabraziune la 4–8 săptămâni. Pentru ten foarte tern: protocol inițial de 3 ședințe la 2–3 săptămâni distanță, apoi întreținere. Rezultatul se cumulează — nu aștepta miracol după o singură vizită dacă problema e cronică.",
       ],
     },
     {
@@ -224,7 +224,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Cristina, 41 de ani, ten mixt, lucrează într-un birou cu aer condiționat. Dimineața tenul pare cenușiu, machiajul arată patchy după prânz. Rutina acasă include vitamina C și cremă hidratantă — fără îmbunătățire după 6 săptămâni. Evaluarea arată strat compactat de celule moarte, deshidratare ușoară și pori înfundati pe nas. Plan: microdermabraziune ușoară în săptămâna 1; Hydrafacial în săptămâna 3; acasă — curățare blândă, acid hialuronic seara, SPF dimineața, fără exfoliere zilnică. Săptămâna 4: ten vizibil mai luminos, machiajul se aplică uniform. Nu HIFU deocamdată — laxitatea e minimă; prioritatea e suprafața și hidratarea. Cristina continuă cu Hydrafacial la 5–6 săptămâni. Scenariul arată cum cauzele combinate cer pași secvențiali, nu un singur « produs minune ».",
+        "Cristina, 41 de ani, ten mixt, lucrează într-un birou cu aer condiționat. Dimineața tenul pare cenușiu, machiajul arată patchy după prânz. Rutina acasă include vitamina C și cremă hidratantă — fără îmbunătățire după 6 săptămâni. Evaluarea arată strat compactat de celule moarte, deshidratare ușoară și pori înfundati pe nas. Plan: microdermabraziune ușoară în săptămâna 1; Hidrafacial în săptămâna 3; acasă — curățare blândă, acid hialuronic seara, SPF dimineața, fără exfoliere zilnică. Săptămâna 4: ten vizibil mai luminos, machiajul se aplică uniform. Nu HIFU deocamdată — laxitatea e minimă; prioritatea e suprafața și hidratarea. Cristina continuă cu Hidrafacial la 5–6 săptămâni. Scenariul arată cum cauzele combinate cer pași secvențiali, nu un singur « produs minune ».",
       ],
     },
     {
@@ -270,7 +270,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
         "Vitamina C ajută la luminozitate și protecție antioxidantă, dar nu elimină stratul compactat de celule moarte sau infundarea profundă a porilor. Combină rutina acasă cu tratamente profesionale pentru rezultate complete.",
     },
     {
-      question: "Cât de repede văd diferență după Hydrafacial?",
+      question: "Cât de repede văd diferență după Hidrafacial?",
       answer:
         "Luminozitatea și senzația de piele curată sunt vizibile imediat după ședință. Pentru ten cronic tern, recomandăm un protocol de 3 ședințe pentru rezultate durabile.",
     },
@@ -282,7 +282,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       question: "Pot face microdermabraziune dacă am ten sensibil?",
       answer:
-        "Depinde de gradul de sensibilitate. Microdermabraziunea clasică poate fi prea intensă; Hydrafacial sau variante blânde pot fi alternative. Consultația evaluează toleranța.",
+        "Depinde de gradul de sensibilitate. Microdermabraziunea clasică poate fi prea intensă; Hidrafacial sau variante blânde pot fi alternative. Consultația evaluează toleranța.",
     },
     {
       question: "Somnul influențează tenul tern?",
@@ -297,7 +297,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       question: "Cât de des ar trebui să fac tratamente pentru luminozitate?",
       answer:
-        "Hydrafacial: la 4–6 săptămâni. Microdermabraziune: la 4–8 săptămâni. După un protocol inițial, întreținerea se adaptează sezonului și stilului tău de viață.",
+        "Hidrafacial: la 4–6 săptămâni. Microdermabraziune: la 4–8 săptămâni. După un protocol inițial, întreținerea se adaptează sezonului și stilului tău de viață.",
     },
   ],
 }

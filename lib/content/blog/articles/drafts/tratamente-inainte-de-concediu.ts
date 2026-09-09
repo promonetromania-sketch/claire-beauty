@@ -86,7 +86,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
         ],
         ["4 săptămâni înainte: tratamente active față (peeling, microneedling) dacă e cazul"],
         ["2 săptămâni înainte: ultima ședință corporală intensă; evită proceduri noi experimentale"],
-        ["1 săptămână înainte: Hydrafacial, curățare profundă, drenaj ușor — fără iritare"],
+        ["1 săptămână înainte: Hidrafacial, curățare profundă, drenaj ușor — fără iritare"],
         ["3–5 zile înainte: doar hidratare, SPF, fără tratamente agresive"],
       ],
     },
@@ -145,7 +145,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
         ["Săptămâna 3: microdermabraziune sau Dermapen facial"],
         ["Săptămâna 4: ședință remodelare corporală; hidratare acasă"],
         ["Săptămâna 5: a doua ședință anticelulitic; curățare profundă față dacă e nevoie"],
-        ["Săptămâna 6: Hydrafacial cu 5–7 zile înainte de plecare; drenaj ușor opțional"],
+        ["Săptămâna 6: Hidrafacial cu 5–7 zile înainte de plecare; drenaj ușor opțional"],
       ],
     },
     {
@@ -174,7 +174,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Tratamentele nu se termină la ușa salonului. În vacanță, hidratarea constantă, SPF reaplicat și evitarea excessului de alcool și sare susțin efectul drenajului și al tratamentelor faciale. Nu extrage singură comedoanele — risc de inflamație și pete post-soare. Dacă ai făcut microdermabraziune sau Hydrafacial, tenul absoarbe mai bine serurile — profită de asta cu produse simple, fără parfum. La întoarcere, o ședință de drenaj sau o curățare blândă resetează pielea după zbor, clor și soare.",
+        "Tratamentele nu se termină la ușa salonului. În vacanță, hidratarea constantă, SPF reaplicat și evitarea excessului de alcool și sare susțin efectul drenajului și al tratamentelor faciale. Nu extrage singură comedoanele — risc de inflamație și pete post-soare. Dacă ai făcut microdermabraziune sau Hidrafacial, tenul absoarbe mai bine serurile — profită de asta cu produse simple, fără parfum. La întoarcere, o ședință de drenaj sau o curățare blândă resetează pielea după zbor, clor și soare.",
       ],
     },
     {
@@ -184,7 +184,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Concediu la mare, 10 zile, plecare peste 5 săptămâni: începe cu drenaj și anticelulitic, programează Hydrafacial la 6–7 zile înainte, evită peeling chimic. City break de weekend, peste 2 săptămâni: doar Hydrafacial sau curățare profesională + drenaj ușor — fără proceduri active. Nuntă sau eveniment, peste 8 săptămâni: protocol complet față + corp, cu HIFU sau Dermapen la jumătatea planului și finisare cu Hydrafacial în săptămâna evenimentului. Nu există plan universal — consultația personalizează calendarul.",
+        "Concediu la mare, 10 zile, plecare peste 5 săptămâni: începe cu drenaj și anticelulitic, programează Hidrafacial la 6–7 zile înainte, evită peeling chimic. City break de weekend, peste 2 săptămâni: doar Hidrafacial sau curățare profesională + drenaj ușor — fără proceduri active. Nuntă sau eveniment, peste 8 săptămâni: protocol complet față + corp, cu HIFU sau Dermapen la jumătatea planului și finisare cu Hidrafacial în săptămâna evenimentului. Nu există plan universal — consultația personalizează calendarul.",
       ],
     },
     {
@@ -220,7 +220,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Ioana, 29 de ani, pleacă la un city break de 4 zile peste trei săptămâni. Vrea ten luminos în poze și picioare mai ușoare după zbor — fără downtime vizibil. Nu are timp pentru protocol lung de remodelare. Planul propus: săptămâna 1 — drenaj limfatic ușor (ușurare imediată, fără echimoze); săptămâna 2 — curățare profesională facială + hidratare intensă; săptămâna 3, cu 5 zile înainte de plecare — Hydrafacial ca finisare, SPF recomandat pentru vacanță. Fără microneedling, fără peeling chimic, fără masaj anticelulitic intens — risc de roșeață sau sensibilitate înainte de eveniment. Acasă: demachiant blând, ser hidratant, SPF reaplicabil în geantă. La întoarcere, slot rezervat pentru drenaj post-zbor. Scenariul arată cum prioritizarea și renunțarea la proceduri « de efect maxim » bat graba de ultim moment când calendarul e scurt.",
+        "Ioana, 29 de ani, pleacă la un city break de 4 zile peste trei săptămâni. Vrea ten luminos în poze și picioare mai ușoare după zbor — fără downtime vizibil. Nu are timp pentru protocol lung de remodelare. Planul propus: săptămâna 1 — drenaj limfatic ușor (ușurare imediată, fără echimoze); săptămâna 2 — curățare profesională facială + hidratare intensă; săptămâna 3, cu 5 zile înainte de plecare — Hidrafacial ca finisare, SPF recomandat pentru vacanță. Fără microneedling, fără peeling chimic, fără masaj anticelulitic intens — risc de roșeață sau sensibilitate înainte de eveniment. Acasă: demachiant blând, ser hidratant, SPF reaplicabil în geantă. La întoarcere, slot rezervat pentru drenaj post-zbor. Scenariul arată cum prioritizarea și renunțarea la proceduri « de efect maxim » bat graba de ultim moment când calendarul e scurt.",
       ],
     },
     {
@@ -230,7 +230,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Nu toată lumea are timp sau buget pentru protocol complet față + corp. Prioritizează în funcție de ce te deranjează cel mai mult în vacanță: tenul în poze, picioarele grele după zbor, conturul în costum de baie. Dacă ai doar 2–3 ședințe disponibile, Hydrafacial plus drenaj oferă cel mai rapid « feel-good ». Dacă ai 6+ ședințe, poți alterna masaj anticelulitic cu tratament facial activ. Comunică transparent obiectivele și constrângerile — planul se adaptează, nu se impune.",
+        "Nu toată lumea are timp sau buget pentru protocol complet față + corp. Prioritizează în funcție de ce te deranjează cel mai mult în vacanță: tenul în poze, picioarele grele după zbor, conturul în costum de baie. Dacă ai doar 2–3 ședințe disponibile, Hidrafacial plus drenaj oferă cel mai rapid « feel-good ». Dacă ai 6+ ședințe, poți alterna masaj anticelulitic cu tratament facial activ. Comunică transparent obiectivele și constrângerile — planul se adaptează, nu se impune.",
       ],
     },
     {
@@ -250,7 +250,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       items: [
         ["Plecarea e în 4–6 săptămâni — ai timp pentru protocol față + corp"],
         ["City break în 2–3 săptămâni — ai nevoie de plan scurt, fără downtime"],
-        ["Nu știi ce combini: Hydrafacial, drenaj, anticelulitic, remodelare"],
+        ["Nu știi ce combini: Hidrafacial, drenaj, anticelulitic, remodelare"],
         ["Vrei calendar invers de la data plecării — nu ghiceli"],
       ],
     },
@@ -287,7 +287,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       items: [
         ["Evaluare personalizată — data plecării, obiective față + corp, istoric tratamente"],
         ["Plan adaptat tipului tău de piele/corp — frecvență și ordine proceduri"],
-        ["Recomandare tratament corect — Hydrafacial, drenaj, anticelulitic sau remodelare, după calendar"],
+        ["Recomandare tratament corect — Hidrafacial, drenaj, anticelulitic sau remodelare, după calendar"],
       ],
     },
     {
@@ -306,12 +306,12 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       question: "Cu cât timp înainte de vacanță ar trebui să încep tratamentele?",
       answer:
-        "Ideal, cu 4–6 săptămâni pentru protocol corporal complet și 2–3 săptămâni pentru tratamente faciale active. Hydrafacial poate fi făcut cu 3–7 zile înainte, fără downtime semnificativ.",
+        "Ideal, cu 4–6 săptămâni pentru protocol corporal complet și 2–3 săptămâni pentru tratamente faciale active. Hidrafacial poate fi făcut cu 3–7 zile înainte, fără downtime semnificativ.",
     },
     {
       question: "Pot face tratament facial cu o săptămână înainte de plecare?",
       answer:
-        "Da, dacă alegi proceduri blânde — Hydrafacial, curățare profesională, hidratare intensă. Evită peeling chimic, microneedling sau laser dacă urmează expunere la soare imediat după.",
+        "Da, dacă alegi proceduri blânde — Hidrafacial, curățare profesională, hidratare intensă. Evită peeling chimic, microneedling sau laser dacă urmează expunere la soare imediat după.",
     },
     {
       question: "Ce tratament corporal are efect cel mai rapid?",

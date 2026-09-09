@@ -72,7 +72,7 @@ const submenuIcons: Record<string, LucideIcon> = {
   "/dermapen-craiova": PenLine,
   "/microdermabraziune-craiova": Layers,
   "/microneedling-craiova": Syringe,
-  "/hydrafacial-craiova": Sparkles,
+  "/hidrafacial-craiova": Sparkles,
   "/remodelare-corporala-craiova": Activity,
   "/electrostimulare-craiova": Zap,
   "/radiofrecventa-corporala-craiova": Radio,

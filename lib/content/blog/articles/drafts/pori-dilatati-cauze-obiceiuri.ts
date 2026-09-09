@@ -175,7 +175,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
         L.microdermabraziune,
         " — exfoliere mecanică, textură mai fină, luminozitate. ",
         L.microneedling,
-        " — colagen pentru piele din jurul porilor, cicatrici post-acnee. Frecvența: Hydrafacial la 3–4 săptămâni pe ten gras; microdermabraziune la 4–6 săptămâni; microneedling la 4–6 săptămâni în protocol. Detalii despre fiecare procedură pe pagina de ",
+        " — colagen pentru piele din jurul porilor, cicatrici post-acnee. Frecvența: Hidrafacial la 3–4 săptămâni pe ten gras; microdermabraziune la 4–6 săptămâni; microneedling la 4–6 săptămâni în protocol. Detalii despre fiecare procedură pe pagina de ",
         L.tratamenteFaciale,
         ".",
       ],
@@ -234,7 +234,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Diana, 32 de ani, ten gras, pori vizibili pe nas și pe zona T, puncte negre recurente. A încercat scrub-uri zilnice și aparat de vacuum acasă — porii par mai mari, pielea iritată. Evaluarea arată barieră slăbită și foliculi înfundati, nu laxitate severă. Plan: săptămâna 1 — oprire scrub zilnic, introducere gel blând + BHA de 2 ori pe săptămână; săptămâna 2 — Hydrafacial (curățare profundă, extragere comedoane profesională); săptămânile 4 și 8 — Hydrafacial repetat, cu niacinamidă acasă; fără microdermabraziune până la săptămâna 6 — pielea trebuie să-și refacă bariera. SPF zilnic, fără fond de ten heavy pe nas. După 8 săptămâni, porii rămân vizibili la distanță mică — normal genetic — dar textura e mai fină, punctele negre reduse, tenul nu mai arată inflamat. Diana continuă cu Hydrafacial la 4 săptămâni. Scenariul arată că reducerea vizibilității porilor începe cu oprirea obiceiurilor dăunătoare, apoi curățare profesională regulată — nu cu produse « pore shrinking ».",
+        "Diana, 32 de ani, ten gras, pori vizibili pe nas și pe zona T, puncte negre recurente. A încercat scrub-uri zilnice și aparat de vacuum acasă — porii par mai mari, pielea iritată. Evaluarea arată barieră slăbită și foliculi înfundati, nu laxitate severă. Plan: săptămâna 1 — oprire scrub zilnic, introducere gel blând + BHA de 2 ori pe săptămână; săptămâna 2 — Hidrafacial (curățare profundă, extragere comedoane profesională); săptămânile 4 și 8 — Hidrafacial repetat, cu niacinamidă acasă; fără microdermabraziune până la săptămâna 6 — pielea trebuie să-și refacă bariera. SPF zilnic, fără fond de ten heavy pe nas. După 8 săptămâni, porii rămân vizibili la distanță mică — normal genetic — dar textura e mai fină, punctele negre reduse, tenul nu mai arată inflamat. Diana continuă cu Hidrafacial la 4 săptămâni. Scenariul arată că reducerea vizibilității porilor începe cu oprirea obiceiurilor dăunătoare, apoi curățare profesională regulată — nu cu produse « pore shrinking ».",
       ],
     },
     {
@@ -246,7 +246,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       content: [
         "Problema ta — porii vizibili — devine decizie de tratament când rutina acasă nu aduce progres după 2–3 luni, sau squeezing-ul a agravat textura. Semne clare că ai nevoie de serviciu: puncte negre recurente, ten gras cu barieră slăbită, textură aspră persistentă. Tranziția naturală: identifici cauza (sebum, laxitate, cicatrici) → alegi tratamentul potrivit → programezi evaluarea. În cadrul clinicii noastre din Craiova, majoritatea clientelor observă textură mai fină încă după prima ",
         { text: "consultație tratament facial personalizat", href: "/tratamente-faciale-craiova" },
-        " — Hydrafacial sau microdermabraziune, după evaluare.",
+        " — Hidrafacial sau microdermabraziune, după evaluare.",
       ],
     },
     {
@@ -260,12 +260,12 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     },
     {
       type: "h2",
-      text: "Soluții posibile — Hydrafacial, microdermabraziune, microneedling",
+      text: "Soluții posibile — Hidrafacial, microdermabraziune, microneedling",
     },
     {
       type: "p",
       content: [
-        "Hydrafacial curăță profund; microdermabraziune refinează textura; microneedling stimulează colagenul din jurul porilor. Detalii pe ",
+        "Hidrafacial curăță profund; microdermabraziune refinează textura; microneedling stimulează colagenul din jurul porilor. Detalii pe ",
         L.tratamenteFaciale,
         " — hub-ul nostru pentru tratamente faciale.",
       ],
@@ -285,7 +285,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       items: [
         ["Evaluare personalizată — sebum, laxitate, cicatrici vs pori genetici"],
         ["Plan adaptat tipului tău de piele — frecvență și procedură corectă"],
-        ["Recomandare tratament corect — Hydrafacial, microdermabraziune sau microneedling, după caz"],
+        ["Recomandare tratament corect — Hidrafacial, microdermabraziune sau microneedling, după caz"],
       ],
     },
     {
@@ -309,7 +309,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       question: "De ce am pori mai mari pe nas?",
       answer:
-        "Zona T are cele mai multe glande sebacee. Nasul produce mai mult sebum, iar foliculii sunt natural mai dilatați. Curățare regulată și BHA ajută; Hydrafacial curăță profund zona.",
+        "Zona T are cele mai multe glande sebacee. Nasul produce mai mult sebum, iar foliculii sunt natural mai dilatați. Curățare regulată și BHA ajută; Hidrafacial curăță profund zona.",
     },
     {
       question: "Apa rece « închide » porii?",
@@ -319,7 +319,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       question: "Cât de des pot face tratamente pentru pori dilatați?",
       answer:
-        "Hydrafacial: la 3–4 săptămâni pe ten gras. Microdermabraziune: la 4–6 săptămâni. Microneedling: la 4–6 săptămâni în protocol activ. Respectă intervalele — pielea trebuie să se refacă.",
+        "Hidrafacial: la 3–4 săptămâni pe ten gras. Microdermabraziune: la 4–6 săptămâni. Microneedling: la 4–6 săptămâni în protocol activ. Respectă intervalele — pielea trebuie să se refacă.",
     },
     {
       question: "Niacinamida chiar reduce porii?",
@@ -329,7 +329,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       question: "Extragerea comedoanelor acasă agravează porii?",
       answer:
-        "Da. Presiunea traumatizează foliculul, poate cauza inflamație, cicatrici și dilatare permanentă. Extragerea profesională în cadrul Hydrafacial sau curățării estetice este sigură.",
+        "Da. Presiunea traumatizează foliculul, poate cauza inflamație, cicatrici și dilatare permanentă. Extragerea profesională în cadrul Hidrafacial sau curățării estetice este sigură.",
     },
     {
       question: "Pori dilatați la 40 de ani — e normal?",
@@ -339,7 +339,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       question: "Ce tratament e cel mai bun pentru pori dilatați?",
       answer:
-        "Depinde de cauză: sebum și înfundare — Hydrafacial; textură aspră — microdermabraziune; laxitate și cicatrici — microneedling. Consultația stabilește combinația potrivită.",
+        "Depinde de cauză: sebum și înfundare — Hidrafacial; textură aspră — microdermabraziune; laxitate și cicatrici — microneedling. Consultația stabilește combinația potrivită.",
     },
   ],
 }

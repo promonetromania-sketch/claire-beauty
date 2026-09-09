@@ -61,7 +61,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Primele 7 zile sunt despre oprirea daunelor, nu despre « reparare activă ». Ziua 1–2: pielea poate fi caldă, uscată, ușor strânsă — chiar fără arsură vizibilă. Demachiere blândă seara, apă termală sau ser cu acid hialuronic, cremă calmantă, SPF 50+ dimineața indiferent de vreme. Zero exfoliere, zero retinol, zero aparat de curățat porii. Dacă ai arsut, vezicule sau durere intensă, dermatolog — nu salon. Ziua 3–5: senzația de uscăciune persistă; hidratarea în straturi (ser apos + cremă) aduce confort. Evită piscina, sauna, sportul cu fața roșie. Ziua 6–7: dacă pielea nu mai arde la aplicarea produselor și roșeața s-a estompat, ești pe traseul corect — încă fără active agresive. Săptămâna 2 (zilele 8–14): reintrodu treptat vitamina C în concentrație mică dimineața, o dată pe săptămână PHA sau acid lactic blând. Retinolul așteaptă. SPF rămâne non-negociabil — petele noi se formează rapid pe piele vulnerabilă. Săptămâna 3 (zilele 15–21): textura începe să se uniformizeze; petele superficiale pot părea mai evidente pe fond de bronz estompat — normal. Poți programa prima evaluare profesională blândă (Hydrafacial hidratant) dacă bariera e stabilă. Nu combina acasă retinol cu tratament activ la salon în aceeași săptămână. La finalul celor 21 de zile, majoritatea tenurilor revin la confort și hidratare; uniformizarea tonului și estomparea petelor durează încă 4–8 săptămâni — răbdarea e parte din protocol, nu pasivitate.",
+        "Primele 7 zile sunt despre oprirea daunelor, nu despre « reparare activă ». Ziua 1–2: pielea poate fi caldă, uscată, ușor strânsă — chiar fără arsură vizibilă. Demachiere blândă seara, apă termală sau ser cu acid hialuronic, cremă calmantă, SPF 50+ dimineața indiferent de vreme. Zero exfoliere, zero retinol, zero aparat de curățat porii. Dacă ai arsut, vezicule sau durere intensă, dermatolog — nu salon. Ziua 3–5: senzația de uscăciune persistă; hidratarea în straturi (ser apos + cremă) aduce confort. Evită piscina, sauna, sportul cu fața roșie. Ziua 6–7: dacă pielea nu mai arde la aplicarea produselor și roșeața s-a estompat, ești pe traseul corect — încă fără active agresive. Săptămâna 2 (zilele 8–14): reintrodu treptat vitamina C în concentrație mică dimineața, o dată pe săptămână PHA sau acid lactic blând. Retinolul așteaptă. SPF rămâne non-negociabil — petele noi se formează rapid pe piele vulnerabilă. Săptămâna 3 (zilele 15–21): textura începe să se uniformizeze; petele superficiale pot părea mai evidente pe fond de bronz estompat — normal. Poți programa prima evaluare profesională blândă (Hidrafacial hidratant) dacă bariera e stabilă. Nu combina acasă retinol cu tratament activ la salon în aceeași săptămână. La finalul celor 21 de zile, majoritatea tenurilor revin la confort și hidratare; uniformizarea tonului și estomparea petelor durează încă 4–8 săptămâni — răbdarea e parte din protocol, nu pasivitate.",
       ],
     },
     {
@@ -145,7 +145,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Model recomandat: săptămânile 1–2 acasă (calmare), săptămânile 3–4 reintroducere ușoară + eventual prima ședință profesională blândă (Hydrafacial), săptămânile 5–8 tratamente țintite (microdermabraziune, pete) dacă e nevoie. Nu suprapune acasă retinol puternic cu peeling la salon în aceeași săptămână. Opțiunile post-vacanță — de la hidratare intensă la protocoale de luminozitate — sunt detaliate pe pagina de ",
+        "Model recomandat: săptămânile 1–2 acasă (calmare), săptămânile 3–4 reintroducere ușoară + eventual prima ședință profesională blândă (Hidrafacial), săptămânile 5–8 tratamente țintite (microdermabraziune, pete) dacă e nevoie. Nu suprapune acasă retinol puternic cu peeling la salon în aceeași săptămână. Opțiunile post-vacanță — de la hidratare intensă la protocoale de luminozitate — sunt detaliate pe pagina de ",
         L.tratamenteFaciale,
         ", cu recomandare adaptată stadiului tău de recuperare. Dacă vrei să previi daunele data viitoare, ",
         { text: "pregătirea tenului pentru vară", href: "/blog/pregatire-ten-vara-pasi" },
@@ -182,7 +182,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Dacă ai ten sensibil, cuperoză sau rosacee, recuperarea post-soare cere și mai multă prudență. Soarele poate declanșa pusee de roșeață care persistă săptămâni după vacanță. Evită apă foarte fierbinte la spălare, produse cu alcool sau mentol, scrub-uri și tratamente termice acasă. Ingredientele calmante — azelaic acid în concentrație mică, centella, niacinamidă blândă — pot ajuta, dar introducerea e treptată. La salon, protocoalele agresive sunt contraindicate până la stabilizare; Hydrafacial blând sau hidratare profesională sunt adesea singurele opțiuni sigure în primele săptămâni. Comunică diagnosticul sau sensibilitatea înainte de programare — adaptarea protocolului previne regresul, nu doar disconfortul temporar.",
+        "Dacă ai ten sensibil, cuperoză sau rosacee, recuperarea post-soare cere și mai multă prudență. Soarele poate declanșa pusee de roșeață care persistă săptămâni după vacanță. Evită apă foarte fierbinte la spălare, produse cu alcool sau mentol, scrub-uri și tratamente termice acasă. Ingredientele calmante — azelaic acid în concentrație mică, centella, niacinamidă blândă — pot ajuta, dar introducerea e treptată. La salon, protocoalele agresive sunt contraindicate până la stabilizare; Hidrafacial blând sau hidratare profesională sunt adesea singurele opțiuni sigure în primele săptămâni. Comunică diagnosticul sau sensibilitatea înainte de programare — adaptarea protocolului previne regresul, nu doar disconfortul temporar.",
       ],
     },
     {
@@ -216,9 +216,9 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
         "Nu recomandat în prima 1–2 săptămâni. Pielea e vulnerabilă; retinolul poate irita. Reintrodu treptat după ce bariera e restaurată, de obicei săptămâna 3–4.",
     },
     {
-      question: "Hydrafacial e sigur după expunere la soare?",
+      question: "Hidrafacial e sigur după expunere la soare?",
       answer:
-        "Da, dacă nu ai arsură activă sau piele foarte inflamată. Hydrafacial e blând, hidratant — adesea ideal 2–4 săptămâni post-vacanță. Consultația confirmă dacă e momentul potrivit.",
+        "Da, dacă nu ai arsură activă sau piele foarte inflamată. Hidrafacial e blând, hidratant — adesea ideal 2–4 săptămâni post-vacanță. Consultația confirmă dacă e momentul potrivit.",
     },
     {
       question: "Pete noi după soare — dispar singure?",

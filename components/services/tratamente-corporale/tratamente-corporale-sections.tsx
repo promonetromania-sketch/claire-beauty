@@ -297,10 +297,10 @@ export function TratamenteCorporaleSections() {
               </Link>
               , inclusiv{" "}
               <Link
-                href="/hydrafacial-craiova"
+                href="/hidrafacial-craiova"
                 className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
               >
-                Hydrafacial
+                Hidrafacial
               </Link>
               , pentru o rutină completă de beauty și wellness. Pentru programări,
               vizitează pagina de{" "}
@@ -326,7 +326,7 @@ export function TratamenteCorporaleSections() {
           {[
             { label: "Masaj Craiova", href: "/masaj-craiova" },
             { label: "Tratamente faciale", href: "/tratamente-faciale-craiova" },
-            { label: "Hydrafacial", href: "/hydrafacial-craiova" },
+            { label: "Hidrafacial", href: "/hidrafacial-craiova" },
             { label: "Prețuri", href: "/preturi" },
             { label: "Contact", href: "/contact" },
           ].map((link) => (

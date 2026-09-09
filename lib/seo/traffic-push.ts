@@ -60,7 +60,7 @@ export const hubBlogLinks: Record<HubKey, BlogInlineLink[]> = {
       href: "/blog/ce-evitat-dupa-tratamente-estetice",
     },
     {
-      text: "Hydrafacial pentru începători — ce trebuie să știi",
+      text: "Hidrafacial pentru începători — ce trebuie să știi",
       href: "/blog/ce-este-hydrafacial-beneficii-craiova",
     },
     {
@@ -152,7 +152,7 @@ export const servicePageBlogLinks: Record<string, BlogInlineLink[]> = {
       href: "/blog/masaj-anticelulitic-vs-drenaj-limfatic",
     },
   ],
-  "/hydrafacial-craiova": [
+  "/hidrafacial-craiova": [
     {
       text: "Curățare facială acasă vs salon",
       href: "/blog/curatare-faciala-acasa-vs-salon",
@@ -162,7 +162,7 @@ export const servicePageBlogLinks: Record<string, BlogInlineLink[]> = {
       href: "/blog/cum-scapi-de-puncte-negre-corect",
     },
     {
-      text: "Hydrafacial pentru începători",
+      text: "Hidrafacial pentru începători",
       href: "/blog/ce-este-hydrafacial-beneficii-craiova",
     },
     {
@@ -327,7 +327,7 @@ export const articleTrafficPushOutbounds: Record<string, BlogInlineLink[]> = {
       href: "/blog/pori-dilatati-cauze-obiceiuri",
     },
     {
-      text: "Hydrafacial pentru începători",
+      text: "Hidrafacial pentru începători",
       href: "/blog/ce-este-hydrafacial-beneficii-craiova",
     },
     {
@@ -367,7 +367,7 @@ export const articleTrafficPushOutbounds: Record<string, BlogInlineLink[]> = {
       href: "/blog/curatare-faciala-acasa-vs-salon",
     },
     {
-      text: "Hydrafacial pentru începători",
+      text: "Hidrafacial pentru începători",
       href: "/blog/ce-este-hydrafacial-beneficii-craiova",
     },
     {
@@ -421,7 +421,7 @@ export const articleTrafficPushOutbounds: Record<string, BlogInlineLink[]> = {
       href: "/blog/pregatire-ten-vara-pasi",
     },
     {
-      text: "Hydrafacial pentru începători",
+      text: "Hidrafacial pentru începători",
       href: "/blog/ce-este-hydrafacial-beneficii-craiova",
     },
     {
@@ -585,7 +585,7 @@ export const articleTrafficPushOutbounds: Record<string, BlogInlineLink[]> = {
       href: "/blog/tratamente-inainte-de-concediu",
     },
     {
-      text: "Hydrafacial pentru începători",
+      text: "Hidrafacial pentru începători",
       href: "/blog/ce-este-hydrafacial-beneficii-craiova",
     },
     {
@@ -609,7 +609,7 @@ export const articleTrafficPushOutbounds: Record<string, BlogInlineLink[]> = {
       href: "/blog/cum-scapi-de-puncte-negre-corect",
     },
     {
-      text: "Hydrafacial pentru începători",
+      text: "Hidrafacial pentru începători",
       href: "/blog/ce-este-hydrafacial-beneficii-craiova",
     },
     {

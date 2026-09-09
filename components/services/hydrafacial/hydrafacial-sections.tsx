@@ -164,11 +164,11 @@ const hydrafacialSteps = [
     icon: Droplets },
 ] as const
 
-export function HydrafacialSections() {
+export function HidrafacialSections() {
   return (
     <>
       <InlineCTA
-        title="Obține glow imediat cu Hydrafacial în Craiova"
+        title="Obține glow imediat cu Hidrafacial în Craiova"
         description="Curățare profundă, hidratare intensă și ten luminos — fără durere și fără recuperare."
         primaryLabel="Programează-te acum"
       />
@@ -179,8 +179,8 @@ export function HydrafacialSections() {
             <SectionHeading
               align="left"
               eyebrow="Procedură facială"
-              title="Ce este Hydrafacial și cum funcționează"
-              description="Hydrafacial este un tratament facial avansat care combină mai multe etape esențiale într-o singură ședință, fără disconfort."
+              title="Ce este Hidrafacial și cum funcționează"
+              description="Hidrafacial este un tratament facial avansat care combină mai multe etape esențiale într-o singură ședință, fără disconfort."
             />
             <BulletList
               items={[
@@ -207,8 +207,8 @@ export function HydrafacialSections() {
 
       <SectionShell className="bg-secondary/40">
         <SectionHeading
-          eyebrow="Protocol Hydrafacial"
-          title="Etapele tratamentului Hydrafacial"
+          eyebrow="Protocol Hidrafacial"
+          title="Etapele tratamentului Hidrafacial"
           description="Patru etape integrate pentru curățare, exfoliere, extracție și hidratare intensă."
         />
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
@@ -226,8 +226,8 @@ export function HydrafacialSections() {
       <SectionShell className="bg-background">
         <SectionHeading
           eyebrow="Beneficii"
-          title="Beneficiile reale ale Hydrafacial"
-          description="Tratamentul Hydrafacial este tot mai căutat în Craiova pentru curățare facială profesională și rezultate imediate."
+          title="Beneficiile reale ale Hidrafacial"
+          description="Tratamentul Hidrafacial este tot mai căutat în Craiova pentru curățare facială profesională și rezultate imediate."
         />
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {[
@@ -240,7 +240,7 @@ export function HydrafacialSections() {
           ].map((benefit) => (
             <InfoCard key={benefit} icon={Sparkles} title={benefit}>
               <p>
-                Hydrafacial Craiova oferă curățare facială și ten luminos cu
+                Hidrafacial Craiova oferă curățare facială și ten luminos cu
                 rezultate vizibile imediat.
               </p>
             </InfoCard>
@@ -254,8 +254,8 @@ export function HydrafacialSections() {
             <SectionHeading
               align="left"
               eyebrow="Indicații"
-              title="Pentru cine este potrivit Hydrafacial"
-              description="Hydrafacial este extrem de versatil — tratamentul universal pentru întreținerea tenului."
+              title="Pentru cine este potrivit Hidrafacial"
+              description="Hidrafacial este extrem de versatil — tratamentul universal pentru întreținerea tenului."
             />
             <BulletList
               items={[
@@ -269,7 +269,7 @@ export function HydrafacialSections() {
           </div>
           <div className="rounded-[2rem] border border-[#D4AF37]/20 bg-card/80 p-8 shadow-premium backdrop-blur-sm">
             <h3 className="mb-4 font-serif text-2xl font-semibold text-foreground">
-              De ce Hydrafacial este unul dintre cele mai căutate tratamente
+              De ce Hidrafacial este unul dintre cele mai căutate tratamente
               faciale
             </h3>
             <BulletList
@@ -290,10 +290,10 @@ export function HydrafacialSections() {
         <div className="rounded-[2rem] border border-[#D4AF37]/20 bg-card/80 p-8 shadow-premium backdrop-blur-sm sm:p-10">
           <AlertTriangle className="mb-4 h-7 w-7 text-[#D4AF37]" />
           <h2 className="mb-4 font-serif text-3xl font-semibold text-foreground">
-            Când NU este suficient Hydrafacial
+            Când NU este suficient Hidrafacial
           </h2>
           <p className="mb-4 text-muted-foreground leading-relaxed">
-            Hydrafacial este ideal pentru curățare și întreținere, dar nu
+            Hidrafacial este ideal pentru curățare și întreținere, dar nu
             rezolvă probleme profunde precum:
           </p>
           <BulletList
@@ -326,12 +326,12 @@ export function HydrafacialSections() {
       <SectionShell className="bg-secondary/40">
         <SectionHeading
           eyebrow="Comparație SEO"
-          title="Hydrafacial vs alte tratamente faciale"
-          description="Hydrafacial nu înlocuiește — completează celelalte tratamente."
+          title="Hidrafacial vs alte tratamente faciale"
+          description="Hidrafacial nu înlocuiește — completează celelalte tratamente."
         />
         <div className="mx-auto max-w-4xl space-y-4 rounded-[1.75rem] border border-[#D4AF37]/20 bg-card/85 p-8 shadow-premium backdrop-blur-sm">
           <p className="font-medium text-foreground">
-            Hydrafacial → curăță + hidratează instant
+            Hidrafacial → curăță + hidratează instant
           </p>
           <ul className="space-y-3 text-muted-foreground leading-relaxed">
             <li>
@@ -412,14 +412,14 @@ export function HydrafacialSections() {
 
       <InlineCTA
         title="Vrei ten curat și hidratat imediat?"
-        description="Programează Hydrafacial și combină-l cu tratamente faciale complementare pentru rezultate complete."
+        description="Programează Hidrafacial și combină-l cu tratamente faciale complementare pentru rezultate complete."
         primaryLabel="Cere recomandare"
       />
 
       <SectionShell className="bg-secondary/40">
         <SectionHeading
           eyebrow="Semne de alarmă"
-          title="Semne că ai nevoie de Hydrafacial"
+          title="Semne că ai nevoie de Hidrafacial"
         />
         <div className="mx-auto max-w-3xl">
           <BulletList
@@ -473,11 +473,11 @@ export function HydrafacialSections() {
             <SectionHeading
               align="left"
               eyebrow="SEO local Craiova"
-              title="Hydrafacial Craiova – aproape de tine"
+              title="Hidrafacial Craiova – aproape de tine"
               description="Indiferent dacă locuiești în Craiovița Nouă, Rovine, Brazda lui Novac, Centru sau 1 Mai, ajungi rapid la Claire Beauty."
             />
             <p className="text-muted-foreground leading-relaxed">
-              Pentru rezultate complete, poți combina Hydrafacial cu{" "}
+              Pentru rezultate complete, poți combina Hidrafacial cu{" "}
               <Link
                 href="/tratamente-faciale-craiova"
                 className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
@@ -503,7 +503,7 @@ export function HydrafacialSections() {
 
       <SectionShell className="bg-background">
         <div className="grid gap-8 lg:grid-cols-2">
-          <InfoCard icon={Target} title="Cât costă Hydrafacial în Craiova">
+          <InfoCard icon={Target} title="Cât costă Hidrafacial în Craiova">
             <p className="mb-4">Prețul diferă în funcție de:</p>
             <BulletList
               items={["tipul tratamentului", "complexitate", "pachet"]}
@@ -540,7 +540,7 @@ export function HydrafacialSections() {
       />
 
       <ServiceCTA
-        title="Programează-te pentru Hydrafacial Craiova"
+        title="Programează-te pentru Hidrafacial Craiova"
         description="Vezi diferența chiar după prima ședință: curățare profundă, hidratare intensă și glow imediat. Telefon: 0757 851 882."
       />
     </>

@@ -37,7 +37,7 @@ export const INDEX_TIER_2_HUBS = [
   "/tratamente-corporale-craiova",
   "/remodelare-corporala-craiova",
   "/drenaj-limfatic-craiova",
-  "/hydrafacial-craiova",
+  "/hidrafacial-craiova",
 ] as const
 
 export const INDEX_TIER_3_DRAFTS = [
