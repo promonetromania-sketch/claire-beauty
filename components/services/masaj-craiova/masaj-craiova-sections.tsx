@@ -144,6 +144,13 @@ const serviceCards = [
     icon: Droplets,
     cta: "Drenaj limfatic Craiova" },
   {
+    title: "Drenaj limfatic post-operator",
+    href: "/drenaj-limfatic-post-operator-craiova",
+    description:
+      "Pentru recuperarea după liposucție, abdominoplastie sau alte intervenții, cu protocol medical.",
+    icon: Droplets,
+    cta: "Drenaj limfatic post-operator Craiova" },
+  {
     title: "Reflexoterapie",
     href: "/reflexoterapie-craiova",
     description:

@@ -151,6 +151,12 @@ const procedureCards = [
     description:
       "Curățare și exfoliere pentru ten încărcat, piele ternă și întreținere cu textură îmbunătățită.",
     icon: Sparkles },
+  {
+    title: "Cicatrici și vergeturi",
+    href: "/cicatrici-vergeturi-craiova",
+    description:
+      "Radiofrecvență fracționată pentru cicatrici de acnee, cicatrici post-operatorii și vergeturi.",
+    icon: PenLine },
 ] as const
 
 function ProcedureHubCard({

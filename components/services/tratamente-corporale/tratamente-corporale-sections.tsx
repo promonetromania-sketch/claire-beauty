@@ -144,6 +144,30 @@ const hubServices: {
     description:
       "Tehnici dedicate eliminării retenției de apă, detoxifierii și susținerii circulației limfatice.",
     image: claireImages.tratamenteCorporaleContent },
+  {
+    title: "HIFU corporal Craiova",
+    href: "/hifu-corporal-craiova",
+    description:
+      "Lifting și fermitate fără operație pentru abdomen, brațe și coapse, cu ultrasunete focalizate.",
+    image: claireImages.hifuCorporal },
+  {
+    title: "Cicatrici și vergeturi Craiova",
+    href: "/cicatrici-vergeturi-craiova",
+    description:
+      "Radiofrecvență fracționată pentru vergeturi, cicatrici de acnee și cicatrici după operații sau cezariană.",
+    image: claireImages.microneedlingContent },
+  {
+    title: "Radiofrecvență corporală Craiova",
+    href: "/radiofrecventa-corporala-craiova",
+    description:
+      "Tratament non-invaziv pentru fermitatea pielii, tonifiere și aspect vizibil mai ferm.",
+    image: claireImages.radiofrecventaFacial },
+  {
+    title: "Electrostimulare Craiova",
+    href: "/electrostimulare-craiova",
+    description:
+      "Tonifiere musculară asistată, pentru abdomen și fesieri, fără efort fizic intens.",
+    image: claireImages.electrostimulare },
 ]
 
 function HubServiceCard({

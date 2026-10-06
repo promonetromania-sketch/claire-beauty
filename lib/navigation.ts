@@ -23,6 +23,10 @@ export const mainNavigation: NavItem[] = [
       { name: "Masaj terapeutic", href: "/masaj-terapeutic-craiova" },
       { name: "Masaj anticelulitic", href: "/masaj-anticelulitic-craiova" },
       { name: "Drenaj limfatic", href: "/drenaj-limfatic-craiova" },
+      {
+        name: "Drenaj limfatic post-operator",
+        href: "/drenaj-limfatic-post-operator-craiova",
+      },
       { name: "Reflexoterapie", href: "/reflexoterapie-craiova" },
     ],
   },
@@ -35,6 +39,7 @@ export const mainNavigation: NavItem[] = [
       { name: "Microdermabraziune", href: "/microdermabraziune-craiova" },
       { name: "Microneedling", href: "/microneedling-craiova" },
       { name: "Hydrablast", href: "/hydrablast-craiova" },
+      { name: "Cicatrici și vergeturi", href: "/cicatrici-vergeturi-craiova" },
     ],
   },
   {
@@ -48,6 +53,8 @@ export const mainNavigation: NavItem[] = [
         name: "Radiofrecvență corporală",
         href: "/radiofrecventa-corporala-craiova",
       },
+      { name: "HIFU corporal", href: "/hifu-corporal-craiova" },
+      { name: "Cicatrici și vergeturi", href: "/cicatrici-vergeturi-craiova" },
     ],
   },
   { type: "link", name: "Prețuri", href: "/preturi" },

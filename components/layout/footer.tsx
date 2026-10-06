@@ -5,11 +5,26 @@ import { businessProfile } from "@/lib/seo/business"
 import { Phone, Mail, MapPin, Clock, Instagram, Facebook } from "lucide-react"
 
 const services = [
-  { name: "Reflexoterapie", href: "/reflexoterapie-craiova" },
+  { name: "Masaj", href: "/masaj-craiova" },
   { name: "Masaj Anticelulitic", href: "/masaj-anticelulitic-craiova" },
   { name: "Drenaj Limfatic", href: "/drenaj-limfatic-craiova" },
+  {
+    name: "Drenaj Limfatic Post-operator",
+    href: "/drenaj-limfatic-post-operator-craiova",
+  },
+  { name: "Reflexoterapie", href: "/reflexoterapie-craiova" },
   { name: "Tratamente Faciale", href: "/tratamente-faciale-craiova" },
+  { name: "HIFU Facial", href: "/hifu-facial-craiova" },
+  { name: "Microneedling", href: "/microneedling-craiova" },
+  { name: "Cicatrici și Vergeturi", href: "/cicatrici-vergeturi-craiova" },
+  { name: "Tratamente Corporale", href: "/tratamente-corporale-craiova" },
+  { name: "HIFU Corporal", href: "/hifu-corporal-craiova" },
   { name: "Remodelare Corporală", href: "/remodelare-corporala-craiova" },
+  {
+    name: "Radiofrecvență Corporală",
+    href: "/radiofrecventa-corporala-craiova",
+  },
+  { name: "Electrostimulare", href: "/electrostimulare-craiova" },
 ]
 
 const quickLinks = [
