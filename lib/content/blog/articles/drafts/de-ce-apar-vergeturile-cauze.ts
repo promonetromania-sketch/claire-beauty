@@ -19,13 +19,17 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
   tag: "Tratamente corporale",
   publishedAt: "2026-08-14",
   image: {
-    src: "/images/blog/drafts/de-ce-apar-vergeturile-cauze.jpg",
+    src: "/og/blog/de-ce-apar-vergeturile-cauze.jpg",
     alt: "Vergeturi pe piele — cauze și factori de risc explicați",
     title: "Vergeturi: de ce apar și la cine sunt mai frecvente",
   },
-  relatedService: L.remodelare,
-  recommendedServices: [L.microneedling, L.radiofrecventa, L.tratamenteCorporale],
-  hubLink: L.tratamenteCorporale,
+  relatedService: L.cicatriciVergeturi,
+  recommendedServices: [
+    L.vergeturiRosiiAlbe,
+    L.vergeturiDupaSarcina,
+    L.radiofrecventaFractionata,
+  ],
+  hubLink: L.cicatriciVergeturi,
   relatedArticles: [
     {
       text: "Vergeturi și piele lăsată: ce tratamente aduc rezultate reale",
@@ -72,7 +76,11 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "În sarcină, combinația de întindere mecanică, hormoni (cortizol, relaxina) și modificări ale fluxului sanguin slăbește temporar fibrele de colagen. Relaxina, de exemplu, pregătește ligamentele pentru naștere — dar afectează și elasticitatea pielii. Vergeturile apar cel mai frecvent în trimestrul al treilea, când abdomenul atinge volum maxim; sânii și șoldurile sunt zone secundare. Predispoziția genetică joacă rol major: dacă mama ta a avut vergeturi în sarcină, probabilitatea ta crește — nu e garantat, dar statistic semnificativ. Greutatea câștigată peste recomandări poate amplifica, dar vergeturile apar și la femei slabe cu sarcină normală. Prevenția totală nu există; hidratarea și masajul ușor pot susține confortul, nu elimină riscul structural.",
+        "În sarcină, combinația de întindere mecanică, hormoni (cortizol, relaxina) și modificări ale fluxului sanguin slăbește temporar fibrele de colagen. Relaxina, de exemplu, pregătește ligamentele pentru naștere — dar afectează și elasticitatea pielii. Vergeturile apar cel mai frecvent în trimestrul al treilea, când abdomenul atinge volum maxim; sânii și șoldurile sunt zone secundare. Predispoziția genetică joacă rol major. Greutatea câștigată peste recomandări poate amplifica, dar vergeturile apar și la femei slabe cu sarcină normală. Prevenția totală nu există. Dacă liniile au apărut în sarcină, contextul este pe pagina despre ",
+        L.vergeturiDupaSarcina,
+        ". Diferența dintre liniile recente și cele mature este pe pagina despre ",
+        L.vergeturiRosiiAlbe,
+        ".",
       ],
     },
     {
@@ -149,9 +157,9 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Nu poți schimba genetică, sexul biologic, pubertatea sau necesitatea unei sarcini. Poți influența parțial: evitarea fluctuațiilor bruște de greutate (unde e posibil), hidratarea, alimentație echilibrată care susține sănătatea pielii, evitarea corticosteroizilor fără indicație medicală. Nu există dovadă solidă că un singur ingredient topice previne vergeturile în sarcină — masajul ușor poate ajuta la confort, nu la garanție. Acceptarea faptului că vergeturile sunt comune (estimări: 50–90% din femei în timpul vieții) reduce presiunea inutilă. Dacă te deranjează estetic, informarea despre opțiuni vine după ce înțelegi cauza — ",
-        { text: "remodelarea corporală fără operație", href: "/blog/remodelare-corporala-fara-operatie-tehnologii" },
-        " explică tehnologiile disponibile, separat de acest articol.",
+        "Nu poți schimba genetică, sexul biologic, pubertatea sau necesitatea unei sarcini. Poți influența parțial: evitarea fluctuațiilor bruște de greutate (unde e posibil), hidratarea, alimentație echilibrată care susține sănătatea pielii, evitarea corticosteroizilor fără indicație medicală. Nu există dovadă solidă că un singur ingredient topic previne vergeturile în sarcină — masajul ușor poate ajuta la confort, nu la garanție. Dacă te deranjează estetic, opțiunile din salon sunt pe pagina de ",
+        L.cicatriciVergeturi,
+        ", separat de acest articol despre cauze.",
       ],
     },
     {
@@ -171,11 +179,13 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Vergeturile marchează perioade de transformare — sarcină, creștere, schimbări corporale. Nu indică « piele proastă » sau neglijență. Înțelegerea cauzelor te ajută să setezi așteptări corecte: prevenție totală e rară, iar creme miracle nu rescriu anatomia. Dacă vrei să explorezi ce se poate îmbunătăți după ce ai înțeles de ce au apărut, hub-ul de ",
-        L.tratamenteCorporale,
-        " și articolul despre ",
-        { text: "tratamente pentru vergeturi", href: "/blog/vergeturi-tratamente-rezultate" },
-        " sunt pașii următori — nu acest text. Aici ne oprirm la « de ce », nu la « cum le șterg ».",
+        "Vergeturile marchează perioade de transformare — sarcină, creștere, schimbări corporale. Nu indică « piele proastă » sau neglijență. Înțelegerea cauzelor te ajută să setezi așteptări corecte: prevenție totală e rară, iar cremele nu rescriu anatomia. Dacă vrei să vezi ce se poate discuta după ce ai înțeles de ce au apărut, paginile sunt ",
+        L.vergeturiRosiiAlbe,
+        ", ",
+        L.vergeturiDupaSarcina,
+        " și ",
+        L.radiofrecventaFractionata,
+        ". Aici ne oprim la cauze.",
       ],
     },
     {
@@ -185,7 +195,13 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       type: "p",
       content: [
-        "Vergeturile recente (striae rubra) apar ca linii roșii, roz sau violacee, ușor ridicate, uneori cu mâncărime discretă — apar în primele săptămâni–luni după sarcină, creștere rapidă sau fluctuație de greutate. Sub piele, vasele de sânge sunt încă vizibile; inflamația ușoară explică culoarea. Striae alba (mature) sunt albe, perlate sau mai deschise decât pielea din jur, adesea ușor indentate — colagenul s-a reorganizat, inflamația a dispărut. Pe același abdomen pot coexista ambele tipuri: linii « noi » lângă linii « vechi » de la o sarcină anterioară. Culoarea nu indică « severitate morală » — indică vârsta leziunii. Lățimea contează: vergeturile largi, violacee, apărute brusc la adult fără sarcină sau creștere evidentă merită discuție medicală — pot sugera exces de cortizol. Pentru vergeturile obișnuite post-sarcină sau post-adolescență, mecanismul rămâne același: pielea s-a întins mai repede decât a putut produce fibre de suport.",
+        "Vergeturile recente (striae rubra) apar ca linii roșii, roz sau violacee, ușor ridicate, uneori cu mâncărime discretă — apar în primele săptămâni–luni după sarcină, creștere rapidă sau fluctuație de greutate. Sub piele, vasele de sânge sunt încă vizibile; inflamația ușoară explică culoarea. Striae alba (mature) sunt albe, perlate sau mai deschise decât pielea din jur, adesea ușor indentate — colagenul s-a reorganizat, inflamația a dispărut. Pe același abdomen pot coexista ambele tipuri. Cum se deosebesc și de ce contează culoarea este explicat pe pagina despre ",
+        L.vergeturiRosiiAlbe,
+        ". Pentru opțiunile din salon, hub-ul de ",
+        L.cicatriciVergeturi,
+        " și tehnologia de ",
+        L.radiofrecventaFractionata,
+        " sunt pașii următori, nu acest text despre cauze.",
       ],
     },
     {
@@ -194,7 +210,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       content: [
         "Programează o consultație inițială la Claire Beauty — evaluăm tipul de striae, cauza și așteptările realiste înainte de orice protocol.",
       ],
-      link: L.remodelare,
+      link: L.cicatriciVergeturi,
     },
   ],
   faqs: [
@@ -236,7 +252,7 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
     {
       question: "Unde găsesc informații despre tratamente, nu doar cauze?",
       answer:
-        "Acest articol acoperă doar cauzele. Pentru microneedling, radiofrecvență și protocoale, citește ghidul despre vergeturi și rezultate reale sau explorează hub-ul de tratamente corporale.",
+        "Acest articol acoperă doar cauzele. Pentru diferența dintre vergeturi roșii și albe, pentru vergeturile după sarcină și pentru radiofrecvența fracționată, vezi paginile de serviciu ale salonului. Ghidul de pe blog despre rezultate rămâne un text informativ, separat de evaluare.",
     },
   ],
 }

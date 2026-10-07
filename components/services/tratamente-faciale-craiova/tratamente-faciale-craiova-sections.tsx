@@ -10,7 +10,9 @@ import {
   Layers,
   MapPin,
   PenLine,
+  ScanLine,
   Sparkles,
+  Sun,
   XCircle,
   Zap } from "lucide-react"
 import { ViewPricesLink } from "@/components/pricing/view-prices-link"
@@ -123,6 +125,12 @@ function InlineCTA({
 
 const procedureCards = [
   {
+    title: "Rejuvenare facială",
+    href: "/rejuvenare-faciala-craiova",
+    description:
+      "Alegi procedura după obiectiv: fermitate, textură sau aspect mai îngrijit, nu după numele unei tehnologii.",
+    icon: Sun },
+  {
     title: "Hydrablast",
     href: "/hydrablast-craiova",
     description:
@@ -130,8 +138,9 @@ const procedureCards = [
     icon: Droplets },
   {
     title: "RF Fractionat",
+    href: "/radiofrecventa-fractionata-craiova",
     description:
-      "Stimulare colagen pentru riduri fine, cicatrici și textură neuniformă, cu acțiune în profunzime.",
+      "Radiofrecvență fracționată pentru aspectul cicatricilor, vergeturilor și texturii pielii.",
     icon: PenLine },
   {
     title: "Microneedling",
@@ -157,6 +166,18 @@ const procedureCards = [
     description:
       "Radiofrecvență fracționată pentru cicatrici de acnee, cicatrici post-operatorii și vergeturi.",
     icon: PenLine },
+  {
+    title: "Cicatrici post-acnee",
+    href: "/cicatrici-acnee-craiova",
+    description:
+      "Pagină de problemă pentru pete, gropițe și textura rămasă după acnee, nu un protocol unic.",
+    icon: ScanLine },
+  {
+    title: "Head Spa",
+    href: "/head-spa-craiova",
+    description:
+      "Îngrijire pentru scalp și relaxare, separată de tratamentele de fermitate ale feței.",
+    icon: Sparkles },
 ] as const
 
 function ProcedureHubCard({
@@ -211,9 +232,11 @@ const treatmentDetails = [
     result: "ten curat și luminos după prima ședință",
     cta: "Vezi Hydrablast" },
   {
-    title: "RF Fractionat – stimularea colagenului",
-    idealFor: ["riduri fine", "cicatrici", "textură neuniformă"],
-    result: "lucrează în profunzime, nu doar la suprafață" },
+    title: "Radiofrecvență fracționată",
+    href: "/radiofrecventa-fractionata-craiova",
+    idealFor: ["cicatrici", "vergeturi", "textură neuniformă"],
+    result: "tehnologie pentru aspectul pielii, cu protocol stabilit la evaluare",
+    cta: "Vezi radiofrecvența fracționată" },
   {
     title: "Microneedling – regenerare intensivă",
     href: "/microneedling-craiova",
@@ -315,8 +338,9 @@ export function TratamenteFacialeCraiovaSections() {
               link: "/microneedling-craiova",
               label: "microneedling" },
             {
-              problem: "colagen și regenerare",
-              label: "RF Fractionat" },
+              problem: "cicatrici, vergeturi, textură",
+              link: "/radiofrecventa-fractionata-craiova",
+              label: "radiofrecvență fracționată" },
             {
               problem: "lifting și fermitate",
               link: "/hifu-facial-craiova",
@@ -514,7 +538,15 @@ export function TratamenteFacialeCraiovaSections() {
               >
                 microneedling
               </Link>{" "}
-              pentru rezultate rapide și vizibile.
+              pentru rezultate rapide și vizibile. Pentru o experiență de
+              relaxare centrată pe scalp și păr, nu pe ten, vezi{" "}
+              <Link
+                href="/head-spa-craiova"
+                className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
+              >
+                Head Spa
+              </Link>
+              .
             </p>
           </div>
           <div className="rounded-[2rem] border border-[#D4AF37]/20 bg-card/80 p-8 shadow-premium backdrop-blur-sm">
@@ -545,7 +577,12 @@ export function TratamenteFacialeCraiovaSections() {
             />
             <p className="mt-4 text-muted-foreground leading-relaxed">
               De exemplu,{" "}
-              <span className="font-medium text-[#0E2B1F]">RF Fractionat</span>{" "}
+              <Link
+                href="/radiofrecventa-fractionata-craiova"
+                className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
+              >
+                radiofrecvență fracționată
+              </Link>{" "}
               sau{" "}
               <Link
                 href="/hifu-facial-craiova"

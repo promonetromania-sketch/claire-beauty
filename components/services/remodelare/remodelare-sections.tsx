@@ -222,8 +222,22 @@ export function RemodelareSections() {
                   className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
                 >
                   radiofrecvență corporală
+                </Link>
+                ,{" "}
+                <Link
+                  href="/hifu-corporal-craiova"
+                  className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
+                >
+                  HIFU corporal în Craiova
                 </Link>{" "}
-                și{" "}
+                pentru fermitatea pielii,{" "}
+                <Link
+                  href="/cavitatie-craiova"
+                  className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
+                >
+                  cavitație
+                </Link>{" "}
+                pentru un obiectiv estetic localizat, și{" "}
                 <Link
                   href="/electrostimulare-craiova"
                   className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
@@ -454,7 +468,16 @@ export function RemodelareSections() {
                   masajul anticelulitic
                 </Link>{" "}
                 completează drenajul prin stimularea circulației sanguine și
-                refacerea aspectului pielii.
+                refacerea aspectului pielii. Presoterapia cu aparat nu este o
+                metodă de remodelare sau de slăbire. Este o ședință separată, de
+                compresie și confort:{" "}
+                <Link
+                  href="/presoterapie-craiova"
+                  className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
+                >
+                  presoterapie în Craiova
+                </Link>
+                .
               </p>
             </div>
           </div>

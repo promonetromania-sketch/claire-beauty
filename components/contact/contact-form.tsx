@@ -16,6 +16,7 @@ const CONTACT_SERVICE_OPTIONS = [
   { value: "masaj-anticelulitic", label: "Masaj Anticelulitic" },
   { value: "drenaj-limfatic", label: "Drenaj Limfatic" },
   { value: "tratamente-faciale", label: "Tratamente Faciale" },
+  { value: "head-spa", label: "Head Spa" },
   { value: "microdermabraziune", label: "Microdermabraziune" },
   { value: "microneedling", label: "Microneedling" },
   { value: "hifu-facial", label: "HIFU Facial" },

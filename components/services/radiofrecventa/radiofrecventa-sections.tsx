@@ -210,7 +210,22 @@ export function RadiofrecventaSections() {
             />
             <p className="mt-6 text-muted-foreground leading-relaxed">
               Este una dintre cele mai eficiente metode de fermizare a pielii în
-              Craiova.
+              Craiova. Pentru vergeturi și cicatrici vindecate, procedura dedicată
+              este{" "}
+              <Link
+                href="/cicatrici-vergeturi-craiova"
+                className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
+              >
+                tratamentul pentru cicatrici și vergeturi
+              </Link>
+              , făcut cu{" "}
+              <Link
+                href="/radiofrecventa-fractionata-craiova"
+                className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
+              >
+                radiofrecvență fracționată
+              </Link>
+              , nu cu radiofrecvența corporală de pe această pagină.
             </p>
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-premium-lg">
@@ -583,7 +598,25 @@ export function RadiofrecventaSections() {
               Ce alegi în funcție de obiectiv
             </h2>
             <ul className="space-y-3 text-foreground/90 leading-relaxed">
+              <li>
+                piele lăsată și lipsă de fermitate, ca să compari opțiunile →{" "}
+                <Link
+                  href="/piele-lasata-craiova"
+                  className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
+                >
+                  tratamente pentru fermitatea pielii
+                </Link>
+              </li>
               <li>fermitate → radiofrecvență</li>
+              <li>
+                fermitatea pielii cu ultrasunete →{" "}
+                <Link
+                  href="/hifu-corporal-craiova"
+                  className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
+                >
+                  tratament HIFU corporal
+                </Link>
+              </li>
               <li>
                 celulită →{" "}
                 <Link
@@ -600,6 +633,15 @@ export function RadiofrecventaSections() {
                   className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
                 >
                   drenaj limfatic
+                </Link>
+              </li>
+              <li>
+                aspect localizat, ca procedură separată →{" "}
+                <Link
+                  href="/cavitatie-craiova"
+                  className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
+                >
+                  cavitație corporală
                 </Link>
               </li>
               <li>

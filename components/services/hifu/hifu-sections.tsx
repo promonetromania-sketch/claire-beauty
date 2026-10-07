@@ -385,6 +385,17 @@ export function HifuSections() {
             </li>
             <li>HIFU → lifting profund</li>
           </ul>
+          <p className="text-muted-foreground leading-relaxed">
+            Dacă nu știi încă ce procedură vrei și cauți{" "}
+            <Link
+              href="/rejuvenare-faciala-craiova"
+              className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
+            >
+              tratamente de rejuvenare facială
+            </Link>
+            , pornește de la obiectiv: fermitate, textură sau aspectul unei
+            urme. HIFU rămâne pagina tehnologiei pentru fermitate și contur.
+          </p>
         </div>
       </SectionShell>
 
@@ -511,11 +522,19 @@ export function HifuSections() {
             <SectionHeading
               align="left"
               eyebrow="SEO local Craiova"
-              title="HIFU Craiova – aproape de tine"
+              title="HIFU facial în Craiova – aproape de tine"
               description="Indiferent dacă locuiești în Craiovița Nouă, Rovine, Brazda lui Novac, Centru sau 1 Mai, ajungi rapid la Claire Beauty."
             />
             <p className="text-muted-foreground leading-relaxed">
-              Pentru rezultate complete, combină cu{" "}
+              Pagina aceasta este despre procedurile faciale. Pentru fermitatea
+              pielii pe corp, vezi{" "}
+              <Link
+                href="/hifu-corporal-craiova"
+                className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
+              >
+                HIFU corporal în Craiova
+              </Link>
+              . Pentru îngrijirea feței, poți combina și cu{" "}
               <Link
                 href="/tratamente-faciale-craiova"
                 className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"

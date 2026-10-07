@@ -254,6 +254,37 @@ export function MasajAnticeluliticSections() {
             >
               radiofrecvență corporală
             </Link>
+            . Dacă obiectivul este fermitatea pielii, nu textura celulitei, se
+            poate discuta și{" "}
+            <Link
+              href="/hifu-corporal-craiova"
+              className="font-medium text-[#0E2B1F] underline-offset-4 hover:text-[#D4AF37] hover:underline"
+            >
+              HIFU corporal
+            </Link>
+            . Dacă nu ești sigură dacă te deranjează celulita sau{" "}
+            <Link
+              href="/piele-lasata-craiova"
+              className="font-medium text-[#0E2B1F] underline-offset-4 hover:text-[#D4AF37] hover:underline"
+            >
+              pielea lăsată
+            </Link>
+            , pagina despre lipsa de fermitate separă cele două probleme. Dacă
+            te preocupă mai degrabă urmele de pe piele, vezi{" "}
+            <Link
+              href="/cicatrici-vergeturi-craiova"
+              className="font-medium text-[#0E2B1F] underline-offset-4 hover:text-[#D4AF37] hover:underline"
+            >
+              tratamente pentru vergeturi și cicatrici
+            </Link>
+            . Dacă te interesează aspectul unei zone localizate, nu textura
+            celulitei, vezi{" "}
+            <Link
+              href="/cavitatie-craiova"
+              className="font-medium text-[#0E2B1F] underline-offset-4 hover:text-[#D4AF37] hover:underline"
+            >
+              cavitația corporală
+            </Link>
             .
           </p>
         </div>
@@ -518,6 +549,16 @@ export function MasajAnticeluliticSections() {
               </Link>
             </li>
             <li>grăsime localizată → masaj anticelulitic</li>
+            <li>
+              compresie cu aparat, senzație de picioare ușoare →{" "}
+              <Link
+                href="/presoterapie-craiova"
+                className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
+              >
+                presoterapie
+              </Link>{" "}
+              (nu este tratament anticelulitic)
+            </li>
             <li>
               rezultate rapide → combinație cu{" "}
               <Link

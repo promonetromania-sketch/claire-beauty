@@ -250,6 +250,14 @@ export function DrenajSections() {
             >
               radiofrecvență corporală
             </Link>
+            . Drenajul nu este cavitație. Pentru o procedură orientată spre
+            aspectul unei zone localizate, vezi{" "}
+            <Link
+              href="/cavitatie-craiova"
+              className="font-medium text-[#0E2B1F] underline-offset-4 hover:text-[#D4AF37] hover:underline"
+            >
+              cavitația corporală
+            </Link>
             .
           </p>
         </div>
@@ -371,6 +379,17 @@ export function DrenajSections() {
             Pentru rezultate maxime, cele două tratamente se completează perfect
             în planul de remodelare corporală Craiova.
           </p>
+          <p className="mt-4 text-muted-foreground">
+            Drenajul de pe această pagină este manual. Presoterapia este o
+            procedură separată, cu aparatul Starvac și compresie controlată.{" "}
+            <Link
+              href="/presoterapie-craiova"
+              className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
+            >
+              Presoterapie în Craiova
+            </Link>
+            .
+          </p>
         </div>
       </SectionShell>
 
@@ -464,6 +483,27 @@ export function DrenajSections() {
             </p>
             <ViewPricesLink section="masaj" />
           </InfoCard>
+        </div>
+      </SectionShell>
+
+      <SectionShell className="bg-secondary/40 py-12 sm:py-16">
+        <div className="mx-auto max-w-4xl rounded-[2rem] border border-[#D4AF37]/25 bg-[#FFF9F2] px-6 py-8 shadow-premium sm:px-10 sm:py-10">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-[#D4AF37]">
+            După o intervenție
+          </p>
+          <p className="mb-3 font-serif text-2xl font-semibold text-[#0E2B1F] sm:text-3xl">
+            Ai nevoie de drenaj după o intervenție?
+          </p>
+          <p className="mb-6 max-w-2xl leading-relaxed text-muted-foreground">
+            Drenajul postoperator are o intenție și un protocol diferit de
+            drenajul pentru retenție de lichide.
+          </p>
+          <Link
+            href="/drenaj-limfatic-post-operator-craiova"
+            className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#0E2B1F] px-6 text-sm font-semibold text-[#D4AF37] transition-colors hover:bg-[#0E2B1F]/90"
+          >
+            Vezi drenajul postoperator
+          </Link>
         </div>
       </SectionShell>
 

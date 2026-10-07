@@ -145,11 +145,30 @@ const hubServices: {
       "Tehnici dedicate eliminării retenției de apă, detoxifierii și susținerii circulației limfatice.",
     image: claireImages.tratamenteCorporaleContent },
   {
+    title: "Presoterapie Craiova",
+    href: "/presoterapie-craiova",
+    description:
+      "Compresie controlată pentru drenaj, relaxare și senzația de picioare ușoare. Nu este un tratament de fermitate.",
+    image: claireImages.drenajLimfatic },
+  {
+    title: "Cavitație Craiova",
+    href: "/cavitatie-craiova",
+    description:
+      "Procedură corporală de 40 de minute, 150 lei pe ședință, pentru aspectul unei zone. Nu este un program de slăbire.",
+    image: claireImages.remodelareCorporala,
+  },
+  {
     title: "HIFU corporal Craiova",
     href: "/hifu-corporal-craiova",
     description:
-      "Lifting și fermitate fără operație pentru abdomen, brațe și coapse, cu ultrasunete focalizate.",
+      "Tratament corporal cu ultrasunete focalizate, pentru fermitatea și aspectul pielii. Nu este un program de slăbit.",
     image: claireImages.hifuCorporal },
+  {
+    title: "Piele lăsată Craiova",
+    href: "/piele-lasata-craiova",
+    description:
+      "Pagină de orientare pentru lipsa de fermitate pe abdomen, brațe și alte zone corporale. Tratamentul se alege după evaluare.",
+    image: claireImages.tratamenteCorporaleHero },
   {
     title: "Cicatrici și vergeturi Craiova",
     href: "/cicatrici-vergeturi-craiova",
@@ -230,6 +249,17 @@ export function TratamenteCorporaleSections() {
             <HubServiceCard key={service.href} {...service} />
           ))}
         </div>
+        <p className="mx-auto mt-8 max-w-3xl text-center leading-relaxed text-muted-foreground">
+          Presoterapia este o ședință separată, cu compresie controlată, nu un
+          masaj manual și nu un program de remodelare.{" "}
+          <Link
+            href="/presoterapie-craiova"
+            className="font-medium text-[#0E2B1F] underline decoration-[#D4AF37]/50 underline-offset-4 hover:text-[#D4AF37]"
+          >
+            Presoterapie în Craiova
+          </Link>
+          .
+        </p>
       </SectionShell>
 
       <InlineCTA

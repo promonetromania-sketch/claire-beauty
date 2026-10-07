@@ -37,7 +37,7 @@ export function HifuHero() {
             Tratament premium anti-aging
           </p>
           <h1 className="mb-6 font-serif text-4xl font-semibold leading-tight text-[#FFF9F2] sm:text-5xl lg:text-6xl">
-            HIFU Craiova – Lifting Facial Fără Operație, Rejuvenare Profundă și
+            HIFU Facial în Craiova – Lifting Fără Operație, Rejuvenare Profundă și
             Efect Vizibil de Întinerire
           </h1>
           <p className="mb-4 max-w-2xl text-lg leading-relaxed text-[#FFF9F2]/90">

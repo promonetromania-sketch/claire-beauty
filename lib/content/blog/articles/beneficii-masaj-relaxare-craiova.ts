@@ -87,6 +87,14 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       ],
     },
     {
+      type: "p",
+      content: [
+        "Dacă vrei o experiență separată, centrată pe scalp și relaxare, nu pe corp, la Claire Beauty există ",
+        L.headSpa,
+        ". Este un serviciu cosmetic, cu preț propriu, diferit de masajul de relaxare descris aici. Nu este un tratament pentru afecțiuni ale scalpului.",
+      ],
+    },
+    {
       type: "h2",
       text: "Cui i se potrivește masajul de relaxare",
     },

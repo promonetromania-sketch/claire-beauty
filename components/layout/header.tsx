@@ -19,7 +19,10 @@ import {
   Syringe,
   Zap,
   Activity,
+  Gauge,
   Radio,
+  ScanLine,
+  CircleDot,
   Facebook,
   Instagram,
   MapPin,
@@ -66,14 +69,28 @@ const submenuIcons: Record<string, LucideIcon> = {
   "/masaj-terapeutic-craiova": Hand,
   "/masaj-anticelulitic-craiova": Droplets,
   "/drenaj-limfatic-craiova": Waves,
+  "/presoterapie-craiova": Gauge,
   "/reflexoterapie-craiova": Footprints,
   "/hifu-craiova": Zap,
   "/microdermabraziune-craiova": Layers,
   "/microneedling-craiova": Syringe,
   "/hydrablast-craiova": Sparkles,
+  "/head-spa-craiova": Sparkles,
   "/remodelare-corporala-craiova": Activity,
+  "/cavitatie-craiova": CircleDot,
   "/electrostimulare-craiova": Zap,
   "/radiofrecventa-corporala-craiova": Radio,
+  "/cicatrici-acnee-craiova": ScanLine,
+  "/radiofrecventa-fractionata-craiova": Radio,
+  "/rejuvenare-faciala-craiova": Sparkles,
+  "/hifu-facial-craiova": Zap,
+  "/hifu-corporal-craiova": Zap,
+  "/piele-lasata-craiova": Activity,
+  "/cicatrici-cheloide-craiova": ScanLine,
+  "/cicatrice-cezariana-craiova": ScanLine,
+  "/vergeturi-dupa-sarcina-craiova": Layers,
+  "/vergeturi-rosii-albe-craiova": Layers,
+  "/drenaj-limfatic-post-operator-craiova": Waves,
 }
 
 const navTextClassName =
@@ -91,7 +108,10 @@ const navDropdownTriggerClassName =
   "inline-flex items-center justify-center rounded-full p-1.5 text-[#0E2B1F] outline-none transition-all duration-250 ease-[cubic-bezier(0.4,0,0.2,1)] hover:bg-[#D4AF37]/24 hover:text-[#0E2B1F] hover:shadow-[0_0_18px_rgba(212,175,55,0.32)] focus-visible:bg-[#D4AF37]/24 focus-visible:text-[#0E2B1F]"
 
 const dropdownMenuContentClassName =
-  "min-w-[16rem] rounded-2xl border border-[#D4AF37]/20 bg-[#FFF9F2]/98 p-2 shadow-[0_20px_50px_rgba(14,43,31,0.14)] backdrop-blur-md"
+  "max-h-[min(70vh,32rem)] min-w-[17rem] overflow-y-auto rounded-2xl border border-[#D4AF37]/20 bg-[#FFF9F2]/98 p-2 shadow-[0_20px_50px_rgba(14,43,31,0.14)] backdrop-blur-md"
+
+const dropdownGroupLabelClassName =
+  "px-3 pb-1 pt-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-[#D4AF37]"
 
 const dropdownMenuItemClassName =
   "cursor-pointer rounded-xl px-3 py-2.5 font-serif text-[15px] font-bold tracking-[0.5px] text-[#0E2B1F] transition-all duration-250 ease-[cubic-bezier(0.4,0,0.2,1)] focus:bg-[#D4AF37]/22 focus:text-[#0E2B1F] focus:shadow-[0_0_18px_rgba(212,175,55,0.32)] data-[highlighted]:bg-[#D4AF37]/22 data-[highlighted]:text-[#0E2B1F] data-[highlighted]:shadow-[0_0_18px_rgba(212,175,55,0.32)]"
@@ -122,6 +142,10 @@ function isDropdownNavActive(
     isNavLinkActive(pathname, href) ||
     items.some((item) => isNavLinkActive(pathname, item.href))
   )
+}
+
+function navGroups(item: { items: NavLink[]; groups?: { label: string; items: NavLink[] }[] }) {
+  return item.groups ?? [{ label: "", items: item.items }]
 }
 
 function SubmenuIcon({ href }: { href: string }) {
@@ -182,7 +206,7 @@ export function Header() {
             </div>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-6 lg:gap-8">
+          <nav className="hidden items-center gap-0.5 xl:gap-1 lg:flex">
             {mainNavigation.map((item) =>
               item.type === "link" ? (
                 <Link
@@ -190,6 +214,7 @@ export function Header() {
                   href={item.href}
                   className={cn(
                     navItemClassName,
+                    "px-2.5 xl:px-3",
                     isNavLinkActive(pathname, item.href) && navItemActiveClassName,
                   )}
                 >
@@ -200,12 +225,13 @@ export function Header() {
                   key={item.name}
                   className={cn(
                     navItemClassName,
+                    "px-2 xl:px-3",
                     isDropdownNavActive(pathname, item.href, item.items) &&
                       navItemActiveClassName,
                   )}
                 >
                   <Link href={item.href} className="rounded-full px-1 py-0.5">
-                    {item.name}
+                    {item.shortName}
                   </Link>
                   <DropdownMenu>
                     <DropdownMenuTrigger
@@ -218,20 +244,27 @@ export function Header() {
                       align="start"
                       className={dropdownMenuContentClassName}
                     >
-                      {item.items.map((subItem) => (
-                        <DropdownMenuItem
-                          key={subItem.href}
-                          asChild
-                          className={dropdownMenuItemClassName}
-                        >
-                          <Link
-                            href={subItem.href}
-                            className="flex items-center gap-2.5"
-                          >
-                            <SubmenuIcon href={subItem.href} />
-                            <span>{subItem.name}</span>
-                          </Link>
-                        </DropdownMenuItem>
+                      {navGroups(item).map((group) => (
+                        <div key={group.label || item.href}>
+                          {group.label ? (
+                            <p className={dropdownGroupLabelClassName}>{group.label}</p>
+                          ) : null}
+                          {group.items.map((subItem) => (
+                            <DropdownMenuItem
+                              key={subItem.href}
+                              asChild
+                              className={dropdownMenuItemClassName}
+                            >
+                              <Link
+                                href={subItem.href}
+                                className="flex items-center gap-2.5"
+                              >
+                                <SubmenuIcon href={subItem.href} />
+                                <span>{subItem.name}</span>
+                              </Link>
+                            </DropdownMenuItem>
+                          ))}
+                        </div>
                       ))}
                     </DropdownMenuContent>
                   </DropdownMenu>
@@ -240,7 +273,7 @@ export function Header() {
             )}
           </nav>
 
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden items-center gap-4 lg:flex">
             <Button asChild className={ctaButtonClassName}>
               <a href="tel:+40757851882" className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
@@ -249,7 +282,7 @@ export function Header() {
             </Button>
           </div>
 
-          <div className="flex shrink-0 items-center gap-0 md:hidden">
+          <div className="flex shrink-0 items-center gap-0 lg:hidden">
             {mobileSocialLinks.map(({ href, label, icon: Icon }) => (
               <a
                 key={href}
@@ -286,7 +319,7 @@ export function Header() {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="border-t border-[#D4AF37]/20 glass-header md:hidden">
+        <div className="border-t border-[#D4AF37]/20 glass-header lg:hidden">
           <div className="space-y-2 px-4 py-6">
             {mainNavigation.map((item) =>
               item.type === "link" ? (
@@ -325,20 +358,30 @@ export function Header() {
                     </CollapsibleTrigger>
                   </div>
                   <CollapsibleContent className="space-y-1 pb-2 pl-2">
-                    {item.items.map((subItem) => (
-                      <Link
-                        key={subItem.href}
-                        href={subItem.href}
-                        className={cn(
-                          mobileSubNavItemClassName,
-                          isNavLinkActive(pathname, subItem.href) &&
-                            navItemActiveClassName,
-                        )}
-                        onClick={closeMobileMenu}
-                      >
-                        <SubmenuIcon href={subItem.href} />
-                        <span>{subItem.name}</span>
-                      </Link>
+                    {navGroups(item).map((group) => (
+                      <div key={group.label || item.href} className="space-y-1">
+                        {group.label ? (
+                          <p className="px-4 pt-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-[#D4AF37]">
+                            {group.label}
+                          </p>
+                        ) : null}
+                        {group.items.map((subItem) => (
+                          <Link
+                            key={subItem.href}
+                            href={subItem.href}
+                            className={cn(
+                              mobileSubNavItemClassName,
+                              "min-h-11",
+                              isNavLinkActive(pathname, subItem.href) &&
+                                navItemActiveClassName,
+                            )}
+                            onClick={closeMobileMenu}
+                          >
+                            <SubmenuIcon href={subItem.href} />
+                            <span>{subItem.name}</span>
+                          </Link>
+                        ))}
+                      </div>
                     ))}
                   </CollapsibleContent>
                 </Collapsible>

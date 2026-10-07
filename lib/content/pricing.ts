@@ -35,7 +35,7 @@ export const pricingCategories: PricingCategory[] = [
         name: "Presoterapie Starvac",
         price: "80 lei",
         detail: "/ ședință",
-        href: "/drenaj-limfatic-craiova",
+        href: "/presoterapie-craiova",
       },
       {
         name: "Saună",
@@ -103,13 +103,13 @@ export const pricingCategories: PricingCategory[] = [
         name: "Masaj drenaj limfatic postoperator",
         price: "250 lei",
         detail: "/ ședință",
-        href: "/drenaj-limfatic-craiova",
+        href: "/drenaj-limfatic-post-operator-craiova",
       },
       {
         name: "Abonament drenaj postoperator 10 ședințe",
         price: "2000 lei",
         isSubscription: true,
-        href: "/drenaj-limfatic-craiova",
+        href: "/drenaj-limfatic-post-operator-craiova",
       },
       {
         name: "Masaj endodermic",
@@ -145,7 +145,7 @@ export const pricingCategories: PricingCategory[] = [
         name: "Cavitație 40 min",
         price: "150 lei",
         detail: "/ ședință",
-        href: "/remodelare-corporala-craiova",
+        href: "/cavitatie-craiova",
       },
       {
         name: "Celludrain 30 min",
@@ -170,7 +170,13 @@ export const pricingCategories: PricingCategory[] = [
         name: "Radiofrecvență fracționată",
         price: "de la 1000 lei",
         detail: "/ ședință / zonă",
-        href: "/radiofrecventa-corporala-craiova",
+        href: "/radiofrecventa-fractionata-craiova",
+      },
+      {
+        name: "HIFU corporal",
+        price: "800–1.100 lei",
+        detail: "/ ședință, în funcție de zonă",
+        href: "/hifu-corporal-craiova",
       },
     ],
   },
@@ -204,7 +210,7 @@ export const pricingCategories: PricingCategory[] = [
         name: "Head Spa",
         price: "300 lei",
         detail: "/ ședință",
-        href: "/tratamente-faciale-craiova",
+        href: "/head-spa-craiova",
       },
       {
         name: "Herbal Sauna & Fitoterapie",

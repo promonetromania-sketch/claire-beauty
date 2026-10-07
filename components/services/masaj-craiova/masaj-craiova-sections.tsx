@@ -144,10 +144,17 @@ const serviceCards = [
     icon: Droplets,
     cta: "Drenaj limfatic Craiova" },
   {
+    title: "Presoterapie",
+    href: "/presoterapie-craiova",
+    description:
+      "Compresie controlată cu aparat, pentru relaxare și senzația de picioare ușoare. Nu este drenaj manual.",
+    icon: Activity,
+    cta: "Presoterapie Craiova" },
+  {
     title: "Drenaj limfatic post-operator",
     href: "/drenaj-limfatic-post-operator-craiova",
     description:
-      "Pentru recuperarea după liposucție, abdominoplastie sau alte intervenții, cu protocol medical.",
+      "Pentru contextul de după o intervenție, când programarea se discută în funcție de recomandările primite.",
     icon: Droplets,
     cta: "Drenaj limfatic post-operator Craiova" },
   {
@@ -526,6 +533,16 @@ export function MasajCraiovaSections() {
               <li>retenție → drenaj limfatic</li>
               <li>stres → reflexoterapie</li>
             </ul>
+            <p className="mt-6 text-muted-foreground leading-relaxed">
+              Pentru o experiență separată, centrată pe scalp și relaxare, vezi{" "}
+              <Link
+                href="/head-spa-craiova"
+                className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
+              >
+                Head Spa
+              </Link>
+              . Masajele de pe această pagină rămân experiențe corporale.
+            </p>
             <p className="mt-6 text-muted-foreground leading-relaxed">
               Rezultatele tratamentelor de masaj Craiova pot apărea chiar după
               primele ședințe, însă pentru efecte vizibile și de durată este

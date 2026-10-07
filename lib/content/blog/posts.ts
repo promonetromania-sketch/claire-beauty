@@ -20,6 +20,8 @@ import { puncteNegrePost } from "./articles/cum-scapi-de-puncte-negre-corect"
 import { tratamenteCorporaleGhidPost } from "./articles/tratamente-corporale-ghid-incepatori"
 import { vergeturiPost } from "./articles/vergeturi-tratamente-rezultate"
 import { terapeuticVsAnticeluliticPost } from "./articles/masaj-terapeutic-vs-anticelulitic-cand"
+import { deCeAparVergeturileCauzePost } from "./articles/drafts/de-ce-apar-vergeturile-cauze"
+import { pieleLasaCauzeFaraOperatiePost } from "./articles/drafts/piele-lasa-cauze-fara-operatie"
 import { deCeApareRetentiaDeApaCauzePost } from "./articles/drafts/de-ce-apare-retentia-de-apa-cauze"
 import { picioareGreleSearaCauzePost } from "./articles/drafts/picioare-grele-seara-cauze"
 import { curatareFacialaAcasaVsSalonPost } from "./articles/drafts/curatare-faciala-acasa-vs-salon"
@@ -48,6 +50,8 @@ export const blogPosts: BlogPost[] = [
   tratamenteCorporaleGhidPost,
   vergeturiPost,
   terapeuticVsAnticeluliticPost,
+  deCeAparVergeturileCauzePost,
+  pieleLasaCauzeFaraOperatiePost,
   // Tier 1 — indexare imediată
   deCeApareRetentiaDeApaCauzePost,
   picioareGreleSearaCauzePost,

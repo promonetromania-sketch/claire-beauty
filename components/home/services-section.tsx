@@ -46,9 +46,18 @@ const services = [
     featured: false,
   },
   {
-    title: "Radiofrecvență",
+    title: "Cicatrici și vergeturi",
     description:
-      "Tratament non-invaziv pentru fermitatea pielii și reducerea ridurilor.",
+      "Radiofrecvență fracționată pentru cicatrici de acnee, cicatrici după operații și vergeturi.",
+    image: claireImages.microneedling,
+    href: "/cicatrici-vergeturi-craiova",
+    featured: false,
+    cta: "Cicatrici și vergeturi în Craiova",
+  },
+  {
+    title: "Radiofrecvență corporală",
+    description:
+      "Tratament corporal pentru fermitatea pielii. Cicatricile și vergeturile au pagina lor.",
     image: claireImages.radiofrecventaFacial,
     href: "/radiofrecventa-corporala-craiova",
     featured: false,
@@ -111,7 +120,7 @@ export function ServicesSection() {
                     {service.description}
                   </p>
                   <span className="inline-flex items-center text-sm font-medium text-accent">
-                    Află mai multe
+                    {"cta" in service && service.cta ? service.cta : "Află mai multe"}
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-2" />
                   </span>
                 </div>

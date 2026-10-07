@@ -13,15 +13,13 @@ import { businessProfile, localBusinessId, postalAddressSchema } from "@/lib/seo
 const pageUrl = `${businessProfile.url}/hifu-facial-craiova`
 
 export const metadata: Metadata = {
-  title: "HIFU Craiova – Lifting Facial Fără Operație | Claire Beauty Craiova",
+  title: "HIFU Facial Craiova – Lifting Fără Operație | Claire Beauty Craiova",
   description:
-    "HIFU Craiova pentru lifting facial fără operație și fermitatea pielii. Stimulează colagenul și oferă efect de întinerire vizibil. Programează-te!",
+    "HIFU facial în Craiova pentru lifting fără operație și fermitatea pielii feței. Stimulează colagenul și oferă efect de întinerire vizibil. Programează-te!",
   keywords: [
-    "HIFU Craiova",
     "HIFU facial Craiova",
     "lifting facial Craiova",
     "lifting facial fără operație Craiova",
-    "rejuvenare facială Craiova",
     "fermitate piele Craiova",
     "tratamente anti-aging Craiova",
     "tratamente faciale Craiova",
@@ -29,9 +27,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: pageUrl },
   openGraph: {
-    title: "HIFU Craiova – Lifting Facial Fără Operație | Claire Beauty Craiova",
+    title: "HIFU Facial Craiova – Lifting Fără Operație | Claire Beauty Craiova",
     description:
-      "HIFU Craiova pentru lifting facial fără operație și fermitatea pielii.",
+      "HIFU facial în Craiova pentru lifting fără operație și fermitatea pielii feței.",
     type: "website",
     locale: "ro_RO",
     url: pageUrl } }

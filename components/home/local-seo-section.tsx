@@ -16,8 +16,14 @@ export function LocalSEOSection() {
             Unde ne găsești
           </h2>
           <p className="text-lg leading-relaxed text-muted-foreground">
-            Claire Beauty te așteaptă în Craiova pentru masaj, remodelare
-            corporală și tratamente faciale.
+            Claire Beauty te așteaptă în Craiova pentru masaj,{" "}
+            <Link
+              href="/head-spa-craiova"
+              className="font-medium text-foreground underline decoration-[#D4AF37]/60 underline-offset-4 hover:text-[#8C7320]"
+            >
+              Head Spa
+            </Link>
+            , remodelare corporală și tratamente faciale.
           </p>
         </ScrollReveal>
 

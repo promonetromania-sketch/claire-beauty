@@ -19,12 +19,12 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
   tag: "Masaj",
   publishedAt: "2026-07-14",
   image: {
-    src: "/images/blog/drafts/picioare-grele-seara-cauze.jpg",
+    src: "/og/blog/picioare-grele-seara-clinic.jpg",
     alt: "Persoană cu picioare obosite seara — cauze și remedii pentru senzația de greutate",
     title: "Picioare grele seara: cauze frecvente",
   },
   relatedService: L.drenaj,
-  recommendedServices: [L.masaj, L.masajTerapeutic, L.reflexoterapie],
+  recommendedServices: [L.drenaj, L.presoterapie, L.masajTerapeutic],
   hubLink: L.masaj,
   relatedArticles: [
     {
@@ -221,9 +221,13 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       content: [
         "Opțiunile depind de cauza dominantă: ",
         { text: "masaj terapeutic Craiova", href: "/masaj-terapeutic-craiova" },
-        " pentru tensiune musculară și circulație pe gambe; drenaj limfatic dacă predomină retenția; reflexoterapie ca abordare complementară. Toate variantele sunt prezentate pe ",
+        " pentru tensiune musculară și circulație pe gambe; ",
+        L.drenaj,
+        " dacă predomină retenția; ",
+        L.presoterapie,
+        " când se caută o procedură cu compresie controlată pentru senzația de picioare ușoare. Reflexoterapia rămâne complementară. Toate variantele de masaj sunt prezentate pe ",
         L.masaj,
-        " — hub-ul nostru de tratamente pentru circulație și relaxare.",
+        ".",
       ],
     },
     {

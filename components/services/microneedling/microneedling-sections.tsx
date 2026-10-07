@@ -342,13 +342,21 @@ export function MicroneedlingSections() {
               ]}
             />
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Recomandare:{" "}
+              Pentru laxitate, o opțiune de discutat este{" "}
               <Link
                 href="/hifu-facial-craiova"
                 className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
               >
                 HIFU
               </Link>
+              . Pentru aspectul cicatricilor sau al vergeturilor, salonul are și{" "}
+              <Link
+                href="/radiofrecventa-fractionata-craiova"
+                className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
+              >
+                radiofrecvență fracționată
+              </Link>
+              , o tehnologie diferită de microneedling.
             </p>
           </div>
         </div>
@@ -505,7 +513,30 @@ export function MicroneedlingSections() {
               </Link>{" "}
               adaptate tipului tău de ten. Microneedling Craiova este tot mai
               căutat pentru tratamentul cicatricilor post-acnee și îmbunătățirea
-              texturii pielii.
+              texturii pielii. Dacă vrei să compari fermitatea, textura și
+              celelalte direcții pentru{" "}
+              <Link
+                href="/rejuvenare-faciala-craiova"
+                className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
+              >
+                îmbunătățirea aspectului pielii
+              </Link>
+              , pagina de rejuvenare facială te ajută să alegi. Pentru
+              radiofrecvență pe cicatrici sau vergeturi, vezi{" "}
+              <Link
+                href="/cicatrici-vergeturi-craiova"
+                className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
+              >
+                tratamente pentru vergeturi și cicatrici
+              </Link>
+              . Dacă te preocupă în special textura rămasă după acnee, vezi{" "}
+              <Link
+                href="/cicatrici-acnee-craiova"
+                className="font-medium text-[#0E2B1F] hover:text-[#D4AF37]"
+              >
+                cicatrici rămase după acnee
+              </Link>
+              .
             </p>
           </div>
           <div className="rounded-[2rem] border border-[#D4AF37]/20 bg-card/80 p-8 shadow-premium backdrop-blur-sm">

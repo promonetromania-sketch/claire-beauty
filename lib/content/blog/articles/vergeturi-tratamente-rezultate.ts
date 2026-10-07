@@ -110,6 +110,14 @@ const post: Omit<BlogPost, "readTimeMinutes"> = {
       ],
     },
     {
+      type: "p",
+      content: [
+        "Pentru îmbunătățirea aspectului vergeturilor și al cicatricilor cu radiofrecvență, pagina dedicată este ",
+        L.cicatriciVergeturi,
+        ".",
+      ],
+    },
+    {
       type: "h3",
       text: "Remodelare corporală combinată",
     },

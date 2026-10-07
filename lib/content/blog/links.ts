@@ -39,7 +39,11 @@ export const blogServiceLinks = {
     text: "Masaj terapeutic Craiova",
     href: "/masaj-terapeutic-craiova",
   },
-  hifu: { text: "HIFU Craiova", href: "/hifu-facial-craiova" },
+  hifu: { text: "HIFU facial în Craiova", href: "/hifu-facial-craiova" },
+  hifuCorporal: {
+    text: "HIFU corporal în Craiova",
+    href: "/hifu-corporal-craiova",
+  },
   dermapen: { text: "Microneedling Craiova", href: "/microneedling-craiova" },
   microneedling: {
     text: "Microneedling Craiova",
@@ -50,4 +54,29 @@ export const blogServiceLinks = {
     href: "/reflexoterapie-craiova",
   },
   contact: { text: "Claire Beauty Craiova", href: "/contact" },
+  headSpa: { text: "Head Spa în Craiova", href: "/head-spa-craiova" },
+  cicatriciVergeturi: {
+    text: "tratament cicatrici și vergeturi în Craiova",
+    href: "/cicatrici-vergeturi-craiova",
+  },
+  presoterapie: {
+    text: "presoterapie în Craiova",
+    href: "/presoterapie-craiova",
+  },
+  pieleLasata: {
+    text: "tratamente pentru pielea lăsată în Craiova",
+    href: "/piele-lasata-craiova",
+  },
+  vergeturiRosiiAlbe: {
+    text: "vergeturi roșii și albe",
+    href: "/vergeturi-rosii-albe-craiova",
+  },
+  vergeturiDupaSarcina: {
+    text: "vergeturi după sarcină",
+    href: "/vergeturi-dupa-sarcina-craiova",
+  },
+  radiofrecventaFractionata: {
+    text: "radiofrecvență fracționată în Craiova",
+    href: "/radiofrecventa-fractionata-craiova",
+  },
 } as const satisfies Record<string, BlogInlineLink>

@@ -51,6 +51,8 @@ export const BLOG_IMAGE_BY_SLUG: Record<string, string> = {
   "vergeturi-tratamente-rezultate": "/images/blog/blog-vergeturi-tratament.jpg",
   "masaj-terapeutic-vs-anticelulitic-cand":
     "/images/blog/blog-masaj-terapeutic-vs-anticelulitic.jpg",
+  "de-ce-apar-vergeturile-cauze": "/og/blog/de-ce-apar-vergeturile-cauze.jpg",
+  "piele-lasa-cauze-fara-operatie": "/og/blog/piele-lasa-cauze-fara-operatie.jpg",
 }
 
 function publicPath(src: string): string {

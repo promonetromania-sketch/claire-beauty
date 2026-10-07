@@ -33,7 +33,7 @@ export const draftArticleSeoPatches: Record<string, ArticleSeoPatch> = {
         href: "/blog/ghid-complet-drenaj-limfatic",
       },
     ],
-    extraServiceLinks: [L.drenaj, L.masajTerapeutic, L.masaj],
+    extraServiceLinks: [L.drenaj, L.presoterapie, L.masajTerapeutic],
   },
   "curatare-faciala-acasa-vs-salon": {
     hubLink: L.tratamenteFaciale,
@@ -220,18 +220,22 @@ export const draftArticleSeoPatches: Record<string, ArticleSeoPatch> = {
     extraServiceLinks: [L.tratamenteFaciale, L.hydrafacial, L.microdermabraziune],
   },
   "de-ce-apar-vergeturile-cauze": {
-    hubLink: L.tratamenteCorporale,
+    hubLink: L.cicatriciVergeturi,
     relatedArticles: [
       {
         text: "Vergeturi — tratamente și rezultate",
         href: "/blog/vergeturi-tratamente-rezultate",
       },
       {
-        text: "Piele lăsată fără operație",
+        text: "Piele lăsată: cauze",
         href: "/blog/piele-lasa-cauze-fara-operatie",
       },
     ],
-    extraServiceLinks: [L.remodelare, L.radiofrecventa, L.tratamenteCorporale],
+    extraServiceLinks: [
+      L.vergeturiRosiiAlbe,
+      L.vergeturiDupaSarcina,
+      L.radiofrecventaFractionata,
+    ],
   },
   "colagen-explicat-simplu": {
     hubLink: L.tratamenteFaciale,
@@ -262,7 +266,7 @@ export const draftArticleSeoPatches: Record<string, ArticleSeoPatch> = {
     extraServiceLinks: [L.drenaj, L.masaj, L.masajTerapeutic],
   },
   "piele-lasa-cauze-fara-operatie": {
-    hubLink: L.tratamenteCorporale,
+    hubLink: L.pieleLasata,
     relatedArticles: [
       {
         text: "De ce apar vergeturile",
@@ -273,7 +277,7 @@ export const draftArticleSeoPatches: Record<string, ArticleSeoPatch> = {
         href: "/blog/remodelare-corporala-fara-operatie-tehnologii",
       },
     ],
-    extraServiceLinks: [L.remodelare, L.radiofrecventa, L.tratamenteCorporale],
+    extraServiceLinks: [L.pieleLasata, L.hifuCorporal, L.radiofrecventa],
   },
   "lifting-nechirurgical-vs-chirurgical": {
     hubLink: L.tratamenteFaciale,

@@ -29,15 +29,19 @@ export const INDEX_TIER_2_PUBLISHED = [
   "tratamente-corporale-ghid-incepatori",
   "vergeturi-tratamente-rezultate",
   "masaj-terapeutic-vs-anticelulitic-cand",
+  "de-ce-apar-vergeturile-cauze",
+  "piele-lasa-cauze-fara-operatie",
 ] as const
 
 export const INDEX_TIER_2_HUBS = [
   "/masaj-craiova",
   "/tratamente-faciale-craiova",
+  "/rejuvenare-faciala-craiova",
   "/tratamente-corporale-craiova",
   "/remodelare-corporala-craiova",
   "/drenaj-limfatic-craiova",
   "/hydrablast-craiova",
+  "/head-spa-craiova",
 ] as const
 
 export const INDEX_TIER_3_DRAFTS = [
@@ -49,10 +53,8 @@ export const INDEX_TIER_3_DRAFTS = [
   "pori-dilatati-cauze-obiceiuri",
   "cat-de-des-tratamente-corporale",
   "recuperare-ten-dupa-soare",
-  "de-ce-apar-vergeturile-cauze",
   "colagen-explicat-simplu",
   "detoxifiere-limfatica-ce-inseamna",
-  "piele-lasa-cauze-fara-operatie",
   "lifting-nechirurgical-vs-chirurgical",
   "microneedling-peeling-laser-cicatrici-textura",
 ] as const

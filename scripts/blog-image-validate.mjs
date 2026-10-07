@@ -31,6 +31,8 @@ const LIVE = [
   "tratamente-corporale-ghid-incepatori",
   "vergeturi-tratamente-rezultate",
   "masaj-terapeutic-vs-anticelulitic-cand",
+  "de-ce-apar-vergeturile-cauze",
+  "piele-lasa-cauze-fara-operatie",
 ]
 
 const mapContent = readFileSync("lib/seo/blog-images.ts", "utf8")
