@@ -24,6 +24,7 @@ export const privacyPolicySections: LegalSection[] = [
       "date de identificare și contact (nume, telefon, e-mail) transmise prin formularul de contact, WhatsApp sau telefon",
       "date despre serviciul solicitat sau preferințe de programare",
       "date tehnice limitate (adresă IP, tip browser, pagini vizitate) prin cookie-uri, doar cu consimțământul tău pentru analiză",
+      "numărarea anonimă a apăsărilor pe telefon, WhatsApp, e-mail și a trimiterilor formularului de contact, indiferent de alegerea privind cookie-urile (doar tipul acțiunii, pagina și dacă vizita a venit dintr-o reclamă), fără date care să te identifice și fără adresa IP",
       "conținutul mesajelor pe care ni le trimiți voluntar",
     ],
   },
@@ -114,6 +115,7 @@ export const cookiePolicySections: LegalSection[] = [
     title: "3. Cum îți gestionezi preferințele",
     paragraphs: [
       "La prima vizită poți alege „Accept toate” sau „Doar necesare”. Poți șterge oricând consimțământul ștergând datele site-ului din browser sau revizitând setările cookie din banner (reîncarcă pagina după ștergerea stocării locale).",
+      "Indiferent de alegerea făcută în bannerul de cookie-uri, numărăm anonim apăsările pe butoanele de telefon, WhatsApp și e-mail, precum și trimiterile formularului de contact. Serverul site-ului transmite către Google Analytics doar tipul acțiunii, pagina și dacă vizita a venit dintr-o reclamă. Nu se salvează nimic în browserul tău și nu se transmite nimic care să te identifice (nici adresa IP).",
     ],
   },
   {

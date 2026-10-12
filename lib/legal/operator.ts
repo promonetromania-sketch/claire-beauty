@@ -10,6 +10,6 @@ export const legalOperator = {
   locality: businessProfile.address.locality,
   region: businessProfile.address.region,
   country: "România",
-  lastUpdated: "7 iunie 2026",
+  lastUpdated: "12 octombrie 2026",
   anspdcpUrl: "https://www.dataprotection.ro",
 } as const

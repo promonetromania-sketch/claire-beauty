@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Montserrat } from "next/font/google"
 import { CookieConsent } from "@/components/legal/cookie-consent"
 import { ConditionalAnalytics } from "@/components/legal/conditional-analytics"
 import "./globals.css"
+import { ContactAnonim } from '@/components/contact-anonim'
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -48,6 +49,7 @@ export default function RootLayout({
   return (
     <html lang="ro" className={`${cormorant.variable} ${montserrat.variable} bg-background`}>
       <body className="font-sans antialiased">
+        <ContactAnonim />
         {children}
         <CookieConsent />
         {process.env.NODE_ENV === "production" && <ConditionalAnalytics />}
