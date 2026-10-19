@@ -78,6 +78,10 @@ export function ContactForm() {
 
     setIsSubmitting(true)
 
+    // Formularul nu trece prin server (deschide WhatsApp + e-mail), deci anunțăm explicit
+    // trimiterea — GoogleTags o transformă în conversie Google Ads + eveniment GA4.
+    window.dispatchEvent(new CustomEvent("claire:formular-trimis"))
+
     const body = buildContactMessage(payload)
     const subject = `Contact Claire Beauty — ${payload.name}`
 

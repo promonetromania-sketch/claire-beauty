@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { Cormorant_Garamond, Montserrat } from "next/font/google"
 import { CookieConsent } from "@/components/legal/cookie-consent"
-import { ConditionalAnalytics } from "@/components/legal/conditional-analytics"
+import { GoogleTags } from "@/components/legal/google-tags"
 import "./globals.css"
 import { ContactAnonim } from '@/components/contact-anonim'
 
@@ -52,7 +52,7 @@ export default function RootLayout({
         <ContactAnonim />
         {children}
         <CookieConsent />
-        {process.env.NODE_ENV === "production" && <ConditionalAnalytics />}
+        {process.env.NODE_ENV === "production" && <GoogleTags />}
       </body>
     </html>
   )

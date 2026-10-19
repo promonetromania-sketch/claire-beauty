@@ -52,7 +52,8 @@ export function CookieConsent() {
             >
               Folosim cookie-uri strict necesare pentru preferințele tale. Cu
               acordul tău, activăm și cookie-uri analitice (Google Analytics)
-              pentru a înțelege cum este folosit site-ul. Detalii în{" "}
+              și de marketing (Google Ads), ca să înțelegem cum este folosit
+              site-ul și ce aduc reclamele. Detalii în{" "}
               <Link
                 href="/politica-cookie"
                 className="font-medium text-[#D4AF37] underline-offset-2 hover:underline"

@@ -108,6 +108,8 @@ export const cookiePolicySections: LegalSection[] = [
     list: [
       "Cookie-uri strict necesare — preferința ta privind consimțământul (stocată local, fără tracking)",
       "Cookie-uri analitice (opționale) — Google Analytics 4, statistici agregate de vizitare (ex. _ga, _ga_*), activate doar dacă apeși „Accept toate”",
+      "Cookie-uri de marketing (opționale) — Google Ads, pentru a măsura ce contacte aduc reclamele (ex. _gcl_au, _gcl_aw), activate doar dacă apeși „Accept toate”",
+      "Fără acordul tău, etichetele Google funcționează în modul fără cookie-uri (Google Consent Mode): nu se stochează nimic în browser și nu se transmite nimic care să te identifice — doar semnale agregate, din care Google estimează statistic rezultatele.",
     ],
   },
   {
@@ -122,7 +124,7 @@ export const cookiePolicySections: LegalSection[] = [
     id: "third",
     title: "4. Cookie-uri terțe",
     paragraphs: [
-      "Google Analytics (Google Ireland Limited) poate seta cookie-uri proprii când ai acceptat cookie-urile analitice. Linkurile către rețele sociale (Instagram, Facebook, WhatsApp) pot plasa cookie-uri proprii când interacționezi cu ele. Consultă politicile acelor platforme.",
+      "Google Analytics și Google Ads (Google Ireland Limited) pot seta cookie-uri proprii când ai acceptat cookie-urile analitice și de marketing. Linkurile către rețele sociale (Instagram, Facebook, WhatsApp) pot plasa cookie-uri proprii când interacționezi cu ele. Consultă politicile acelor platforme.",
     ],
   },
   {
@@ -195,9 +197,9 @@ export const gdprSections: LegalSection[] = [
   },
   {
     id: "cookies",
-    title: "7. Consimțământ cookie-uri analitice",
+    title: "7. Consimțământ cookie-uri analitice și de marketing",
     paragraphs: [
-      "Google Analytics este activat doar dacă alegi „Accept toate” în bannerul de cookie-uri. Poți retrage acordul ștergând datele site-ului din browser (inclusiv preferința de consimțământ) sau contactându-ne.",
+      "Cookie-urile Google Analytics și Google Ads sunt activate doar dacă alegi „Accept toate” în bannerul de cookie-uri. Poți retrage acordul ștergând datele site-ului din browser (inclusiv preferința de consimțământ) sau contactându-ne.",
       "Detalii tehnice despre cookie-uri: Politica de cookie.",
     ],
   },
