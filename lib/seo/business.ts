@@ -2,7 +2,7 @@ export const businessProfile = {
   name: "Claire Beauty Craiova",
   legalName: "Claire's Studio by Ana Savovici",
   locationName: "Claire's Beauty",
-  url: "https://clairebeauty.ro",
+  url: "https://www.clairebeauty.ro",
   telephone: "+40757851882",
   telephoneDisplay: "+40 757 851 882",
   email: "anasavovici@yahoo.com",
